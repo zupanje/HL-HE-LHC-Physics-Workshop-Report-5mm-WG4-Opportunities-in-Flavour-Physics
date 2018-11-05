@@ -1,0 +1,122 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+\def\bsmumu{\ensuremath{B^0_s \to \mu^{+} \mu^{-}}\xspace}
+\def\bsmumugamma{\ensuremath{B^0_s \to \mu^{+} \mu^{-} \gamma}\xspace}
+\def\bdmumugamma{\ensuremath{B^0 \to \mu^{+} \mu^{-} \gamma}\xspace}
+\def\epm    {{\ensuremath{e^\pm}}\xspace}
+\def\emp    {{\ensuremath{e^\mp}}\xspace}
+\def\mupm   {{\ensuremath{\mu^\pm}}\xspace}
+\def\mump   {{\ensuremath{\mu^\mp}}\xspace}
+\def\BToEMu    {\decay{\B}{\epm\mump}}
+\def\BdToEMu   {\decay{\Bd}{\epm\mump}}
+\def\BsToEMu   {\decay{\Bs}{\epm\mump}}
+\newcommand{\subdecay}[2]{\ensuremath{#1(\!\to #2)}\xspace}
+% Particles
+\def\mupm   {{\ensuremath{\mu^\pm}}\xspace}
+\def\mump   {{\ensuremath{\mu^\mp}}\xspace}
+\def\taupm   {{\ensuremath{\tau^\pm}}\xspace}
+\def\taump   {{\ensuremath{\tau^\mp}}\xspace}
+%% Decays
+\def\tauppp{\decay{\taupm}{\pi^\pm\pi^\mp\pi^\pm\nu}}
+\def\tauppppi0{\decay{\taupm}{\pi^\pm\pi^\mp\pi^\pm\piz\nu}}
+\def\BToTauMu    {\decay{\B}{\taupm\mump}}
+\def\BdToTauMu   {\decay{\Bd}{\taupm\mump}}
+\def\BsToTauMu   {\decay{\Bs}{\taupm\mump}}
+\def\BdToTauMupm   {\decay{\Bd}{\taupm\mump}}
+\def\BsToTauMupm   {\decay{\Bs}{\taupm\mump}}
+\def\BdsToTauMu   {\decay{\B^0_{\left( s\right) }}{\taupm\mump}}
+\def\BdsToTauMuSS {\decay{\B^0_{\left( s\right) }}{\taupm\mupm}}
+\def\Btaumu{\decay{\B}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bstotaumu{\decay{\Bs}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bdtotaumu{\decay{\Bd}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bdstaumu{\decay{\B^0_{\left( s\right) }}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bdtaumu{\decay{\Bd}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bstaumu{\decay{\Bs}{\subdecay{\taupm}{\pipm\pimp\pipm\nu}\mump}}
+\def\Bstaumupi0{\decay{\Bs}{\subdecay{\taupm}{\pipm\pimp\pipm\piz\nu}\mump}}
+\def\Bdtaumupi0{\decay{\Bd}{\subdecay{\taupm}{\pipm\pimp\pipm\piz\nu}\mump}}
+\def\BToDPi    {\decay{\Bd}{\D^\pm\pi^\mp}}
+\def\dbtaunu {\decay{\B}{D^{(*)} \tau \nu}}
+\def\dbmunu {\decay{\B}{D^{(*)} \mu \nu}}
+\def\dbenu {\decay{\B}{D^{(*)} e \nu}}
+\def\dmunu {\decay{\B}{D \mu \nu}}
+\def\denu {\decay{\B}{D e \nu}}
+\def\dsttaunu {\decay{\B}{D^{*} \tau \nu}}
+\def\dstztaunu {\decay{\B}{D^{*0} \tau \nu}}
+\def\dstptaunu {\decay{\B_{d}}{D^{*-} \tau^{+} \nu}}
+\def\dstmunu {\decay{\B}{D^{*} \mu \nu}}
+\def\dstenu {\decay{\B}{D^{*} e \nu}}
+\def\dstpmunu {\decay{\B}{D^{*+} \mu \nu}}
+\def\dstzmunu {\decay{\B}{D^{*0} \mu \nu}}
+\def\dstlnu {\decay{\B}{D^{*} \ell \nu}}
+\def\dblnu {\decay{\B}{D^{(*)} \ell \nu}}
+\def\RDst {\ensuremath{\mathcal{R}(\Dstar)}\xspace}
+\def\RDstp {\ensuremath{\mathcal{R}(\Dstarp)}\xspace}
+\def\RD {\ensuremath{\mathcal{R}(D)}\xspace}
+\def\RDb {\ensuremath{\mathcal{R}(D^{(*)})}\xspace}
+\def\RDst {\ensuremath{\mathcal{R}(\Dstar)}\xspace}
+\def\RDorDst {\ensuremath{\mathcal{R}(D^{(*)})}\xspace}
+\def\RDsteq {\ensuremath{\mathcal{R}(\Dstar)\equiv\frac{\mathcal{B}\left(\decay{\B}{\Dstarb\taup\neu}\right)}{\mathcal{B}\left(\decay{\B}{\Dstarb\ellp\neu}\right)}}\xspace}
+\def\Req {\ensuremath{\mathcal{R}(D^{*})\equiv\frac{\mathcal{B}\left(\decay{\B}{\Db^{(*)}\taup\neu}\right)}
+         {\mathcal{B}\left(\decay{\B}{\Db^{(*)}\ellp\neu}\right)}}\xspace}
+\def\RD {\mathcal{R}(D)}
+\def\threepim {\ensuremath{\pim \pip \pim}\xspace}
+\def\threepip {\ensuremath{\pip \pim \pip}\xspace}
+\def\mupm   {{\ensuremath{\mu^\pm}}\xspace}
+\def\mump   {{\ensuremath{\mu^\mp}}\xspace}
+\def\taupm   {{\ensuremath{\tau^\pm}}\xspace}
+\def\taump   {{\ensuremath{\tau^\mp}}\xspace}
+%% Decays
+\def\taummm{\decay{\taupm}{\mupm \mu^+ \mu^-}}
+\def\Dsetamunu{\decay{\Ds}{\subdecay{\eta}{\mu^+\mu^-\gamma}\mu^+\nu_{\mu}}}
+
+\begin{document}
+
+\section{Bottom quark probes of new physics and prospects for $B$-anomalies \label{secBanom}}
+{\bf Authors: J. Virto, D. Straub, W. Altmannshofer,  D. Robinson, S. Schacht, Martin Jung} (10 pp,TH:EXP= 50\%:50\%)
+
+\subsection{In $b\to s \ell\ell$}
+{\bf Authors: J. Virto, D. Straub, W. Altmannshofer}
+
+\input{section7/bsll.tex}
+
+\subsection{In $b\to c \tau \nu$}
+{\bf Authors: D. Robinson, S. Schacht, M. Freytsis, M. Jung}
+
+
+\input{section7/bctaunu.tex}
+
+
+\input{section7/experimental}
+
+\subsection{Combined theory/experiment perspective on global interpretations (EFT/non-EFT)}
+%a particular emphasis on impact of LHC-only combined analysis and complementarity of this with Belle II
+While the current flavour physics anomalies are very exciting, the key contribution
+of the HL-LHC datasets will be a comprehensive global picture of rare, suppressed,
+and (semi)-leptonic quark transitions. This global picture has value whether or
+not the current anomalies are confirmed with Run~2 or Run~3 LHC data. If the most
+statistically sensitive decay modes ($R_{K}$ and \RDb) confirm the anomalies, a 
+global analysis of all analogous modes will be the only way to discriminate between
+the full range of possible BSM explanations, and to decisively rule out 
+long-distance SM effects as the cause. Such a global analysis will also help to
+pin down the mass scale of the BSM particles and force-carriers, which together
+with the direct HL-LHC searches will further restrict the range of possible
+explanations for the anomalies. On the other hand, if the anomalies decrease in
+significance with Run~2 and Run~3 data, we may return to searching for small BSM
+effects on top of the dominant SM amplitudes. In this case, a global analysis of
+deviations from the SM predictions may be the only way to see such a small BSM
+signal, and understand its energy scale. 
+
+In both cases, it will be of critical importance to maintain robust frameworks 
+for such global analyses, connecting the theoretical ansatz used to interpret 
+the data to the measured experimental likelihoods for the observables of 
+interest. Particularly in the HL-LHC era, where many of the rare and FCNC beauty
+decays will actually become abundant and enter the precision regime, experiments 
+must ensure a coherent treatment of systematic uncertainties,
+and enable systematic correlations between different experiments to be
+understood. 
+%Needs to be expanded, Belle II brought into it...
+%Bring in the topic of non-EFT explanations? Keep looking for new light degrees of freedom?
+\end{document}

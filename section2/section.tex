@@ -1,0 +1,810 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+\begin{document}
+
+\def\vub {\ensuremath{|V_{\uquark\bquark}|}\xspace}
+\def\vcb {\ensuremath{|V_{\cquark\bquark}|}\xspace}
+\def\qq {\ensuremath{q^{2}}\xspace}
+\def\PMuNu{\decay{\Lb}{p \mun \neumb}}
+\def\LcMuNu{\decay{\Lb}{\Lc \mun \neumb}}
+\def\KMuNu{\decay{\Bs}{\Km \mup \neum}}
+\def\DsMuNu{\decay{\Bs}{\Dsm \mup \neum}}
+\def\Bq      {{\ensuremath{\B^0_\quark}}\xspace}
+\def\Bqb     {{\ensuremath{\Bbar{}^0_\quark}}\xspace}
+\def\dbtaunu {\decay{\B}{D^{(*)} \tau \nu}}
+\def\dbmunu {\decay{\B}{D^{(*)} \mu \nu}}
+\def\dbenu {\decay{\B}{D^{(*)} e \nu}}
+\def\dmunu {\decay{\B}{D \mu \nu}}
+\def\denu {\decay{\B}{D e \nu}}
+\def\dsttaunu {\decay{\B}{D^{*} \tau \nu}}
+\def\dstztaunu {\decay{\B}{D^{*0} \tau \nu}}
+\def\dstptaunu {\decay{\B_{d}}{D^{*-} \tau^{+} \nu}}
+\def\dstmunu {\decay{\B}{D^{*} \mu \nu}}
+\def\dstenu {\decay{\B}{D^{*} e \nu}}
+\def\dstpmunu {\decay{\B}{D^{*+} \mu \nu}}
+\def\dstzmunu {\decay{\B}{D^{*0} \mu \nu}}
+\def\dstlnu {\decay{\B}{D^{*} \ell \nu}}
+\def\dblnu {\decay{\B}{D^{(*)} \ell \nu}}
+\def\RDst {\ensuremath{\mathcal{R}(\Dstar)}\xspace}
+\def\RDstp {\ensuremath{\mathcal{R}(\Dstarp)}\xspace}
+\def\RD {\ensuremath{\mathcal{R}(D)}\xspace}
+\def\RDb {\ensuremath{\mathcal{R}(D^{(*)})}\xspace}
+\def\vub {\ensuremath{|V_{\uquark\bquark}|}\xspace}
+\def\vcb {\ensuremath{|V_{\cquark\bquark}|}\xspace}
+\def\qq {\ensuremath{q^{2}}\xspace}
+\def\PMuNu{\decay{\Lb}{p \mun \neumb}}
+\def\LcMuNu{\decay{\Lb}{\Lc \mun \neumb}}
+\def\KMuNu{\decay{\Bs}{\Km \mup \neum}}
+\def\DsMuNu{\decay{\Bs}{\Dsm \mup \neum}}
+\def\vub {\ensuremath{|V_{ub}|}\xspace}
+\def\vcb {\ensuremath{|V_{cb}|}\xspace}
+\def\qq {\ensuremath{q^{2}}\xspace}
+\def\PMuNu{\decay{\Lb}{p \mun \neumb}}
+\def\LcMuNu{\decay{\Lb}{\Lc \mun \neumb}}
+\def\KMuNu{\decay{\Bs}{\Km \mup \neum}}
+\def\DsMuNu{\decay{\Bs}{\Dsm \mup \neum}}
+\def        \DtoKspp        {\ensuremath{\D\to\KS\pip\pim}\xspace}
+\def        \DtoKskk        {\ensuremath{\D\to\KS\Kp\Km}\xspace}
+\def        \DtoKshh        {\ensuremath{\D\to\KS\hadron^+\hadron^-}\xspace}
+\def        \BtoDpi         {\ensuremath{\Bpm\to\D\pipm}\xspace}
+\def        \BtoDK          {\ensuremath{\Bpm\to\D\Kpm}\xspace}
+\def        \BztoDstmuX     {\ensuremath{\Bz\to\Dstarpm\mu^\mp\nu_\mu X}\xspace}
+\def        \hp            {\ensuremath{\hadron^+}\xspace}
+\def        \hm            {\ensuremath{\hadron^-}\xspace}
+\def        \BtoDKst       {\ensuremath{\Bz\to\PD\Kstarz}\xspace}
+\def        \mpsq          {\ensuremath{m_{+}^{2}}\xspace}
+\def        \mmsq          {\ensuremath{m_{-}^{2}}\xspace}
+\def        \mpmsq          {\ensuremath{m_{\pm}^{2}}\xspace}
+\def        \mmpsq          {\ensuremath{m_{\mp}^{2}}\xspace}
+\def        \rb            {\ensuremath{r_B}\xspace}
+\def        \db            {\ensuremath{\delta_B}\xspace}
+\def        \g             {\ensuremath{\gamma}\xspace}
+\def        \dpos          {\ensuremath{(\mpmsq,\mmpsq)\xspace}}
+\def        \dbpos         {\ensuremath{(\mmpsq,\mpmsq)\xspace}}
+\newcommand{\rbk}{\ensuremath{r_{B}^{DK}}\xspace}
+
+\section{Testing the CKM unitarity}\label{sec:metro-CKM}
+{\bf Author(s): Luca Silvestrini, J\'er\^ome Charles, Marco Ciuchini, Vincenzo Vagnoni, S\'ebastien Descotes-Genon, Olivier Deschamps}\\
+(25 pages, TH:EXP= 50\%:50\%)
+
+\subsection{Structure of the CKM matrix and statistical approaches}
+
+\subsubsection{The CKM parameters}
+% S. Descotes-Genon
+
+In the Standard Model (SM), the weak charged-current transitions mix quarks of different generations, which is encoded in the
+unitary Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}, as 
+described by the Lagrangian
+\begin{equation}\label{eq:chargeInteraction}
+\mathcal{L}_{W^{\pm}} = -
+\frac{g}{\sqrt{2}}\overline{U}_{i}\gamma^{\mu}\frac{1-\gamma^5}{2}\left(V_{\rm
+CKM} \right )_{ij} D_{j} W_{\mu}^{+} + \mathrm{h.c.},
+\end{equation}
+where $g$ is the electroweak coupling constant and $V_{\rm
+CKM}=V_{u{L}}^\dag V_{d{L}}$ is the unitary CKM matrix:
+
+\begin{equation}\label{eq:ckmMatrix}
+V_{\rm CKM} = \left(
+\begin{array}{lcr}
+V_{ud} & V_{us} & V_{ub} \\
+V_{cd} & V_{cs} & V_{cb} \\
+V_{td} & V_{ts} & V_{tb}
+\end{array}
+\right).
+\end{equation}
+The CKM matrix induces flavour-changing transitions inside and between generations in the charged sector at tree level ($W^\pm$ interaction). By contrast, there are no flavour-changing transitions in the neutral sector at tree level.
+
+A strong hierarchy is observed experimentally among the CKM matrix elements: transitions within the same generation are characterised by $V_{\rm CKM}$ elements of $\mathcal{O}(1)$, whereas
+there is a suppression of $\mathcal{O}(10^{-1})$
+between 1st and 2nd generations, $\mathcal{O}(10^{-2})$ between 2nd and 3rd and $\mathcal{O}(10^{-3})$ between 1st and 3rd.
+This hierarchy is expressed by defining the four phase convention--independent
+quantities:
+\begin{equation}
+\lambda^2§=\frac{|V_{us}|^2}{|V_{ud}|^2+|V_{us}|^2}\,, \qquad
+A^2\lambda^4=\frac{|V_{cb}|^2}{|V_{ud}|^2+|V_{us}|^2}\,, \qquad
+\bar\rho+i\bar\eta=-\frac{V_{ud}V_{ub}^*}{V_{cd}V^*_{cb}}\,.
+\end{equation}
+
+The CKM matrix can be expanded in powers of the small parameter
+$\lambda$ (which corresponds to the Cabibbo parameter $\sin{\theta_{C}}\simeq
+0.22$)~\cite{Wolfenstein:1983yz} by exploiting the unitarity of
+$V_\text{CKM}$. This
+expansion yields the following parametrisation up to
+$\mathcal{O}\left(\lambda^{6}\right)$:
+
+\begin{equation}\label{eq:ckmWolfenstein4}
+V_{\rm CKM} = \left(
+\begin{array}{ccc}
+1-\frac{1}{2}\lambda^{2}-\frac{1}{8}\lambda^{4} & \lambda & A\lambda^{3}\left(\bar\rho -i\bar\eta\right) \\
+-\lambda +\frac{1}{2}A^{2}\lambda^{5}\left[1-2(\bar\rho +i\bar\eta)\right] & 1-\frac{1}{2}\lambda^{2}-\frac{1}{8}\lambda^{4}(1+4A^{2}) & A\lambda^{2} \\
+A\lambda^{3}\left[1-(\bar\rho +i\bar\eta)\right]~ &
+~-A\lambda^{2}+\frac{1}{2}A\lambda^{4}\left[1-2(\bar\rho
++i\bar\eta)\right]~ & ~1-\frac{1}{2}A^{2}\lambda^{4}
+\end{array}
+\right).
+\end{equation}
+The CKM matrix is complex; thus, \CP violation is allowed if
+and only if $\bar\eta$ differs from zero. 
+%To lowest order, the Jarlskog parameter measuring \CP violation in a convention-independent manner~\cite{Jarlskog:1985ht},
+%\begin{equation}\label{eq:jarlskogValueWolf}
+%J_{C\!P} \equiv \left|\Im\left(V_{i\alpha} V_{j\beta}
+%V_{i\beta}^{*}V_{j\alpha}^{*}\right)\right| =
+%\lambda^{6}A^{2}\bar\eta, \qquad \left( i\neq j,
+%\alpha\neq\beta\right),
+%\end{equation}
+%is directly related to the \CP-violating parameter $\bar\eta$.
+
+Orthogonality relations can be written involving two columns or two rows of the unitary CKM matrix, and they can be represented as triangles in the complex plane. It is standard to focus on the orthogonality relation:
+\begin{equation}
+{V_{ud}V_{ub}^{*}}+{V_{cd}V_{cb}^{*}}+{V_{td}V_{tb}^{*}} = 0
+\end{equation}
+as these products of CKMs are involved in $B$-meson weak decays are of similar $O(\lambda^3)$ size. As show in Fig.~\ref{fig:UTtriangle}, the unitarity triangle corresponds to a rescaling by $V_{cd}V_{cb}^{*}$ of this orthogonality relation, with apices located at $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\eta)$. The angles of the
+UT are related to the CKM matrix elements as
+\begin{equation}
+\alpha= \arg{\left(-\frac{V_{td}V_{tb}^{*}}{V_{ud}V_{ub}^{*}}\right)}, \qquad
+\beta=\arg{\left(-\frac{V_{cd}V_{cb}^{*}}{V_{td}V_{tb}^{*}}\right)}, \qquad
+\gamma\equiv\arg{\left(-\frac{V_{ud}V_{ub}^{*}}{V_{cd}V_{cb}^{*}}\right)}
+\end{equation}
+
+\begin{figure}[!tb]
+\centering
+\includegraphics[width=0.6\linewidth]{section2/figures/ckmTriangle.pdf} 
+\caption{
+The Unitarity triangle. The parameters $\rho$ and $\eta$ are defined as 
+$\rho+i\eta=(1-\lambda^2/2+O(\lambda^4)(\bar\rho+i\bar\eta)$.
+}
+\label{fig:UTtriangle}
+\end{figure} 
+
+\subsubsection{Statistical approaches}
+
+Due to its economical structure in terms of only four parameters and
+its consequences for \CP violation, the CKM matrix can be
+determined through many different quark transitions. These
+correspond to $\Delta F = 1$ decays or $\Delta F=2$ processes
+related to neutral-meson mixing.
+Extracting information on these parameters from data is a challenge for both experimentalists and theorists, since the SM depends on a large set of parameters which are not predicted within its framework, and must be determined experimentally. An additional difficulty stems from the presence of the strong interaction binding quarks into hadrons, which is responsible for most of the theoretical uncertainties discussed when determining the CKM matrix parameters. 
+
+The CKMfitter group aims at this goal by combining a large set of constraints from flavour physics, using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic:
+\begin{equation}
+\chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p)),
+\end{equation}
+where $\vec {\cal O}_{th}(\vec p)$ represent the theoretical value of the observables for the N fixed parameters $\vec p$. The absolute minimum value of the test statistic, $\chi^2_{\rm min}$, quantifies the agreement of the data with the theoretical model, once converted into a $p$-value (interpreting $\chi^2(\vec{p})$
+as a random variable distributed according to a $\chi^2$ law, generally relying on Wilks' theorem). It is also possible to perform the metrology of specific parameters of the model~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt}. Indeed, if we consider the $\vec\mu$ hadronic parameters as ``nuisance parameters'', 
+we can define the test statistic from the \chisq difference:
+\begin{equation}\label{eq:deltachisq}
+ \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}
+\end{equation}
+where  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom:
+\begin{equation}\label{eq:prob}
+ p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,.
+\end{equation}
+Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with a $p$-value larger than $1-$CL.
+
+In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (i.e., systematics not scaling with the size of the sample) which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, corresponding to a constraint to $\chi^2$ restricting the value of the theoretical parameter/observable to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
+
+	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions that is quite intuitive and easy to implement.
+	
+	Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
+	\begin{equation}
+	f(\bar\rho,\bar\eta|\mathbf{\hat{c}}, \mathbf{\hat{f}}) \propto 
+	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta)\,,
+	\label{eq:flat_inf}
+	\end{equation}
+	where $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, whose theoretical expressions are given by the functions $c_j(\bar\rho,\bar\eta;\mathbf{x})$ depending on $\bar\rho$, $\bar\eta$, and a set of additional experimental and theoretical parameters ${\mathbf x}=\{x_1,x_2,\dots,x_N\}$, $f_0(\bar\rho,\bar\eta)$ is the prior p.d.f.\ for $\bar\rho$ and $\bar\eta$, assumed to be flat on the UT plane, and the effective overall likelihood ${\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})$ is
+    \begin{equation}
+    {\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})
+    = \int 
+    \prod_{j=1,{\rm M}}f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})
+    \prod_{i=1,{\rm N}}f_i(x_i)\, \mbox{d}{ x_i}\,.
+    \label{eq:lik_int}
+    \end{equation}
+	The p.d.f.\ $f_i=\{f_1,f_2,\dots,f_N\}$ are the prior distributions of the parameters, while  $f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})$ are the conditional probabilities of $\hat{c}_j$ given $\bar\rho$, $\bar\eta$, and $\mathbf{x}$, that in the Gaussian approximation become
+    \begin{equation}	
+	f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})=\frac{1}{\sqrt{2 \pi}\,\sigma(c_j)}
+	\exp\left[-\frac{(c_j(\bar\rho, \bar\eta; \mathbf{x})-
+		\hat{c}_j)^2}{2\,\sigma^2(c_j)}\right]\,.
+    \end{equation}
+    The integration in eq.(\ref{eq:lik_int}) is usually carried out using Monte Carlo methods. More details on the Bayesian approach of the UTfit collaboration can be found in ref.\cite{Ciuchini:2000de}.
+    
+\subsection{Current status of the constraints}
+
+1/2 page for each constraint
+
+\subsubsection{$|V_{ud}|,|V_{us}|,|V_{cd}|,|V_{cs}|$}
+% S. Descotes-Genon
+
+Accurate constraints on the first and second rows and columns of the CKM matrix come from leptonic ($\pi\to e\nu$, $K\to e\nu$, $K\to\mu\nu$, $\tau\to \pi\nu_\tau$,  $\tau\to K\nu_\tau$, $D\to \mu\nu$, $D_s\to \mu\nu$) and semileptonic decays ($K\to\pi e\nu$, $D\to \pi e\nu$, $D_s\to Ke\nu$). The extraction of CKM matrix elements requires the knowledge of hadronic inputs (decay constants for the leptonic decays, normalisation of the form factors at $q^2=0$ for the semileptonic decays) and electromagnetic/isospin corrections when available (i.e. for kaon and pion decays)~\cite{Antonelli:2010yf}.
+
+Another prominent constraint for $|V_{ud}|$ comes from the consideration of the superallowed $\beta$ decays of 20 different nuclei~\cite{Hardy:2014qxa,Towner:2015woa,Hardy:2018zsb} (there are other constraints, but less powerful due to experimental uncertainties and/or theoretical systematics difficult to assess), which provides a very accurate constraint on $|V_{ud}|$.
+
+
+\subsubsection{$|V_{ub}|$} 
+\td{UTfit}
+
+\subsubsection{$|V_{cb}|$} 
+\td{UTfit}
+
+\subsubsection{Angle $\alpha$}
+
+% O. Deschamps
+The constraints on the CKM angle $\alpha$ are derived from the isospin analysis of the charmless decay modes $B\to\pi\pi$, $B\to\rho\rho$ and $B\to\rho\pi$. This approach has the  interesting feature of being almost free from the hadronic uncertainties due to the QCD of binding quarks into the observed hadrons. Assuming the isospin symmetry and neglecting the electroweak penguin contributions, the amplitudes of the SU(2)-conjugated modes are related, and  the measured branching fractions and asymmetries in the $\B^{\pm,0}\to(\pi\pi)^{\pm,0}$ and $B^{\pm,0}\to(\rho\rho)^{\pm,0}$ modes and the bilinear form factors in the Dalitz analysis of the neutral $B^{0}\to(\rho\pi)^0\to\pi^+\pi^-\pi^0$ decays provide enough observables to simultaneously extract the weak phase $\beta+\gamma=\pi-\alpha$ together with the hadronic tree and penguin contribution to each mode. The combination of the experimental data for the three decay modes above, mostly provided by the B-factories,  gives the world-average value at 68\% 
+Confidence 
+Level (CL)\cite{Charles:2017evz}: 
+\begin{equation} \label{eq:alphadir}
+\alpha_{\rm dir} = (86.2^{+4.4}_{-4.0} \xspace\cup\xspace 178.4^{+3.9}_{-5.1})^\circ\,,
+\end{equation}
+where the resolution is so far significantly larger than the theoretical uncertainty related to hypotheses underlying the SU(2) analysis that may affect the  $\alpha_{\rm dir}$ determination by around $2^\circ$. The solution near $90^\circ$ is in  good agreement with the indirect determination obtained by the global fit of the flavour data\cite{CKMfitterwebsite}.\\
+%\begin{equation}
+%\alpha_{\rm ind}  = \val{92.5}{+1.5}{-1.1}{$^\circ$}\,.\label{eq:alphaInd}
+%\end{equation}
+% Considered separately, the $B\to\pi\pi$ and $B\to\rho\rho$ decays yield direct determinations of $\alpha$ in very good agreement with the indirect determination Eq.~(\ref{eq:alphaInd}), whereas the $B\to \rho\pi$ decay exhibits a 3$\sigma$ discrepancy. This discrepancy affects only marginally the combination Eq.~(\ref{eq:alphadir}), which is dominated by the results from $\rho\rho$ decays, and to a lesser extent $\pi\pi$ decays, whereas $\rho\pi$ modes play only a limited role.\\
+
+
+
+The experimental data is so far statistically limited for all the considered charmless modes. Due to the limited reconstruction efficiency of the neutral pions and the large associated background in the hadronic environment, the LHC contribution to the isospin analyses is so far confined to the final states reconstructed from charged pions only, i.e the measurement of the branching ratio and the time-dependent $CP$-asymmetries in the  $B^0\to\pi^+\pi^-$ decay\cite{Aaij:2012as,Aaij:2018tfw}, and the branching ratio and fraction of longitudinal polarisation in the colour-suppressed decay mode, $B^0\to\rho^0\rho^0$ \cite{Aaij:2015ria}. A detailed prospective exercice on the CKM angle $\alpha$ has been performed in~\cite{Charles:2017evz} by evaluating the individual impact of the charmless decay observables on the $\alpha$ determination.\\
+The global combination of the  decay-specific determinations of $\alpha$ is dominated by the $B\to\rho\rho$ data that provides a constraint with a relative uncertainty at the level of 5\%.  All other observables remaining unchanged, improving the accuracy of the branching ratio of the charged mode $B^+\to\rho^+\rho^0$ would  improve the resolution on $\alpha$ only marginally. Improving the measurements for the neutral modes, in particular the colour-suppressed $B^0\to\rho^0\rho^0$ decay, has a larger impact, essentially driven by the $CP$-asymmetries parameters.\\
+The subleading contribution to the combined $\alpha$ determination is provided by the $B\to\pi\pi$ system. Any sizable improvement on $\alpha_{\pi\pi}$ is  driven by the increased accuracy in the measurement of the direct $CP$ asymmetry in the colour-suppressed decay  $B^0\to\pi^0\pi^0$. No time-dependent analysis has become available so far for the colour-suppressed mode due to the dominant di-photon decay of the neutral pions that  hinders the measurement of the decay time. However, the Dalitz decay $\pi^0\to\gamma e^+e^-$ (with low branching fraction) or the photon conversion in the detector material may allow one to measure the $B^0$ decay time in the future high-statistics flavour experiments.  In addition to a significant improvement on $\alpha$, the measurement of  $S^{00}_{\pi\pi}$ would  lift some of the discrete ambiguities and thus reduce the number of mirror solutions in the $B\to\pi\pi$ isospin analysis.\\
+The extraction of the weak phase $\alpha$ in the the $B^0\to(\rho\pi)^0$ system relies on the analysis of the interference between the intermediate modes $B^0\to\rho^+\pi^-$, $B^0\to\rho^-\pi^+$ and  $B^0\to\rho^0\pi^0$. The Dalitz analysis of the three-pions final states permits a determination free from the discrete ambiguities usually affecting the (quasi) two-body modes, $B\to\rho\rho$ and $B\to\pi\pi$ . At LHCb, such analysis has to face the two fold difficulty of reconstructing the soft $\pi^0$ in the $\rho^+\pi^-$, $\rho^-\pi^+$ interference region and/or to separate the high-energy $\pi^0$ from the single photons from the radiative decays background in the  $\rho^0\pi^0$, $\rho^\pm\pi^\mp$ interference regions. At high luminosity, the analysis may take advantage of the Dalitz decays of the $\pi^0$ or the photon conversion in the detector material.
+
+\subsubsection{Angle $\beta$} 
+	First UT angle to be measured, $\beta$ is extracted from the time-dependent CP asymmetry of $b\to c\bar c s$ decays 
+	with a charmonium state and a $K$ meson in the final state, which measures Im$\lambda_f=$Im$(q/p \bar{A}_f/A_f)$. The prototype of these decays is $B\to J/\psi K_S$. Given the amplitude decomposition $A_{J/\psi K_S} = V_{cs}V_{cb}^* T + V_{us}V_{ub}^* P$, these decays are dominated by the isoscalar tree-level amplitude $T$, while the subleading term $P$ is both loop and doubly Cabibbo suppressed. Neglecting $P$, the expression of the time-dependent CP asymmetry $a^\mathrm{CP}_t(B\to J/\psi K_S)=\sin2\beta\,\sin(\Delta m_B\, t)$ has a single oscillatory term, the amplitude of which gives experimental access to $\sin2\beta$, providing a determination of the CKM angle with a four-fold ambiguity.~\footnote{This ambiguity can be reduced using measurements sensitive to $\cos2\beta$ such as the time-dependent transversity analysis of $B\to J/\psi K^*$.} This approximation is justified as long as the relative error on $\sin2\beta$ is larger than the correction induced by the subleading term $\sim \lambda^2 P/T$. The present relative uncertainty on $\sin2\beta$ from various charmonium states (including $J/\psi$ / $\psi(2S)$ / $\chi_{c1}$ / $\eta_c$ $K_S$, $J/\psi K_L$, $\psi(nS)K^0$) is about $2.4\%$. Double Cabibbo suppression amounts to $5\%$ and $P/T < 1$ is expected. Yet the precise suppression due to $P/T$ is unknown, likely ranging between some tens and a few percent, the latter estimate given by the perturbative evaluation of the penguing amplitude. Thus, depending on the actual value of $P/T$, the subleading amplitude could be a limiting factor for the extraction of $\sin2\beta$ already now or, in the opposite case, be safely neglected
+	down to an experimental precision of few permille. In order to bound the subleading amplitude, one can use $SU(3)$ flavour (or U-spin) related decays where the penguin contribution is not suppressed, such as $B_s\to J/\psi K_s$ or $B\to J/\psi \pi$~\cite{Fleischer:1999nz,Ciuchini:2005mg,Faller:2008zc,Ciuchini:2011kd,Jung:2012mp,DeBruyn:2014oga}. Measuring branching ratios and (time-dependent) CP asymmetries, it is possible to extract the correction to $\sin2\beta$ induced by the subleading term and the corresponding uncertainty, due to the experimental errors and $SU(3)$-breaking effects. The latter, being proportional to a suppressed amplitude, are expected to be at the permille level.
+	With present data, the typical shift in $\beta$ is $0.5$--$1^\circ$ with about $100\%$ uncertainty, dominated by the experimental uncertainties. Thus, the improvement in the measurement the time-dependent asymmetry in $B\to J/\psi K_S$ should be accompanied by a corresponding improvement in the measurement of the control channels in order to keep the subleading amplitude under control and extract $\sin2\beta$ with a subpercent precision.
+	It is worth mentioning that a complemetary approach proposing a theoretical computation of the subleading amplitude using an OPE based on soft-collinear factorization in QCD can be found in ref.~\cite{Frings:2015eva}.
+	Assuming that the subleading amplitude is kept under control, the uncertainty on the indirect determination of $\sin2\beta$ from the UT analysis is expected to go from the present 4.5\% down to 0.6\%, providing an improved sensitivity to NP in the $B$--$\bar B$ mixing amplitude, as discussed further below.
+
+
+\subsubsection{Angle $\gamma$}
+
+% S. Descotes-Genon
+
+The current best sensitivity is obtained using results of the charged 
+$B$-decays into $\tilde{D} K^-$, $\tilde{D}^{*} K^-$, and $\tilde{D} K^{*-}$ modes, where $\tilde{D}$
+is a $D^0$ or $\overline{D}^0$ meson decaying to a same final state. The $D^0$ corresponds
+to the leading $b \to c$ transition, whereas the $\overline{D}^0$ is produced through 
+a Cabibbo- and colour-suppressed $b \to u$ transition. The amplitude ${\cal A}_{b\to c}$ is proportional 
+to $\lambda^3$, while the amplitude  ${\cal A}_{b\to u}$ is proportional
+to $\lambda^3 \sqrt{\bar{\eta}^2+\bar{\rho}^2}$ $\times e^{i( \delta_B - \gamma)}$.
+In these decays, when the $D^0$ or $\overline{D}^0$ decay to a common final state, 
+the interference between the two tree amplitudes leads to observables that 
+depend on the relative weak phase $\gamma$ and results in different 
+$B^+$ and $B^-$ decay rates.
+The size of this interference also depends on the magnitude of the ratio
+of the two amplitudes, $r_B$ ($\equiv \vert {\cal A}_{b\to u}/$ ${\cal A}_{b\to c} \vert$),
+and the relative strong phase $\delta_B$ between them.
+The value of $r_B$, which determines the size of the direct \CP\ asymmetry,
+is predicted~\cite{Gronau:2002mu} to lie in the range 0.05--0.2. The smaller
+$r_B$ is, the smaller is the experimental sensitivity to $\gamma$.
+
+Different methods exploit this interference: the Gronau-London-Wyler (GLW)
+method~\cite{Gronau:1990ra,Gronau:1991dp} where the neutral $D$ meson is
+reconstructed in a \CP\ eigenstate; the Atwood-Dunietz-Soni (ADS)
+method~\cite{Atwood:1994zm,Atwood:1996ci,Atwood:2000ck} where the $D^0$ meson,
+associated to the ${\cal A}_{b\to c}$ amplitude, is required to decay to a doubly
+Cabibbo-suppressed decay (DCSD), while the $\overline{D}^0$ meson, associated to the
+${\cal A}_{b\to u}$ amplitude, decays to a Cabibbo-favoured final state, such as
+$K^+\pi^-$; the Giri-Grossman-Soffer-Zupan (GGSZ) method~\cite{Giri:2003ty} 
+where the neutral $D$ meson is reconstructed in self-conjugate three-body 
+final state such as $K_S^0 h^+ h^-$ (where $h=\pi$ or $K$). Those techniques 
+rely on clean theoretical assumptions as the contributions to the amplitudes 
+are originated only from tree-level transitions, to an excellent 
+approximation~\cite{Brod:2013sga}.
+All variations are sensitive to the same $B$ decay parameters and can therefore
+be combined in a single fit to extract the common weak phase $\gamma$, as well 
+as the hadronic parameters associated to each method.
+
+\subsubsection{Angle $\beta_s$}
+	The angle $\beta_s$ belongs to the squeezed UT $\sum_{q_u} V_{q_u b}^*V_{q_u s}=0$ instead of the usual $\sum_{q_u} V_{q_u b}^*V_{q_u d}=0$. Given its reduced sensitivity to $\bar{\rho}$ and $\bar{\eta}$, it is not a strong constraint in the UT plane. On the other hand, the UT analysis provides a very precise indirect determination of its value that can be compared with the direct determination extracted from the time-dependent transversality analysis of $B_s\to\phi K_S$. At present, we have $\beta_s^\mathrm{direct} = 0.60\pm 0.88$ and  $\beta_s^\mathrm{UTA} = 1.06\pm 0.03$. The future uncertainties of the direct and indirect determinations are expected to be $\pm 0.01$ and $\pm 0.007$ respectively, allowing for a deeper investigation of contributions to $B_s$--$\bar{B}_s$ mixing amplitude beyond the SM.
+	It is worth noting that, similarly to the $\beta$ case, shifts of few degrees to the value of $\beta_s$ extracted from the time-dependent analysis caused by the subleading amplitude cannot be excluded, producing however a much larger relative uncertainty, as $\beta_s$ itself is doubly Cabibbo suppressed. Indeed, for this reason, some control of doubly Cabibbo suppressed contributions is required to meaningfully extract $\beta_s$ at the SM level.
+	Also here, this control can be provided by $SU(3)_f$ related channels, with the additional caveat that $\phi$ is a (almost equal) mixture of $SU(3)_f$ octet and singlet, introducing an additional source of symmetry breaking.
+
+
+\subsubsection{$K\bar{K}$ mixing} 
+The CP-violating parameter $\varepsilon_K$, historically the first constraint in the UT plane, is becoming limited by long-distance contributions.
+In the last years, the improvements in the constraining power of $\varepsilon_K$ have come from new determination of the B-parameter $B_K$ on the lattice. Nowadays, the $B_K$ theoretical error is approaching the percent level and the dominating uncertainty comes from the long-distance contributions, the best estimate of which has an error of $2\%$~\cite{Buras:2010pza} and no clear path of improvement. A breakthrough could come from developing ideas for computing these terms on the lattice, using recent techniques to cope with non-local operators.
+
+
+\subsubsection{$B_d\bar{B}_d$ and $B_s\bar{B}_s$ mixing}
+
+% S. Descotes-Genon
+
+The mixing of the $B_d$ and $B_s$ mesons can be described upon introducing
+the mass and decay matrices, $M^q=M^{q\dagger}$ and
+$\Gamma^q=\Gamma^{q\dagger}$. These matrices are involved in the evolution
+operator for the quantum-mechanical description of the  $B_q--\overline{B}_q$
+oscillations (with $q=d$ or $q=s$).
+Their diagonalisation defines the physical eigenstates $\ket{B^q_H}$ and
+$\ket{B^q_L}$ with masses
+$M^q_H,\,M^q_L$ and decay rates $\Gamma^q_H,\,\Gamma^q_L$.
+One can reexpress these quantities in terms of three parameters:   $|M_{12}^q|$,
+$|\Gamma_{12}^q|$ and the relative phase $\phi_q=\arg(-M_{12}^q/\Gamma_{12}^q)$.
+
+The prediction of $\Delta m_q$ in the SM is dominated by boxes involving top quarks, and it is given by
+	\begin{equation}
+	\label{eqof-dmd}
+	   \dm_d = \frac{G_F^2}{6 \pi^2}\eta_B m_{B_q}f_{B_q}^2 {\hat{B}}_q
+		  m_W^2 S(x_t) \left|V_{tq} V_{tb}^*\right|^2~,
+	\end{equation}
+where $S$ is the Inami-Lim function~\cite{Inami:1980fz} evaluated at $x_{t}=\overline{m}_t^2/m_W^2$.
+and $\eta_B$ are QCD corrections. The value and uncertainty for the perturbative QCD
+correction $\eta_{B}$ was originally estimated in Ref.~\cite{Buchalla:1995vs}.
+With up-to-date values and uncertainties for $\alpha_{s}$ and the top-quark mass one
+obtains $\eta_{B} = 0.5510 \pm 0.0022$~\cite{Lenz:2010gu}.
+The prediction involves also non-perturbative inputs, the decay constant $f_{B_q}$ and the so-called bag parameter $\hat{B}_q$ (which is defined by comparison with the vacuum insertion approximation).
+
+The translation of the measured value for $\Delta m_d$ into constraints
+on the CKM parameter combination ${|V_{td}^{\phantom{*}} V_{tb}^{*}|}^{2}$
+suffers from significant uncertainties in the theoretical calculation of the
+product $f_{B_{d}} \sqrt{B_{B_{d}}}$ of hadronic parameters.
+The dependence of the Standard Model prediction for $\Delta m_s$ on
+$\bar \rho-\bar \eta$ coordinates appears to be very weak through the relevant
+CKM matrix elements term $\vert V^*_{ts}V^{\phantom{*}}_{tb}\vert^2$.
+When combined with the $\Delta m_d$ measurement the measured $\Delta m_s$ value
+improves the ${|V_{td}^{\phantom{*}} V_{tb}^{*}|}^{2}$ constraint obtained from
+$\Delta m_d$. The relevant hadronic
+parameters, $f_{B_{s}}$ and $B_{B_{s}}$ as well as $f_{B_s}/f_{B_d}$ and $B_{B_s}/B_{B_d}$,
+can be obtained from lattice QCD computation.	
+
+
+\begin{table}
+\caption{Constraints used for the global fit, and the main experimental inputs involved (more information, in particular concerning the theory inputs used, can be found in ref.~\cite{CKMfitterwebsite}. \label{tab:expinputs}}
+\begin{center}
+\begin{tabular}{cccccc}
+\hline\hline
+CKM  &  Process  & \multicolumn{4}{c}{Observables}\\
+\hline
+$|V_{ud}|$ & $0^+\to 0^+$ $\beta$
+                  & $|V_{ud}|_{\rm nucl}$&=& $0.97420\pm 0 \pm 0.00021$
+                  &   \\
+ %                   \hline
+\multirow{4}{*}{\qquad$|V_{us}| \left\{\begin{matrix}&\\&\\&\\&\end{matrix}\right.$}  & $K\to\pi\ell\nu$ 
+                  & $|V_{us}|_{\rm semi}f_+(0)$&=& $0.2165 \pm 0.0004$ & 
+                  \\
+                 &  $K\to e\nu_e$ 
+                 & ${\cal B}(K\to e\nu_e)$&=&$ (1.582\pm 0.007)\cdot 10^{-5}$ & 
+                 \\
+                &  $K\to \mu\nu_\mu$ 
+                &  ${\cal B}(K\to \mu\nu_\mu)$&=& $0.6356\pm 0.0011$
+                & \\
+                 &  $\tau \to K \nu_\tau$ 
+                 & ${\cal B}(\tau \to K\nu_\tau)$&=&$0.006960\pm 0.000096$
+                 & \\
+ %                \hline
+\multirow{2}{*}{$|V_{us}|/|V_{ud}|\left\{\begin{matrix}&\\&\\&\end{matrix}\right.$ }                &  $K(\pi)\to \mu\nu$ & 
+                 $\displaystyle \frac{{\cal B}(K\to \mu\nu_\mu)}{{\cal B}(\pi \to \mu\nu_\mu)}$
+                         &=&$(1.3367\pm 0.0029)\cdot 10^{-2}$
+                 & 
+                  \\
+                 &  $\tau\to K(\pi)\nu$ &   
+                 $\displaystyle \frac{{\cal B}(\tau \to K\nu_\tau)}{{\cal B}(\tau \to \pi\nu_\tau)}$
+                        &=& $(6.438\pm 0.094)\cdot 10^{-2}$
+                 &  \\
+ %                \hline
+$|V_{cd}|$ & $D\to \mu\nu $ & ${\cal B}(D\to \mu\nu)$ &=& $(3.74\pm 0.17)\cdot 10^{-4}$ 
+                   & 
+                   \\
+ %                  \hline
+\multirow{2}{*}{$\qquad|V_{cs}|\left\{\begin{matrix}&\\&\end{matrix}\right.$}   & $D_s\to \tau\nu$ 
+                   & ${\cal B}(D_s\to \tau\nu)$&=& $(5.55\pm 0.24)\cdot 10^{-2}$ 
+                   &  
+                   \\
+                   & $D_s\to \mu\nu$ 
+                   & ${\cal B}(D_s\to \mu\nu_\mu)$&=& $(5.39\pm 0.16)\cdot 10^{-3}$ 
+                   &  \\
+ %                  \hline
+\multirow{2}{*}{$\qquad|V_{ub}| \left\{\begin{matrix}&\\&\end{matrix}\right.$ }   & semilept. decays 
+                  & $|V_{ub}|_{\rm semi}$ &=& $(3.98\pm 0.08\pm 0.22)\cdot 10^{-3}$ 
+                  & \\
+                  & $B\to \tau\nu$ 
+                  & ${\cal B}(B\to\tau\nu)$ &=& $(1.08\pm 0.21)\cdot 10^{-4}$ & 
+                  \\
+ %                 \hline
+$|V_{cb}|$ & semilept. decays
+                 & $|V_{cb}|_{\rm semi}$ &=& $(41.8\pm 0.4 \pm 0.6)\cdot 10^{-3}$ & 
+                 \\
+$|V_{ub}/V_{cb}|$ & $\Lambda_b$ decays
+      & 
+      $\frac{{\cal B}(\Lambda_p\to p\mu^-\bar\nu_\mu)_{q^2>15}}{{\cal B}(\Lambda_p\to \Lambda_c\mu^-\bar\nu_\mu)_{q^2>7}}$ 
+                &=& $(0.947\pm 0.081) \times 10^{-2}$ & \\
+%\hline
+$\alpha$ & $B\to\pi\pi$, $\rho\pi$, $\rho\rho$ 
+                & \multicolumn{3}{c}{branching ratios, CP asymmetries} & 
+                \\
+ %               \hline
+$\beta$   & $B\to (c\bar{c}) K$ 
+               & $\sin(2\beta)_{[c\bar{c}]}$ &=& $0.699\pm 0.017$ 
+               & \\
+%\hline
+$\gamma$ & $B\to D^{(*)} K^{(*)}$ 
+                 & \multicolumn{3}{c}{GGSZ, GLW, ADS methods}
+                 &   \\
+ %\hline
+\multirow{2}{*}{$\quad V_{tq}^*V_{tq'} \left\{\begin{matrix}&\\&\end{matrix}\right.$ }        & $\Delta m_d$ 
+                & $\Delta m_d$ &=& $0.5065\pm 0.0019$ ps${}^{-1}$
+                & 
+                \\
+                 & $\Delta m_s$ & $\Delta m_s$ &=& $17.757\pm 0.021$ ps${}^{-1}$ 
+                 & 
+                 \\
+ %                \hline
+$V_{tq}^*V_{tq'},V_{cq}^*V_{cq'}$  
+      & $\epsilon_K$ & $|\epsilon_K|$ &=& $(2.228\pm 0.011)\cdot 10^{-3}$
+       & \\
+       \hline\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsubsection{Combined contraints on the CKM parameters}\label{sec:2018ckmfit}
+
+% S. Descotes-Genon
+
+In the CKMfitter case,
+Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used to assess the
+validity of the Kobayashi--Maskawa mechanism for CP violation and
+to perform the metrology of the CKM parameters, assuming the
+validity of the SM. This corresponds to the Summer 2018 update available in ref.~\cite{CKMfitterwebsite}, where the lattice inputs used can also be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
+
+From the SM global fit, we find that
+the four CKM parameters are determined as
+\begin{equation}
+A=0.8403^{\,+0.0056}_{\,-0.0201}
+\quad
+\lambda=0.224747^{\,+0.000254}_{\,-0.000059}
+\quad
+\bar\rho=0.1577^{\,+0.0096}_{\,-0.0074}
+\quad
+\bar\eta=0.3493^{\,+0.0095}_{\,-0.0071}
+\end{equation}
+The asymmetric errors come from the combination of several constraints containing both statistical and systematic uncertainties, so that the resulting $\chi^2$ has a rather complicated (and asymmetric) shape. The corresponding results are shown in Fig.~\ref{CKMfitterSummer2018}
+The fit shows a good overall consistency among the various constraints. The main pulls come from the kaon and charm sector, but nothing exceeds the 2-$\sigma$ level, confirming the very good overall agreement of the various constraints involved here.
+
+\begin{figure}[!tb]
+  \centering
+  \includegraphics[width=0.60\textwidth]{section2/figures/CKMfitter_rhoeta_small_Vub.pdf}
+   \includegraphics[width=0.35\textwidth]{section2/figures/CKMfitter_Pulls.pdf}
+  \caption{Results for the CKMfitter global fit of the CKM parameters as of Summer 2018. See ref.~\cite{CKMfitterwebsite} for more detail.
+    \label{CKMfitterSummer2018}
+  }
+\end{figure}
+
+The results of the UT analysis in the SM from the UFfit collaboration are summarized by the plots in fig.~\ref{fig:UTfigUTplane}. Detailed input values as well as predictions for various CKM-related parameters and observables cab be found in the Summer 2018 update page on the UTfit website~\cite{UTfitwebsite18}.
+The CKM matrix is determined as
+\begin{eqnarray}
+&&\!\!\!\!\! V_{CKM}=\nonumber\\ 
+&&\!\!\! \left(\begin{array}{ccc} 0.97431(12) & 0.22514(55) & 0.00365(10)e^
+{-i 66.8(2.0)^\circ}\\ -0.22500(54)e^{i 0.0351(10)^\circ} & 0.97344(12)e^{-i 0
+.00188(5)^\circ} & 0.04241(65) \\ 0.00869(14)e^{-i 22.2(0.6)^\circ} & -
+0.04124(56)e^{i 1.056(32)^\circ} & 0.999112(24)\end{array}\right)\,.
+\end{eqnarray}
+The corresponding CKM parameters are
+\begin{eqnarray}
+&& \sin\theta_{12}=0.2250\pm0.0010\,,\quad \sin\theta_{23}=0.00420\pm0.0006\,,\nonumber\\
+&&\sin\theta_{13}=0.00368\pm 0.00010\,,\quad\delta=(67\pm2)^circ\,,
+\end{eqnarray}
+in the PDG parametrization and
+\begin{equation}
+\lambda=0.2250\pm0.0010\,,\quad A=0.826\pm,0.012\,,\quad \rho=0.152\pm0.014\,,\quad \eta=0.357\pm 0.010\,,
+\end{equation}
+in the Wolfenstein one.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.5\textwidth]{section2/figures/rhoeta-fullfit-sm.pdf}
+  \caption{Selected region in the UT plane from the global fit by the UTfit Collaboration~\cite{UTfitwebsite18}. Individual constraints are also shown.}
+  \label{fig:UTfitUTplane}
+\end{figure}
+
+\subsection{Theoretical prospects}
+\subsubsection{Lattice extrapolations (UTfit)}
+\begin{itemize}
+\item Lattice extrapolations
+\item Issue of isospin and radiative corrections
+\end{itemize}
+
+\subsubsection{Other theoretical issues}
+
+% J. Charles
+
+In contrast to the determination of $\gamma$ from decays with a single CKM amplitude, the extraction of $\beta$ and $\beta_s$ (or $\phi_d=2\beta$, $\phi_s=-2\beta_s$) from $b\to c\bar cs$ transitions is plagued by a small theoretical uncertainty from penguin diagrams, that may however compete with the statistical error in the next future. Techniques to estimate the penguin contributions from data on SU(3)-related channels are described in Sec.~\ref{sec:b2ccspenguin}. A different, more theory-driven approach has been proposed in Ref.~\cite{Frings:2015eva}: an Operator Product Expansion is used to calculate the penguin-to-tree ratio and constraint the penguin contribution to the CKM phase. It thus provides an independent cross-check of the SU(3) approach. For present data, however, it is assumed that penguin contributions in $b\to c\bar cs$ are negligible.
+
+In the case of $\alpha$ where penguin contributions are clearly not negligible, they are constrained by isospin symmetry, so that the dominant source of theoretical uncertainty comes from isospin symmetry breaking. Depending on the considered channel ($\pi\pi$, $\rho\rho$ or $\rho\pi$), it can take the form of electroweak penguins, light meson mixing or resonance effects. In all cases then impact on $\alpha$ has been estimated at the subdegree level~\cite{Charles:2017evz} and is neglected for present data, but will have to be taken into account when large statistics samples from next experiments are available.
+
+Another highly discussed issue is the compatibility of the inclusive with exclusive determinations of $|V_{cb}|$ and $|V_{ub}$. Indeed in both cases a discrepancy at the level of $\sim 3\sigma$ has been observed since the first precise measurements have become published. Recently the $|V_{cb}|$ discrepancy was shown to depend significantly on the choice of the form factor parametrisation, and more specifically on the hypotheses made on the underlying heavy quark symmetry~\cite{Grinstein:2017nlq,Bigi:2017njr}. Relaxing these hypotheses lead to an exclusive determination of $|V_{cb}|$  that is in good agreement with the inclusive one, but on the other hand the fit tends to predict unexpectedly large corrections to the heavy quark symmetry predictions~\cite{Bernlochner:2017xyx}. As for $|V_{ub}|$ no satisfying explanation of the discrepancy has been found so far. In the future more precise exclusive measurements of the couplings by LHCb and Belle II on the one hand, and more precise inclusive analysis by Belle II on the other hand, will shed light on this topic by investigating whether it could be an experimental effect or not.
+
+\input{section2/experimental}
+
+\subsection{Future of global CKM fits}
+
+\subsubsection{Summary of the projections}
+
+% S. Descotes-Genon
+
+As discussed above, HL-LHC will naturally provide an improvement in the determination of several flavour observables crucial for the determination of the CKM parameters
+We can then consider two phases for the HL-LHC projections: in Phase 1, we assum that the collected data amount for LHCb to 23 fb$^{-1}$ and for CMS/ATLAS to 300 fb$^{-1}$, whereas for Phase 2, we have for LHCb 300 fb$^{-1}$ and for CMS/ATLAS 3000 fb$^{-1}$.
+Further observables will be measured at a higher precision thanks to Belle II, and we will assume that the uncertainties reached on these observables correspond to the projections for 50 ab$^{-1}$~\cite{Kou:2018nap}. We also take into account the projected increase in the measurement of $D$ and $D_s$ semi-leptonic decay by BESIII, with an experimental accuracy of 1.2\% on $|V_{cd}|$ and $|V_{cs}|$ combined with the current lattice QCD uncertainties for the decay constant of 0.9\% and 0.8\% respectively)~\cite{BESIII}.
+ Since we are
+interested in  the future sensitivity for Phase I and Phase II, we choose the central values of future measurements to coincide
+with their SM predictions using the current best-fit values of $\rhobar$ and
+$\etabar$.
+
+
+\subsubsection{CKMfitter results}
+
+% S. Descotes-Genon
+
+The inputs used for the fits are shown in Tab.~\ref{tab:CKMfitterprojinputs}. For an easier comparison with the current situation,
+we have added a column ``Current'' corresponding to the current situation concerning uncertainties, but taking central values corresponding to a perfect agreement of the various constraints in the SM. Indeed, the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies (in particular for $|V_{us}|$) which increase the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we will therefore compare the three scenarios presented in Tab.~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement rather than the results for the Summer 2018 update.
+
+From the global fit, we can determined the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. The uncertainties obtained are given in Tab.~\ref{tab:CKMfitterprojresults} and the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. We also show the corresponding constraints in the $B_s$ meson in Fig.~\ref{fig:CKMfitterglobalBs}, and various details of the constraints
+in Fig.~\ref{fig:CKMfitterglobalsmall}.
+
+\begin{table}
+\begin{center}
+{%\scriptsize
+\begin{tabular}{c|cccc}
+\hline\hline
+  &  Current  &  Phase I  & Phase II & Ref.  \\
+\hline\hline
+$|V_{ud}|$  &  $\pm 0.00021$ & $\pm 0.00021$ & $\pm 0.00021$ & \cite{CKMfitterwebsite} \\
+$|V_{us}|f_+^{K\to\pi}(0)$  & $\pm 0.0004$  & $\pm 0.0004$ & $\pm 0.0004$ & \cite{CKMfitterwebsite}\\
+$|\epsilon_K|\times 10^{3}$ & $\pm 0.011$   & $\pm 0.011$  & $\pm 0.011$ & \cite{CKMfitterwebsite}\\
+$|V_{cd}|$ & $\pm 0.005$ & $\pm 0.003$ & $\pm 0.003$ & \cite{BESIII}\\
+$|V_{cs}|$ & $\pm 0.016$ & $\pm 0.014$ & $\pm 0.014$ & \cite{BESIII}\\
+$\Delta m_d$ [${\rm ps}^{-1}$]   &  $\pm 0.0019$ & $\pm 0.0019$ & $\pm 0.0019$ & \cite{Amhis:2016xyh} \\
+$\Delta m_s$ [${\rm ps}^{-1}$]  &  $\pm 0.021$ & $\pm 0.021$ & $\pm 0.021$ &  \cite{Amhis:2016xyh} \\
+$|V_{ub}|\times 10^3$ ($b\to u\ell\bar\nu$)  &  $\pm 0.23$ & $\pm 0.10$ & $\pm 0.10$ & \cite{Kou:2018nap}\\
+$|V_{cb}|\times 10^3$  ($b\to c\ell\bar\nu$) &  $\pm 0.7$ & $\pm 0.60$ & $\pm 0.60$ & \cite{Kou:2018nap}\\
+$|V_{ub}/V_{cb}|$ ($\Lambda_b$) & $\pm 0.0050$ & $\pm 0.0025$ & $\pm 0.0008$ &  Above \\
+\hline
+$\sin 2\beta$ &  $\pm 0.017$ & $\pm 0.005$ & $\pm 0.003$ & Above\\
+$\alpha\ [^\circ]$  &  $\pm 4.4$ & $\pm 1$ & $\pm 1$& Above\\
+$\gamma\ [^\circ]$  &  $\pm 5.6$ & $\pm 1.0$ & $\pm 0.35$& Above and Ref.~\cite{Kou:2018nap}\\
+$\beta_s\ [{\rm rad}]$ &  $\pm 0.031$ & $\pm 0.014$ & $\pm 0.004$ & Above\\
+${\cal B}(B\to\tau\nu)\times 10^4$ &  $\pm 0.21$ & $\pm 0.04$ & $\pm 0.04$ & \cite{Kou:2018nap}\\
+${\cal B}(B_s\to\mu\mu)\times 10^9$ &  $\pm 0.66$ & $\pm 0.34$ & $\pm 0.17$ & Above\\
+${\cal B}(B_d\to\mu\mu)\times 10^{11}$ &  $-$ & $\pm 3.5$ & $\pm 1.0$ & Above\\
+$\frac{{\cal B}(B_d\to\mu\mu)}{{\cal B}(B_s\to\mu\mu)}$ &  $-$ & $\pm 0.010$ & $\pm 0.003$ & Above\\
+\hline
+$\bar{m}_c$ [GeV] &  $\pm 0.012$ $(0.9\ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & Sec.~\ref{sec:lattice}\\
+$\bar{m}_t$ [GeV] &  $\pm 0.73$ $(0.4\ \%)$ & $\pm 0.73$ $(0.4\ \%)$& $\pm 0.73$ $(0.4\ \%)$ & \cite{CKMfitterwebsite}\\
+$\alpha_s(m_Z)$  &  $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & Sec.~\ref{sec:lattice}\\
+$f_+^{K\to\pi}(0)$ &  $\pm 0.0026$ $(0.3\ \%)$ & $\pm 0.0012$ $(1.2\ \%)$ & $\pm 0.0012$ $(1.2\ \%)$ & Sec.~\ref{sec:lattice}\\
+$f_K$ & $\pm 0.0006$ $(0.5\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & Sec.~\ref{sec:lattice}\\
+$B_K$  &  $\pm 0.012$ $(1.6\ \%)$ & $\pm 0.005$ $(0.7\ \%)$ & $\pm 0.005$ $(0.7\ \%)$ & Sec.~\ref{sec:lattice}\\
+$f_{B_s}$ [GeV] &  $\pm 0.0025$ $(1.0\ \%)$ & $\pm 0.0025$ $(1.0\ \%)$ & $\pm 0.0014$ $(0.6\ \%)$ & Sec.~\ref{sec:lattice}\\
+$B_{B_s}$ &   $\pm 0.034$ $(2.8\ \%)$ & $\pm 0.010$ $(0.8\ \%)$ & $\pm 0.010$ $(0.8\ \%)$ & Sec.~\ref{sec:lattice}\\
+$f_{B_s}/f_{B_d}$  &  $\pm 0.007$ $(0.6\ \%)$ & $\pm 0.007$ $(0.6\ \%)$ & $\pm 0.005$ $(0.4\ \%)$ & Sec.~\ref{sec:lattice}\\
+$B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & Sec.~\ref{sec:lattice}\\
+\hline\hline
+\end{tabular}}
+\caption{Uncertainties for the CKMfitter projections.}\label{tab:CKMfitterprojinputs}
+\end{center}
+\end{table}
+
+\begin{table}
+\caption{The 68\% CL uncertainties on the determination from the CKMfitter global fit.}\label{tab:CKMfitterprojresults}
+\begin{center}
+{%\scriptsize
+\begin{tabular}{cccccc}
+\hline\hline
+  & Summer 18 &  Current  &  Phase I  & Phase II  \\
+\hline
+$A$  & 0.0129 & 0.0120 & 0.0087 & 0.0072 \\
+$\lambda$ & 0.0002  & 0.0007 & 0.0005 & 0.0004 \\
+$\bar\rho$ & 0.0085 & 0.0085 & 0.0040& 0.0019\\
+$\bar\eta$ & 0.0083 & 0.0087& 0.0036 & 0.0016\\
+\hline
+$|V_{ub}|$ & 0.000076 & 0.000096 & 0.000045 & 0.000031\\
+$|V_{cb}|$ & 0.00073 & 0.00070 & 0.00041 & 0.00033\\
+$|V_{td}|$ & 0.00017 & 0.00014 & 0.00009 & 0.00007\\
+$|V_{ts}|$ & 0.00068 & 0.00054 & 0.00040 & 0.00033\\
+\hline
+$\sin 2\beta$ & 0.012 & 0.015 & 0.006 & 0.003\\
+$\alpha\ (^\circ)$ & 1.4 & 1.4 & 0.6 & 0.3\\
+$\gamma\ (^\circ)$ & 1.3 & 1.3 & 0.6 & 0.3\\
+$\beta_s\ ({\rm rad})$ & 0.00042 & 0.00042 & 0.00020 & 0.00010 \\
+\hline\hline
+\end{tabular}}
+\end{center}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_large_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_large_Stage2.pdf} 
+\caption{Constraints on the Unitarity Triangle from the CKMfitter global analysis for phase 1 (left) and phase 2 (right).}
+\label{fig:CKMfitterglobal}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage2.pdf} 
+\caption{Constraints on the Unitarity Triangle for the $B_s$ meson from the CKMfitter global analysis for phase 1 (left) and phase 2 (right).}
+\label{fig:CKMfitterglobalBs}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_global_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_global_Stage2.pdf} 
+
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_tree_nogammaimproved_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_tree_nogammaimproved_Stage2.pdf} 
+
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_loop_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_loop_Stage2.pdf} 
+
+
+\caption{Constraints on the Unitarity Triangle for the Unitarity triangle from the CKMfitter global analysis: global fit (top), tree only (center), loop only (bottom),  for phase 1 (left) and phase 2 (right).}
+\label{fig:CKMfitterglobalsmall}
+\end{center}
+\end{figure}
+
+
+\subsubsection{UTfit results}
+The projection of the UT analysis in the HL-LHC era is obtained by performing a global fit using expected values of experimental and theoretical input parameters, as discussed in this Chapter. In particular, lattice uncertainties in 2025 are taken from table~\ref{table:Proj} of section~\ref{sec:lattice}. Given this timescale, we use  experimental uncertainties expected at the end of Run 3 for LHCb and with the full statistics for Belle II. Central values for both theoretical and experimental parameter are taken from a SM point in order to ensure the compatibility of the extrapolated constraints. In table~\ref{tab:utfit_global_inpout} we summarize the extrapolated uncertainties used in the fit. 
+\begin{table}
+  \begin{center}
+	\begin{tabular}{|c|c||c|c||c|c||c|c|}
+		\hline 
+		 $m_t$ & $0.25$ GeV & $m_b$ & $10$ MeV & $m_c$ & $5$ MeV & $V_{us}$ & $4\times 10^{-4}$\\\hline
+		 $|V_{cb}|$ & $4\times 10^{-4}$ & $|V_{ub}|$ & $4\times10^{-5}$ & $|V_{ub}/V_{cb}|$ & $8\times 10^{-4}$ & $\Delta M_d$ & $2\times 10^{-4}$\\\hline
+		 $\Delta M_s$ & $6\times 10^{-3}$ & $\sin2\beta$ & $5\times10^{-3}$ & $\alpha$ & $1^\circ$ & $\gamma$ & $1^\circ$\\\hline
+ 		 $A_\mathrm{SL}^d$ & $5\times 10^{-4}$ & $A_\mathrm{SL}^s$ & $7\times 10^{-4}$ & $\phi_{B_s}$  & $0.01$ & $B_K$ & $5\times10^{-3}$\\\hline
+ 		 $F_{B_s}$ & $1\times10^{-3}$ & $F_{B_s}/F_{B_d}$ & $6\times10^{-3}$
+ 		 & $B_s/B_d$ & $5\times10^{-3}$ & $B_s$ & $7\times10^{-3}$ \\\hline
+ 		 
+		 \hline
+	\end{tabular} 
+\end{center}
+\caption{Extrapolated input parameter uncertainties used in the UTfit analysis.} 
+\label{tab:utfit_global_inpout}
+\end{table}
+
+The improvement of the UT global analysis can be appreciated in fig.~\ref{fig:UTfitFut}, where the present and future constraints on the UT plane
+are shown next to each other zooming on the SM preferred region.
+
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width=0.45\linewidth]{section2/figures/utfit_zoom18.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/utfit_zoomfut.pdf} 
+\caption{Present (left) and future (right) constraints on the UT plane.}
+\label{fig:UTfitFut}
+\end{center}
+\end{figure}
+
+To be more quantitative, We collect in table~\ref{tab:utfit_global} the uncertainties of the indirect determination of CKM parameters and angles, obtained from the predictive posterior p.d.f.'s (namely obtained without including the corresponding direct measurements in the fit). These uncertainties are reduced by a factor 3--5,
+allowing for an improved test of the SM, as discussed in the next section.
+
+\begin{table}
+  \begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline 
+		 & $\rho/\bar{\rho}$ & $\eta/\bar{\eta}$ & $A$ &  $\sin2\beta$ & $\gamma$ & $\alpha$ & $\beta_s$ \\ \hline
+		present & 9\% & 3\% & 1.5\% & 4.5\% & 3\% & 2.5\% & 3\% \\ \hline
+		future  & 2\% & 0.7\% & 0.6\% & 0.6\% & 0.5\% & 0.7\% & 0.7\%\\ \hline
+	\end{tabular} 
+\end{center}
+\caption{Relative uncertainties of UT parameters and angles with current and extrapolated input values for measurements and theoretical parameters.} 
+\label{tab:utfit_global}
+\end{table}
+
+\subsection{Future extrapolation of constraints on NP in $\Delta F=2$
+  amplitudes}
+\label{sec:DF2NP}
+
+% Luca Silvestrini and Marco Ciuchini
+
+The Unitarity Triangle Analysis can be generalized beyond the SM to
+obtain a simultaneous determination of CKM parameters and of NP
+contributions to $\Delta F=2$ amplitudes \cite{Bona:2007vi}. Assuming
+that NP is absent (or negligible) in charged current amplitudes, but
+allowing it to be present in FCNC amplitudes, where its virtual
+effects compete with loop-level SM amplitudes, we can still use the
+measurements of $\vert V_{ud}\vert$, $\vert V_{us}\vert$, $\vert
+V_{cb}\vert$, $\vert V_{ub}\vert$, $\gamma$ and $\alpha$ (allowing for
+NP contributions in penguins, but barring order-of-magnitude
+enhancements of electroweak penguins) to obtain the ``tree-level''
+determination of the UT shown in Fig.~\ref{fig:UTtree}. This allows us
+to obtain the SM prediction for $K$, $B_{d}$ and $B_{s}$ mixing
+amplitudes; comparing the latter with the experimental results we can
+extract $C_{\varepsilon_K} = \varepsilon_K/\varepsilon_K^\mathrm{SM}$
+and
+\begin{equation}
+  \label{eq:cbqphibq}
+  C_{B_q} e^{i \phi_{B_q}} = \frac{\langle B_q \lvert H^\mathrm{SM+NP}
+    \rvert \bar{B}_q \rangle}{\langle B_q \lvert H^\mathrm{SM}
+    \rvert \bar{B}_q \rangle}\,.
+\end{equation}
+Using semileptonic asymmetries it is possible to break the degeneracy
+for $\gamma \leftrightarrow \gamma + 180^\circ$ present in the
+tree-level determination of the CKM matrix \cite{Laplace:2002ik},
+getting rid of the solution in the third quadrant. We obtain the
+results in Tab.~\ref{tab:UTAGen} for the CKM and NP parameters. The
+corresponding two-dimensional distributions are shown in
+Fig.~\ref{fig:UTAGen}. 
+
+Combining the results of the generalized UT analysis with the
+constraints on CP violation in $D$ mixing from Sec. \textbf{refer to
+  $D$ mixing combination}, we can consider the most general $\Delta
+F=2$ effective Hamiltonian and bound its coefficients (barring
+accidental cancellations).
+
+The most general effective Hamiltonians for $\Delta F=2$ processes
+beyond the SM have the following form \cite{Gabbiani:1996hi}:
+\begin{eqnarray}
+  \label{eq:defheff}
+  {\cal H}_{\rm eff}^{K-\bar K}=\sum_{i=1}^{5} C_i\, Q_i^{sd} +
+  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{sd} \\
+  {\cal H}_{\rm eff}^{D-\bar D}=\sum_{i=1}^{5} C_i\, Q_i^{uc} +
+  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{uc} \\
+  {\cal H}_{\rm eff}^{B_q-\bar B_q}=\sum_{i=1}^{5} C_i\, Q_i^{bq} +
+  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{bq} \nonumber
+\end{eqnarray}
+where
+\begin{eqnarray}
+         \label{Qi}
+         Q_1^{q_iq_j} & = & \bar q^{\alpha}_{jL} \gamma_\mu
+         q^{\alpha}_{iL} \bar q^{\beta}_{jL} \gamma^\mu 
+         q^{\beta}_{iL}\; ,
+         \nonumber \\
+         Q_2^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\alpha}_{iL} \bar
+         q^{\beta}_{jR} q^{\beta}_{iL}\; , 
+         \nonumber \\
+         Q_3^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\beta}_{iL} \bar
+         q^{\beta}_{jR} q^{\alpha}_{iL}\; , 
+         \\
+         Q_4^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\alpha}_{iL} \bar
+         q^{\beta}_{jL} q^{\beta}_{iR}\; , 
+         \nonumber \\
+         Q_5^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\beta}_{iL} \bar
+         q^{\beta}_{jL} q^{\alpha}_{iR}\; , 
+         \nonumber
+\end{eqnarray}
+and the operators $\tilde{Q}_{1,2,3}^{q_iq_j}$ are obtained from the
+$Q_{1,2,3}^{q_iq_j}$ by the exchange $ L \leftrightarrow R$.  Here
+$q_{R,L}=P_{R,L}\,q$, with $P_{R,L}=(1 \pm \gamma_5)/2$, and $\alpha$
+and $\beta$ are colour indices.
+
+Following the procedure detailed in ref.~\cite{Bona:2007vi}, we obtain
+p.d.f.'s for the Wilson coefficients based on the extrapolated UT and
+$D$ mixing analyses. For self-consistency, we compute the coefficients
+at a scale $\mu_H$ roughly corresponding to the bound on the NP scale
+$\Lambda$ that one can obtain from the analysis (see below). The
+allowed regions at $95\%$ probability are reported in Table
+\ref{tab:DF2Cbounds}. The regions for $\tilde{C}_i$ are identical to
+the ones for the corresponding $C_i$.
+
+In general, the coefficients at the NP scale can be written as
+\begin{equation}
+  \label{eq:CiLambda}
+  C_i(\Lambda) = \frac{F_i L_i}{\Lambda^2}\,,
+\end{equation}
+where $\Lambda$ is the NP scale corresponding to the new heavy
+particles mediating the $\Delta F=2$ transition, $F_i$ is a flavour
+coupling and $L_i$ is the overall strength, \textit{e.g.} a loop
+factor. For a strongly-interacting NP model with arbitrary flavour
+structure one expects $F_i \sim L_i \sim 1$, so with this assumption
+we can convert the allowed regions for $C_i$ in the lower bounds on the
+NP scale $\Lambda$ reported in Table \ref{tab:DF2Cbounds} and in
+Fig. \ref{fig:DF2Lambda}.
+
+\textbf{It would be nice to have a few lines of comparison with bounds
+from other sectors like EW or Higgs taken from other chapters of the
+YB. Maybe editors can add them during the final editing.}
+
+\end{document}

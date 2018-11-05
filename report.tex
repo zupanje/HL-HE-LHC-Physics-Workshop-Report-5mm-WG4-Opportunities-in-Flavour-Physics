@@ -1,0 +1,94 @@
+\documentclass[11pt,twoside,a4paper]{cernrep}
+% * <elunghi@indiana.edu> 2018-08-20T14:08:52.388Z:
+%
+% ^.
+\usepackage{rep_common}
+%\usepackage{rotating}
+\usepackage{braket}
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} 
+\usepackage{upgreek}
+\usepackage{xspace}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+% \usepackage[utf8x]{inputenc}
+\pagestyle{plain}
+\usepackage{hyperref}
+% --
+% -- The bibliography file paths for the main volume and all parts
+% --
+\def\bibfiles{\main/bib/chapter,\main/bib/LHCb-PAPER.bib,\main/bib/LHCb-CONF.bib,\main/section0/bib/section,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section8/bib/section82.bib,\main/section8/bib/section83.bib,\main/section9/bib/section,\main/section10/bib/section,\main/section11/bib/section,\main/section12/bib/section}
+% --
+\providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+\input{lhcb-symbols-def}
+
+% from sec8.3
+\DeclareMathOperator{\br}{Br}
+\let\Re\undefined
+\let\Im\undefined
+\DeclareMathOperator{\Re}{Re}
+\DeclareMathOperator{\Im}{Im}
+
+\definecolor{Blu}{rgb}{0.,0.,1.}
+\newcommand{\Blu}[1]{{\color{Blu}{#1}}}
+\newcommand{\td}[1]{\Blu{\bf [#1]}}
+
+
+\begin{document}
+\newcommand{\main}{.}
+\def\biblio{}
+
+\title{HL/HE-LHC Physics Workshop Report \\[5mm]
+WG4: Opportunities in Flavour Physics}
+\input{authors}
+
+\maketitle
+\begin{itemize}
+\item 
+\end{itemize}
+ 
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+% -- Set the level of the TOC: 2 means including subsection, 1 means
+% including section 
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+% -- List of sections
+\subfile{\main/section0/section}
+\newpage
+\subfile{\main/section1/section}
+\newpage
+\subfile{\main/section2/section}
+\newpage
+\subfile{\main/section3/section}
+\newpage
+\subfile{\main/section4/section}
+\newpage
+\subfile{\main/section5/section}
+\newpage
+\subfile{\main/section6/section}
+\newpage
+\subfile{\main/section7/section}
+\newpage
+\subfile{\main/section8/section}
+\newpage
+\subfile{\main/section9/section}
+\newpage
+\subfile{\main/section10/section}
+\newpage
+\subfile{\main/section11/section}
+\newpage
+\subfile{\main/section12/section}
+% -- Add bibliography to table of contents
+%\addcontentsline{toc}{chapter}{References}
+
+% dummy reference to avoid that bibtex fails
+% -- Add volume bibliography and part specific bibliographies
+
+\bibliographystyle{report}
+\bibliography{\bibfiles}
+
+\end{document}

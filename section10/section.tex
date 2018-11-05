@@ -1,0 +1,393 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+
+\begin{document}
+
+\section{The high $p_T$ flavour physics program} (anticipated length 15-20 pages)
+
+\td{need to write a general introduction} Flavour and high $p_T$ searches are intertwined in several ways. On the one hand the stringent bounds from low energy constraints put severe bounds on the NP models that contain states with TeV masses with couplings to quarks. Quite often these bounds are avoided by assuming Minimal Flavour Violation (MFV), where the only flavour breaking, even in the NP sector, is due to the SM Yukawa matrices. However, more general flavour structures for the NP states are still allowed. In fact such non-MFV couplings can have interesting consequences. In general we can group the NP models into two broad classes: (i) NP models that aim to explain the SM flavor puzzle, and (ii) models that solve one of the outstanding problems particles physics, e.g., the origin of dark matter, or the hierarchy problem, but with nontrivial flavor structure in NP sector that leads to modified high $p_T$ searches. Such a nontrivial flavour structure is especially motivated in the models of NP that aim to explain the recent anomalies. 
+%(not too many of these have states at TeV, though)
+
+In the rest of this section we briefly review... \td{say what was done}
+
+\subsection{Models of flavour and TeV Physics}
+{\bf Author(s): Martin Bauer, Adrian Carmona, Geraldine Servant?} (anticipated length 3 pages)
+%\subsubsection{Overview of TeV scale flavour models} 
+
+\td{quickly introduce the models}
+
+\subsubsection{\bf Randall-Sundrum models of flavour}
+\td{to be done}
+
+\subsubsection{\bf A Clockwork solution to the flavour puzzle}
+%\td{need to shorten}
+{\bf Author: Adrian Carmona}
+The clockwork mechanism, introduced in \cite{Choi:2015fiu, Kaplan:2015fuy} and later generalized to a broader context in Ref.~\cite{Giudice:2016yja}, provides a natural mechanism for obtaining large hierarchies in couplings or mass scales. Ref. \cite{Alonso:2018bcg} showed that it can also be used to generate the observed hierarchy of quark masses and mixing angles with anarchic Yukawa couplings, providing thus a solution to the flavor puzzle. 
+
+In clockwork solution to the flavour puzzle, each SM chiral fermion $\psi$ is accompanied with a $N_\psi$-node chain of vector-like fermions, $\psi_{L,j},\psi_{R,j}$, with masses $m$, and
+%In the simple case of clockworking just a right-handed chiral field $\psi_R\equiv \psi_{R,0}$, one adds a $N$-node chain of vector like fermions $\psi_{L,j},\psi_{R,j}$, with masses $m\bar{\psi}_{L,j}\psi_{R,j}$, as well as 
+a series of nearest neighbour mass terms, $qm\bar{\psi}_{L,j}\psi_{R,j-1}$, between the nodes, where  $j=1,\ldots,N_\psi$. The mass spectrum of each chain has one chiral zero mode, the would-be SM fermion, 
+%chains of fermions $\psi_{R,j}$ and $\psi_{L,j}$  carry the same gauge quantum numbers as $\psi_{R,0}$. The covariant derivatives are thus the same for fermions on all the nodes. After diagonalization, one obtains a chiral massless state, $\psi_{R,0}^{\prime}$, 
+and $N_\psi$  heavy Dirac fermion mass-eigenstates -- the gears, with masses $M_{k}^2=m^2(1+q^2-2q\cos(\frac{k\pi}{N_\psi+1}))$.
+For $q\gg 1$,  the spectrum of the gears is compressed in a $2m$ band around $qm$, with $(M_{N_\psi}-M_1)\ll M_1$. The massless zero-mode interacts with the SM Higgs, which is on the $0$-th node, through a set of Yukawa interactions described by ${\mathcal O}(1)$ Yukawa matrices, $Y_{U,D}$. 
+The component of the massless mode on the $0$-th node is, 
+%$\psi_{R,0}^{\prime}$ has a component $f_{\psi}$ on the $0$-th node which, 
+in the large $q$ limit, given by $1/q^{N_\psi}$. This suppression is the origin of the SM Yukawa hierarchies, 
+%In order to explain the hierarchy of SM quark masses through the clockworking mechanism we introduce for each of the SM fermions, $\psi_i$, where $i=1,2,3$, is the generation index, an $N_{\psi_i}$-node chain of 
+%vector-like fermions with the same quantum numbers. In addition, the SM Higgs resides on the $0$-th node, coupling the fermions on the $0$-th nde through Yukawa interactions.  After electroweak symmetry breaking the Yukawa interactions lead to a mass term for the zero modes, which  are identified with the SM fermions. To leading order in $v^2/M^2$ expansion, the SM Higgs Yukawa matrices are given by the products of zero mode overlaps with the $0$-th node, $f_\psi$,
+\begin{align}
+\label{eqa:YuSM}
+\left(Y_u^{\rm SM}\right)_{ij}&\sim q^{-N_{Q(i)}}_{Q(i)}\left(Y_U\right)_{ij}q^{-N_{u(j)}}_{u(j)},  \quad \left(Y_d^{\rm SM}\right)_{ij} \sim q^{-N_{Q(i)}}_{Q(i)}\left(Y_D\right)_{ij}q^{-N_{d(j)}}_{d(j)}.
+\end{align}
+The hierarchy of quark masses can be then naturally obtained for anarchical $Y_U$ and $Y_D$ Yukawa matrices if $q^{-N_{Q(i)}}\ll q^{-N_{Q(j)}}$, $q^{-N_{u(i)}}_{u(i)}\ll q^{-N_{u(j)}}_{u(j)}$, $q^{-N_{d(i)}}_{d(i)}\ll q^{-N_{d(j)}}_{d(j)}$, for $i<j$ (in the benchmark below we take $q_i$ to be universal and equal to $q$).
+% For the sake of concreteness,  we will only consider the clockwork universal-$q$ limit, which occurs  when all the clockwork factors are the same, $q\equiv q_{Q(i)}=q_{u(i)}=q_{d(i)}\sim {\mathcal O}({\rm few})$, while $N_{Q(1)}\gg N_{Q(2)} \gg N_{Q(3)}$   and similarly for up and down right-handed quarks.\footnote{In particular, we consider  $q=1/\lambda$, with $\lambda=|V_{us}|\simeq0.23$ as well as $N_{Q(1)}=3, N_{Q(2)}=2$, $N_{u(1)}=4$, $N_{u(2)}=1$, $N_{d(1)}=4$, $N_{d(2)}=3$, $N_{d(3)}=2$ and $N_{Q(3)}=N_{u(3)}=0$.} The large multiplicity of colored fermionic degrees of freedom  destroys asymptotic freedom for the strong interaction, putting an upper bound on the maximum number of  gears.  On the other hand, quark loops will also provide a negative contribution to the one-loop beta function of the Higgs quartic self-coupling $\lambda |H|^4/2$. Requiring that the beta function remains perturbative constraints the Yukawa entries in $Y_U$ and $Y_D$ to be smaller than 1,  with the possible exception of $\left(Y_U\right)_{33}$.
+
+%Clockworking  a  left-handed chiral fermion, $\psi_L$, proceeds along exactly the same lines, but exchanging  $L\leftrightarrow R$ everywhere. 
+
+%Unlike the zero mode, the profiles of the gears are not exponentially suppressed on the $0$-th node, even when $q,N\gg 1$. 
+
+
+
+%If one integrates out all the new heavy particles, one can use the generated dimension-6 operators of the SM effective field theory  to analyze the constraints from low-energy experiments: from weak boson decays, rare meson decays and neutral meson mixings. 
+The clockwork models of flavor are endowed with a powerful flavor protection against FCNCs, very similar to the RS models.  The FCNCs with light quarks on the external legs are suppressed by the small overlaps of the zero-modes, which is the same suppression that gives rise to hierarchies between the SM quark masses. This clockwork-GIM  mechanism, along with the constraints on $Y_{U,D}$ arising from the stability of the Higgs potential,   suffices to alleviate the flavor constraints to the level that TeV scale gear masses are compatible with experimental bounds~\cite{Alonso:2018bcg}.
+
+TeV scale gears
+%, as allowed by the present low energy constraints, 
+can be searched for at the LHC, where they are produced through QCD pair production.
+% and at future high energy colliders. 
+%The main production channel for the gears is the QCD pair production with the corresponding cross sections precisely calculable~\cite{Czakon:2017wor}. 
+The collider signatures
+%, on the other hand, do 
+depend on the gear decay patterns. The gears decay predominantly through their coupling to the Higgs doublet into gears from a different-chirality chain.
+The lightest gears decay directly to SM fermions, mostly $t$ and $b$, via the emission of $W,Z$ or $h$, as do heavier gears for which these are the only kinematically allowed channels. 
+%Given the overlap suppression the decays are predominantly to $t$ and $b$. 
+The main existing collider constraints 
+%on clockwork flavor models are  expected to arise 
+are from searches for pair production of vector-like quarks, in final states involving third generation SM quarks. Ref.~\cite{Alonso:2018bcg} found the two
+%In particular, we find the searches for down-like gears decaying to the $tW$ channel, as well as searches for up-like gears decaying to the $tH$ and $tZ$ final states, to be most sensitive.  To perform a more detailed analysis, we recast the recent 
+35 fb${}^{-1}$ 13 TeV ATLAS 
+searches for vector-like quarks decaying into 
+$tW$ final states~\cite{Aaboud:2018uek}, as well as the analogous search employing the 
+$tZ$ and $tH$ final states~\cite{Aaboud:2018xuw}, to be currently most sensitive, see 
+%, both using 35 fb${}^{-1}$ of LHC data at 13~TeV for the two benchmarks defined in Ref.~\cite{Alonso:2018bcg}. The results for the last of these benchmarks are shown in the left panel of 
+Fig.~\ref{fig:both}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{\main/section10/img/GearXsec_all_fn.pdf}
+	\includegraphics[width=0.59\textwidth]{\main/section10/img/GearSpheres_all_fn.pdf}
+\caption{	Left: The total gear pair production cross-sections in the final states $tW+X$, $tH+X$ and $tZ+X$ for the benchmark model from Ref. \cite{Alonso:2018bcg}, with contributions from individual gears shown stacked.
+% and ordered top down by their increasing mass (decreasing cross-section). 
+The currently most stringent upper bounds~\cite{Aaboud:2018uek,Aaboud:2018xuw} are denoted with dashed lines (for the $tZ+X$~\cite{Aaboud:2018xuw} final state the bound is too weak to be shown). 
+%, obtained by recasting of searches for vector-like quarks in the $tW+X$~\cite{Aaboud:2018uek} and $tH+X$ (the 1-lepton channel)~\cite{Aaboud:2018xuw} final states, are denoted with dashed lines. The corresponding bound on the $tZ+X$~\cite{Aaboud:2018xuw} final state is much weaker and is not shown. 	
+Right: Invariant mass spectrum of individual pseudojets clustered using the hemisphere algorithm applied to partonic gear pair production and decay at the 13 TeV LHC. The original hemisphere clustering results are shown in light gray, and the modified hemisphere clustering results in mid-gray (dark gray if in addition 
+%. Finally, the modified hemisphere clustering results, where in addition 
+the masses of the two pseudojets are required to differ by less than 30\%)
+%,  are shown in dark gray. 
+}
+	\label{fig:both}
+\end{center}
+\end{figure}
+
+
+
+
+The dense spectrum of gears and the potentially complex pattern of gear decays poses an experimental challenge.
+% also in the case a signal is discovered. 
+In the conventional vector-like quark searches the clockwork signal will appear as an excess of events with high transverse energies or $H_T$, but without a dominant single peak in the invariant mass of any particular final state, such as $tH$ or $tW$. Ref.~\cite{Alonso:2018bcg} proposed a novel reconstruction strategy targeting pair production of heavy quarks with a-priori unknown but potentially long decay chains that result in a single heavy flavored quark, $t$ or $b$, plus any number of massive weak or Higgs bosons per decay chain. The proposed search strategy uses a modified hemisphere clustering algorithm, with $t-$ and $b-$tagged jest as seeds for clustering into exactly two pseudo-jets (the invariant mass of these is shown as mid-gray distribution in Fig.~\ref{fig:both} right). The original hemisphere clustering uses instead the jets with highest invariant mass as seeds and shows no sharp features (light gray). Requiring that the masses of the two pseudo-jets differ by less then 30\% gives the dark grey distribution, with clearly visible gears (in the exploratory study of~\cite{Alonso:2018bcg} tops, $b$-quarks, $W$, $Z$ and the Higgs were not decayed).
+
+%Our procedure is based on the so-called hemisphere clustering algorithm, defined in Section 13.4 of Ref.~\cite{Ball:2007zza}. Jets, as well as isolated leptons and photons, are clustered into exactly two pseudojets, where the clustering is performed by minimizing the Lund distance measure~\cite{Sjostrand:1982am}. The original hemisphere algorithm is seeded by the two objects with the largest combined invariant mass. Since each gear decay chain results in exactly one heavy flavored quark ($t$ or $b$) we instead seed our algorithm with $t$- and $b$-tagged jets. The idea is that, at least for the moderately boosted pair produced gears, the two pseudojets will predominatly capture the decay products of the individual gears. Finally, we select events, where the invariant masses of the two pseudojets are comparable. 
+%
+%We demonstrate the usefulness of our procedure by simulating gear production and decay for the benchmark model at parton level (where tops, $b$-quarks, $W$, $Z$ and the Higgs are not decayed). The results are shown in the right panel of Fig.~\ref{fig:both}, where we plot the invariant mass distributions of individual pseudojets and overlay the spectral lines of the gears in the benchmark model. The resulting spectrum with the original hemisphere clustering does not exhibit any sharp features, with the bulk of the invariant mass distribution lying well below the mass of the lightest gear. The invariant mass distribution for the modified hemisphere algorithm already exhibits clear spectral line features. The pseudojets with masses of the top and $b$-quarks are abundantly identified, but also those of a few lowest lying gears. Finally, when one only keeps the events for which the masses of the two pseudojets differ by less than 30\%, the low invariant mass peaks corresponding to the pseudojets containing only a single top or $b$-quark  are rejected by this requirement. In addition, the gear peaks are even more pronounced after this cut, with little loss in the number of signal events in the peaks. 
+
+\subsubsection{U(2) models of flavour}
+\td{to be done}
+
+\subsubsection{Low scale flavour gauge symmetries}
+\td{to be done}
+
+\subsection{Implications for high $p_T$ new physics searches} 
+{\bf Author(s): Martin Bauer, Adrian Carmona} (anticipated length 2 pages)
+\td{a few sentences to tie over}
+
+\subsubsection{Top decays to exotica} 
+{\bf Authors: S. Banerjee, M. Chala, M. Spannowsky} 
+%(4 pages) \td{JZ: should be less, probably}
+% S. Banerjee, M. Chala, M. Spannowsky
+
+
+
+FCNC mediated processes are rare within the SM. However, LHC is a top factory, producing top quarks in copious amounts,  significant number of events are expected even for top decays with very small branching ratios. In light of this fact, studies of top FCNC decays to SM particles have garnered a strong interest in the community~\cite{Agashe:2009di,Mele:1998ag,Greljo:2014dka,Azatov:2014lha,Khachatryan:2015att,Botella:2015hoa,Bardhan:2016txk,Badziak:2017wxn,Khachatryan:2016sib,Gabrielli:2016cut,CMS-PAS-TOP-17-017,Aaboud:2018nyl,Aaboud:2017mfd,Aaboud:2018pob,Papaefstathiou:2017xuv}.
+
+\td{need to say something more about classic $t\to c Z$, etc signals, i.e., reference to section \ref{sec:top:quark}, once that is finished}
+
+In presence of NP other exotic top FCNC decays are possible. We highlight one such possibility, where the NP spectrum contains a light 
+%extend previous works by studying the top decay
+%to a 
+scalar singlet, $S$, with mass $m_S$ below the top quark mass.
+%around the Electroweak (EW) scale and an up-type light quark.
+Such scalar
+particle is predicted in a number of well-motivated NP models, e.g., in the NMSSM~\cite{Ellwanger:2009dp} and in
+non-minimal composite Higgs models~\cite{Dimopoulos:1981xc,Kaplan:1983fs,Kaplan:1983sm,Panico:2015jxa}. Moreover, quite often the induced $t\to cS, uS$ FCNC decays are easier to probe than, for instance the ones involving the SM Higgs, $t\to ch, uh$~\cite{Zhang:2013xya}. 
+%such a scalar can usually induce FCNCs to a degree significantly larger than what can be mediated by an SM-like Higgs 
+%boson
+The reason is three-fold; \textit{(i)} The top FCNCs mediated by 
+$S$ are usually suppressed by one less power of the heavy physics scale; \textit{(ii)} in principle, $S$ can possibly have a larger decay width into cleaner final states, such as $\ell^+\ell^-$, $b\overline{b}$ 
+or $\gamma\gamma$; \textit{(iii)} $m_S$ can be much smaller than the Higgs mass, reducing the 
+%corresponding top decay
+%being therefore 
+phase space suppression. %Thus, top FCNCs mediated by new singlet scalars might be seen at the 
+%future runs of the LHC.
+
+There are no direct experimental limits on $t \to q S$ from colliders. The indirect constraints from 1-loop box diagrams in 
+$D^0-\bar{D}^0$ oscillations constrain the products of two $S$ Yukawas, $\tilde Y_{ut} \tilde Y_{ct(tc)}$, and $\tilde Y_{tu} \tilde Y_{ct(tc)}$, to be small~\cite{Bona:2007vi,Harnik:2012pb,Agashe:2013hma}. This means that $S\bar t c$ or $S\bar t u$ couplings can be sizeable, but not both at the same time. Therefore, inspired by the CMS $t\to hc$ search~\cite{CMS:2017cck}, authors of Ref.~\cite{Banerjee:2018fsx} developed a dedicated analyses for $t\to qS$, by varying $m_S$. The projections for  $S \to b\bar{b}$ and $S \to \gamma \gamma$ decays, at the 14 TeV LHC, are shown in Figs. \ref{fig:sbb2} and \ref{fig:sgg2}, respectively.  Note that very light $S$, i.e., with $m_S < m_h/2\sim 62.5$ GeV, need not be
+excluded by the LHC constraints on the Higgs width, $\Gamma(h\rightarrow S S) \lesssim 10$ MeV ~\cite{Khachatryan:2016ctc}. Indeed, 
+for a quartic coupling $\lambda_{HS} S^2 |H|^2$, 
+%we have
+%$\Gamma(h\rightarrow S S)\sim \lambda_{HS}^2/(32\pi) \times v^2/m_h$, so we can evade the aforementioned 
+this bound is avoided for $\lambda_{HS} < 0.05$.
+
+%However, one can have constraints from flavour 
+%observables, \textit{viz.}, $D^0-\bar{D}^0$ oscillations~\cite{Bona:2007vi,Harnik:2012pb,Agashe:2013hma}. These
+%constraints are always in the form of a product of two $S$ Yukawas, $Y_{ct}$ and $Y_{ut}$ (and also $Y_{uc}$). One 
+%can always fall back upon scenarios where $Y_{ut}$ is negligibly small, rendering these constraints unimportant.
+%%
+%Therefore, inspired by the $t\to hc$ search by CMS~\cite{CMS:2017cck}, we develop dedicated analyses for $t\to qS$,
+%by varying $m_S$.
+%We first discuss the model-independent framework and then discuss the analyses and results in two different 
+%final states, \textit{viz.}, $S \to b\bar{b}$ and $S \to \gamma \gamma$ at the 14 TeV LHC. Finally, we quote naive 
+%estimations at $\sqrt{s} = 27$ TeV and $\sqrt{s} = 100$ TeV. \\ \\
+%
+%{\bf Effective Lagrangian} \\
+
+Assuming that $S$ is the only light NP state, its couplings to the SM quarks can be written in terms of a dimension 5 effective operator (not displaying generational indices)
+\begin{equation}\label{eq:lag}
+ \mathcal{L} = -{\bar{q}_L}{\tilde{Y}}\frac{S}{f}  \tilde{H}{u_R} + \text{h.c.}\supset \tilde{g} \frac{m_t}{f} \bar{t}_L S c_R + \text{h.c.},
+\end{equation}
+where $f$ is the NP scale, and on r.h.s. we introduced a new flavor violating coupling $\tilde g$. The three Benchmark Points (BP) shown in Figs. \ref{fig:sbb2} and \ref{fig:sgg2} are
+%, each including $m_S = 20, 50, 80, 100, 120$ and $150$ GeV, are as follows
+%
+\begin{equation}
+\begin{split}
+ \text{BP 1}: \quad \tilde{g} = 1.0~, \quad f =~\, 2~\text{TeV}\quad\Longrightarrow\quad\mathcal{B}(t\rightarrow Sc)\sim 10^{-3}-10^{-2}~;\\
+ \text{BP 2}: \quad \tilde{g} = 1.0~, \quad f = 10~\text{TeV}\quad\Longrightarrow\quad\mathcal{B}(t\rightarrow Sc)\sim 10^{-4}-10^{-3}~;\\
+ \text{BP 3}: \quad \tilde{g} = 0.1~, \quad f =~\, 2~\text{TeV}\quad\Longrightarrow\quad\mathcal{B}(t\rightarrow Sc)\sim 10^{-5}-10^{-4}~. 
+\end{split}
+\end{equation}
+%
+%We study a scenario where the SM Higgs sector is extended by a gauge singlet, $S$, with mass $m_S$. 
+%At low energies, the relevant Yukawa Lagrangian can be written as~
+%
+%\begin{equation}\label{eq:lag}
+% \mathcal{L} = -\mathbf{\overline{q_L}}\bigg(\mathbf{Y} + \mathbf{Y'}\frac{|H|^2}{f^2} + \mathbf{\tilde{Y}}\frac{S}{f}\bigg)  \tilde{H} \mathbf{u_R} + \text{h.c.}~,
+%\end{equation}
+%%
+%where $H = [\phi^+, (h + \phi^0)/\sqrt{2}]^t$, is the SM-like Higgs doublet, $\mathbf{q_L}$ ($\mathbf{u_R}$) denotes 
+%the left-handed (right-handed) quarks, $\mathbf{Y}, \mathbf{Y'}, \; \textrm{and} \; \mathbf{\tilde{Y}}$ are arbitrary 
+%flavour matrices, $v\sim 246$ GeV, is the Higgs vacuum expectation value (\textit{vev}) and $f\gtrsim 
+%\mathcal{O}(\textrm{TeV})$ is the new physics scale. Normally, the flavour matrices are not aligned, and hence the
+%FCNCs can arise in the EW phase. This induces various new physics effects including the top flavour-violating decays, 
+%\textit{viz.}, $t\rightarrow h c$ or $t\rightarrow S c$. As discussed before, the latter dominates. (In CHMs, Higgs mediated
+%top FCNCs are even absent in first approximation~\cite{Agashe:2009di}, \textit{i.e.} $\mathbf{Y}\sim\mathbf{Y^\prime}$, whereas this does not need to be the case for $S$~\cite{Banerjee:2018fsx}).
+%
+%After the EWSB, one obtains
+%%
+%\begin{align}
+%\label{lag:lag1}
+% \mathcal{L} &= -\frac{v}{\sqrt{2}}\bigg[\mathbf{\overline{q_L}}\mathbf{Y}\left(1+\frac{h}{v}\right)\mathbf{u_R} + \frac{S}{f}\mathbf{\overline{q_L}}\mathbf{\tilde{Y}}\mathbf{u_R} + \mathcal{O}\left(\frac{1}{f^2}\right)\bigg]\supset \tilde{g} \frac{m_t}{f} \overline{t_L} S c_R + \text{h.c.},
+%\end{align}
+%%
+%where $m_t\sim 173$ GeV is the top mass and $g$ is an $\mathcal{O}(1)$ coupling. The partial width of $t \to Sc$ 
+%is
+%%
+%\begin{equation}
+% \Gamma(t\rightarrow Sc) = \frac{\tilde{g}^2}{32\pi}\frac{v^2}{f^2}m_t\bigg(1-\frac{m_S^2}{m_t^2}\bigg)^2.
+%\end{equation}
+%
+If the flavor conserving couplings of $S$ to the SM fermions, $\psi$, as ${c_{\psi} m_\psi}
+S(\bar{\psi}\psi)/f$, and to the photons ${c_{\gamma}\alpha} S F_{\mu\nu}\tilde{F}^{\mu\nu}/({4\pi f})$, then
+$\mathcal{B}(S\rightarrow\gamma\gamma)/\mathcal{B}(S\rightarrow \overline{\psi}\psi) \sim 
+({\alpha}/{\pi})^2 (m_S/m_\psi)^2$, 
+taking $c_{\psi}$ and $c_{\gamma}$ to be $\mathcal{O}(1)$.
+% couplings and $\alpha$ the fine-structure 
+%constant. Thus, at leading order,
+%%
+%\begin{equation}
+% \Gamma(S\rightarrow\psi\psi) = \frac{N_c}{8\pi}\frac{c_{\psi}^2 m_\psi^2}{f^2}m_S~ \; \quad \textrm{and}~ \; \quad \Gamma(S\rightarrow\gamma\gamma) = \frac{c_\gamma^2 \alpha^2}{64 \pi^3 f^2}m_S^3~.
+%\end{equation}
+%%
+%One finds the ratio 
+ The small electromagnetic coupling driven suppression of $S\to \gamma\gamma$ can be partially 
+compensated by scaling with $m_S$, so that $\mathcal{B}(S\to \gamma\gamma)$ can possibly be 
+significantly larger than $\mathcal{B}(h\to \gamma\gamma)$. This motivates that both $S\to b\bar b$ and $S\to \gamma\gamma$ are searched for.
+%\\ \\
+
+
+
+%The Lagrangian in 
+
+%{\bf LHC prospects for $t\rightarrow Sc, S\rightarrow b\overline{b}$} \\
+
+The reach for $t\to c S(\to b\bar b)$ was obtained in~\cite{Banerjee:2018fsx} by requiring 
+%Here, we focus on the scenario where the scalar singlet decays to a pair of $b$-quarks, yielding a final state 
+%comprised of 
+at least four jets, three of them $b$-tagged, and exactly one isolated lepton. 
+%Our goal here is to derive an upper bound on $\mathcal{B}(t \to S c, S \to b \bar{b})$ at 95~\% Confidence Level 
+%(CL). We use fixed $b$-tagging efficiency of 70\%. The $c \; (\textrm{light jet}) \to b$ mistag rate is 10\% (1\%). 
+The dominant real background is the semi-leptonic $t\bar{t} b \bar{b}$ production. 
+%Besides, we also have the fully leptonic 
+%$t\bar{t}b\bar{b}$. 
+The major fake backgrounds are the semi-leptonic (and leptonic) $t\bar{t}$, $Wb\bar{b}$ and 
+$Zb\bar{b}$. 
+%These are all merged (MLM merging~\cite{Mangano:2006rw}) with up to extra partons.
+These are reduced by making cuts on reconstructed top mass, $S$ mass, and on $m_T$, see~\cite{Banerjee:2018fsx} for details. 
+%
+%%Here, we focus on the scenario where the scalar singlet decays to a pair of $b$-quarks, yielding a final state 
+%%comprised of at least four jets, three of them required to be $b$-tagged, and exactly one isolated lepton. 
+%%Our goal here is to derive an upper bound on $\mathcal{B}(t \to S c, S \to b \bar{b})$ at 95~\% Confidence Level 
+%%(CL). We use fixed $b$-tagging efficiency of 70\%. The $c \; (\textrm{light jet}) \to b$ mistag rate is 10\% (1\%). The most 
+%%dominant real background is the semi-leptonic $t\bar{t} b \bar{b}$ production. Besides, we also have the fully leptonic 
+%%$t\bar{t}b\bar{b}$. The major fake backgrounds are the semi-leptonic (and leptonic) $t\bar{t}$, $Wb\bar{b}$ and 
+%%$Zb\bar{b}$. These are all merged (MLM merging~\cite{Mangano:2006rw}) with up to extra partons.
+%
+%The details of the
+%event selection can be found in the original paper~\cite{Banerjee:2018fsx}. Once the events are selected, we look for the 
+%closest pair (in $\Delta R$) of $b$-tagged jets and reconstruct the top mass, $m_t^{\Delta R}$ with the additional
+%hardest jet, not $b$-tagged. We demand that this variable lies within 50 GeV from $m_t$. With the remaining $b$-jet,
+%we construct the transverse mass variable, $m_T$ and demand $m_T < 200$ GeV. 
+%We finally impose a benchmark-dependent cut, 
+%$0.8\, m_S < m_{S}^{\Delta R} < m_S + 10$ GeV. Fig.~\ref{fig:sbb2} shows our results. 
+The left panel in Fig.~\ref{fig:sbb2} shows  the $3$ab${}^{-1}$ \td{corect?}
+95~\% CL upper limit on $BR(t \to S c, S \to b \bar{b})$. The right panel shows the minimum integrated luminosity 
+required to test a branching ratio of $10^{-4}$ at 95~\% CL. The highest reach is attained for $m_S \sim 80$ GeV, for which one can probe
+$\mathcal{B}(t\rightarrow Sc, S\rightarrow b\overline{b}) > 10^{-4}$ at $95$ \% CL with $\mathcal{L} = 3$ ab$^{-1}$ of integrated luminosity. At lower masses, this reach is smaller as it is harder to resolve two $b$-jets, but a boosted analysis with fat jets may be useful. 
+%For larger masses, 
+%the sensitivity gets also reduced because $m_t^{\Delta R}$ does not always peak around $m_t$~\cite{Banerjee:2018fsx}. \\ \\
+%
+
+%{\bf LHC prospects for $t\rightarrow Sc, S\rightarrow \gamma\gamma$} \\
+
+\begin{figure}[t]
+ \includegraphics[width=0.45\textwidth]{\main/section10/img/bbChannel.pdf}
+ \includegraphics[width=0.45\textwidth]{\main/section10/img/LbbChannel.pdf}
+ %
+ \caption{\label{fig:sbb2} \it Left) Branching ratios that can be tested in the $b\overline{b}$ channel. Superimposed are the theoretical expectations in the three BPs. Right) Luminosity required to test $\mathcal{B}(t\rightarrow S c, S\rightarrow b\overline{b}) = 10^{-4}$. Superimposed are $\mathcal{L} = 300$ fb$^{-1}$ and $3000$ fb$^{-1}$.}
+\end{figure}
+%
+%
+%
+
+For $t\to cS(\to \gamma)$ the analysis 
+%decays to a pair of photons. We consider a final state comprising 
+required at least two 
+jets (one $b$-tagged), one isolated lepton and two isolated photons, with a 
+% The reconstructions are similar to the previous
+%case. Because of a much sharper diphoton mass resolution, we require a 
+3 GeV mass window about the reconstructed scalar mass. 
+%The 
+%other cuts remain as in the previous case. 
+We show the 95\% CL upper limit on the branching ratio $\mathcal{B}(t 
+\to S c, S \to \gamma \gamma)$ in Fig.~\ref{fig:sgg2}, along with the minimum integrated luminosity necessary to 
+probe a branching ratio of $10^{-6}$. The effect of the 125 GeV Higgs can be seen where the background is much 
+larger.
+We find that,
+with the same integrated luminosity, $\mathcal{B}(t\rightarrow Sc, S\rightarrow \gamma\gamma) > 10^{-7}$ can be 
+tested at the 95 \% CL. Consequently, if $\mathcal{B}(S\rightarrow\gamma\gamma) \sim 1\%$, we can indirectly probe new 
+physics scales as large as $\sim 50$ TeV. In this particular channel, the major background is 
+$t\overline{t}\gamma\gamma$ for $m_S$, well separated from $m_h$. 
+ 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+ \includegraphics[width=0.45\textwidth]{\main/section10/img/ggChannel.pdf}
+ \includegraphics[width=0.45\textwidth]{\main/section10/img/LggChannel.pdf}
+ %
+ \caption{\label{fig:sgg2} \it Left) Branching ratios that can be tested in the $\gamma\gamma$ channel. Superimposed are the theoretical expectations in the three BPs. Right) Luminosity required to test $\mathcal{B}(t\rightarrow St, S\rightarrow \gamma\gamma) = 10^{-6}$. Superimposed are $\mathcal{L} = 300$ fb$^{-1}$ and $3000$ fb$^{-1}$.}
+\end{figure}
+
+
+
+In regard of the possibilities af future colliders, we find that the increase in cross-section 
+for the background at $\sqrt{s} = 27$ TeV ($100$ TeV) when compared to $\sqrt{s} = 14$ TeV is similar to 
+that in the signal, and is of order $\sim 4$ ($\sim 40$). Assuming an integrated luminosity of $10$ ab$^{-1}$, 
+we expect an increase in significance by a factor of $\sim 3.7$ ($\sim 11.5$). Similar results will hold for the 
+$b\overline{b}$ channel.
+
+\subsubsection{Neutrino Mass Models at the HL/HE LHC}
+{\bf Author(s): Cedric Weiland?}(anticipated length 2 pages)
+\td{missing}
+
+\subsection{Implications of TeV scale flavour models for electroweak baryogenesis} 
+{\bf Author(s): Oleksii Matsedonskyi, Geraldine Servant} (anticipated length 2 pages)
+
+%Intro: EWBG
+
+In most solutions to the SM flavour puzzle, Yukawa couplings have a dynamical origin. 
+Their cosmological evolution should be studied.
+ In Ref.~\cite{Baldes:2016rqn,Baldes:2016gaf,vonHarling:2016vhf,Bruggisser:2017lhc,Bruggisser:2018mus,Bruggisser:2018mrt,Baldes:2018nel,Servant:2018xcs},  the connection between flavour cosmology and electroweak baryogenesis has been investigated.
+
+Electroweak baryogenesis (EWBG) is a mechanism to explain the matter antimatter asymmetry of the universe  using Standard Model baryon number violation. It 
+ relies on a charge transport mechanism in the vicinity of bubble walls during a first-order electroweak (EW) phase transition. It uses EW scale physics only and is therefore testable experimentally. It requires an extension of the Higgs sector leading to a first-order EW phase transition as well as new sources of CP violation. A typical constraint on EWBG comes from Electric Dipole Moments.
+ In the following,  we consider that the source of CP violation has changed with time, which is a natural way to evade constraints. 
+ The main motivation is to link EWBG to low-scale flavour models.  If the physics responsible for the structure of the Yukawa couplings is linked to EW symmetry breaking, we can expect the Yukawa couplings to vary at the same time as the Higgs is acquiring a VEV, in particular if the flavour structure is controlled by a new scalar field which couples to the Higgs.
+ This is  precisely what can happen in Composite Higgs models ~\cite{Kaplan:1983fs,Panico:2015jxa}, on which we focus in the following.
+
+
+%Intro: CH
+
+These models assume that the Higgs boson arises as a bound state of a new strong interaction, confining around the TeV scale $f$. Other composite resonances are naturally heavier than the Higgs, as a result of the approximate Goldstone symmetry suppressing the Higgs mass. The rest of the SM fields do not belong to the strong sector and are elementary. The nature of the phase transition in CH models can be substantially different with respect to the SM. One of the reasons is that these models can naturally feature new scalar resonances, participating in the EW phase transition and changing its properties (see Refs.~\cite{Espinosa:2011eu,Chala:2016ykx}). On the other hand, the EW transition may become strong without help of additional states, if is happens simultaneously with the deconfinement-confinement phase transition of the new strong sector (see Refs.~\cite{Bruggisser:2018mus,Bruggisser:2018mrt} and also Refs.~\cite{vonHarling:2016vhf,Megias:2018sxv} for the dual description in the warped 5D space).    
+
+%Flavour in CH
+
+The flavour structure of the CH models has a paramount importance for the viability of EWBG. Requirement to produce the sizeable top quark Yukawa coupling, while suppressing the unwanted flavour-violating effects suggests that the new sector is nearly scale-invariant
+% and strongly coupled 
+for a large range of energies above the confinement scale. As a result, one may expect that the transition dynamics is mostly determined by a single light field -- the dilaton $\chi$ (see e.g Ref.~\cite{Coradeschi:2013gda}). Depending on its mass (whose size can be related to the separation of the UV flavour scale and the EW scale), the EW phase transition may happen separately from the confinement, or together~\cite{Bruggisser:2018mus,Bruggisser:2018mrt}. %The two-step transition is expected to happen for the heavier dilaton, while the one-step -- for the dilaton lighter than about $\sim 0.5$~TeV. 
+
+Moreover, the mechanism of generation of the SM flavour hierarchy in CH models may eventually also be a source of CP asymmetry during the EW phase transition. The hierarchy of SM Yukawas $\lambda_q$ is generated by the renormalization group running of the couplings $y_q$ between the elementary fermions and the strong sector operators: 
+\begin{equation}
+\lambda_q \propto y_q^2 \quad\text{with} \quad y_q=y_q^{\text{UV}} \left( \frac{\mu}{\Lambda_{\text{UV}}} \right)^{\gamma_{y_q}},
+\end{equation}
+where $\mu\sim \chi$ is the confinement scale, $\Lambda_{\text{UV}}$ is some large scale at which all the mixings are generated with a similar size $y_q^{\text{UV}}$ and $\gamma_{y_q}$ is the anomalous dimension of the operator responsible for the mixing.
+ This means that the size of the Yukawa couplings changes with the evolution of the confinement scale during the confinement phase transition. Such a change of the Yukawa interactions may efficiently source the CP-violation required for the baryogenesis~\cite{Bruggisser:2017lhc}.
+
+%Pheno
+
+\begin{figure}[!t]\centering
+\includegraphics[scale=.44]{\main/section10/img/hvv.png}
+\hspace{0.2cm}
+\includegraphics[scale=.44]{\main/section10/img/Imhtt.png}
+\caption{Relative deviation of the Higgs couplings to $W$ and $Z$ bosons (left panel) and the imaginary correction to the top quark Yukawa coupling (right panel), in terms of the dilaton mass $m_\chi$, the number of colours of the new confining sector $N$, and the mass of generic composite states $m_*$. Black contours correspond to the glueball-like dilaton and red dashed to the meson-like dilaton. The current  and near future experimental sensitivities of electron EDM experiments  to the imaginary part of the top yukawa correspond respectively to approximately $2\times 10^{-2}$~\cite{Cirigliano:2016nyn} and $2\times 10^{-4}$~\cite{Kumar:2013qya}.
+}
+\label{fig:ewbg_observables}
+\end{figure}
+
+For both types of transitions  mentioned, one can expect to observe deviations of the Higgs couplings from the Standard model predictions. These deviations, besides containing contributions which are generic for CH models, also contain those which are linked to the features of the phase transition and the new source of CP-violation. For concreteness, let us focus on the case with a combined electroweak and strong sector phase transition as a more minimal one. 
+%
+The potential of the Higgs boson can be parametrized in terms of trigonometric functions of $h/f$, with the overall size of the potential controlled by the mixings between the elementary and composite fermions~\cite{Matsedonskyi:2012ym,Panico:2012uw}:
+\begin{equation}\label{eq:ewbg_vh}
+V = c_1 \sin^2 \frac h f + c_2 \sin^4 \frac h f,
+\end{equation}
+where $c_1 \sim c_2 \sim \sum_q ({3 y_q^2}/{(4 \pi)^2}) g_\star^2 f^4$. The dependence of the $y_q$ mixings on the dilaton field is responsible for the mass mixing between the dilaton and the Higgs field, which we parametrise by an angle $\delta$.
+To generate a sufficient amount of CP violation, such a mass mixing has to be sizeable. Let us consider its effect on the quark Yukawa coupling~\footnote{Similar, but CP-preserving, modifications are also generated in the couplings of the Higgs boson to the SM gauge fields and the Higgs self-interactions.}:
+\begin{equation}\label{eq:ewbg_yuk}
+{\cal L}_{Yukawa} = \lambda(\chi) \left(\chi \sin \frac h f \right) \bar q_L q_R 
+= \bar q_L q_R h \left(\lambda(f) \frac {\chi}{f} + \beta_{\lambda} \frac {\chi - f }{f} \right) + \dots 
+\end{equation}
+where we performed an expansion in $\chi$ around its today value $f$.
+The complex phase of the Yukawa beta-function $\beta_\lambda$ has to be different from that of the quark mass $\lambda(f) h$, as the Yukawa phase changes with energy. 
+Choosing the mass parameter to be real, the CP-violating interaction becomes localised in the term $\propto \beta_\lambda$. Now, rotating the $h$ and $\chi$ fields to the mass basis, one finds a CP-even and odd corrections to the Higgs Yukawa interaction
+\begin{equation}
+\text{Re} [\delta \lambda] \sim \text{Re} [\beta_\lambda] \delta (v/f) + \lambda (\delta^2/2+\delta(v/f)) ,\quad
+\text{Im} [\delta \lambda] \sim \text{Im} [\beta_\lambda]  \delta (v/f).
+\end{equation} 
+In Fig.~(\ref{fig:ewbg_observables}) we show the values of the CP-violating top quark Yukawa modification and the deviations of the Higgs couplings to the $W$ and $Z$ bosons.
+Such couplings can be tested directly at the LHC, and also in the measurements of electric dipole moments.  
+In addition to the observables directly linked to the CP violation, the strength of the phase transition can be tested in gravitational waves signals at the future space-based observatory LISA~\cite{Caprini:2015zlo}.
+
+
+\input{section10/High_pT.tex}
+
+\end{document}

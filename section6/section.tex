@@ -1,0 +1,46 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+\def\Qbar    {{\kern 0.2em\overline{\kern -0.2em \PQ}{}}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\fk}[1]{{\color{blue}#1}}
+%\newcommand{\fkcor}[1]{{\color{blue}\st{#1}}}
+\newcommand{\sasa}[1]{{\color{brown}#1}}
+\newcommand{\others}[1]{{\color{red}#1}}
+\newcommand{\juan}[1]{{\color{green}#1}}
+\definecolor{gold}{rgb}{1.0, 0.65, 0.0}
+\newcommand{\ale}[1]{{\color{gold}#1}} 
+%\newcommand{\alecor}[1]{{\color{gold}\st{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\section{Hadron spectroscopy and QCD exotica}
+{\bf Theory Authors: A. Esposito, Feng-Kun Guo, J. Nieves, A. Pilloni, A. Polosa, Sasa Prelovsek} 
+
+\input{section6/theory}
+\input{section6/experimental}
+
+\subsection{Combined theory/experiment perspective}
+%Including how far ATLAS/CMS can contribute to finding new states, confirming the %pentaquark etc. observations, and studying their properties (?)
+Hadronic spectroscopy has been a very challenging field historically, from both the
+experimental and theoretical perspectives. While \belletwo will make a major impact 
+in the study of excited mesons and lighter exotic hadrons, only the HL-LHC experiments 
+have the potential to comprehensively study the full range of possible excited
+hadronic states. Such a comprehensive understanding and characterisation of quark
+structures would not only in some sense complete the taxonomy of SM particles, but
+would also sharpen our understanding of QCD in a particularly difficult energy
+regime. For this reason, while not directly probing BSM physics, spectroscopy
+measurements will continue to make essential contributions to the interpretation
+of any observed BSM effects in the flavour sector. While the \upgradetwo of LHCb will
+by design offer unparalleled capabilities in this area, the legacy of HL-LHC for
+spectroscopy will be much stronger if ATLAS and CMS are also able to continue
+pursuing this work in the HL-LHC period. The planned hardware tracking
+triggers and much higher data rates sent to their software triggers are promising
+in this respect.
+
+\end{document}

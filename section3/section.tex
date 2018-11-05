@@ -1,0 +1,861 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+\newcommand{\inlineComplexmix}{\ensuremath{\nicefrac{q}{p}}}
+\newcommand{\inlineInvcomplexmix}{\ensuremath{\nicefrac{p}{q}}}
+\newcommand{\inlineRmix}{\ensuremath{\left | \inlineComplexmix \right |}}
+\newcommand{\gp}{\ensuremath{g_{+}}}
+\newcommand{\gm}{\ensuremath{g_{-}}}
+\newcommand{\phimix}{\ensuremath{\phi_{\mathit{mix}}}}
+\def\brdmumu{\ensuremath{\mathcal{B}(D^0 \to \mu^{+} \mu^{-})}\xspace}
+\def\dmumu{\ensuremath{D^0 \to \mu^{+} \mu^{-}}\xspace}
+\def\dgammagamma{\ensuremath{D^0 \to \gamma \gamma}\xspace}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\ba{\begin{eqnarray}}
+\def\ea{\end{eqnarray}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+%\def\barD{\overline D{}^0}
+%\def\D0bar{\overline D{}^0}
+\def\dzbar{\bar D{}^0}
+\def\dbar{\bar D{}^0}
+\def\DDbar{D{}^0-\overline D{}^0}
+\def\lsim{\lesssim}
+\def\gsim{\gtrsim}
+
+\begin{document}
+
+\section{Charm quark probes of new physics}
+{\bf Author(s): J. Brod, A. Lenz, S. Fajfer, A. Kagan, L. Silvestrini} (15 pages, TH:EXP= 50\%:50\%)
+
+%In the SM, the dynamics of FCNC processes is determined by the interplay between loop functions
+%and CKM matrix elements. 
+In the SM, the FCNC processes involving charmed hadrons are
+suppressed compared to those involving strange or beauty hadrons since they are proportional to 
+the soft breaking of the GIM mechanism by the bottom quark mass. This also means that 
+ the contributions from long-distance physics, due to intermediate $d$, $s$ quarks, are relatively more important, complicating the predictions. 
+%same reason, the prediction of these processes is generally
+%complicated by a large contribution of long-distance
+% * <kaganalexander@gmail.com> 2018-10-17T18:12:15.422Z:
+%
+% ^.
+% * <kaganalexander@gmail.com> 2018-10-17T18:12:12.135Z:
+%
+% ^.
+%physics. 
+Moreover, due to small off-diagonal CKM matrix elements the third generation approximately factorizes from the first two generations, 
+leading to additional suppression of the CP violating effects in charmed hadrons.
+% is additionally
+%suppressed by an approximate factorization of ,
+%. 
+The charmed
+hadrons can then be used as sensitive probes of new physics in the up-quark
+sector, to the extent that theoretical uncertainties can be brought
+under control, or circumvented by using experimental data.
+
+\subsection{Charm mixing}
+\label{sec:Dmixingth}
+Weak interactions mix $D^0$ and $\bar D^0$ mesons, so that the mass 
+%Diagonalisation of the 2x2 Hamiltonian matrix, $H$, describing the mixing of the neutral $D$ mesons
+%gives the same eigenvalue equations as in the neutral $B$ systems.  
+%The mass 
+eigenstates are
+%denoted as 
+$|D_{1,2}\rangle = p |D^0 \rangle \pm q |\dzbar\rangle$. By convention $|D_{2}\rangle$
+is CP-even in the absence of CP violation.  The mass and width differences, 
+$\Delta M = m_2 - m_1$, and $\Delta \Gamma = \Gamma_2 - \Gamma_1$,  are parametrized as 
+\begin{eqnarray}\label{xyexp}
+x \equiv \Delta M^D / \Gamma^D = 0.46 \% \pm 0.13 \% \, ,
+&&
+y \equiv \Delta \Gamma^D / (2 \Gamma^D) = 0.62 \% \pm 0.07 \%.
+\end{eqnarray}
+Here $\Gamma$ is the total decay rate of the neutral $D$ mesons, while the numerical values are from the fits to the experimental measurements \cite{Amhis:2016xyh}.
+% are also included. 
+% While a decay rate difference in the neutral $D$ system is by now firmly established, the possibility of 
+% having a vanishing mass difference is not yet experimentally excluded (the future sensitivity for $x$
+% will be at the order of $0.001 \%$).  
+% However, as discussed below, $x\sim y$ is naturally expected
+% in the SM \cite{Falk:2001hx,Falk:2004wg,Cheng:2010rv}.
+This is to be contrasted with the $B$ system, where $|\Gamma_{12}/M_{12}| \ll 1$ holds.
+We also define the ``theoretical'' mixing parameters, 
+\beq 
+x_{12}\, \equiv\, \frac{2|M^D_{12}|}{\Gamma^D}\,
+,~~ y_{12}\, \equiv\,\frac{|\Gamma^D_{12}|}{\Gamma^D}\,,~~\phi_{12} \,\equiv\, {\rm arg}\left(\frac{M^D_{12}}{\Gamma^D_{12} }\right)\,,
+\label{x12yi12phi12}
+\eeq
+where $M_{12}^D $ and $\Gamma_{12}^D$ are the dispersive and absorptive contributions to the $\DDbar$ mixing amplitude, $\langle  D^0 | H | \dzbar \rangle \ =\  M^D_{12} - \frac{i}{2} \Gamma^D_{12}$. 
+The phase $\phi_{12}$ gives rise to CP violation in mixing, cf. Sec.~\ref{sec:CPVDmixth}. Its magnitude is currently bounded to lie below $\sim 100$ mrad at 95\% CL~\cite{LHCbimplications,Amhis:2016xyh}.
+These parameters are related to $x$ and $y$ as,
+\beq (x- i y)^2 = x_{12}^2 - y_{12}^2  - 2 \,i\, x_{12} y_{12} \cos\phi_{12}\,,\label{xyx12y12}\eeq
+so that, up to negligible corrections quadratic in $\sin\phi_{12}$ (in general, $|y| \le y_{12}$ \cite{Nierste:2009wg,Jubb:2016mvq}),
+\beq \begin{split} |x|=x_{12} ,~~|y| = y_{12}\,.\label{x12vsx}
+\end{split}
+\eeq 
+
+
+It is convenient to begin the discussion of the SM mixing amplitudes 
+%(and indirect CPV, cf. Sec.~\ref{sec:CPVDmixth}) 
+with their $U$-spin flavor symmetry decomposition \cite{Falk:2001hx,Gronau:2012kq}.
+Employing CKM unitarity, $\lambda_d + \lambda_s +\lambda_b = 0$, with  $\lambda_x = V_{cx} V^*_{ux}$, 
+$\Gamma^D_{12}$ can be written as 
+\beq
+ \Gamma^D_{12 } = \frac{(\lambda_s - \lambda_d )^2}{4 }\, \Gamma_2 + \frac{(\lambda_s - \lambda_d ){\lambda_b} }{ 2 }\, \Gamma_1 + 
+\frac{{ \lambda_b^2} }{4} \, \Gamma_0 \,,  \label{Uspindecomp}\eeq
+where
+\beq \begin{split} \label{Uspinamps}
+\Gamma_2  &= \Gamma_{ss} + \Gamma_{dd} - 2 \Gamma_{sd} ~\sim~ (\bar s s - \bar d d )^2 ={\mathcal O}(\epsilon^2)  \,,\cr
+\Gamma_1 & = \Gamma_{ss} - \Gamma_{dd}~ \sim~ (\bar s s - \bar d d ) (\bar s s + \bar d d) ={\mathcal O}(\epsilon)\,,\cr
+\Gamma_0 & = \Gamma_{ss} +\Gamma_{dd}+2 \Gamma_{sd} ~ \sim~ (\bar s s+ \bar d d )^2 ={\mathcal O}(1)  \,,
+\end{split}
+\eeq
+with $\epsilon$ the $U$-spin breaking parameter. 
+%and similarly for the dispersive parts with $\Gamma\to M$ replacements everywhere.
+ The $\Gamma_{2,1,0}$ are the $\Delta U_3 =0$ elements of the $U$-spin 5-plet, triplet, and singlet, respectively.
+%$\Delta U$= 2, 1, 0 (5-plet, triplet, and singlet)  multiplets, respectively.  
+%This can be seen from their quark flavor structure, given by
+%where t
+The individual $\Gamma_{ij}$ are identified, at the quark level, with box diagrams containing on-shell internal $i$ and $j$ quarks. They possess flavor structure $\Gamma_{ij}\sim  (\bar i i) (\bar j j) (\bar u c)^2$, where
+the external $u $ and $c$ quarks are irrelevant for the $U$-spin decomposition.
+%The orders in the $U$-spin breaking parameter $\epsilon$ at which they enter are shown on the right (corresponding to the power of the 
+%$U$-spin breaking spurion $ \epsilon (\bar s s - \bar d d)$ required to construct each $\Gamma_i$).  
+The $U$-spin decomposition of $M^D_{12}$ is analogous to \eqref{Uspindecomp}, with $\Gamma\to M$ replacement everywhere. 
+%with the $M_i$ given by 
+%\beq \begin{split} \label{Mspinamps}
+%M_2  &= M_{ss} +M_{dd} - 2 M_{sd} ~\sim~ (\bar s s - \bar d d )^2 
+%=O(\epsilon^2)  \,,\cr
+%M_1 & =M_{ss} - M_{dd} + M_{sb} - M_{db} ~ \sim~ (\bar s s - \bar d d ) (\bar s s + \bar d d) =O(\epsilon)\,,\cr
+%M_0 & =M_{ss} +M_{dd}+2 M_{sd} + M_{sb} + M_{db} + M_{bb} ~ \sim~ (\bar s s+ \bar d d )^2 =O(1)  \,.
+%\end{split}
+%\eeq
+%The $M_{ij} $ are ``off-shell" analogs of the $\Gamma_{ij}$.
+At the level of quark box diagrams, $M_{1,0}$ also receive contributions containing internal $b$ quarks.
+The small value of $\lambda_b$ implies that we can neglect the $\Delta U= 1, 0$ contributions to the mass and width differences, even though the $\Delta U=2$ piece is higher order in $\epsilon$.
+
+
+
+Evaluation of the SM mixing amplitudes is very challenging,
+because the charm quark mass lies at an intermediate scale between the masses of the light quarks and the bottom quark.
+%the heavy quark expansion (HQE) applies, and and chiral perturbation theory.  
+%, too light to be considered a heavy quark not much larger than $\Lambda_{QCD}$.  
+Broadly, there are two approaches: (i) an inclusive one employing the operator product expansion (OPE), which expands in powers of $\Lambda_{\rm QCD}/m_c$, as in the heavy quark expansion (HQE), and assumes that local quark-hadron duality holds \cite{Georgi:1992as,Ohl:1992sr,Bigi:2000wn,Bobrowski:2010xg}; and (ii) 
+an exclusive one in which $y$ is estimated by summing over contributions of exclusive states, and $x$ is estimated via a dispersion relation which relates
+it to $y$.
+In the first approach, 
+the HQE applied to $\Gamma_{12}^D$, combined with the relevant non-perturbative dimension six operator matrix elements evaluated in 
+\cite{Carrasco:2014uya,Carrasco:2015pra,Bazavov:2017weg,Kirk:2017juj}, yields
+individual $\Gamma_{ij}$ %, e.g. $\Gamma_{ss}$, 
+contributions to $y$ that are five times larger than the experimental value \cite{Lenz:2016fcv}.
+However, the result for $\Gamma_2$, cf. \eqref{Uspindecomp}, \eqref{Uspinamps}, yields a value of $y$
+%$s\bar s the whole expression of Eq.(\ref{Gamma12D}) one lies 
+lying about four orders 
+of magnitude below experiment, due to large GIM cancellations.
+Evidently, the inclusive approach is not well suited for analyzing $\DDbar$ mixing, i.e., the charm quark is not sufficiently massive.
+First estimates 
+of the dimension nine contribution in the HQE \cite{Bobrowski:2012jf} indicate an enhancement compared to the leading dimension six terms, but do not alter this conclusion.  In a fit to the data which supplements the OPE with a model for duality violation \cite{Jubb:2016mvq} (thus eliminating severe GIM suppression), the latter yields an ${\mathcal O}(1)$ increase in the $\Gamma_{ij}$ at 95\% CL, e.g., $\Gamma_{ss}$, further supporting the need for a non-perturbative description of $\DDbar$ mixing. % in the SM.
+One possibility is the second (exclusive) approach.
+
+
+
+The starting point for the exclusive approach\cite{Falk:2001hx,Falk:2004wg,Cheng:2010rv,Gronau:2012kq,Jiang:2017zwr} 
+%aims to determine $M_{12}^D$ and  $\Gamma_{12}^D$ at the hadron level. A potential starting point 
+is a sum over the decay modes contributing to the absorptive and dispersive mixing amplitudes,
+\beq
+\Gamma_{12}^D =  \sum_f \rho_f                                            A_f^* \, \bar A_f  \, ;
+~~~~~M_{12}^D  =   \langle {D}^0 | H |\dzbar \rangle 
++ P \sum_f{}^{\prime} \frac{    A_f^* \, \bar A_f  }
+                                          {m_{D^0}^2 - E_f^2} \, ,
+\label{Dmix_exclusive}
+\eeq
+where $A_f $ and $\bar A_f $ are the $D^0 \to f$ and $\dzbar \to f$ decay amplitudes, respectively, $\sum$ ($\sum^\prime$) denotes a sum over all on-shell (off-shell) hadronic states $f$ into which both the $D^0$ and $\bar{D}^0$ can decay, $\rho_f$ is the 
+density of the state $f$, and $P$ is the principal value.   Unfortunately, the charm quark mass is not sufficiently light
+for $D$ meson decays to be dominated by a few final states.  Moreover, the off-shell decay amplitudes
+and strong phase differences entering the above expressions %are not directly measurable, and 
+are not calculable from first principles.  
+Thus, simplified treatments of $SU(3)_F$ flavor symmetry breaking have been utilized.
+%(recall that the mixing amplitudes vanish in the symmetric limit, cf.~\eqref{Uspindecomp}--\eqref{Mspinamps}).  
+A rough $U$-spin based estimate for $y$ is simply obtained from the first term in \eqref{Uspindecomp}, 
+\beq y \,= \, \sin^2 \theta_c \times  \Gamma_2/ \Gamma^D\, \sim \,\sin^2\theta_C \,\times \, \epsilon^2  \sim (0.2 -5)\%,\eeq
+where we have taken $\Gamma_2 \sim \Gamma^D \epsilon^2 $; and 
+$\epsilon \sim 0.2 - 1$, corresponding to variation from nominal to maximal $U$-spin breaking.
+The authors of \cite{Falk:2001hx,Falk:2004wg} only took $SU(3)_F$-breaking phase space effects into account in the exclusive sum.  They found that 
+$y\lsim 1\%$ could naturally be realized, where a value at the high end would require contributions from higher multiplicity final states, due to larger $SU(3)_F$ breaking effects near threshold.
+This conclusion was subsequently supported in \cite{Cheng:2010rv,Jiang:2017zwr}, which added experimental branching ratio inputs together with factorization based models for dynamical $SU(3)_F$ breaking effects, e.g., in the form factors and strong phases.
+Rough dispersion relation treatments relating $x$ to $y$ in \cite{Falk:2004wg,Cheng:2010rv } suggested that $|x/y| \sim 0.1 -1$.
+
+
+We conclude that the estimates of $x$ and $y$ in the SM are consistent with their measured values, cf. \eqref{xyexp}.  
+Unfortunately, the large theoretical uncertainties eliminate the window for NP in these quantities. % is currently closed due to the large theoretical uncertainties.
+The situation is markedly different for the CPV mixing observables, due to their large suppression in the SM, as discussed below.
+On a very long time-scale, direct lattice calculations might be able to predict the
+SM values of $x$ and $y$ by building on the methods described in \cite{Hansen:2012tf}.
+
+
+% Diagonalisation of the 2x2 matrix describing the mixing of the neutral $D$ mesons
+% gives the same Eigenwert equations like in the neutral $B$ systems:
+% \begin{eqnarray}
+% \Delta M_D^2 - \frac14 \Delta \Gamma_D^2 
+% =  
+% 4 \left| M_{12}^D \right|^2 - \left| \Gamma_{12}^D \right|^2 \, ,
+% &&
+% \Delta M_D \Delta \Gamma_D 
+%  =  
+% 4 \left| M_{12}^D \right| \left| \Gamma_{12}^D \right| \cos (\phi_{12}^D) \, ,
+% \label{xyrelns} \end{eqnarray}
+% with the mass difference $\Delta M_D$ and decay rate difference $ \Delta \Gamma_D$ of the mass 
+% eigenstates of the neutral $D$ mesons. The box diagrams giving rise to $D$ mixing can have internal
+% $d$, $s$ and $b$ quarks - compared to $u$, $c$, $t$ in the $B$ sector. $M_{12}^D$ denotes the 
+% dispersive part of the box diagram, $\Gamma_{12}^D$ the absorptive part and the relative phase 
+% of the two is given by $\phi_{12}^D = - \arg (-M_{12}^D / \Gamma_{12}^D)$. Unlike in the $B$ 
+% system, where $|\Gamma_{12}/M_{12}| \ll 1$ holds, the expressions for  $\Delta M_D$ and 
+% $\Delta \Gamma_D$ in terms of $M_{12}^D$ and $\Gamma_{12}^D$ cannot be simplified,  
+% and for the knowledge of $\Delta M_D$ both $M_{12}^D$ and $\Gamma_{12}^D$ have to be determined. 
+% On the other hand it is well-known that bounds like $\Delta \Gamma_D \leq 2 |\Gamma_{12}^D |$ 
+% hold \cite{Nierste:2009wg,Jubb:2016mvq}.
+% The experimental measurements \cite{Amhis:2016xyh} of the mass and decay rate differences 
+% yield very small values
+% \begin{eqnarray}\label{xyexp}
+% x := \Delta M_D / \Gamma_D = 0.32 \% \pm 0.14 \% \, ,
+% &&
+% y := \Delta \Gamma_D / (2 \Gamma_D) = 0.61 \% \pm 0.07 \% \, ,
+% \end{eqnarray}
+% where $\Gamma_D$ denotes the total decay rate of the neutral $D$ mesons. While
+% a decay rate difference in the neutral $D$ system is by now firmly established, the possibility of 
+% having a vanishing mass difference is still not excluded - the future experimental sensitivity for $x$
+% will be at the order of $0.001 \%$.
+% \\
+% $\Gamma_{12}^D$ can be expressed in terms of on-shell box diagrams differing in the 
+% internal quarks - $(s \bar{s})$, $(s \bar{d})$, $(d \bar{s})$ and $(d \bar{d})$.
+% Using the unitarity ($\lambda_d + \lambda_s +\lambda_b = 0$ with  $\lambda_x = V_{cx} V^*_{ux}$) of the CKM matrix \cite{Cabibbo:1963yz,Kobayashi:1973fv} one gets
+% \begin{eqnarray}
+% \Gamma_{12}^D & = & -   \lambda_s^2 \left(\Gamma_{ss}^D - 2 \Gamma_{sd}^D + \Gamma_{dd}^D\right)
+%                     + 2 \lambda_s \lambda_b \left(\Gamma_{sd}^D - \Gamma_{dd}^D \right)
+%                     -   \lambda_b^2 \Gamma_{dd}^D \, .
+% \label{Gamma12D}
+% \end{eqnarray}
+% Eq.(\ref{Gamma12D}) shows a very pronounced CKM hierarchy: 
+% expressed in terms of the Wolfenstein parameter \cite{Wolfenstein:1983yz} $\lambda \approx 0.225$ 
+% (web-updates of \cite{Charles:2004jd,Bona:2006ah}) one has $\lambda_s \propto \lambda$ 
+% and $\lambda_b \propto \lambda^5$. 
+% In the exact $SU(3)_F$ limit $\Gamma_{ss}^D = \Gamma_{sd}^D = \Gamma_{dd}^D$ holds and 
+% the first two terms of the r.h.s. of Eq.(\ref{Gamma12D}) vanish and only the tiny contribution from 
+% the third term survives. 
+% The determination of $M_{12}^D$ involves in addition box diagrams with internal $b$ 
+% quarks and in contrast to $\Gamma_{12}^D$ now the dispersive part of the diagrams has 
+% to be determined. Denoting the dispersive part of a box diagram with internal $x$ and $y$ 
+% quarks by $M_{xy}^D$ and using again CKM unitarity one gets the following structure
+% \begin{eqnarray}
+% M_{12}^D \! & \! = \! &  \! \! \! \lambda_s^2          \left[ M_{ss}^D \! - 2 M_{sd}^D + M_{dd}^D \right]
+%               \! + 2 \lambda_s \lambda_b  \left[ M_{bs}^D \! -   M_{bd}^D \! - M_{sd}^D + M_{dd}^D \right]
+%               \!+   \lambda_b^2          \left[ M_{bb}^D \! - 2 M_{bd}^D + M_{dd}^D \right]\, .
+% \label{M12D}
+% \end{eqnarray} 
+% In the case of neutral $B$ mesons the third term (replacing $b,s,d \to t,c,u$) is clearly dominant, while in the case 
+% of $D$ mesons the extreme CKM suppression of $\lambda_b$ might be compensated by a less pronounced 
+% GIM cancellation \cite{Glashow:1970gm} and in the end all three contributions of 
+% Eq.(\ref{M12D}) could have a similar size.
+% For the theoretical determination of $M_{12}^D$ and $\Gamma_{12}^D$ one can use a 
+% quark-level (inclusive) or a hadron-level (exclusive) description. 
+% The inclusive approach for $\Gamma_{12}^D$ is based on the heavy quark expansion (HQE) 
+% \cite{Khoze:1983yp,Shifman:1984wx,Bigi:1991ir,Bigi:1992su,Blok:1992hw,Blok:1992he,Beneke:1998sy} and 
+% works very well for the $B$ system \cite{Lenz:2014jha,Artuso:2015swg,Kirk:2017juj}.
+% Surprisingly the HQE can successfully explain the large lifetime ratio of charm mesons 
+% \cite{Lenz:2013aua,Kirk:2017juj} indicating an expansion parameter $\Lambda/m_c \approx 0.3$. 
+% Lifetimes have the advantages of being free from GIM cancellations - to make statements concerning 
+% the convergence of the HQE in the charm system more sound, future experimental and theoretical 
+% studies of charmed baryon lifetimes will be necessary.
+% Applying the HQE (the appearing non-perturbative matrix elements of dimension six operators have been
+% determined in \cite{Carrasco:2014uya,Carrasco:2015pra,Bazavov:2017weg,Kirk:2017juj}) to 
+% a single diagram contributing to $\Gamma_{12}^D$ - e.g. only internal
+% $s \bar{s}$ quark - one gets five times the experimental value of $y$ \cite{Lenz:2016fcv}, 
+% applying the HQE to the whole expression of Eq.(\ref{Gamma12D}) one lies about four orders 
+% of magnitude below the experiment! Due to the success of the HQE in the $B$ system (where the 
+% expansion parameter is only a factor of three smaller) and for $D$ meson lifetimes 
+% it is unlikely that the HQE fails by four orders of magnitude in charm mixing - the problem seems
+% to be rooted in severe GIM cancellations.
+% In \cite{Jubb:2016mvq} it was shown that duality violations of the order of $20 \%$ could be 
+% sufficient to explain the discrepancy. Another interesting idea 
+% \cite{Georgi:1992as,Ohl:1992sr,Bigi:2000wn,Bobrowski:2010xg}
+% is a lifting of the severe GIM cancellation in the first and second term of Eq.(\ref{Gamma12D})
+% by higher terms in the HQE - overcompensating the $\Lambda/m_c$ suppression. First estimates 
+% of the dimension nine contribution in the HQE for $D$ mixing \cite{Bobrowski:2012jf}
+% indicate an enhancement compared to the leading dimension six terms, unfortunately not 
+% large enough to explain the experimental value. Here a full theory determination of the HQE
+% terms of dimension nine and twelve will provide further insight.
+% It is interesting to note that the lifting of GIM cancellation in $D$-mixing by higher orders in the 
+% HQE \cite{Georgi:1992as,Ohl:1992sr,Bigi:2000wn,Bobrowski:2010xg} could also yield a sizeable 
+% CP violating phase in $\Gamma_{12}$, stemming from the second term on the r.h.s. of Eq.(\ref{Gamma12D}).
+% According to \cite{Bobrowski:2010xg} values of up to $1 \%$ for $\phi_{12}^D$ can currently not be excluded.
+% After settling the issues with the inclusive theory prediction for $\Gamma_{12}^D$ one could aim for
+% a quark level determination of $M_{12}^D$.
+% \\
+% The exclusive approach\cite{Falk:2001hx,Falk:2004wg,Cheng:2010rv,Jiang:2017zwr} 
+% aims to determine $M_{12}^D$ and  $\Gamma_{12}^D$ at the hadron level. A potential starting point are the expressions
+% \begin{eqnarray}
+% \Gamma_{12}^D & = & \sum \limits_n \rho_n \langle \bar{D}^0 | {\cal H}_{eff.}^{\Delta C =1} | n   \rangle
+%                                           \langle  n        | {\cal H}_{eff.}^{\Delta C =1} | D^0 \rangle \, ,
+% \\
+% M_{12}^D & = & \sum \limits_n \langle \bar{D}^0 | {\cal H}_{eff.}^{\Delta C =2} |D^0 \rangle 
+% + P \sum \limits_n \frac{ \langle \bar{D}^0 | {\cal H}_{eff.}^{\Delta C =1} | n   \rangle
+%                                           \langle  n        | {\cal H}_{eff.}^{\Delta C =1} | D^0 \rangle }
+%                                           {m_D^2 - E_n^2} \, ,
+% \label{Dmix_exclusive}
+% \end{eqnarray}
+% where $n$ denotes all possible hadronic states in which both $D^0$ and$\bar{D}^0$ can decay into, $\rho_n$ is the 
+% density of the state $n$ and $P$ is the principal value. Unfortunately a first principle calculation 
+% of the arising matrix elements is beyond our current abilities, thus we have to make simplifying 
+% assumptions like taking only the $SU(3)_F$-breaking effects due to phase space effects into account
+% and neglecting any other hadronic effects. Doing so the authors of \cite{Falk:2001hx,Falk:2004wg} 
+% found that $y$ and $x$ could naturally be of the order of a per cent. On the other hand such a treatment 
+% clearly does not allow to draw strong conclusions about the existence of BSM effects, if the 
+% measurement would disagree with these expectations.  The exclusive approach can be improved by 
+% using experimental input, as done in \cite{Cheng:2010rv}, or by trying to take into account 
+% additional dynamical effects compared to the phase space. In  \cite{Jiang:2017zwr} the
+% factorization-assisted topological-amplitude approach was used for this purpose.
+% On a very long time-scale also direct lattice calculations might also be able to predict the
+% SM values for $D$-mixing by building up on methods described in \cite{Hansen:2012tf}.
+
+\subsection{CP violation in $\DDbar$ mixing}
+\label{sec:CPVDmixth}
+
+
+% mention window for NP here unlike in the CP conserving obseravbles x, y
+In the SM, CP violation (CPV) in $\DDbar$ mixing is highly suppressed, entering at 
+{ ${\mathcal O}(|V_{cb} V_{ub} / V_{cs} V_{us}| ) \sim 10^{-3}$}. 
+This raises several questions, which we briefly address, based on work to appear in \cite{GKLPPS}:
+What is the resulting theoretical uncertainty on the indirect CPV 
+observables? How large is the current window for New Physics (NP)?  
+What is an appropriate parametrization for indirect CPV effects, 
+given the expected sensitivity in the LHCb/Belle-II era?   
+
+
+There are two types of CPV due to mixing; both are referred to 
+as ``indirect'' CPV.  The first is CPV due to interference between the dispersive and absorptive mixing amplitudes (``CPVMIX''), which arises when $\phi_{12}\ne 0$.  CPVMIX can be directly measured via 
+the semileptonic CP asymmetry 
+\beq \label{ASL}
+A_{\rm SL} \ \equiv\  
+\frac{\Gamma(D^0\to K^+\ell^-\nu) - \Gamma(\dzbar\to K^-\ell^+\nu)}
+{\Gamma(D^0\to K^+\ell^-\nu) + \Gamma(\dzbar\to K^-\ell^+\nu)} \ =\ 
+ \frac{|q/p|^4 -1}{|q/p|^4 +1}\ = \frac{2 x_{12} y_{12}}{x_{12}^2 + y_{12}^2 } \sin\phi_{12}\,.
+\eeq
+The second type of indirect CPV is due to interference between a direct decay 
+amplitude and a ``mixed'' amplitude followed by decay (``CPVINT''), 
+i.e., interference between $D^0 \to f$ and $D^0 \to \dzbar \to f $. 
+For decays to a CP eigenstate final state, there are two CPVINT observables
+%, introduced in
+\cite{Branco:1999fs}, 
+\beq 
+\lambda^M_{f} \equiv \,\frac{M_{12}}{|M_{12} |}\,
+\frac{A_f } { \overline A_f} = \,\eta_{f}^{CP}\,\left|\frac{A_f }{ \overline A_f }\right| \, e^{ i  \phi_f^M }\,,~~~
+\lambda^\Gamma_{f} \equiv \,\frac{\Gamma_{12} }{|\Gamma_{12} |}\,
+\frac{A_f } {\overline A_f} = \,\eta_{f}^{CP}\,\left|\frac{A_f } {\overline A_f}\right| \, e^{ i  \phi_f^\Gamma }
+   \,,\label{lambdaMf}\eeq   
+parametrizing the interference for a dispersive and absorptive mixing amplitudes, respectively.
+The $\phi^{M}_f$ and $\phi^{\Gamma}_f$ are CPV weak phases, with $\phi_{12} = \phi_{f}^M - \phi_{f}^\Gamma$,  while $\eta_f^{CP} = + (-)$ for CP even (odd) final states. 
+%For decays to a CP-conjugate pair of final states $f$ and $\bar f$,
+%there are two pairs of observables analogous to \eqref{lambdaMf}, which depend on the weak phases $\phi^{M}_f$ and $\phi^{\Gamma}_f$, as well as the strong phase difference between $A_f $ and $ \overline A_f $.
+%The absorptive and dispersive phases satisfy $\phi_{12} = \phi_{f}^M - \phi_{f}^\Gamma$.
+%\beq \phi_{12} = \phi_{f}^M - \phi_{f}^\Gamma \,.\label{phiMfmphiGf}\eeq
+In general, $\phi^{M}_f$ and $\phi^{\Gamma}_f$ 
+are final-state specific due 
+to non-universal weak and strong phases entering the CKM suppressed SM 
+(and potential NP) contributions to the subleading decay amplitudes. 
+
+
+Non-vanishing $\phi^{M}_f$ and $\phi^\Gamma_f$
+yield {\it time-dependent} CP asymmetries. For example, in singly Cabibbo suppressed (SCS) decays to 
+CP-eigenstates, $f=K^+K^-,\,\pi^+ \pi^-,...$, the effective decay widths, $\hat{\Gamma}$, for $D^0$ and
+$\dzbar$ decays will differ,
+\beq 
+\Delta Y_f \ \equiv\ 
+\frac{\hat \Gamma^{}_{\dzbar \to f} - \hat \Gamma^{}_{D^0 \to f}} {2 \Gamma_D}
+\ = \,- x_{12} \sin\phi_f^M  + a_f^d \, y_{12} \,.
+\label{eqn:scs_asymm1}
+\eeq
+%where $\Delta Y_f = - A_\Gamma$.
+The first and second terms on the RHS are the dispersive CPVINT and direct CPV contributions, respectively, % (which is subleading, as we will see below), 
+where the direct CP asymmetry is defined as $a_f^d = 1 - \left|\bar A_f / A_f \right|$. 
+%\beq a_f^d = 1 - \left|\bar A_f / A_f \right| . \label{afdCP}\eeq
+They can, in principle, be disentangled
+via measurements of the corresponding time-integrated CP asymmetries \eqref{ACPhh}, which satisfy $A_{CP} (D^0 \to h^+ h^-) = \Delta Y_{h^+ h^-} \,\langle t\rangle/ \tau^{}_D   +\ a_{h^+ h^-}^{d}$.
+Examples of time-dependent CP asymmetries in decays to non-CP eigenstates include
+the SCS final states $f=K^* K$ or $f=\rho\pi$, and the Cabibbo favored/doubly Cabibbo suppressed
+(CF/DCS) final states $f=K^\pm \pi^\mp$.  These asymmetries generally depend on both $\phi_f^M$ and $\phi_f^\Gamma$, unlike decays to CP eigenstates, due to the additional strong phases \cite{GKLPPS}.
+%difference between $A_f$ and $\overline A_f$.%$\Delta_f$ \cite{GKLPPS}.
+
+The dispersive and absorptive observables are simply related \cite{GKLPPS} 
+to the more familiar parametrization of indirect CPV, see, e.g., \cite{Nir:1992uv}. The latter consists 
+of $ |q/p|-1 $, 
+and  
+\beq{\lambda_f} \equiv \frac{q}{p} \frac{ \bar A_f }{A_f} = - \eta_f^{ CP} \left|\lambda_f \right| e^{i \,\phi_{\lambda_f}},\label{lambdaf}\eeq
+for CP eigenstate final states, and pairs of observables ${\lambda_f} $, $\lambda_{\bar f} $ 
+for non-CP eigenstate final states.
+The same number of independent parameters is employed in each case (recall that $\phi_{12} = \phi_f^M - \phi_f^\Gamma$).
+
+
+% With the continuing improvements in experimental sensitivity at LHCb,  
+Single mrad precision for $\phi_{12}$ could become a realistic target at LHCb, see below and Sec.~ \ref{sec:expcharmmix}, to be 
+compared with the current $\sim 50-100$ mrad bounds 
+[95\% CL] quoted by HFLAV and UTfit Collaboration~\cite{Amhis:2016xyh,LHCbimplications}. 
+Thus, we must estimate the final state dependence in $\phi_f^M$, $\phi_f^\Gamma$
+%(recall that $\phi_{12} = \phi_f^M-\phi_f^\Gamma$) 
+due to the subleading decay amplitudes, and consider how to best parameterize this.
+This is accomplished via the $U$-spin flavor symmetry decomposition of the $\DDbar$ mixing amplitudes given in Eq. \eqref{Uspindecomp}.
+%--\eqref{Mspinamps}.
+We define three theoretical CPV phases 
+%with respect to ${\rm arg}[(\lambda_s - \lambda_d)^2]$, the direction of the $\Delta U=2$ contributions $\Gamma_2$, $M_2$ in the mixing amplitude complex plane,
+\beq \label{theorphasesdef}
+{ \phi_2^\Gamma }\equiv  {\rm arg}\left(\frac{\Gamma_{12}} {\Gamma_{12}^{\Delta U=2} }\right),~~{ \phi_2^M }\equiv  {\rm arg}\left(\frac{M_{12} }{\Gamma_{12}^{\Delta U=2} }\right),~~\phi_2 \equiv  {\rm arg}\left(\frac{q} { p} \frac{1}{\Gamma_{12}^{\Delta U=2} } \right)\,,
+\eeq
+%The phases $\phi_2^M$, $\phi_2^\Gamma$, and $\phi_2$ 
+which are the theoretical analogs of the final state dependent phases $\phi_f^M$, $\phi_f^\Gamma$, and $\phi_{\lambda_f}
+$, respectively.
+The $U$-spin breaking hierarchy $\Gamma_1/ \Gamma_2 = {\mathcal O}(1/\epsilon)$ %cf. \eqref{Gamma12decomp}, 
+yields
+the estimate
+\beq \begin{split} \label{theorphases}
+{ \phi_2^\Gamma }&  \approx {\rm Im}\left(  \frac{2 \lambda_b }{ \lambda_s - \lambda_d}  \frac{\Gamma_1 }{\Gamma_2} \right)
+\sim \left| \frac{\lambda_b }{ \theta_c } \right| \sin \gamma  \times \frac{1} { \epsilon},
+\end{split}
+\eeq
+and similarly for $\phi_2^M$ (the $O(\lambda_b^2)$ contributions are negligible).
+Taking the nominal value $\epsilon \sim 0.2$ for $U$-spin breaking, 
+%and noting that $\phi_{12} =  \phi_2^M - \phi_2^\Gamma$,
+% in \eqref{theorphases}, 
+we obtain the rough 
+SM estimates
+\beq  \phi_{12} \sim \phi_2^\Gamma \sim \phi_2^M \sim 3 \times 10^{-3} 
+\,.\label{phiGphiMnaive}\eeq
+Comparison with the current 95\% CL bounds on $\phi_{12}$ 
+implies that there is an ${\mathcal O}(10)$ window for NP in indirect CPV.
+An alternative expression for $\phi_2^\Gamma$ follows from \eqref{theorphases} via the relation $\Gamma_2  \cong y \,\Gamma^D$, 
+ \beq |\phi_2^\Gamma| =  \left|\frac{\sin\gamma\,\, \lambda_b\,\lambda_s 
+} { y }\right| \,\frac{|\Gamma_1 |} { \Gamma^D } \approx 0.005 \, \frac{|\Gamma_1 |} { \Gamma^D } \sim 0.005\, \epsilon  \,,\label{refined}\eeq
+where in the last relation we have taken $\Gamma_1 \sim \Gamma^D \epsilon$.
+In principle, $\Gamma_1$ can be estimated via the exclusive approach as more data on SCS $D^0$ decay branching ratios and direct CP asymmetries becomes available.
+
+
+
+The misalignments between $\phi_f^M$, $\phi_f^\Gamma$, $\phi_{\lambda_f}$ in \eqref{lambdaMf}, \eqref{lambdaf}, and their theoretical counterparts satisfy  %these phases, for given final state $f$, satisfy
+\beq {{ \delta \phi_f } \equiv \phi_{f}^\Gamma - \phi_{2}^\Gamma = \phi_{f}^M - \phi_{2}^M  = \phi_2 -\phi_{\lambda_f}} \,.\eeq
+We can characterize the magnitude of the misalignment $\delta \phi_f$ in the SM as follows:
+(i) For CF/DCS decays it is precisely known and negligible, i.e., $\delta \phi_f = {\mathcal O}(\lambda_b^2 / \theta_c^2 )$;
+(ii) In SCS decays, $\delta \phi_f$ is related to direct CPV as $\delta \phi_f = a_f^d  \,\cot \delta $
+ via the $U$-spin decomposition of the decay amplitudes \cite{Brod:2012ud}, where
+a strong phase $\delta = {\mathcal O}(1)$ is expected due to 
+large rescattering at the charm mass scale.  Thus, for $f = \pi^+ \pi^-,\, K^+ K^-$,
+the experimental bounds $a_f^d \lsim {\mathcal O}(10^{-3})$ imply that $\delta \phi_f \lsim {\mathcal O}(10^{-3})$; 
+(iii) In SCS decays, $\delta \phi_f = {\mathcal O}( \lambda_b \sin\gamma /\theta_c ) \times \cot\delta$, i.e., it is ${\mathcal O}(1)$ in $SU(3)_F$ breaking.  Thus,
+%at which quantities arise, find $\phi_{12}^\Gamma = O(1/\epsilon) $.  
+\eqref{theorphases} yields ${\delta \phi_f  /\phi_{2}^\Gamma } = {\mathcal O}({ \epsilon})$,
+implying an order of magnitude suppression of the misalignment. % relative to the 
+
+
+%We learn that
+In the LHCb era, 
+% and assuming $\lsim 10$ mrad sensitivity
+% , 
+a single pair of dispersive and absorptive phases, identified with $\phi_2^M$ and  $\phi_2^\Gamma$, respectively, should suffice to parametrize all indirect CPV effects. We refer to this fortunate circumstance as {\it approximate universality}.  Moreover, approximate universality generalizes beyond the SM under the following conservative assumptions about NP %decay amplitudes containing new weak phases: 
+contributions:
+(i) they can be neglected in CF/DCS decays (a highly exotic NP flavor structure would otherwise be required in order to evade the $\epsilon_K$ constraint~\cite{Bergmann:1999pm}); (ii) in SCS decays they are of similar size or  
+%magnitudes are similar to, or 
+smaller than the SM QCD penguin amplitudes, as already hinted at by the experimental bounds on the direct CP asymmetries $a^d_{K^+K^-},\,a^d_{\pi^+\pi^-}$. These assumptions can be tested by future direct CPV measurements.
+
+
+Under approximate universality, 
+%the phases $\phi_f^M$ and $\phi_f^\Gamma$ are replaced with $\phi_2^M$ and $\phi_2^\Gamma$, respectively, 
+$\phi_f^M\to \phi_2^M$ and $\phi_f^\Gamma\to\phi_2^\Gamma$
+in expressions for time-dependent CP asymmetries. 
+A global fit to the CPV data for any two of the three phases, 
+$\phi_2^M$, $\phi_2^\Gamma$, $\phi_{12}$, is equivalent to the traditional
+two-parameter fit for 
+%the parameters 
+$|q/p|$ and $ \phi$
+, where $ \phi$ is identified with $\phi_2$~\cite{GKLPPS}.
+The relations 
+\beq
+\left| \frac{q} { p}\right| -1   \approx  \frac{|x| |y| } { x^2 + y^2 } \sin{ \phi_{12}} ,~~~~~
+\tan 2 (\phi_2 + { \phi^\Gamma})  \approx  - \frac{x_{12}^2 } { x_{12}^2 + y_{12}^2  }   
+\sin 2{ \phi_{12}} \,,
+\label{beyondsuperweak}
+\eeq
+together with $\phi_{12} = \phi_2^M - \phi_2^\Gamma$, allow one to translate between 
+$(\phi_2, |q/p|)$ and $(\phi_2^M, \phi_2^\Gamma)$. 
+To illustrate the potential reach of LHCb in $\phi_2^M$ and $\phi_2^\Gamma$ from prompt charm production at 300 fb$^{-1}$,
+the projected statistical errors on $\phi$, $|q/p|$, $x$, $y$ from $D^0 \to K_s \pi^+ \pi^-$ (combined with the Belle 
+error correlation matrix \cite{Peng:2014oda}), and on $\Delta Y_f = -A_\Gamma$,  
+given in the last rows of Tables \ref{tab:D0KSPiPi_yields} and \ref{tab:Agamma_yields}, and assuming the central values $|q/p|=1$, $\phi=0$, $x=0.57\%$, and $y=0.7\%$, yield 
+\beq \sigma (\phi_2^M ) = 2~\text{mrad},~~~ \sigma (\phi_2^\Gamma ) = 5~\text{mrad}\,.\eeq 
+The projected statistical errors are  smaller for $D^0 \to K^+ \pi^-\pi^-\pi^+$ than for $D^0 \to K_s \pi^+ \pi^-$, cf. Tab.~\ref{tab:WS-D2K3pi}.
+Thus, if the systematic errors are not prohibitively large, cf. Sec.~\ref{sec:expcharmmix},
+LHCb could probe indirect CPV in the SM.
+
+
+\subsection{Direct CP violating probes}
+%Two-body hadronic $D$-meson decays can be classified
+Direct \CP asymmetries,
+\begin{equation}\label{ACPhh}
+A_{\CP}(\Dz\to h^-h^+)\equiv \frac{\Gamma(D^0\rightarrow h^-h^+)-\Gamma(\Dzb\rightarrow h^-h^+)}{\Gamma(D^0\rightarrow h^-h^+)+\Gamma(\Dzb\rightarrow h^-h^+)},
+\end{equation}
+with $h$ a light meson, are suppressed in the SM but could be enhanced by NP.
+%The sensitivity to direct \CP violation is enhanced through a measurement of the difference in \CP asymmetries between \Dz\to\Km\Kp and \Dz\to\pim\pip decays, $\Delta A_{\CP}=A_{\CP}(\Km\Kp)-A_{\CP}(\pim\pip)$.
+%The individual asymmetries $A_{\CP}(\Km\Kp)$ and $A_{\CP}(\pim\pip)$ can also be measured. 
+Quite likely the most prominent test of direct CPV in charm is the
+observable 
+$
+\Delta A_{\CP}=A_{\CP}(\Km\Kp)-A_{\CP}(\pim\pip),
+$
+%(see Sec.~\ref{sec:directCP:exp} for the
+%definition). 
+which measure the difference between direct CPV in SCS modes $D^0 \to K^+ K^-$ and $D^0 \to \pi^+ \pi^-$. This is despite that the
+SM prediction is hard to obtain.  However, assuming nominal breaking of
+the $SU(3)$ flavor symmetry, $\epsilon\approx f_K/f_\pi - 1 \approx
+{\mathcal O}(20\,\%)$, one can infer from the observed branching ratios of the
+CF decay$D^0 \to \pi^+ K^-$ and DCS decay $D^0
+\to \pi^- K^+$ a consistent picture involving large
+ matrix elements for $U$-spin breaking penguin~\cite{Brod:2012ud,
+  Savage:1991wu, Pirtskhalava:2011va, Feldmann:2012js, Franco:2012ck,
+  Hiller:2012xm}. These can account, in the presence of large strong
+phases,  for values of $\Delta A_{\CP}
+\lesssim 0.2\%$~\cite{Brod:2011re}, in accordance with the current
+measurements. LHCb is expected to probe far into this region after
+Upgrade~II (see Sec.~\ref{sec:directCP:exp}).
+
+SCS $D$ decay modes are sensitives probes of CP violation in and
+beyond the SM~\cite{Grossman:2006jg}. Other decay modes can also be
+sensitive to CP asymmetries of the same order, both in the SM and in
+NP extensions that modify the QCD penguin operators. Besides the modes
+$D^+ \to K^+ \bar K^0$ and $D_s^+ \to \pi^+ K^0$, obtained from the
+above via exchange of the spectator quark, the mode $D^0 \to K_S K_S$
+is particularly interesting, because a large CP asymmetry $\lesssim
+1\,\%$ can be expected~\cite{Brod:2011re, Nierste:2015zra}. The
+related $D \to K K^*$ modes have smaller asymmetries, but this can be
+compensated by the higher experimental
+efficiency~\cite{Nierste:2017cua}.
+
+Another interesting class of observables are the semileptonic $D$
+decays, $D \to P \ell^+ \ell^-$ and $D \to P_1 P_2 \ell^+ \ell^-$,
+where $P, P_1, P_2$ are light pseudoscalars. In analogy to the
+well-studied corresponding semileptonic $B$ decay modes, interesting
+null test of CP violation can be constructed~\cite{deBoer:2015boa,
+  deBoer:2017que, deBoer:2018buv}. In certain regions of phase space,
+the CP asymmetries can be largely enhanced via interferences with
+resonances, which makes these decays an interesting class of
+observables for LHCb.
+
+
+\subsection{Null tests from isospin sum rules}
+\label{sec:isospin:null:test}
+SM predictions for hadronic $D$ decays are notoriously difficult. In
+some cases it is possible to obtain strong indications for the
+presence of NP by relating various modes using the
+approximate flavor symmetry $SU(3)$ (invariance under interchange of
+up, down, and strange quarks) or the more precise isospin (invariance under interchange of
+up and down quarks). 
+
+Probably the simplest example is the $D^+ \to \pi^+
+\pi^0$ decay~\cite{Brod:2011re}. The final state has isospin $I=2$ which
+cannot be reached from the $I = 1/2$ initial state via the $\Delta I =
+1/2$ QCD penguin operators, predicting very suppressed direct CPV in the SM. An important question in this context is
+the size of isospin-breaking effects. Isospin-breaking due to QED and
+the difference of up- and down-quark mass is CP conserving and can be
+safely neglected. The electroweak penguin contribution is relatively
+suppressed by $\alpha/\alpha_s$ in the SM. Thus, enhanced direct CPV in $D^+ \to \pi^+ \pi^0$ would signal the presence of
+isospin-violating NP.
+
+Another example is the sum of rate differences~\cite{Grossman:2012eb}
+\begin{equation}
+\begin{split}
+  |A_{\pi^+ \pi^-}|^2 - |\bar A_{\pi^+ \pi^-}|^2 & + |A_{\pi^0
+    \pi^0}|^2 - |\bar A_{\pi^0 \pi^0}|^2 \\ & - \frac{3}{2} \big(
+  |A_{\pi^+ \pi^0}|^2 - |\bar A_{\pi^- \pi^0}|^2 \big) = 3 \big(
+  |A_{1/2}|^2 - |\bar A_{1/2}|^2 \big),
+\end{split}
+\end{equation}
+which depends only on $\Delta I = 1/2$ amplitudes. There are two
+possibilities. If the sum is non-zero, there are $\Delta I = 1/2$
+contributions to CP violation; they can be due to SM or NP. If the sum
+is zero, but the individual asymmetries are non-zero, the CP
+asymmetries are likely dominated by $\Delta I = 3/2$ NP
+contributions. More sum rules, involving also vector meson final
+states, can be devised for the decay modes $D \to \rho \pi$, $D \to
+K^{(*)} \bar K^{(*)} \pi (\rho)$, $D_s^+ \to K^* \pi
+(\rho)$~\cite{Grossman:2012eb}. For an exhaustive list of sum rules
+based on the flavor $SU(3)$ or its subgroups, 
+%including
+%also vector meson final states, 
+see Refs.~\cite{Grossman:2012ry,
+  Grossman:2013lya, Muller:2015rna}.
+
+\subsection{Radiative and leptonic charm decays}
+In the down-type quark sector the GIM suppression is less effective than in the up-quark sector, due to the presence of $top$-quarks running in the loops which leads to an effective decoupling with the other diagrams, owing to the large top quark mass. In the \emph{charm} sector FCNCs are instead more effectively suppressed due to the absence of a large mass down-type quark and therefore, within the SM, branching fractions of rare $D$ decays have very small values. However, these processes  can be enhanced in NP scenarios by up to several orders of magnitude when compared to the SM.  
+
+\subsubsection{Radiative Decays}
+The  $c \to u$ transition  occurs  in the SM  only at loop level, providing an option to 
+study effects of NP in the up-like quark sector. 
+The  GIM  mechanism leads to the  strong suppression in the 
+branching ratios  of   inclusive $c\to u \gamma$. However, in the exclusive charm decays,  non-perturbative QCD effects become very important. %\section{The decay $D\to V\gamma$}
+The effective weak Lagrangian for $D\to V\gamma$ is, see, e.g., \cite{deBoer:2017que},
+\begin{align}
+\label{eq:Leff:e1}
+ \mathcal L_\text{eff}^\text{weak}=\frac{4G_F}{\sqrt 2}\left(\sum_{q\in\{d,s\}}V_{cq}^*V_{uq}\sum_{i=1}^2C_iO_i^{(q)}+\sum_{i=3}^6C_iO_i+\sum_{i=7}^8\left(C_i)_i+C_i'O_i'\right)\right)\,,
+\end{align}
+with the operators ${\cal O}_{2(1)}=(\bar u_L\gamma_\mu(T^a)q_L)(\overline q_L\gamma^\mu(T^a)c_L)$, ${ \cal O}_7^{(\prime)}={e\, }{m_c}/{16\pi^2}(\bar u_{L(R)}\sigma^{\mu\nu}c_{R(L)})F_{\mu\nu}$ and $ { \cal O}_8^{(\prime)}={g_s\,m_c}/{16\pi^2}(\bar u_{L(R)}\sigma^{\mu\nu}T^ac_{R(L)})G^a_{\mu\nu}$. 
+%\begin{align}
+%\label{e2}
+% & { \cal O}_{2(1)}=(\bar u_L\gamma_\mu(T^a)q_L)(\overline q_L\gamma^\mu(T^a)c_L)\,,\nonumber\\
+% & { \cal O}_7^{(\prime)}=\frac{e\,m_c}{16\pi^2}(\bar u_{L(R)}\sigma^{\mu\nu}c_{R(L)})F_{\mu\nu}\,,\nonumber\\
+% & { \cal O}_8^{(\prime)}=\frac{g_s\,m_c}{16\pi^2}(\bar u_{L(R)}\sigma^{\mu\nu}T^ac_{R(L)})G^a_{\mu\nu}\,,
+%\end{align}
+%as explained in details in Ref. \cite{deBoer:2017que}. 
+The SM effective Wilson coefficients $C_i^\text{(eff)}$ are known at  two-loop level in QCD \cite{deBoer:2017que,deBoer:2016dcg,Greub:1996wn,Fajfer:2002gp}.
+The authors of Ref. \cite{deBoer:2017que}  improved the SM prediction for the branching ratios of $D\to V\gamma$, by  including power corrections and updating the hybrid model predictions. The hybrid model combines   the heavy quark effective theory and chiral perturbation theory using experimentally measured parameters \cite{Fajfer:1997bh,Fajfer:1998dv}. 
+They also  included corrections to the perturbative Wilson coefficients by employing  a QCD based approach, worked out for $B$ physics as reviewed in  \cite{deBoer:2017que}. Updated values for the  SM Wilson coefficients %of $Q_{1,2}$ and the effective coefficient of the chromomagnetic dipole operator
+at leading order in $\alpha_s$ are given in  \cite{deBoer:2017que,deBoer:2015boa,deBoer:2016dcg}. 
+%\begin{align}
+ %&C_1^{(0)}\in[-1.28,-0.83]\,,\quad C_2^{(0)}\in[1.14,1.06]\,,\nonumber\\
+ %&C_8^{(0)\text{eff}}\in[0.47\cdot10^{-5}-1.33\cdot10^{-5}i,0.21\cdot10^{-5}-0.61\cdot10^{-5}]\,,\nonumber\\
+  %&C_7^\text{eff}\in[-0.00151-(0.00556i)_\text{s}+(0.00005i)_\text{CKM},-0.00088-(0.00327i)_\text{s}+(0.00002i)_\text{CKM}]\,.
+%\end{align}
+%In \cite{deBoer:2017que} authors varied $\mu_c$ i within $[m_c/\sqrt2,\sqrt2m_c]$.
+The GIM mechanism  suppresses strongly  $C_8^{\text{eff}}$ in the SM. 
+%The  effective  Wilson coefficient $C_7^{\prime\,\text{eff}}\sim m_u/m_c\simeq 0$ \cite{deBoer:2017que}.   
+%the data for  \cite{deBoer:2017que,deBoer:2016dcg,deBoer:2015boa} 
+The experimental branching ratios  for the Cabibbo allowed decay  $BR(D^0\to K^*(892) \gamma) = (3.31\pm 0.34)\times 10^{-4}$ and Cabibbo suppressed  decays 
+$BR(D^0\to\phi\gamma) = (2.73\pm 0.35)\times 10^{-5}$    \cite{Patrignani:2016xqp} %\td {should this be $D^0\to \rho^0\gamma$?:} 
+%\td{what is meant here?:} 
+$BR(D^0 \to D^0\to \rho^0 \gamma) = (1.77\pm 0.30\pm 0.07)\times 10^{-5}$ \cite{Abdesselam:2016yvr}. The hybrid model accompanied with  the weak annihilation  predicts %the rates 
+$BR(D^0 \to \rho^0 \gamma)_{SM}= (0.11-3.8)\times 10^{-5}$, $BR(D^0\to\phi\gamma)_{SM} = (0.24-2.8))\times 10^{-5}$,   $BR(D^0\to\bar K^{*0} \gamma)_{SM} = (0.26-4.6)\times 10^{-4}$    \cite{deBoer:2017rzd} \cite{deBoer:2017que}. The NP 
+scenarios discussed in Ref.   \cite{deBoer:2017rzd} can contribute at the loop level to $C_{7,8}^\text{eff}$, and cannot significantly modify the branching ratios.
+% making the modification of the branching ratio insignificant.
+ %\td{please check the rewrite:} 
+ However, the NP induced CPV asymmetry was found to still be modest, e.g.,  $\sim {\mathcal O}(10\%)$ for $D^0 \to \rho^0 \gamma$. In the case of baryonic mode $\Lambda_c \to p \gamma$ the rate is estimated to be $\sim {\cal O} (10^{-5})$. The forward-backward asymmetry of photon momentum relative to $\Lambda_c$ boost can be $0.2$ in the SM, and somewhat smaller  within scenarios of NP discussed in \cite{deBoer:2017rzd}. 
+ 
+ 
+\subsubsection{Rare charm leptonic decays} 
+To describe NP effects the effective Lagrangian for the $c\to u \bar \ell \ell $ has to be extended by the following operators
+\begin{equation}
+  \label{eq:operators}
+  \begin{split}
+  \qquad \quad {\cal O}_{9(10)} &= \frac{e^2}{(4\pi)^2}\, (\bar u \gamma^\mu P_L c)
+  (\bar\ell \gamma_\mu (\gamma_5)\ell) \,, \qquad \quad  
+%    {\cal O}_{10} = \frac{e^2}{(4\pi)^2}\, (\bar u \gamma^\mu P_L c)
+%  (\bar\ell \gamma_\mu \gamma_5 \ell)\, , \\
+%   \qquad \quad 
+   {\cal O}_{S(P)}  = \frac{e^2}{(4\pi)^2}\, (\bar u P_R c)
+  (\bar\ell (\gamma_5) \ell)\,, 
+% \qquad \quad \qquad   {\cal O}_P = \frac{e^2}{(4\pi)^2}\, (\bar u P_R c) (\bar\ell \gamma_5 \ell)\, ,
+\\
+    \qquad \quad  {\cal O}_{T} &= \frac{e^2}{(4\pi)^2}\, (\bar u \sigma_{\mu\nu} c)
+  (\bar\ell \sigma^{\mu\nu}  \ell)\,,
+ \qquad \qquad\quad   {\cal O}_{T5} = \frac{e^2}{(4\pi)^2}\, (\bar u \sigma_{\mu\nu} c)
+  (\bar\ell \sigma^{\mu\nu} \gamma_5  \ell).
+\end{split}
+\end{equation}
+%\begin{equation}
+%  \label{eq:operators}
+%  \begin{split}
+%  \qquad \quad {\cal O}_9 &= \frac{e^2}{(4\pi)^2}\, (\bar u \gamma^\mu P_L c)
+%  (\bar\ell \gamma_\mu \ell) \,, \qquad \quad  
+%    {\cal O}_{10} = \frac{e^2}{(4\pi)^2}\, (\bar u \gamma^\mu P_L c)
+%  (\bar\ell \gamma_\mu \gamma_5 \ell)\, , \\
+%   \qquad \quad {\cal O}_{S} & = \frac{e^2}{(4\pi)^2}\, (\bar u P_R c)
+%  (\bar\ell \ell)\,, 
+% \qquad \quad \qquad   {\cal O}_P = \frac{e^2}{(4\pi)^2}\, (\bar u P_R c) (\bar\ell \gamma_5 \ell)\, ,\\
+%    \qquad \quad  {\cal O}_{T} &= \frac{e^2}{(4\pi)^2}\, (\bar u \sigma_{\mu\nu} c)
+%  (\bar\ell \sigma^{\mu\nu}  \ell)\,,
+% \qquad \quad   {\cal O}_{T5} = \frac{e^2}{(4\pi)^2}\, (\bar u \sigma_{\mu\nu} c)
+%  (\bar\ell \sigma^{\mu\nu} \gamma_5  \ell)\,.\\ 
+%\end{split}
+%\end{equation} 
+Among these only the $C_9$ is nonzero in the SM. For each ${\cal O}_i$ one can introduce ${\cal O}_i^\prime$ with the corresponding Wilson coefficient $C_i^\prime$ by replacing the chirality operator $P_L= 1/2(1-\gamma^5)$ by $P_R= 1/2(1+\gamma^5)$ \cite{Fajfer:2015mia}. 
+%the Wilson coefficient of  operator ${\cal O}_9$ differs from 0. 
+In Ref. \cite{deBoer:2015boa} authors obtained (N)NLO QCD SM Wilson coefficients at $\mu_c=m_c$, %\td{these should be dimensionful, if the definition in \eqref{eq:Leff:e1} applies} 
+$C_{7} \simeq( -0.0011-0.0041 i)$ and $C_9 \simeq  -0.021 X_{ds}$, where $X_{ds}=V_{cd}^*V_{ud}L(m_d^2,q^2)+V_{cs}^*V_{us}L(m_s^2,q^2)$,  with $L(m^2, q^2)$ defined in eq. (B1) of \cite{deBoer:2015boa}. 
+%\begin{align}\label{eq:one_loop_qbarq}
+ %L(m^2,q^2)=\frac53+\ln\frac{\mu_c^2}{m^2}+x-\frac12(2+x)|1-x|^{1/2}
+% \begin{cases}
+ % \ln\frac{1+\sqrt{1-x}}{1-\sqrt{1-x}}-i\pi\quad x\equiv\frac{(2m)^2}{q^2}<1\\
+%  2\tan^{-1}\left[\frac1{\sqrt{x-1}}\right]\quad x\equiv\frac{(2m)^2}{q^2}>1. 
+% \end{cases}
+%\end{align}
+%\td{What is $L$?}.
+ In the range of $m_c/\sqrt2\le\mu_c\le\sqrt2m_c$ the  effective Wilson coefficients  were found to be $(-0.0014-0.0054i)\le C_7\le(-0.00087-0.0033i)$ and 
+ $-0.060X_{ds}(\mu_c=\sqrt2m_c)\le C_9\le0.030 X_{ds}(\mu_c=m_c/\sqrt2)$. In the small 
+ $q^2 \gtrsim 1 \, \mbox{GeV}^2$ region  $|C_{9}| \lesssim 5\cdot10^{-4}$.  
+
+One can consider contribution of this effective Lagrangian in the exclusive decay channels. For the $D$ meson di-leptonic decays the best upper bound to date is obtained by the LHCb collaboration at  the $90\%$ CL 
+~\cite{Aaij:2013cza}
+%\begin{equation}
+ % \label{eq:Dmumu-exp}
+$BR(D^0 \to \mu^+ \mu^-) < 6.2 \times 10^{-9}$.
+%\end{equation}
+In the decay
+$D^+ \to \pi^+ \mu^+ \mu^-$ the LHCb experiment %cused on kinematic
+determined bounds on the branching ratio in the two kinematic regions of the di-lepton mass, %$q^2 = (k_- + k_+)^2$, 
+ chosen to be either below or
+above the dominant resonant contributions. The measured
+total branching ratio, obtained by extrapolating spectra over the
+non-resonant region, is~\cite{Aaij:2013sua}
+%\begin{equation}
+%  \label{eq:Dpimumu-exp}
+$BR(D^+ \to \pi^+ \mu^+ \mu^-) < 8.3 \ 10^{-8}$,
+%\end{equation}
+while the separate branching fractions in the low- and high-$q^2$ bins are bounded to be below 
+$BR(\pi^+ \mu^+ \mu^-)_{I}<  2.5\times 10^{-8}$ for region I, ${q^2 \in [0.0625,0.276]\,{GeV}^2} $, and
+    $BR(\pi^+ \mu^+ \mu^-)_{II}  <  2.9 \times 10^{-8}$ for region II, ${q^2 \in [1.56,4.00]{GeV}^2}$~\cite{Aaij:2013sua}. 
+%\footnote{Note that the high-$q^2$ bin quoted by
+ % the experiment extends beyond the maximal allowed $q^2_\mrm{max} = (m_D-m_\pi)^2 = 2.99\e{GeV}^2$.}:
+%\begin{equation}
+%  \label{eq:Dpimumu-bins}
+%  \begin{split}
+%    $BR(\pi^+ \mu^+ \mu^-)_{I} \equiv BR(D^+ \to \pi^+ \mu^+
+%      \mu^-)_{q^2 \in [0.0625,0.276]\,{GeV}^2} <  2.5\times 10^{-8}$  and
+%    $BR(\pi^+ \mu^+ \mu^-)_{II} \equiv BR(D^+ \to \pi^+ \mu^+
+%      \mu^-)_{q^2 \in [1.56,4.00]{GeV}^2} <  2.9 \times 10^{-8}$. 
+ % \end{split}
+%\end{equation}
+These can be used to put bounds on Wilson coefficients. Allowing for NP contributions to only one 
+ Wilson coefficient at a time gives the upper bounds listed in Table~\ref{tab:BR}, where $\tilde C_i = V_{ub} V_{cb}^* C_i$\cite{Fajfer:2015mia}.
+% to have a real nonzero
+%value one can extract its upper bound  as presented in \cite{Fajfer:2015mia}. %This is repeated for each choice of random phases and moduli of Breit-Wigner parameters $a_{\eta,\rho,\omega,\phi}$, where the latter are sampled in their$1\sigma$ regions (90\% CL bound for $|a_\omega|$),c.f. Tab.~\ref{tab:bw}. 
+%The most relaxed bound obtained in this way
+%are presented in Tab.~\ref{tab:BR}, where 
+%$\tilde C_i = V_{ub} V_{cb}^* C_i$ notation is being used.  At the same time
+The bound on $BR(D^0 \to \mu^+ \mu^-)$ 
+%can give bound on Wilson coefficients $C_{10}$, $C_{S}$, and
+%$C_P$. It turns out that the upper bound on $BR(D^0\to \mu^+ \mu^-)$ is
+gives the most stringent bounds on 
+%more restrictive for 
+$C_{S,P,10}$ Wilson coefficients.
+% than any of the
+%invariant dilepton mass bins of $D^+ \to \pi^+ \mu^+ \mu^-$.
+
+For baryonic $c\to u \ell^+ \ell^-$ transitions the relevant  form factors are known from lattice QCD calculations for the %produced relevant  for the
+ $\Lambda_c \to p \ell^+\ell^-$ decay \cite{Meinel:2017ggx}. The dominant contributions to the branching ratio come from resonant regions of $\Lambda_c  \to p \rho, (\omega, \phi)$ with $\rho$, $\omega$ and $\phi$ decaying to $\mu^+ \mu^-$. %\td{not sure about the meaning of this sentence. Is the search in the resonance region?:} 
+ This enables to  investigate the impact of NP on the differential branching ratio, the  fraction of longitudinally polarized di-muons and the forward-backward asymmetry. %\td{please check:}
+ %The measured value $BR(\Lambda_c \to p \mu^+ \mu^-)_{res}  = (3.7\pm 1.2) \times 10^{-7}$, or rather t
+ The upper 90\% CL bound $BR(\Lambda_c \to p  \mu^+ \mu^-)_{exp}  <7.7 \times 10^{-8}$  \cite{Aaij:2017nsd}, obtained by excluding the $\pm40$ MeV intervals around resonances still allows NP contribution in $C_9$ and $ C_{10}$. 
+The $\Lambda_c \to p \mu^+ \mu^-$ forward-backward asymmetry appears as a result of  a nonzero $C_{10}$ Wilson coefficient, generated by the NP.  Therefore  this observable  provides a clean null test of the SM as suggested in Ref. \cite{Meinel:2017ggx}.%The case of  
+ %NP  contributing to $C_9= - C_{10} \simeq 0.6$ in \cite{Meinel:2017ggx},  still weaker NP bounds than the $D^+ \to \pi^+ \mu^+ \mu^-$ analysis. 
+% 
+% and current bound obtained from the differential branching ratio for $D^+ \to \pi^+ \mu^+ \mu^-$,  the author of \cite{Meinel:2017ggx}  found that  the current upper bound of the LHCb $BR(\Lambda_c \to p  \mu^+ \mu^-)_{exp}  <7.7 \times 10^{-8}$  (at 90 \% confidence level) in the dimuon mass region,  excluding $\pm40$ MeV intervals around resonances,  \cite{Aaij:2017nsd}   
+%still allows the presence of NP with bounds obtained  in $D^+ \to \pi^+ \mu^+ \mu^-$. 
+
+\begin{table}[t]
+\caption{%\td{Mass dimensions do not work} 
+Maximal experimentally allowed magnitudes of the Wilson coefficients,
+  $|\tilde C_i| = |V_{ub}  V_{cb}^* C_i|$, obtained from 
+  non-resonant part of $D^+ \to \pi^+ \mu^+ \mu^-$ decay, low $q^2$ region I: $q^2 \in [0.0625,0.276]\,{\rm GeV}^2$; high $q^2$ region: $q^2 \in
+  [1.56,4.00] {\rm GeV}^2$); and from $BR (D^0 \to \mu^+ \mu^-) < 7.6 \times 10^{-9}$~\cite{Aaij:2013cza}.
+  The last row applies to the case $\tilde C_9= \pm\tilde C_{10}$. All the bounds assume real
+  $C_{i}$, and also apply to coefficients with flipped chirality, $\tilde C_j^\prime$.%\td{the definition for these is missing}
+  }
+\label{tab:BR}
+\begin{center}
+\begin{tabular}{cr@{.}lr@{.}lr@{.}l} 
+\hline\hline\\[-4mm]
+\multicolumn{1}{c}{}&\multicolumn{6}{c}{$|\tilde C_i|_\mathrm{max}$}\\
+%\hline
+ \multicolumn{1}{c}{}  & \multicolumn{2}{c}{$BR(\pi \mu \mu)_{I}$} &  \multicolumn{2}{c}{$BR(\pi \mu \mu)_{II}$} &   \multicolumn{2}{c}{$BR(D^0\to \mu \mu)$} \\ 
+\hline\\[-4mm] 
+$\tilde C_7$ & \hspace{0.8cm} 2&4 \hspace{0.8cm} & \hspace{0.8cm} 1&6 \hspace{0.8cm} & \multicolumn{2}{c}{-} \\
+$\tilde C_9$ & 2&1 & 1&3 & \multicolumn{2}{c}{-}  \\
+$\tilde C_{10}$ & 1&4  & 0&92 & \hspace{.7cm}0&63\\
+$\tilde C_S$ & 4&5 & 0&38& 0&049\\
+$\tilde C_P$ & 3&6 & 0&37 & 0&049\\
+$\tilde C_T$ & 4&1 & 0&76& \multicolumn{2}{c}{-}  \\
+$\tilde C_{T5}$ & 4&4& 0&74 & \multicolumn{2}{c}{-}  \\
+$\tilde C_9= \pm \tilde C_{10}$ & 1&3& 0&81&  0&63\\
+ \hline\hline
+\end{tabular}
+\end{center}
+\end{table}
+%\begin{table}[t]
+%\caption{Maximal allowed values of the Wilson coefficient moduli,
+%  $|\tilde C_i| = |V_{ub}  V_{cb}^* C_i|$, calculated in the
+%  nonresonant regions of $D^+ \to \pi^+ \mu^+ \mu^-$ in the low lepton
+%  invariant mass region ($q^2 \in [0.0625,0.276]\,{\rm GeV}^2$), denoted by ${I}$,
+%  in the high invariant mass region ($q^2 \in
+%  [1.56,4.00] {\rm GeV}^2$), denoted by ${II}$, and from the upper
+%  bound $BR (D^0 \to \mu^+ \mu^-) < 7.6 \times 10^{-9}$~\cite{Aaij:2013cza}.
+%  The last row gives the maximal value for the case where $\tilde
+%  C_9= \pm\tilde C_{10}$. All the quoted bounds have been derived for real
+%  $C_{i}$. The bounds for $\tilde C_i$ apply also to the chiraly
+%  flipped coefficients $\tilde C_j^\prime$.}
+%\label{tab:BR}
+%\begin{center}
+%\begin{tabular}{||c||r@{.}l|r@{.}l|r@{.}l||} 
+%\cline{2-7}
+%\multicolumn{1}{c||}{}&\multicolumn{6}{c||}{$|\tilde C_i|_\mathrm{max}$}\\
+%\cline{2-7}
+% \multicolumn{1}{c||}{}  & \multicolumn{2}{c|}{$BR(\pi \mu \mu)_{I}$} &  \multicolumn{2}{c|}{$BR(\pi \mu \mu)_{II}$} &   \multicolumn{2}{c||}{$BR(D^0\to \mu \mu)$} \\ 
+%\hline \hline
+%$\tilde C_7$ & \hspace{0.8cm} 2&4 \hspace{0.8cm} & \hspace{0.8cm} 1&6 \hspace{0.8cm} & \multicolumn{2}{c||}{-} \\
+%$\tilde C_9$ & 2&1 & 1&3 & \multicolumn{2}{c||}{-}  \\
+%$\tilde C_{10}$ & 1&4  & 0&92 & \hspace{.7cm}0&63\\
+%$\tilde C_S$ & 4&5 & 0&38& 0&049\\
+%$\tilde C_P$ & 3&6 & 0&37 & 0&049\\
+%$\tilde C_T$ & 4&1 & 0&76& \multicolumn{2}{c||}{-}  \\
+%$\tilde C_{T5}$ & 4&4& 0&74 & \multicolumn{2}{c||}{-}  \\
+%$\tilde C_9= \pm \tilde C_{10}$ & 1&3& 0&81&  0&63\\
+% \hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+The above bounds allow for appreciable  NP contributions. An example are leptoquark mediators \cite{Dorsner:2016wpm}, which are well motivated as the NP explanations of  
+%are possible  of NP mediators \cite{Dorsner:2016wpm} which are rather successful in explaining 
+the $B$-meson anomalies, see, e.g., \cite{Buttazzo:2017ixm}.
+Refs. \cite{deBoer:2015boa} and \cite{Fajfer:2015mia} showed that leptoquark exchanges do not affect much 
+%it was found that the impact of leptoquarks is rather insignificant in the case of 
+the branching ratios, but can lead to CP asymmetries in $D\to \pi l^+ l^-$ and $D_s \to K l^+ l^-$  of a few percent \cite{Fajfer:2012nr,deBoer:2015boa}. Namely, such CP asymmetries are 
+%give effects of the order few percent if the case of  
+%\td{can we be more concrete? give one example or cite somebody for an example?}
+defined close to the $\phi$  resonance that couples to the lepton pair and they  can be generated by imaginary parts of the $C_{7}$ Wilson coefficients in the effective Lagrangian  for $c \to  u l^+l^−$ processes. 
+In the case of any NP scenario one cannot consider any charm rare decays without considering bounds from the $D^0- \bar D^0 $ oscillation as pointed out in \cite{Golowich:2009ii}. In some particular NP scenarios, bounds on NP are stronger if from  the $D^0- \bar D^0 $ oscillation. 
+ In addition, if the NP is realized by the left-handed doublets of the weak isospin, then NP present in $B$ physics also inevitably appears in charm physics, accompanied with the appropriate CKM matrix elements.  
+
+
+
+\subsection{Inputs for $B$ physics}
+If discovered, the presence of direct CP violation in $D$ decays can
+affect the extraction of the CKM angle $\gamma$ from the
+``tree-level'' decays $B \to DK$~\cite{Gronau:1990ra, Gronau:1991dp,
+  Atwood:1996ci, Giri:2003ty}. If one includes the $B \to D \pi$
+modes, the effect can be of order one~\cite{Martone:2012nj}. One of
+the advantages of obtaining $\gamma$ from tree decays is that all
+hadronic parameters can be fit from data. This remains essentially
+true even if direct CPV is present in the decays of the final-state
+$D$ mesons~\cite{Martone:2012nj, Wang:2012ie, Bhattacharya:2013vc}, as
+long as one includes all direct CP asymmetries in the fit -- there are
+still more observables than parameters in the fit. However, one can
+show that there remains an ambiguity: A shift in the angle $\gamma$
+can be compensated by a corresponding, unobservable shift in the
+contributing strong phases. This shift symmetry can be broken by
+assuming the absence of CPV in one of the $D$ decay modes (for
+instance, in the SM this is the case for CF and DCS decay
+modes). Alternatively, one could consider ratios of $B \to f_D K$ and
+$B \to f_D \pi$ modes where the strong phase
+cancels~\cite{LHCb-CONF-2012-032}, or use information on the relative
+strong phases, e.g., by measuring entangled decays at $D$
+factories~\cite{Martone:2012nj}.
+
+
+
+%\td{SF will also write something}
+
+\input{section3/experimental}
+
+%\subsection{Combined th/exp perspective on charm mixing/CPV global fits and charm as %input to $B$ physics}
+%\td{missing}
+
+\end{document}
