@@ -74,6 +74,170 @@ The SM branching fraction for this region would be around $2 \times 10^{-10}$,
 implying a first observation would be possible with Run 3 and certainly with Run 4 data, 
 while extremely tight limits could already be determined with Run 2. 
 
+\subsubsubsection{ATLAS/CMS}
+
+HL-LHC will offer a compelling opportunity to extend the ATLAS and CMS  $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ studies to the expected integrated high luminosity.
+\par\noindent
+Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low pT dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to 2 \mu$ analysis
+\par\noindent
+Fig.~\ref{fig:CMSMass} shows the CMS reconstructed $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ invariant in the barrel (left) and forward region. 
+Fig.~\ref{Fig:ATLASMAss} shows the $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$
+
+The present ATLAS projections are extrapolated from the ATLAS Run I analysis \cite{ATLASRun1}*
+(ATLAS plots included in tarball circulated)
+
+The present projections are extrapolated from the ATLAS Run 1 result \cite{Aaboud:2016ire}. Assumptions include the training of a multivariate classifier capable of similar background rejection and signal purities and an analysis selection with comparable pile-up immunity as Run 1.
+The study takes into account the scaling of B production cross-section and integrated luminosity relative to Run 1, and explores different triggering scenarios corresponding to different dimuon transverse momentum thresholds:
+($p_T^{\mu_1}$,$p_T^{\mu_2}$): $(6 \,\text{GeV},6 \,\text{GeV})$, $(6 \, \text{GeV},10 \,\text{GeV})$ and $(10 \,\text{GeV},10 \,\text{GeV})$.
+
+Depending on these dimuon thresholds, three working points are obtained from detector simulations. These are expressed in terms of signal and background statistics relative to Run 1: x15 (conservative), x60 (intermediate) and x75 (high-yield).
+An unbinned maximum-likelihood fit is applied to datasets generated in the assumptions discussed above, in order to produce 68.3\%, 95.5\% and 99.7\% likelihood contours.
+For each level, contours are calculated for statistical-only and statistical+systematic uncertainties. The Run 1 analysis parametrizes two classes of systematic uncertainties: the
+ones coming from external inputs (e.g. the $f_s/f_d$ ratio and
+the $B^+\to J/\psi [\to\mu\mu]K^\pm$ branching ratio) and those depending on internal analysis effects (invariant mass fit shapes, efficiencies, etc.).
+The latter category is parameterized as a function of the signal yields where dependencies are found to be significant.\\
+This study extrapolates the same systematic uncertainties including the same signal yield parameterization found in the Run 1 studies. As for the external sources of systematic uncertainties, it is plausible to expect that these will be reduced with other measurements and could optimistically scale for the most part like
+statistical uncertainties. This study however conservatively assumes their values to be those used in the Run 1 analysis.
+
+Figures~\ref{fig:HLLHCextrapolation_x15}, \ref{fig:HLLHCextrapolation_x60} and \ref{fig:HLLHCextrapolation_x75} summarise the contours derived in these assumptions,
+in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane. Table~\ref{BMuMUTable} provides the estimated statistical and statistical+systematic uncertainties on the two branching ratios expected for the extrapolations discussed.
+
+\begin{table}
+  \centering
+  \caption{Uncertainty on $\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ and $\cal{B}$$(B^0 \to \mu^+ \mu^-)$ as reported
+    by the fitting procedure applied to  the toy simulations. The results are centered on the SM theoretical prediction~\cite{Bobeth}.
+    For each extrapolation performed, statistical and statistical+systematic uncertainties are reported in units of $10^{-10}$.
+    The table reports a sufficient number of significant digits to highlight the difference between statistical+systematics and
+    systematics-only uncertainties.
+  }
+  \label{BMuMuTable}
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{ l c c c c }
+    \hline
+    & \multicolumn{2}{c}{$\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ } & \multicolumn{2}{c}{$\cal{B}$$(B^0 \to \mu^+ \mu^-)$} \\
+    & stat $[10^{-10}]$ & stat + syst $[10^{-10}]$ & stat $[10^{-10}]$ & stat + syst $[10^{-10}]$ \\
+    \hline
+    Run 2 & 7.0 & 8.3 & 1.42 & 1.43\\
+    HL-LHC: Conservative  & 3.2 & 5.5 & 0.53 & 0.54\\
+    HL-LHC: Intermediate  & 1.9 & 4.7 & 0.30 & 0.31\\
+    HL-LHC: High-yield  & 1.8 & 4.6 & 0.27 & 0.28\\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+\begin{figure}[ht]
+  \centering                                                                                                                                                        \includegraphics[width=1\textwidth]{ATLAS/BMuMu/plot_preliminary_x15.pdf}
+  \caption{Comparison of 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the
+    working point at $\times 15$ Run 1 statistics. This corresponds to the 'conservative' HL-LHC extrapolation, based on yield
+    projections for the $(10 \text{GeV},10 \text{GeV})$ dimuon trigger.
+    Red contours do not include the systematic uncertainties, which are then included
+    in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
+  \label{fig:HLLHCextrapolation_x15}
+\end{figure}
+
+
+\begin{figure}[ht]
+  \centering
+\
+                                                                                                                                                        \includegraphics[width=1\textwidth]{ATLAS/BMuMu/plot_preliminary_x60.pdf}
+  \caption{Comparison of 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the
+    working point at $\times 60$ Run 1 statistics. This corresponds to the 'intermediate' HL-LHC extrapolation, based on yield
+    projections for the $(6 \text{GeV},10 \text{GeV})$ dimuon trigger.
+    Red contours do not include the systematic uncertainties, which are then included
+    in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
+  \label{fig:HLLHCextrapolation_x60}
+\end{figure}
+
+The current CMS projection, compared to the previous Run-I analysis \cite{CMSRun1},  includes a more advanced UML fit and an improved muon identification algorithm. 
+The impact of a PU scenario of 200 interactions was found not to have strong impact on the isolation variable distributions. The signal-to-background ratio (S/B), which depends on momentum resolution, is best in the barrel region and degrades  if one or both muons are detected in the forward region. Therefore, the analysis is performed in two different regions defined by the pseudorapidity of the most forward muon   $|\eta_f|$, defined  as $|\eta_f|  < 0.7$ and  0.7 < $|\eta_f|  <1.4$.
+Fig.~\ref{fig:CMSMass}  shows the invariant mass distributions with the fit projection overlayed, corresponding to an
+integrated luminosity of 3000 fb$^{-1}$ for the two $\eta_f|$ regions.
+
+   \begin{figure}[htbp]
+   \begin{center}
+    \includegraphics[width=0.5\textwidth]{proj_toy_bin_2016GHs01_0_0.pdf}
+     \includegraphics[width=0.5\textwidth]{proj_toy_bin_2016GHs01_1_0.pdf}
+       \caption{invariant mass distributions with the fit projection overlayed, corresponding to an
+integrated luminosity of 3000 fb$^{-1}$. 
+    The left plot shows the central barrel region, $\eta| $< 0.7 and the right plot is for to 0.7< $\eta|$ < 1.4.}
+     \label{fig:b2mumass}\end{center}\end{figure}\setlength{\extrarowheight}{4pt}     
+
+
+An unbinned maximum likelihood fit to the dimuon invariant mass distribution is performed to determine the $\mathrm{B^0_s} \to \mu ^+ \mu^-$ effective 
+lifetime. Based on the fitting results, a projection along the proper decay time distribution for the $B^0_s$ signal events is built with the 
+sPlot technique [ref for sPlot and FTR-18-013]. The model used in the lifetime fit is based on an exponential function, convoluted with a Gaussian
+function which describes the expected decay time resolution.
+The major sources of systematic uncertainties, listed in Table~\ref{tab:b2musys}, are from external physics parameters 
+(e.g. fu/ fs ratio and SM branching fractions of  $\mathrm{B}\to  \mu^+ \mu^-$  and B$^+ \to   \mathrm{J}/\psi K^+$ ) and those depending on internal 
+analysis effects (e.g. individual signal and background yields, efficiencies, etc.) 
+
+The uncertainty on the muon identification(ID) efficiency ratio is determined by the difference of data and MC efficiency ratio 
+from $\mathrm{B^+ \to  J}/\psi K^+$ and $\mathrm{B^0_s \to J}/\psi \phi$ is assumed to diminish to 1 \% 
+for the Phase-II case.  In this study, it is expected that the dimuon trigger for the signal and normalization channels will 
+remain the same 
+The major systematics shown in Table~\ref{tab:b2msys} are implemented in the PDFs as nuisance parameters.The external input to UML, the value of 
+$f_u/f_s$ relative uncertainty is currently 5.8\%: This uncertainty is assumed to be 3.5 \%, which is dominated by systematic uncertainties 
+from form-factor ratios and branching fraction measurements.
+
+The systematic uncertainty on the normalization yield enters the branching fraction directly. We determine this uncertainty from the yield 
+difference between the results of the unconstrained $\mathrm{B+}$ and fit the J/$\psi$ mass-constrained invariant mass distribution.
+The Belle II collaboration is expected to be able to improve this measurement to 1,4 \%.
+The uncertainty due to the peaking and semileptonic backgrounds is currently dominated by the uncertainty on the hadron misidentification probability.
+To determine the systematic uncertainty on the muon misidentification probability for pion, kaons and protons, we calculate the bin-averaged 
+misidentification probability for data and MC simulation. From these values and their uncertainties we calculate the error-weighted average and
+its uncertainty. The relative uncertainty of this average is used as systematic uncertainty.
+We assume the uncertainty on hadron misID to be 10\%.
+As a result of this, the relative uncertainties on the yield of peaking and semileptonic background are 20 \% and 15 \% respectively, during Run 2.
+As a reasonable assumption, these two uncertainties are expected to reduce by a factor of 2 and to be 10 \% and 7.5 \% respectively for the Phase II
+scenario.
+
+The selection efficiency depends on the $\mathrm{B^0_s}$ effective lifetime.and its uncertainty assumed to be 2\% during Phase II era.
+The systematic uncertainty for the determination of the $\mathrm{B^0_s} \to \mu^+\mu^-$ effective lifetime will be limited by the knowledge 
+of the trigger efficiency as a funztion of the $\mathrm{B^0_s}$ decay time.
+We expect that this uncertainty can be well measured with the $\mathrm{B^+} \to J/\psi K^+$ decay using simila triggers ( except for the dimuon mass
+range).
+The trigger efficiency is estimated by the difference between the dimuon triggers for signal and for j/$\psi$ which is assumed to dimish to 1.5 \% 
+Other sources of systematics (acceptance, selection, etc) have been studied and the related uncertainties halved: the sensitoivity for 
+the significance of the $\mathrm{B^0}$ observation ans its branching fraction is not significantly affected whereas there is a 1 \% improvement 
+on the sensitivity for the $\mathrm{B^0_s}$ branching fraction. 
+The quadratic sum of these uncertainties is 3\% 
+
+
+\begin{table}
+\centering
+\caption{Systematic uncertainties for Phase II  scenario.}
+\label{tab:b2musys}
+\begin{tabular}{cc}\hline
+Source & Uncertainty \\ \hline Muon ID efficiency ratio & 1\% \\ 
+$\mathrm{B^+}$ normalization yield & 1,4\% \\
+Peaking background yield & 10\% \\ 
+Semileptonic background yield & 7,5\% \\
+fs/fu ratio & 3.5\% \\Effective lifetime & 2\% \\
+Trigger efficiency & 1,5\%\\\hline
+\end{tabular}\end{table}
+
+The sensitivities of the measurement for the $\mathrm{B^0_s}$ effective lifetime and branching fractions of the rare decays 
+$\mathrm{B^0_s}$ and $\mathrm{B^0}$ to dimuons are reported in Table~\ref{tab:b2musensitivity} 
+The total relative uncertainties on the branching fractions of the $\mathrm{B^0_s }\to \mu^+\mu^-$ and $\mathrm{B^0} \to \mu^+\mu^-$ include 
+both systematic and statistical uncertainties, while the unceratinty on the $\mathrm{B^0_s}$ effective lifetime is statistical only.
+
+
+\begin{table}[!htb]
+\begin{center}
+\caption{Estimated analysis sensitivity for different integrated luminosities. 
+Columns in the table, from left to right: the total integrated luminosity, the number of reconstructed $\mathrm{B^0_s}$ and $\mathrm{B^0}$  
+mesons, the total uncertainties on the bsmm and bdmm branching fractions, the range of the significance of $\mathrm{B^0}$ 
+observation(the range indicates the $\pm 1 \sigma$ of the distribution of significance) and the statistical uncertainty on the 
+bsm effective lifetime. All results are based on the Phase II  detector configuration except for the first row.} 
+\label{tab:b2musensitivity}
+\begin{tabular}{l|l|l|l|l|l|l} $\mathcal{L}$ (fb$^{-1}$) & $N(B_s)$ & $N(B^0)$ & $\delta\mathcal{B}(B_s\to\mu\mu)$ & 
+$\delta\mathcal{B}(B^0\to\mu\mu)$ & $\sigma(B^0\to\mu\mu)$ & $\delta[\tau(B_s)]$\\ \hline
+300 & 205 & 21 & 12\% & 46\% & $1.2-3.3\sigma$ &
+ 0.15 \\ 3000 & 2048 & 215 & 7\% & 16\% & $6.0-8.3\sigma$ & 0.05 \\
+\end{tabular}\end{center}\end{table}
+
+
 \subsubsection{Measurements of $b\to sll$ from LHCb/ATLAS/CMS}
 
 In order to estimate our sensitivity to BSM effects in $b\to sll$ decays, a number of benchmark NP scenarios are considered (see Table~\ref{tab:penguins:NPscenarios}). 
