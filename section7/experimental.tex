@@ -81,12 +81,9 @@ HL-LHC will offer a compelling opportunity to extend the ATLAS and CMS  $B^0_s \
 Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low pT dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to 2 \mu$ analysis
 \par\noindent
 Fig.~\ref{fig:CMSMass} shows the CMS reconstructed $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ invariant in the barrel (left) and forward region. 
-Fig.~\ref{Fig:ATLASMAss} shows the $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$
+Fig.~\ref{fig:ATLASMAss} shows the $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$
 
-The present ATLAS projections are extrapolated from the ATLAS Run I analysis \cite{ATLASRun1}*
-(ATLAS plots included in tarball circulated)
-
-The present projections are extrapolated from the ATLAS Run 1 result \cite{Aaboud:2016ire}. Assumptions include the training of a multivariate classifier capable of similar background rejection and signal purities and an analysis selection with comparable pile-up immunity as Run 1.
+The present ATLAS projections are extrapolated from the ATLAS Run I analysis \cite{Aaboud:2016ire}. Assumptions include the training of a multivariate classifier capable of similar background rejection and signal purities and an analysis selection with comparable pile-up immunity as Run 1.
 The study takes into account the scaling of B production cross-section and integrated luminosity relative to Run 1, and explores different triggering scenarios corresponding to different dimuon transverse momentum thresholds:
 ($p_T^{\mu_1}$,$p_T^{\mu_2}$): $(6 \,\text{GeV},6 \,\text{GeV})$, $(6 \, \text{GeV},10 \,\text{GeV})$ and $(10 \,\text{GeV},10 \,\text{GeV})$.
 
@@ -168,6 +165,17 @@ An unbinned maximum likelihood fit to the dimuon invariant mass distribution is 
 lifetime. Based on the fitting results, a projection along the proper decay time distribution for the $B^0_s$ signal events is built with the 
 sPlot technique [ref for sPlot and FTR-18-013]. The model used in the lifetime fit is based on an exponential function, convoluted with a Gaussian
 function which describes the expected decay time resolution.
+
+Fig~\ref{fig:lifetime} shows the $\mathrm{B^0_s}$ decay time distribution with the fit projection superimposed.
+The effective lifetime from the fit is 1.61 $\pm$ 0.05 ps.
+
+   \begin{figure}[htbp]
+   \begin{center}
+    \includegraphics
+    [width=0.5\textwidth]{\main/section7/figures/CMS_tau_splot_toy_bs.pdf}
+       \caption{The binned maximum likelihood fit to the decay time distribution for the Phase-II scenario}
+     \label{fig:lifetime}\end{center}\end{figure}\setlength{\extrarowheight}{4pt}     
+
 The major sources of systematic uncertainties, listed in Table~\ref{tab:b2musys}, are from external physics parameters 
 (e.g. fu/ fs ratio and SM branching fractions of  $\mathrm{B}\to  \mu^+ \mu^-$  and B$^+ \to   \mathrm{J}/\psi K^+$ ) and those depending on internal 
 analysis effects (e.g. individual signal and background yields, efficiencies, etc.) 
