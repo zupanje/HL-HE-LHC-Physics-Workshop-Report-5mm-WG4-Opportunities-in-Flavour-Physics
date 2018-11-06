@@ -1,5 +1,5 @@
 \subsection{Experimental perspective (including interplay with Belle II)}
-\subsubsection{Measurements of $b\to ll$ from LHCb/ATLAS/CMS}
+\subsubsection{Measurements of $b\to ll$ from LHCb}%/ATLAS/CMS}
 
 In 2017 LHCb measured~\cite{LHCb-PAPER-2017-001} ${\cal B}(\decay{\Bs}{\mumu})=\left(3.0\pm 0.6^{+0.3}_{-0.2}\right)\times 10^{-9}$ and ${\cal B}(\decay{\Bd}{\mumu})=\left(1.5^{+1.2 +0.2}_{-1.0 -0.1}\right) \times 10^{-10}$ using data collected in $pp$ collisions corresponding to a total integrated luminosity of 4.4\invfb (Fig.~\ref{fig:btomumu}, left). Both measurements are compatible with the SM predictions but statistically limited. 
 
@@ -74,14 +74,19 @@ The SM branching fraction for this region would be around $2 \times 10^{-10}$,
 implying a first observation would be possible with Run 3 and certainly with Run 4 data, 
 while extremely tight limits could already be determined with Run 2. 
 
-\subsubsubsection{ATLAS/CMS}
+\subsubsection{ATLAS and CMS}
 
 HL-LHC will offer a compelling opportunity to extend the ATLAS and CMS  $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ studies to the expected integrated high luminosity.
 \par\noindent
-Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low pT dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to 2 \mu$ analysis
+Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low $p_T$ dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to 2 \mu$ analysis
 \par\noindent
 Fig.~\ref{fig:CMSMass} shows the CMS reconstructed $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ invariant in the barrel (left) and forward region. 
-Fig.~\ref{fig:ATLASMAss} shows the $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$
+Fig.~\ref{fig:ATLASMass} compares the ATLAS $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$ with the current (Run~2) and upgraded tracking detector (ITk).
+ \begin{figure}[htbp]
+   \begin{center}
+    \includegraphics[width=0.5\textwidth]{\main/section7/figures/ATLASmass.pdf}
+       \caption{Comparison of the ATLAS invariant mass spectra for simulated $B^0_s \to \mu^+\mu^-$ events with the current (Run~2) and upgraded (ITk) detectors. A vertical line at the $B_d$ mass value is drawn to visualize the $B_s$-$B_d$ signals separation.}
+     \label{fig:ATLASMass}\end{center}\end{figure}\setlength{\extrarowheight}{4pt}     
 
 The present ATLAS projections are extrapolated from the ATLAS Run I analysis \cite{Aaboud:2016ire}. Assumptions include the training of a multivariate classifier capable of similar background rejection and signal purities and an analysis selection with comparable pile-up immunity as Run 1.
 The study takes into account the scaling of B production cross-section and integrated luminosity relative to Run 1, and explores different triggering scenarios corresponding to different dimuon transverse momentum thresholds:
@@ -101,8 +106,7 @@ in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane
 
 \begin{table}
   \centering
-  \caption{Uncertainty on $\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ and $\cal{B}$$(B^0 \to \mu^+ \mu^-)$ as reported
-    by the fitting procedure applied to  the toy simulations. The results are centered on the SM theoretical prediction~\cite{Bobeth}.
+  \caption{Projected ATLAS uncertainty on $\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ and $\cal{B}$$(B^0 \to \mu^+ \mu^-)$. The results are centered on the SM theoretical prediction~\cite{Bobeth}.
     For each extrapolation performed, statistical and statistical+systematic uncertainties are reported in units of $10^{-10}$.
     The table reports a sufficient number of significant digits to highlight the difference between statistical+systematics and
     systematics-only uncertainties.
@@ -114,7 +118,7 @@ in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane
     & \multicolumn{2}{c}{$\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ } & \multicolumn{2}{c}{$\cal{B}$$(B^0 \to \mu^+ \mu^-)$} \\
     & stat $[10^{-10}]$ & stat + syst $[10^{-10}]$ & stat $[10^{-10}]$ & stat + syst $[10^{-10}]$ \\
     \hline
-    Run 2 & 7.0 & 8.3 & 1.42 & 1.43\\
+    % Run 2 & 7.0 & 8.3 & 1.42 & 1.43\\
     HL-LHC: Conservative  & 3.2 & 5.5 & 0.53 & 0.54\\
     HL-LHC: Intermediate  & 1.9 & 4.7 & 0.30 & 0.31\\
     HL-LHC: High-yield  & 1.8 & 4.6 & 0.27 & 0.28\\
@@ -123,28 +127,37 @@ in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane
 \end{table}
 
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
   \centering  
-  \includegraphics[width=1\textwidth]{\main/section7/figures/plot_preliminary_x15.pdf}
-  \caption{Comparison of 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the
-    working point at $\times 15$ Run 1 statistics. This corresponds to the 'conservative' HL-LHC extrapolation, based on yield
-    projections for the $(10 \text{GeV},10 \text{GeV})$ dimuon trigger.
+  \includegraphics[width=0.6\textwidth]{\main/section7/figures/plot_preliminary_x15.pdf}
+  \includegraphics[width=0.6\textwidth]{\main/section7/figures/plot_preliminary_x60.pdf}
+  \includegraphics[width=0.6\textwidth]{\main/section7/figures/plot_preliminary_x75.pdf}
+  \caption{ATLAS projected 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the 'conservative' (top), 'intermediate' (middle) and 'high-yield' HL-LHC extrapolations.
     Red contours do not include the systematic uncertainties, which are then included
     in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
   \label{fig:HLLHCextrapolation_x15}
 \end{figure}
 
 
-\begin{figure}[ht]
-  \centering
-\includegraphics[width=1\textwidth]{\main/section7/figures/plot_preliminary_x60.pdf}
-  \caption{Comparison of 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the
-    working point at $\times 60$ Run 1 statistics. This corresponds to the 'intermediate' HL-LHC extrapolation, based on yield
-    projections for the $(6 \text{GeV},10 \text{GeV})$ dimuon trigger.
-    Red contours do not include the systematic uncertainties, which are then included
-    in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
-  \label{fig:HLLHCextrapolation_x60}
-\end{figure}
+%\begin{figure}[htbp]
+%  \centering
+%\includegraphics[width=1\textwidth]{\main/section7/figures/plot_preliminary_x60.pdf}
+%  \caption{ATLAS projected 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the 'intermediate' HL-LHC extrapolation, based on yield
+%    projections for the $(6 \text{GeV},10 \text{GeV})$ dimuon trigger.
+%    Red contours do not include the systematic uncertainties, which are then included
+%    in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
+%  \label{fig:HLLHCextrapolation_x60}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=1\textwidth]{\main/section7/figures/plot_preliminary_x75.pdf}
+%  \caption{ATLAS projected 68.3\% (solid), 95.5\% (dashed) and 99.7\% (dotted) confidence level profiled likelihood ratio contours for the 'high-yield' HL-LHC extrapolation, based on yield
+%    projections for the $(6 \text{GeV},6 \text{GeV})$ dimuon trigger.
+%    Red contours do not include the systematic uncertainties, which are then included
+%    in the blue ellipsoids. The black point shows the SM theoretical prediction and its uncertainty \cite{Bobeth}.}
+%  \label{fig:HLLHCextrapolation_x75}
+%\end{figure}
 
 The current CMS projection, compared to the previous Run-I analysis \cite{CMSRun1},  includes a more advanced UML fit and an improved muon identification algorithm. 
 The impact of a PU scenario of 200 interactions was found not to have strong impact on the isolation variable distributions. The signal-to-background ratio (S/B), which depends on momentum resolution, is best in the barrel region and degrades  if one or both muons are detected in the forward region. Therefore, the analysis is performed in two different regions defined by the pseudorapidity of the most forward muon   $|\eta_f|$, defined  as $|\eta_f|  < 0.7$ and  0.7 < $|\eta_f|  <1.4$.
@@ -153,8 +166,8 @@ integrated luminosity of 3000 fb$^{-1}$ for the two $\eta_f|$ regions.
 
  \begin{figure}[htbp]
    \begin{center}
-    \includegraphics[width=0.5\textwidth]{\main/section7/figures/CMS_mass_barrel.pdf}
-     \includegraphics[width=0.5\textwidth]{\main/section7/figures/CMS_mass_forward.pdf}
+    \includegraphics[width=0.45\textwidth]{\main/section7/figures/CMS_mass_barrel.pdf}
+     \includegraphics[width=0.45\textwidth]{\main/section7/figures/CMS_mass_forward.pdf}
        \caption{Invariant mass distributions with the fit projection overlayed, corresponding to an
 integrated luminosity of 3000 fb$^{-1}$. 
     The left plot shows the central barrel region, $\eta| $< 0.7 and the right plot is for to 0.7< $\eta|$ < 1.4.}
