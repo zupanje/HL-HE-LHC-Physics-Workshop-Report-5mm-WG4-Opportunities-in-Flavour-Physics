@@ -203,7 +203,7 @@ The expected sensitivity is shown in Fig.~\ref{4body_gamma_projection}. An addit
 
 Other multibody \D decays are under development with reciprocal charm-system measurements underway: a $\Bpm \to D[\to4\pi] \Kpm$ analysis can build on the \D-system knowledge gathered in Ref.~\cite{Harnew:2017tlp}; an ADS analysis of $\Bpm \to D[\to\KS K\pi] \Kpm$ decays has been demonstrated with Run 1~\cite{LHCb-PAPER-2013-068}; and work on $\Bpm \to D[\to KK\pi\pi] \Kpm$ decays is envisaged.
 
-\begin{figure}[h]
+\begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{section2/figures/4body_gamma_projection.pdf}
     \captionof{figure}{Projected sensitivity of a $\Bpm \to D[\to\pi K\pi\pi] \Kpm$ decays. 
@@ -336,7 +336,7 @@ The evaluation of these uncertainties is based on the study of control modes, an
 
 \subsubsection{Gamma combination and impact of external inputs}
 
-\begin{figure}[!htb]
+\begin{figure}[t]
 \centering
 \includegraphics[scale=0.5]{section2/figures/comb_projection.pdf}
   \caption{\small Projected sensitivity for the LHCb $\gamma$ combination with the currently used strategies and the world average using projections from \belletwo in addition.}
@@ -470,7 +470,7 @@ prediction at the $10^{-3}$ level.
 \centering
 
 \begin{tabular}{lcc}
-\hline
+\hline\hline
 Sample ($\mathcal{L}$) & $\delta a^s_{\rm sl}/10^{-4}$ & $\delta a^d_{\rm sl}/10^{-4}$ \\
 \hline
 Run 1 (3 \invfb)~\cite{LHCb-PAPER-2016-013,LHCb-PAPER-2014-053} & $33$  & $36$\\
@@ -478,7 +478,7 @@ Run 1-3 (23 \invfb) &  $10$ &  $8$ \\
 Run 1-5 (300 \invfb) &  $3$ &  $2$ \\
 \hline
 Current theory~\cite{Lenz:2006hd,Artuso:2015swg} & $0.03$ & $0.6$\\
-\hline
+\hline\hline
 \end{tabular}
 
 \end{table}
@@ -523,8 +523,10 @@ Thanks to an upgraded inner detector, simulations show an improved decay time re
 Figure~\ref{jpsiphiSensitivity:Mass} shows how this resolution - plotted as a function of the B meson transverse momentum - compares with the Run 1 and Run 2 detectors performance.
 
 \begin{figure}[hb]
-\includegraphics[width=\textwidth]{section2/figures/c_01_time_BpT_SF_PerCandRMS.pdf}
-\caption{Dependence of the proper decay time resolution of the Bs0 meson of the signal $B_s\to J/\psi\phi$ decay on the B meson $p_T$. Per-candidate resolutions corrected for scale-factors are shown, comparing the performance in Run 1, Run 2 and upgrade HL-LHC MC simulations. All samples use 6 GeV muon $p_T$ cuts.}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{section2/figures/c_01_time_BpT_SF_PerCandRMS.pdf}
+\end{center}
+\caption{Dependence of the proper decay time resolution of the $B_s^0$ meson of the signal $B_s\to J/\psi\phi$ decay on the B meson $p_T$. Per-candidate resolutions corrected for scale-factors are shown, comparing the performance in Run 1, Run 2 and upgrade HL-LHC MC simulations. All samples use 6 GeV muon $p_T$ cuts.}
 \label{jpsiphiSensitivity:Mass}
 \end{figure}
 
@@ -532,9 +534,12 @@ This sensitivity study is based on the extrapolation of the atlas 2012 analysis 
 
 Table \ref{jpsiphitable} summarises the expected sensitivities, compared to the atlas Run 1 measurements and extrapolations to Run 2 statistics. Figure \ref{jpsiphiSensitivity:Contour} summarises the projected contours in the $\Delta \Gamma_s$ vs $\varphi_s$ plane for the different scenarios presented.
 
-\begin{table}[hb]
+\begin{table}[t]
+\caption{Summary of the ATLAS $B_s\to J/\psi\phi$ performance at the HL-LHC compared with the Run 1 measurements and projections. Numbers in parenthesis are predictions.}
+\label{jpsiphitable}
 \center
-\begin{tabular}{l|cccccc}
+\begin{tabular}{lcccccc}
+\hline\hline
 Period & $L_{int}$ [fb$^{-1}$]  & $N_{sig}$ & $\epsilon D^2$ & $\sigma\left(t\right)$ [ps] & $\delta_{\phi_s}^{stat}$ [rad] & $\delta \Gamma_s$ [ps] \\
 \hline
 2011 & 4.9 & 22700 & 1.45 & 0.1 & 0.25 (0.22) & \\
@@ -544,9 +549,8 @@ Period & $L_{int}$ [fb$^{-1}$]  & $N_{sig}$ & $\epsilon D^2$ & $\sigma\left(t\ri
 HL-LHC $\mu 6\mu 6$     & 3000 & $9.7\cdot 10^6$ & 1.5 & 0.05 & (0.004) & (0.0011)\\
 HL-LHC $\mu 10\mu 6$   & 3000 & $5.9\cdot 10^6$ & 1.5 & 0.04 & (0.005) & (0.0014)\\
 HL-LHC $\mu 10\mu 10$ & 3000 & $1.7\cdot 10^6$ & 1.5 & 0.04 & (0.009) & (0.003)\\
+\hline\hline
 \end{tabular}
-\caption{Summary of the ATLAS $B_s\to J/\psi\phi$ performance at the HL-LHC compared with the Run 1 measurements and projections. Numbers in parenthesis are predictions.}
-\label{jpsiphitable}
 \end{table}
 
 \begin{figure}
