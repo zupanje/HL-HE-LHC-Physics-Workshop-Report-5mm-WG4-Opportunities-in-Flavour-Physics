@@ -1119,6 +1119,18 @@ FUNCTION {unpublished}
   fin.entry
 }
 
+FUNCTION {lhcbreport}
+{ output.bibitem
+  format.collaboration output
+  format.authors "author" output.check
+  format.title "title" output.check
+  blank.sep
+  format.lhcbid output.nonnull
+  new.block
+  note output
+  fin.entry
+}
+
 FUNCTION {default.type} { misc }
 
 MACRO {jan} {"Jan."}
