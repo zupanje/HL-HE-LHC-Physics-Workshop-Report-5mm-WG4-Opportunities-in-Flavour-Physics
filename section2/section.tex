@@ -70,9 +70,9 @@
 {\bf Author(s): Luca Silvestrini, J\'er\^ome Charles, Marco Ciuchini, Vincenzo Vagnoni, S\'ebastien Descotes-Genon, Olivier Deschamps}\\
 (25 pages, TH:EXP= 50\%:50\%)
 
-\subsection{Structure of the CKM matrix and statistical approaches}
+\subsection{Structure of the CKM matrix}
 
-\subsubsection{The CKM parameters}
+%\subsubsection{The CKM parameters}
 % S. Descotes-Genon
 
 In the Standard Model (SM), the weak charged-current transitions mix quarks of different generations, which is encoded in the
@@ -166,60 +166,10 @@ $\rho+i\eta=\big(\bar\rho+i\bar\eta\big)\big(1-\lambda^2/2+O(\lambda^4)\big)$, w
 \label{fig:UTtriangle}
 \end{figure} 
 
-\subsubsection{Statistical approaches}
-
-Due to its economical structure in terms of only four parameters and
-its consequences for \CP violation, the CKM matrix can be
-determined through many different quark transitions. These
-correspond to $\Delta F = 1$ decays or $\Delta F=2$ processes
-related to neutral-meson mixing.
-Extracting information on these parameters from data is a challenge for both experimentalists and theorists, since the SM depends on a large set of parameters which are not predicted within its framework, and must be determined experimentally. An additional difficulty stems from the presence of the strong interaction binding quarks into hadrons, which is responsible for most of the theoretical uncertainties discussed when determining the CKM matrix parameters. 
-
-The CKMfitter group aims at this goal by combining a large set of constraints from flavour physics, using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic:
-\begin{equation}
-\chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p)),
-\end{equation}
-where $\vec {\cal O}_{th}(\vec p)$ represent the theoretical value of the observables for the N fixed parameters $\vec p$. The absolute minimum value of the test statistic, $\chi^2_{\rm min}$, quantifies the agreement of the data with the theoretical model, once converted into a $p$-value (interpreting $\chi^2(\vec{p})$
-as a random variable distributed according to a $\chi^2$ law, generally relying on Wilks' theorem). It is also possible to perform the metrology of specific parameters of the model~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt}. Indeed, if we consider the $\vec\mu$ hadronic parameters as ``nuisance parameters'', 
-we can define the test statistic from the \chisq difference:
-\begin{equation}\label{eq:deltachisq}
- \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}
-\end{equation}
-where  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom:
-\begin{equation}\label{eq:prob}
- p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,.
-\end{equation}
-Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with a $p$-value larger than $1-$CL.
-
-In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (i.e., systematics not scaling with the size of the sample) which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, corresponding to a constraint to $\chi^2$ restricting the value of the theoretical parameter/observable to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
-
-	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions that is quite intuitive and easy to implement.
-	
-	Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
-	\begin{equation}
-	f(\bar\rho,\bar\eta|\mathbf{\hat{c}}, \mathbf{\hat{f}}) \propto 
-	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta)\,,
-	\label{eq:flat_inf}
-	\end{equation}
-	where $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, whose theoretical expressions are given by the functions $c_j(\bar\rho,\bar\eta;\mathbf{x})$ depending on $\bar\rho$, $\bar\eta$, and a set of additional experimental and theoretical parameters ${\mathbf x}=\{x_1,x_2,\dots,x_N\}$, $f_0(\bar\rho,\bar\eta)$ is the prior p.d.f.\ for $\bar\rho$ and $\bar\eta$, assumed to be flat on the UT plane, and the effective overall likelihood ${\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})$ is
-    \begin{equation}
-    {\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})
-    = \int 
-    \prod_{j=1,{\rm M}}f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})
-    \prod_{i=1,{\rm N}}f_i(x_i)\, \mbox{d}{ x_i}\,.
-    \label{eq:lik_int}
-    \end{equation}
-	The p.d.f.\ $f_i=\{f_1,f_2,\dots,f_N\}$ are the prior distributions of the parameters, while  $f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})$ are the conditional probabilities of $\hat{c}_j$ given $\bar\rho$, $\bar\eta$, and $\mathbf{x}$, that in the Gaussian approximation become
-    \begin{equation}	
-	f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})=\frac{1}{\sqrt{2 \pi}\,\sigma(c_j)}
-	\exp\left[-\frac{(c_j(\bar\rho, \bar\eta; \mathbf{x})-
-		\hat{c}_j)^2}{2\,\sigma^2(c_j)}\right]\,.
-    \end{equation}
-    The integration in eq.(\ref{eq:lik_int}) is usually carried out using Monte Carlo methods. More details on the Bayesian approach of the UTfit collaboration can be found in ref.\cite{Ciuchini:2000de}.
     
 \subsection{Current status of the constraints}
 
-1/2 page for each constraint
+\td{1/2 page for each constraint}
 
 \subsubsection{$|V_{ud}|,|V_{us}|,|V_{cd}|,|V_{cs}|$}
 % S. Descotes-Genon
@@ -235,7 +185,7 @@ Another prominent constraint for $|V_{ud}|$ comes from the consideration of the 
 Tree-level semileptonic decays of beauty mesons and baryons allow for the extraction of $|V_{cb}|$ and $|V_{ub}|$. The current determination is dominated by the $B$-factories data on $B$ decays and by the measurement of $|V_{ub}|/|V_{cb}|$ from baryonic decays at LHCb. 
 
 For $B$ decays, both inclusive and exclusive semileptonic decays have been used to extract $|V_{cb}|$ and $|V_{ub}|$. The two approaches have different sources of theoretical uncertainties: inclusive analyses rely on quark-hadron duality, on the heavy quark expansion and, for $|V_{ub}|$, on additional modeling; exclusive analyses require the knowledge of the relevant form factors over the entire kinematic range, a very difficult task for lattice QCD. Currently, the HFLAV averages for inclusive and exclusive determinations of $|V_{cb}|$ and $|V_{ub}|$ disagree at the $3\sigma$ level.
-While recently the choice of the parameterization of the form factor dependence on the recoil for $B \to D^*$ decays has been shown to have a large impact on the extracted value of $|V_{cb}|$ \cite{Abdesselam:2018nnh,Bigi:2017njr,Grinstein:2017nlq}, the situation is still rather unclear. \textit{A discussion of UTfit skeptical combination will follow.}
+While recently the choice of the parameterization of the form factor dependence on the recoil for $B \to D^*$ decays has been shown to have a large impact on the extracted value of $|V_{cb}|$ \cite{Abdesselam:2018nnh,Bigi:2017njr,Grinstein:2017nlq}, the situation is still rather unclear. \td{A discussion of UTfit skeptical combination will follow.}
 
 \subsubsection{$|V_{cb}|$} 
 \td{UTfit}
@@ -456,10 +406,62 @@ $V_{tq}^*V_{tq'},V_{cq}^*V_{cq'}$
 \end{center}
 \end{table}
 
-\subsubsection{Combined contraints on the CKM parameters}\label{sec:2018ckmfit}
+\subsection{Combined contraints on the CKM parameters}\label{sec:2018ckmfit}
+
+\subsubsection{Statistical approaches}
+
+Due to its economical structure in terms of only four parameters and
+its consequences for \CP violation, the CKM matrix can be
+determined through many different quark transitions. These
+correspond to $\Delta F = 1$ decays or $\Delta F=2$ processes
+related to neutral-meson mixing.
+Extracting information on these parameters from data is a challenge for both experimentalists and theorists. First of all the SM depends on a large set of parameters, masses, mixings, and couplings, which are not predicted within the SM, but rather need to be determined experimentally. An additional difficulty relates to the presence of strong interaction, binding quarks into hadrons. This is responsible for most of the theoretical uncertainties in the determinations of CKM matrix elements. 
+
+The CKMfitter group aims at the goal  of determining the CKM parameters by combining a large set of constraints from flavour physics, using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic:
+\begin{equation}
+\chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p)),
+\end{equation}
+where $\vec {\cal O}_{th}(\vec p)$ represent the theoretical value of the observables for the N fixed parameters $\vec p$. The absolute minimum value of the test statistic, $\chi^2_{\rm min}$, quantifies the agreement of the data with the theoretical model, once converted into a $p$-value (interpreting $\chi^2(\vec{p})$
+as a random variable distributed according to a $\chi^2$ law, generally relying on Wilks' theorem). It is also possible to perform the metrology of specific parameters of the model~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt}. Indeed, if we consider the $\vec\mu$ hadronic parameters as ``nuisance parameters'', 
+we can define the test statistic from the \chisq difference:
+\begin{equation}\label{eq:deltachisq}
+ \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}
+\end{equation}
+where  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom:
+\begin{equation}\label{eq:prob}
+ p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,.
+\end{equation}
+Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with a $p$-value larger than $1-$CL.
+
+In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (i.e., systematics not scaling with the size of the sample) which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, corresponding to a constraint to $\chi^2$ restricting the value of the theoretical parameter/observable to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
+
+	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions that is quite intuitive and easy to implement.
+	
+	Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
+	\begin{equation}
+	f(\bar\rho,\bar\eta|\mathbf{\hat{c}}, \mathbf{\hat{f}}) \propto 
+	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta)\,,
+	\label{eq:flat_inf}
+	\end{equation}
+	where $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, whose theoretical expressions are given by the functions $c_j(\bar\rho,\bar\eta;\mathbf{x})$ depending on $\bar\rho$, $\bar\eta$, and a set of additional experimental and theoretical parameters ${\mathbf x}=\{x_1,x_2,\dots,x_N\}$, $f_0(\bar\rho,\bar\eta)$ is the prior p.d.f.\ for $\bar\rho$ and $\bar\eta$, assumed to be flat on the UT plane, and the effective overall likelihood ${\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})$ is
+    \begin{equation}
+    {\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})
+    = \int 
+    \prod_{j=1,{\rm M}}f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})
+    \prod_{i=1,{\rm N}}f_i(x_i)\, \mbox{d}{ x_i}\,.
+    \label{eq:lik_int}
+    \end{equation}
+	The p.d.f.\ $f_i=\{f_1,f_2,\dots,f_N\}$ are the prior distributions of the parameters, while  $f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})$ are the conditional probabilities of $\hat{c}_j$ given $\bar\rho$, $\bar\eta$, and $\mathbf{x}$, that in the Gaussian approximation become
+    \begin{equation}	
+	f_j(\hat{c}_j\,|\,\bar\rho,\bar\eta,\mathbf{x})=\frac{1}{\sqrt{2 \pi}\,\sigma(c_j)}
+	\exp\left[-\frac{(c_j(\bar\rho, \bar\eta; \mathbf{x})-
+		\hat{c}_j)^2}{2\,\sigma^2(c_j)}\right]\,.
+    \end{equation}
+    The integration in eq.(\ref{eq:lik_int}) is usually carried out using Monte Carlo methods. More details on the Bayesian approach of the UTfit collaboration can be found in ref.\cite{Ciuchini:2000de}.
+
 
 % S. Descotes-Genon
-
+\subsubsection{Current combined constraints on the CKM parameters}
 In the CKMfitter case,
 Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used to assess the
 validity of the Kobayashi--Maskawa mechanism for CP violation and
