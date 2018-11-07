@@ -76,16 +76,15 @@
 % S. Descotes-Genon
 
 In the Standard Model (SM), the weak charged-current transitions mix quarks of different generations, which is encoded in the
-unitary Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}, as 
-described by the Lagrangian
+unitary Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}. The relevant part of the SM 
+ Lagrangian is
 \begin{equation}\label{eq:chargeInteraction}
 \mathcal{L}_{W^{\pm}} = -
 \frac{g}{\sqrt{2}}\overline{U}_{i}\gamma^{\mu}\frac{1-\gamma^5}{2}\left(V_{\rm
 CKM} \right )_{ij} D_{j} W_{\mu}^{+} + \mathrm{h.c.},
 \end{equation}
-where $g$ is the electroweak coupling constant and $V_{\rm
-CKM}=V_{u{L}}^\dag V_{d{L}}$ is the unitary CKM matrix:
-
+where $g$ is the electroweak coupling constant, and $V_{\rm
+CKM}=V_{u{L}}^\dag V_{d{L}}$ the unitary CKM matrix,
 \begin{equation}\label{eq:ckmMatrix}
 V_{\rm CKM} = \left(
 \begin{array}{lcr}
@@ -95,15 +94,16 @@ V_{td} & V_{ts} & V_{tb}
 \end{array}
 \right).
 \end{equation}
-The CKM matrix induces flavour-changing transitions inside and between generations in the charged sector at tree level ($W^\pm$ interaction). By contrast, there are no flavour-changing transitions in the neutral sector at tree level.
+The CKM matrix induces flavour-changing transitions inside and between generations in the charged currents at tree level ($W^\pm$ interaction). By contrast, there are no flavour-changing transitions in the neutral currents at tree level.
 
-A strong hierarchy is observed experimentally among the CKM matrix elements: transitions within the same generation are characterised by $V_{\rm CKM}$ elements of $\mathcal{O}(1)$, whereas
+Experimentally, a strong hierarchy is observed  among the CKM matrix elements: transitions within the same generation are characterised by $V_{\rm CKM}$ elements of $\mathcal{O}(1)$, whereas
 there is a suppression of $\mathcal{O}(10^{-1})$
 between 1st and 2nd generations, $\mathcal{O}(10^{-2})$ between 2nd and 3rd and $\mathcal{O}(10^{-3})$ between 1st and 3rd.
 This hierarchy is expressed by defining the four phase convention--independent
-quantities:
+quantities,
 \begin{equation}
-\lambda^2§=\frac{|V_{us}|^2}{|V_{ud}|^2+|V_{us}|^2}\,, \qquad
+\label{eq:lambda:A:rhoeta}
+\lambda^2 =\frac{|V_{us}|^2}{|V_{ud}|^2+|V_{us}|^2}\,, \qquad
 A^2\lambda^4=\frac{|V_{cb}|^2}{|V_{ud}|^2+|V_{us}|^2}\,, \qquad
 \bar\rho+i\bar\eta=-\frac{V_{ud}V_{ub}^*}{V_{cd}V^*_{cb}}\,.
 \end{equation}
@@ -112,9 +112,8 @@ The CKM matrix can be expanded in powers of the small parameter
 $\lambda$ (which corresponds to the Cabibbo parameter $\sin{\theta_{C}}\simeq
 0.22$)~\cite{Wolfenstein:1983yz} by exploiting the unitarity of
 $V_\text{CKM}$. This
-expansion yields the following parametrisation up to
-$\mathcal{O}\left(\lambda^{6}\right)$:
-
+expansion yields the following parametrisation, valid up to
+$\mathcal{O}\big(\lambda^{6}\big)$,
 \begin{equation}\label{eq:ckmWolfenstein4}
 V_{\rm CKM} = \left(
 \begin{array}{ccc}
@@ -126,7 +125,7 @@ A\lambda^{3}\left[1-(\bar\rho +i\bar\eta)\right]~ &
 \end{array}
 \right).
 \end{equation}
-The CKM matrix is complex; thus, \CP violation is allowed if
+The CKM matrix is complex if $\bar\eta\ne 0$.  Furthermore, \CP is violated,  if
 and only if $\bar\eta$ differs from zero. 
 %To lowest order, the Jarlskog parameter measuring \CP violation in a convention-independent manner~\cite{Jarlskog:1985ht},
 %\begin{equation}\label{eq:jarlskogValueWolf}
@@ -137,24 +136,32 @@ and only if $\bar\eta$ differs from zero.
 %\end{equation}
 %is directly related to the \CP-violating parameter $\bar\eta$.
 
-Orthogonality relations can be written involving two columns or two rows of the unitary CKM matrix, and they can be represented as triangles in the complex plane. It is standard to focus on the orthogonality relation:
+Orthogonality relations can be written involving two columns or two rows of the unitary CKM matrix, and they can be represented as triangles in the complex plane. It is standard to focus on the following orthogonality relation,
 \begin{equation}
-{V_{ud}V_{ub}^{*}}+{V_{cd}V_{cb}^{*}}+{V_{td}V_{tb}^{*}} = 0
+\label{eq:orthog:rel}
+{V_{ud}V_{ub}^{*}}+{V_{cd}V_{cb}^{*}}+{V_{td}V_{tb}^{*}} = 0,
 \end{equation}
-as these products of CKMs are involved in $B$-meson weak decays are of similar $O(\lambda^3)$ size. As show in Fig.~\ref{fig:UTtriangle}, the unitarity triangle corresponds to a rescaling by $V_{cd}V_{cb}^{*}$ of this orthogonality relation, with apices located at $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\eta)$. The angles of the
-UT are related to the CKM matrix elements as
+as the three products of CKM elements 
+%are involved in $B$-meson weak decays 
+are of similar size, $O(\lambda^3)$. Fig.~\ref{fig:UTtriangle} shows the standard unitarity triangle (UT), obtained from \eqref{eq:orthog:rel} by rescaling with $V_{cd}V_{cb}^{*}$ the three terms in the orthogonality relation. 
+%with apices located at $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\eta)$. 
+The apex of the UT is at $(\bar\rho,\bar\eta)$, while 
+the angles 
+%of the
+%UT 
+are related to the CKM matrix elements as
 \begin{equation}
 \alpha= \arg{\left(-\frac{V_{td}V_{tb}^{*}}{V_{ud}V_{ub}^{*}}\right)}, \qquad
 \beta=\arg{\left(-\frac{V_{cd}V_{cb}^{*}}{V_{td}V_{tb}^{*}}\right)}, \qquad
-\gamma\equiv\arg{\left(-\frac{V_{ud}V_{ub}^{*}}{V_{cd}V_{cb}^{*}}\right)}
+\gamma\equiv\arg{\left(-\frac{V_{ud}V_{ub}^{*}}{V_{cd}V_{cb}^{*}}\right)}.
 \end{equation}
 
 \begin{figure}[!tb]
 \centering
 \includegraphics[width=0.6\linewidth]{section2/figures/ckmTriangle.pdf} 
 \caption{
-The Unitarity triangle. The parameters $\rho$ and $\eta$ are defined as 
-$\rho+i\eta=(1-\lambda^2/2+O(\lambda^4)(\bar\rho+i\bar\eta)$.
+The standard CKM unitarity triangle. The parameters $\rho$ and $\eta$ are defined as 
+$\rho+i\eta=\big(\bar\rho+i\bar\eta\big)\big(1-\lambda^2/2+O(\lambda^4)\big)$, with $\bar \rho, \bar \eta$ defined in \eqref{eq:lambda:A:rhoeta}.
 }
 \label{fig:UTtriangle}
 \end{figure} 
