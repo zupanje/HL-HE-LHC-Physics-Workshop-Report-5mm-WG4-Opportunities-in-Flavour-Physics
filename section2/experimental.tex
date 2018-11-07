@@ -560,6 +560,83 @@ HL-LHC $\mu 10\mu 10$ & 3000 & $1.7\cdot 10^6$ & 1.5 & 0.04 & (0.009) & (0.003)\
 \label{jpsiphiSensitivity:Contour}
 \end{figure}
 
+\subsubsubsection{CMS projection for $\Bs\to\jpsi\phi$}
+
+The CP violating phase $\phi_S$ has been previously measured in CMS \cite{CMSPhis} from a fit of the angular distribution of the $B^0_s \to J/\psi \phi(1020)$ decay products 
+as a function of the  $B^0_s$ decay time, with $J/\psi$ decaying to $\mu^+\mu^-$ and $\phi(1020)$ decaying to $K^+K^-$.
+
+The expected $\phi_S$ sensitivity at the end of the HL-LHC data-taking (Phase 2) is estimated in the same decay channel.
+It mainly depends on the collected statistics, the flavour-tagging power, and proper-decay-time resolution.
+The study  is performed using fully simulated signal events and toy Monte Carlo experiments for some assumed realistic tagging scenarios.
+
+In order to check the expected detector performance in Phase-2, a dedicated Monte Carlo sample has been generated at $\sqrt s$ = 14 TeV 
+with realistic alignment conditions for the start-up of Phase-2.
+The better hit resolution of the Phase-2 tracker and the reduction of the material budget result in a significant improvement of the 
+momentum and transverse impact parameter resolution with respect to the Phase-1 detector. This, in turn, results in a substantial 
+improvement of the mass and lifetime resolutions, as well as more precise kinematic measurements, such as angular distributions. 
+In addition, the extended pseudorapidity 
+coverage ( up to $|\eta|$ = 4) will increase the acceptance for track reconstruction.
+The Phase-2 L1 and HLT trigger performances are expected to be comparable to those used in 2012 analysis. No difference in signal over background ratio with 
+respect to Phase-1 is assumed in this analysis.
+
+Fig~\ref{} shows the expected Phase-2 performances in the $B^0_s$ mass resolution and proper decay length uncertainty. 
+( fig to be included here!)
+
+The expected $\phi_S$ sensitivity \cite{fom} can be inferred from equation~\ref{eq:FOM}
+\begin{equation}
+%\begin{center}
+S \propto \sqrt{\frac{\epsilon D^2 N_s} {2}} \sqrt{\frac{N_S}{N_S+N_{BG}}}e^{-\frac{\sigma_t^2 \Delta m^2_S}{2}},
+%\end{center}
+\label{eq:FOM}
+\end{equation}
+
+where $\epsilon$ is the flavour-tagging efficiency, D=1-2$\omega$ is the dilution factor, $\omega$ the wrong tag fraction, $N_S$ and 
+$N_{BG}$ are the signal and background yields respectively, and $\sigma_t$ is the proper time resolution.
+ 
+According to Eq.~\ref{eq:FOM},the main ingredients in the $\phi_S$ sensitivity estimation  are the signal yield, the tagging performance ( efficiency $\epsilon$ and 
+mistag $\omega $, and the proper decay length uncertainty. 
+In this study the expected sensitivity for Phase-2 is estimated using the toy Monte Carlo pseudo-experiment technique.A set of toy 
+MC samples has been generated using the signal model $B^0_s \to J/\psi \phi(1020)$ decay as in the previous CMS analysis \cite{CMSPhis}.
+The proper decay length uncertainty is estimated using a MC signal sample with a GEANT 4 simulation of the Phase-2 detector response.
+The flavour tagging dilution is included in the toy MC production by fixing it to its effective value. The generated toy MC samples 
+are fitted using the same signal model used for their production. The resulting $\phi_S$ uncertainty distribution is fitted with a Landau 
+function and the most probable value is used to determine its sensitivity for the set of toy MC samples.
+
+The CMS Run I analysis was driven by the statistical uncertainty. 
+The main sources of systematic uncertainty on the CP-violating phase $\phi_S$ were the angular efficiency, fitting model, 
+and kaon pT re-weighting. The angular efficiency systematic uncertainty was mainly due to the limited MC sample statistics.This 
+can be reduced by increasing the MC statistics and using data-driven techniques to estimate/calibrate the angular efficiency. The latter 
+method can also reduce the poor knowledge of the detector, which is the origin of the kaon pT re-weighting uncertainty. The fitting model 
+uncertainties can be easily reduced by optimizing the choice of fitted parameters, and improving the likelihood fit function.
+
+The flavour tagging systematic uncertainty was 3 mrad in the CMS previous analysis. It mainly depends on the statistics of the 
+calibration channel used to tune the flavour tagging tool. Given the high statistics expected for Phase-2, it can be reasonably 
+assumed that this systematic source can be reduced to 1 mrad. The total $\phi_S$  uncertainty will still be statistically limited at the 
+end of Phase-2.
+
+Three different realistic scenarios have been tested:  $a$ where the flavour tagging performance is based on muons and 
+jet-charge, $b$ where a muon and electron  flavour tagging is used ( as in the CMS Run1 analysis), and $c$ where 
+a well performing flavour tagging based on leptons, jet-charge, and same side jet-charge/kaon tagging is assumed.
+The performances of the three scenarios are summarizied in Table~\ref{tab:tagging}.
+
+
+\begin{table}
+\begin{center}
+\caption{Statistical uncertainty of $\phi_S$ obtained through MC pseudo-experiments in three different flavour tagging scenarios}
+\label{tab:tagging}
+\begin{tabular}{lcccc}\hline
+scenario & $\epsilon$ [\%] & $\omega$[\%] & $\epsilon D^2$ [\%] & $\Delta \phi_S$ [mrad] \\ \hline
+$a$        & 32  	           & 39.4         &   1.4               & 5.6   		  \\
+$b$        & 8  	           & 30.2         &   1.2               & 5.8   		  \\
+$c$        & 33  	           & 36.4         &   2.4               & 4.6   		  \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Assuming the new tagging power to be in the range 1.2-2.4 \% and a total of 9 million $B^0_s$ candidates in 3000 fb$^{-1}$, the 
+CMS $\phi_S$ statistical uncertainty is expected to be 5-6 mrad.
+
 \subsubsubsection{LHCb projections for $b\to c\bar{c}s$ transitions}
 
 Having multiple independent precision measurements is important since it allows not simply to improve the precision of the average, but also to perform a powerful consistency check of the SM.
