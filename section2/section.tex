@@ -182,10 +182,19 @@ Accurate constraints on the first and second rows and columns of the CKM matrix 
 
 Tree-level semileptonic decays of beauty mesons and baryons allow for the extraction of $|V_{cb}|$ and $|V_{ub}|$. The current determination is dominated by the $B$-factories data on $B$ decays and by the measurement of $|V_{ub}|/|V_{cb}|$ from baryonic decays at LHCb. For $B$ decays, both inclusive and exclusive semileptonic decays have been used to extract $|V_{cb}|$ and $|V_{ub}|$. The two approaches have different sources of theoretical uncertainties: inclusive analyses rely on quark-hadron duality, on the heavy quark expansion and, for $|V_{ub}|$, on additional modeling; exclusive analyses require the knowledge of the relevant form factors over the entire kinematic range, a very difficult task for lattice QCD. Currently, the HFLAV averages for inclusive and exclusive determinations of $|V_{cb}|$ and $|V_{ub}|$ disagree at the $3\sigma$ level.
 While recently the choice of the parameterization of the form factor dependence on the recoil for $B \to D^*$ decays has been shown to have a large impact on the extracted value of $|V_{cb}|$ \cite{Abdesselam:2018nnh,Bigi:2017njr,Grinstein:2017nlq}, the situation is still rather unclear. 
-%\td{A discussion of UTfit skeptical combination will follow.}
 
-%\subsubsection{$|V_{cb}|$} 
-%\td{UTfit}
+One can then assume that the uncertainty of each determination of $|V_{cb}|$ and $|V_{ub}|$ might have been underestimated, and perform a "skeptic combination" of all available data following the method of ref.~\cite{DAgostini:1999niu}, which is basically equivalent to the PDG prescription in one dimension and allows for a straightforward generalization to the two-dimensional case of $|V_{cb}|$ and $|V_{ub}|$. The result of this exercise is reported in Fig.~\ref{fig:UTfitvubvcb}, where in addition to the average we also plot the "indirect determination" obtained from all other observables in the SM. The numerical results of the skeptic average are $|V_{cb}| = 0.0405 \pm 0.0011$, $|V_{ub}| = 0.00374 \pm 0.00023$ with correlation $\rho = 0.09$.
+
+\begin{figure}[!tb]
+\centering
+\includegraphics[width=0.6\linewidth]{section2/figures/VubVcb_winter18.pdf} 
+\caption{
+Measurements of $|V_{cb}|$ and $|V_{ub}|$ from exclusive and inclusive $B$ decays (vertical and horizontal bands) and from \PMuNu and \LcMuNu (diagonal band), skeptical average and indirect determination of $|V_{cb}|$ and $|V_{ub}|$.
+}
+\label{fig:UTfitvubvcb}
+\end{figure} 
+
+It is reasonable to expect that progress on the lattice QCD determination of form factors in a larger kinematic range will allow Belle II to perform a much more parameterization-independent extraction of $V_{cb}$ from exclusive decays, hopefully reconciling it with the inclusive one. Also for $V_{ub}$, the much larger statistics should allow to get an insight on the origin of the discrepancy between inclusive and exclusive, and to provide a consistent determination of $V_ub$. 
 
 \subsubsection{Angle $\alpha$}
 
@@ -743,7 +752,7 @@ measurements of $\vert V_{ud}\vert$, $\vert V_{us}\vert$, $\vert
 V_{cb}\vert$, $\vert V_{ub}\vert$, $\gamma$ and $\alpha$ (allowing for
 NP contributions in penguins, but barring order-of-magnitude
 enhancements of electroweak penguins) to obtain the ``tree-level''
-determination of the UT shown in Fig.~\ref{fig:UTtree}. This allows us
+determination of the UT. This allows us
 to obtain the SM prediction for $K$, $B_{d}$ and $B_{s}$ mixing
 amplitudes; comparing the latter with the experimental results we can
 extract $C_{\varepsilon_K} = \varepsilon_K/\varepsilon_K^\mathrm{SM}$
@@ -761,6 +770,31 @@ getting rid of the solution in the third quadrant. We obtain the
 results in Tab.~\ref{tab:UTAGen} for the CKM and NP parameters. The
 corresponding two-dimensional distributions are shown in
 Fig.~\ref{fig:UTAGen}. 
+
+\begin{table}
+  \begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline 
+		 & $\bar{\rho}$ & $\bar{\eta}$ & $C_{\varepsilon_K}$ &  $C_{B_d}$ & $\phi_{B_d}[^\circ]$ & $C_{B_s}$ & $\phi_{B_s}[^\circ]$ \\ \hline
+		present & 0.030 & 0.028 & 0.12 & 0.11 & 1.8 & 0.09 & 0.89 \\ \hline
+		future  & 0.0047 & 0.0040 & 0.036 & 0.030 & 0.28 & 0.026 & 0.29\\ \hline
+	\end{tabular} 
+\end{center}
+\caption{Present and future uncertainties on CKM and NP parameters from the generalized UT analysis.} 
+\label{tab:UTAgen}
+\end{table}
+
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.45\linewidth]{section2/figures/phibd_cbd-np.pdf}
+\includegraphics[width=0.4\linewidth]{section2/figures/cbdvsphibd_fit1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/phibs_cbs-np.pdf}
+\includegraphics[width=0.4\linewidth]{section2/figures/cbsvsphibs_fit1.pdf} 
+\caption{Present (left) and future (right) constraints on NP contributions to $B_q$-$\bar{B}_q$ mixing.}
+\label{fig:UTAgen}
+\end{center}
+\end{figure}
 
 Combining the results of the generalized UT analysis with the
 constraints on CP violation in $D$ mixing from Sec. \textbf{refer to
@@ -826,6 +860,56 @@ structure one expects $F_i \sim L_i \sim 1$, so with this assumption
 we can convert the allowed regions for $C_i$ in the lower bounds on the
 NP scale $\Lambda$ reported in Table \ref{tab:DF2Cbounds} and in
 Fig. \ref{fig:DF2Lambda}.
+
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{@{}cccc}
+\hline\hline
+Parameter &~~ $95\%$ allowed range~~ &~~ Lower limit on $\Lambda$ (TeV)\\
+\hline \hline
+$\mathrm{Im} C_K^1$  & $[-3.4,7.0] \cdot 10^{-16}$  &  $37.9\cdot 10^{3}$  \\ 
+$\mathrm{Im} C_K^2$  & $[-7.7,3.8] \cdot 10^{-18}$  &  $359.8\cdot 10^{3}$ \\ 
+$\mathrm{Im} C_K^3$  & $[-5.2,10.4] \cdot 10^{-17}$  &  $98.2\cdot 10^{3}$ \\ 
+$\mathrm{Im} C_K^4$  & $[-8.0,16.0] \cdot 10^{-19}$  &  $789.5\cdot 10^{3}$ \\ 
+$\mathrm{Im} C_K^5$  & $[-1.6,3.2] \cdot 10^{-17}$  &  $176.0\cdot 10^{3}$ \\ 
+$\mathrm{Im} C_D^1$  & $[-1.4,1.4] \cdot 10^{-15}$  &  $27.1\cdot
+10^{3}$ \\
+$\mathrm{Im} C_D^2$  & $[-2.2,2.2] \cdot 10^{-16}$  &  $66.8\cdot
+10^{3}$  \\
+$\mathrm{Im} C_D^3$  & $[-3.3,3.3] \cdot 10^{-15}$  &  $17.4\cdot 10^{3}$   \\
+$\mathrm{Im} C_D^4$  & $[-5.5,5.5] \cdot 10^{-17}$  &  $134.5\cdot 10^{3}$ \\ 
+$\mathrm{Im} C_D^5$  & $[-6.6,6.5] \cdot 10^{-16}$  &  $39.0\cdot 10^{3}$  \\ 
+$|C_{B_d}^1|$  & $< 1.9\cdot 10^{-13}$  &  $2.3\cdot 10^{3}$  \\ 
+$|C_{B_d}^2|$  & $< 5.4\cdot 10^{-14}$  &  $4.3\cdot 10^{3}$  \\ 
+$|C_{B_d}^3|$  & $< 2.0\cdot 10^{-13}$  &  $2.2\cdot 10^{3}$  \\ 
+$|C_{B_d}^4|$  & $< 1.6\cdot 10^{-14}$  &  $7.9\cdot 10^{3}$  \\ 
+$|C_{B_d}^5|$  & $< 4.5\cdot 10^{-14}$  &  $4.7\cdot 10^{3}$  \\ 
+$\mathrm{Re} C_{B_s}^1$  & $[-4.6,5.9] \cdot 10^{-12}$  &  $411.7$   \\ 
+$\mathrm{Re} C_{B_s}^2$  & $[-1.6,1.3] \cdot 10^{-12}$  &  $782.5$   \\ 
+$\mathrm{Re} C_{B_s}^3$  & $[-4.7,6.0] \cdot 10^{-12}$  &  $408.2$   \\ 
+$\mathrm{Re} C_{B_s}^4$  & $[-3.9,5.0] \cdot 10^{-13}$  &  $1.4\cdot 10^{3}$  \\ 
+$\mathrm{Re} C_{B_s}^5$  & $[-1.1,1.4] \cdot 10^{-12}$  &  $842.2$  \\ 
+$\mathrm{Im} C_{B_s}^1$  & $[-2.0,2.0] \cdot 10^{-12}$  &  $705.7$  \\ 
+$\mathrm{Im} C_{B_s}^2$  & $[-5.5,5.5] \cdot 10^{-13}$  &  $1.3\cdot 10^{3}$  \\ 
+$\mathrm{Im} C_{B_s}^3$  & $[-2.1,2.0] \cdot 10^{-12}$  &  $696.7$  \\ 
+$\mathrm{Im} C_{B_s}^4$  & $[-1.7,1.7] \cdot 10^{-13}$  &  $2.4\cdot 10^{3}$   \\ 
+$\mathrm{Im} C_{B_s}^5$  & $[-4.8,4.8] \cdot 10^{-13}$  &  $1.4\cdot 10^{3}$  \\ 
+
+  \hline\hline
+\end{tabular}
+\caption{95\% probability ranges for the the Wilson coefficients in eq.~\ref{eq:defheff} and corresponding bounds on the NP scale. See the text for details.}
+\end{center}
+\label{tab:DF2Cbounds}
+\end{table}
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.6\linewidth]{section2/figures/df2-npscale-cernyb.pdf}
+\caption{Present (lighter) and future (darker) constraints on the NP scale from the UTfit NP analysis.}
+\label{fig:DF2Lambda}
+\end{center}
+\end{figure}
+
 
 \textbf{It would be nice to have a few lines of comparison with bounds
 from other sectors like EW or Higgs taken from other chapters of the
