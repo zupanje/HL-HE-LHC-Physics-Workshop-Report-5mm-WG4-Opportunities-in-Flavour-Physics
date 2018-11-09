@@ -273,9 +273,9 @@ A common approach is to determine $r_{D\pi}$ from the branching fraction of $\Bd
 \begin{equation}
 r_{D\pi}= \tan \theta_c  \frac{f_{D^+}}{f_{D_s}}\sqrt{\frac{\mathcal{B}(\Bd \to \Dsp \pim)}{\mathcal{B}(\Bd \to \Dm \pip)}}\,,
 \end{equation}
-where $\tan\theta_c$ is the tangent of the Cabibbo angle and  ${f_{D_s}}/{f_{D^+}}$ is the ratio of decay constants.
-Using the obtained value of $r_{D\pi}=0.0182\pm0.0012\pm0.0036$, where the second uncertainty accounts for possible nonfactorisable \grpsuthree-breaking effects~\cite{DeBruyn:2012jp}, the intervals $|\sin(2\beta + \gamma)|\in [0.77,1.00]$ and $\gamma\in [5,86]\degrees \cup [185,266]\degrees$ are obtained, at the 68\% confidence level. 
-The uncertainties on $r_{D\pi}$ and $\beta$ have negligible impact on these intervals, as the dominant uncertainties are from the $S_f$ and $S_{\bar{f}}$ measurement. 
+where $\tan\theta_c$ is the tangent of the Cabibbo angle and  ${f_{D^+}}/{f_{D_s}}$ is the ratio of decay constants.
+Using the resulting value of $r_{D\pi}=0.0182\pm0.0012\pm0.0036$, where the second uncertainty accounts for possible nonfactorisable \grpsuthree-breaking effects~\cite{DeBruyn:2012jp}, the intervals $|\sin(2\beta + \gamma)|\in [0.77,1.00]$ and $\gamma\in [5,86]\degrees \cup [185,266]\degrees$ are obtained, at the 68\% CL. 
+The uncertainties on $r_{D\pi}$ and $\beta$ have negligible impact on these intervals, as the dominant uncertainties are from the $S_f$ and $S_{\bar{f}}$ measurements. 
 
 The expected statistical sensitivities for the \CP violation parameters in $B^0_s \to D_s^\mp K^\pm$ and $B^0 \to D^\mp \pi^\pm$ decays are shown in Table~\ref{tab:Dh_expected_errors}.
 These are based on scaling of yields, and as such assume that the same detector performance as achieved in Run~I can be maintained.
@@ -384,7 +384,7 @@ The GGSZ modes are considered the \emph{golden modes} at \belletwo and drive the
 $1.5^\circ$ with a data sample of $50~{\rm ab}^{-1}$. This is comparable to the sensitivity that the \lhcb \g combination will
 achieve with a data sample
 corresponding to approximately $23\invfb$. Subsequently input from \belletwo will still contribute towards the world average by the end
-of \lhcb's \upgradeone but \lhcb will dominate \g measurements with \upgradetwo (300\invfb) contributing entirely towards a world average precision of
+of \lhcb's \upgradeone \td{keep?} but \lhcb will dominate \g measurements with \upgradetwo (300\invfb) contributing entirely towards a world average precision of
 $\sim0.35\degrees$.
 It should be emphasised that this projection includes only the currently used strategies, and does not include improvements from other approaches.
 A comparison between the projected uncertainties for \lhcb and the world average as a function of integrated luminosity is shown in Fig.~\ref{fig:42:proj}.
@@ -395,13 +395,13 @@ A comparison between the projected uncertainties for \lhcb and the world average
 \subsubsection{Determinations of $\Delta m_s$, $\Delta m_d$, and interplay with $b$-hadron lifetimes}
 
 The world-leading measurements of both $\Delta m_{\dquark}$ and $\Delta m_{\squark}$ are from LHCb~\cite{LHCb-PAPER-2015-031,LHCB-PAPER-2013-006}, and can be improved further assuming that good flavour tagging performance can be maintained.
-This will not only reduce systematic uncertainties in \CP-violation measurements but will also provide a strong constraint on the length of one side of the unitarity triangle, although progress here is mainly dependent on improvements in lattice QCD calculations. The decay-time-dependent angular analysis of $\Bs \to \jpsi\phi$ allows measurement of $\Delta \Gamma_{\squark}$ simultaneously with \CP-violation parameters. Therefore, improved knowledge of $\Delta \Gamma_{\squark}$ will be obtained together with measurements of $\phi_s^{c\bar{c}s}$. The LHCb precision is expected
+This will not only reduce systematic uncertainties in \CP-violation measurements but also provide a strong constraint on the length of one side of the unitarity triangle, although progress here is mainly dependent on improvements in lattice QCD calculations. The decay-time-dependent angular analysis of $\Bs \to \jpsi\phi$ allows measurement of $\Delta \Gamma_{\squark}$ simultaneously with \CP-violation parameters. Therefore, improved knowledge of $\Delta \Gamma_{\squark}$ will be obtained together with measurements of $\phi_s^{c\bar{c}s}$. The LHCb precision is expected
 to scale with the integrated luminosity, with no known systematic limitations even in the \upgradetwo period. A specific ATLAS projection can be found
-in Sec.~\ref{sec:atlasjpsiphi}.
+in Sec.~\ref{sec:atlasjpsiphi}.\td{missing}
 
-Width differences between types of \bquark\ hadron such as $\Gamma_s - \Gamma_d$ are also of interest.
-In addition to allow tests of the heavy-quark expansion framework used to make theoretical predictions of such quantities, their precise knowledge is important to control systematic uncertainties in measurements where a decay mode of one type of \bquark\ hadron is used as a control channel in studies of a decay of another.
-Detailed understanding of the acceptance is necessary for such measurements, which can be achieved using topologically similar final states (see, for example, Ref.~\cite{LHCB-PAPER-2014-003}).
+Width differences between different types of \bquark\ hadrons, such as $\Gamma_s - \Gamma_d$, are also of interest.
+They test heavy-quark expansion, used to make theoretical predictions. In addition, their precise knowledge is important to control systematic uncertainties in measurements where a decay mode of one type of \bquark\ hadron is used as a control channel in studies of a decay of another.
+Detailed understanding of acceptances is necessary for such measurements, which can be achieved using topologically similar final states (see, e.g., Ref.~\cite{LHCB-PAPER-2014-003}).
 These measurements are therefore expected to be significantly improved with LHCb \upgradetwo.
 
 \subsubsection{Semileptonic asymmetries and prospects for $\Delta \Gamma_d$}
@@ -412,17 +412,23 @@ Including the effect of an unknown production asymmetry, $a_p$, the time-depende
 \label{eq:5.3.2}
   A_{\rm sl}^{q}(t) \equiv \frac{N - \bar{N}}{N + \bar{N}} = \frac{a_{\rm sl}^{q}}{2} - \left[ a_{p} + \frac{a_{\rm sl}^{q}}{2} \right] \cdot \left[\frac{\cos \Delta M_q t }{\cosh \Delta \Gamma_q t /2}\right],
 \end{equation}
-where $N$ and $\bar{N}$ denote the number of observed decays to the $f$ and $\bar{f}$ final states, respectively.
+where $N$ and $\bar{N}$ denote the number of observed decays to $f$ and $\bar{f}$ final states, respectively.
 A decay-time-dependent fit can disentangle the $B_d^0-\bar{B}_d^0$ production asymmetry from $a_{\rm sl}^d$~\cite{LHCb-PAPER-2014-053}.
 In the $B_s^0$ case the {\em time integrated} asymmetry is employed~\cite{LHCb-PAPER-2016-013}.
 Owing to the large value of $\Delta M_s$ the term containing $a_p$ is suppressed to a calculable correction of a few $\times 10^{-4}$,
 after integrating over decay time.
-These approaches have been applied in the measurements with the Run 2 dataset that are listed in Table~\ref{tab:5.3.1}.
-These are already the world's best single measurements of these parameters.
-However these measurements are far from any uncertainty floor in the SM predictions, while being sensitive to a vast number of anomalous NP contributions to $\Gamma_{12}^{q}$ and $M_{12}^{q}$.
+These approaches have been applied in the measurements with the Run 2 dataset that are listed in Table~\ref{tab:5.3.1}, giving 
+%.
+%These are already 
+the world's best single measurements.
+% of these parameters.
+%However t
+These measurements are far from any uncertainty floor in the SM predictions, and are 
+%being 
+sensitive to a vast number of anomalous NP contributions to $\Gamma_{12}^{q}$ and $M_{12}^{q}$.
 
 The following briefly reviews the dominant sources of uncertainty on the current LHCb measurements, and considers strategies to 
-fully exploit the potential of the \upgradetwo.
+fully exploit the potential of the LHCb \upgradetwo.
 All uncertainties are as evaluated on $a_{sl}^{q}$ (\ie all sources of raw asymmetry, and their uncertainties, are scaled by  
 a factor of two as expected from Eq.~\ref{eq:5.3.2}).
 
@@ -432,7 +438,7 @@ The statistical uncertainty on $a^s_{\rm sl}$ straightforwardly extrapolates to 
 In the case of $a^d_{\rm sl}$ it should be noted that stringent fiducial cuts and weights were imposed on the signal sample
 to control certain tracking asymmetries that were not well known at the time. By the time of the subsequent $a^s_{\rm sl}$ measurement,
 a new method with $J/\psi \to \mu^+\mu^-$ decays had been developed, and others are in the pipeline. 
-A factor of two further increase in yields is therefore assumed,
+A further factor of two  increase in yields is therefore assumed,
 which extrapolates to an uncertainty of $1.1 \times 10^{-4}$.
 \item[Detection asymmetries:] The single largest contributor is the $K^-\pi^+$ asymmetry in $a^d_{\rm sl}$.
 This asymmetry was determined with a single method using $D^+$ 
@@ -441,12 +447,12 @@ with a precision of around $2.0 \times 10^{-3}$~\cite{LHCb-PAPER-2014-053}.
 Thanks to trigger improvements, a factor of two increase in the effective yield of the
 most limiting $\KS\pi^+$ final state~\cite{Davis:2310213,Davis:2284097} can be anticipated. 
 This will extrapolate to an uncertainty of $1.1 \times 10^{-4}$. 
-With improvements in the reconstruction of downstream tracks in the first HLT stage, we may also be able to exploit 
+With improvements in the reconstruction of downstream tracks in the first HLT \td{define} stage, we may also be able to exploit 
 $\KS\pi^+$ final states with $\KS$ decays downstream of the VELO.
 Further methods have since been proposed using partially reconstructed $D^{*+}$ decays and $D^0 \to K^-K^+$ decays.
 The partial reconstruction method will be greatly improved by the reduction of material before the first VELO measurement point.
 The systematic uncertainties in these approaches will be controlled by using ultra high statistics fast simulations to track the 
-kinematic dependencies in the asymmetries. We target an uncertainty of $1.0 \times 10^{-4}$ including systematic uncertainties.
+kinematic dependencies in the asymmetries. The target uncertainty is $1.0 \times 10^{-4}$, including systematic uncertainties.
 The equivalent $K^+K^-$ asymmetry in the $a^s_{\rm sl}$ measurement will be smaller and more precisely controlled.
 The $\mu^+\pi^-$ asymmetry will be controlled by a combination of $J/\psi \to \mu^+\mu^-$ decays, partially reconstructed $D^{*+}$ decays,
 $D^0 \to h^-h^+$ decays, and high statistics fast simulations. 
@@ -458,13 +464,13 @@ $D_q^- \mu^+$ corrected mass dimension. It is assumed that the background asymme
 assigning weights to one polarity~\cite{Vesterinen:1642153}. 
 We note that the choice of crossing angles should be carefully considered~\cite{Dufour:2304546}.
 While we do not account for them in the current estimation, we could consider using other $D^{+}_{q}$ decay modes to better align the detection asymmetries between $a_{\rm sl}^s$ and $a_{\rm sl}^d$.
-For example, $D^+ \to K^-K^+\pi^+$ and $D^+ \to \KS \pi^+$ decays can be used, taking advantage of possible improvements in the trigger efficiency for \KS decays in Upgrade II.
+For example, $D^+ \to K^-K^+\pi^+$ and $D^+ \to \KS \pi^+$ decays can be used, taking advantage of possible improvements in the trigger efficiency for \KS decays in LHCb Upgrade II.
 While the former decay is singly Cabibbo suppressed, its \CP asymmetry could be measured using promptly produced $D^+$ mesons.
 \end{description}
-In summary the Upgrade II dataset should allow both asymmetries to be measured to the level of a few parts in $10^{-4}$,
-as listed in Table~\ref{tab:5.3.1}, which will give unprecedented new physics sensitivity, and is still far from saturating the {\em current}
+In summary the LHCb Upgrade II dataset should allow both $a^s_{\rm sl}$ and $a^d_{\rm sl}$ asymmetries to be measured to the level of a few parts in $10^{-4}$,
+see Table~\ref{tab:5.3.1}. This will give unprecedented new physics sensitivity, and is still far from saturating the {\em current}
 theory uncertainties in the SM predictions.
-Figure~\ref{fig:5.3} shows the prospective \upgradetwo measurement, arbitrarily centred at a value that differs from the SM
+Figure~\ref{fig:5.3} shows the prospective LHCb \upgradetwo measurement, arbitrarily centred at a value that differs from the SM
 prediction at the $10^{-3}$ level. 
 
 \begin{table}\caption{\label{tab:5.3.1}Current theoretical and experimental determinations of the semileptonic asymmetries $a^d_{\rm sl}$ and $a^s_{\rm sl}$.}
@@ -491,15 +497,15 @@ Current theory~\cite{Lenz:2006hd,Artuso:2015swg} & $0.03$ & $0.6$\\
 Current and future landscape for the semileptonic asymmetries.
 The grey vertical band indicates the current \B-Factory average for $a_{\rm sl}^d$.
 The blue ellipse represents the current LHCb Run 1 measurements~\cite{LHCb-PAPER-2016-013,LHCb-PAPER-2014-053}.
-The red ellipse, which is arbitrarily centred, delineates the \upgradetwo projected precision.
-The black ellipse shows the SM prediction, the uncertainty of which is barely visible with these axes.
+The red ellipse, which is arbitrarily centred, delineates the LHCb \upgradetwo projected precision.
+The black ellipse shows the SM prediction, the uncertainty of which is barely visible.
+% with these axes.
 \label{fig:5.3}}
 \end{figure}
 
 
-The ratio $\Delta \Gamma_{\dquark}/\Gamma_{\dquark}$, is typically measured from the from the difference in effective lifetimes between $\Bd$ decays to flavour-specific, namely $\jpsi \Kstarz$, and \CP-eigenstate, namely $\jpsi \KS$, final states~\cite{Gershon:2010wx}. 
-Using $1\invfb$ of data, LHCb determined $\Delta \Gamma_{\dquark}/\Gamma_{\dquark} = -0.044\pm0.025\pm0.011$~\cite{LHCb-PAPER-2013-065} with this approach; ATLAS and CMS have also published competitive measurements~\cite{Aaboud:2016bro,Sirunyan:2017nbv}. 
-The expected statistical uncertainty for \upgradetwo, taking into account the larger centre-of-mass energy and the increase in luminosity, is $\sigma(\Delta \Gamma_{\dquark}/\Gamma_{\dquark}) \sim 0.001$.
+The ratio $\Delta \Gamma_{\dquark}/\Gamma_{\dquark}$, is typically measured  from the difference in effective lifetimes between $\Bd$ decays to final states that are flavour-specific, namely $\jpsi \Kstarz$, and \CP-eigenstates, namely $\jpsi \KS$~\cite{Gershon:2010wx}. With this approach LHCb determined $\Delta \Gamma_{\dquark}/\Gamma_{\dquark} = -0.044\pm0.025\pm0.011$ using $1\invfb$ of data~\cite{LHCb-PAPER-2013-065}. ATLAS and CMS published competitive measurements~\cite{Aaboud:2016bro,Sirunyan:2017nbv}. 
+The expected statistical uncertainty for LHCb \upgradetwo, taking into account the larger centre-of-mass energy and the increase in luminosity, is $\sigma(\Delta \Gamma_{\dquark}/\Gamma_{\dquark}) \sim 0.001$.
 This can be compared with the SM prediction $\Delta \Gamma^{\rm SM}_{\dquark}/\Gamma^{\rm SM}_{\dquark}=(0.00397 \pm 0.00090)$~\cite{Artuso:2015swg}. 
 Thus, if systematic uncertainties can be controlled sufficiently, it will be possible to measure a significantly non-zero value of $\Delta \Gamma_{\dquark}$ even if it is not enhanced above its SM prediction.
 
