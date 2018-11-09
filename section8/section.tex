@@ -61,12 +61,12 @@ Values of $r<10$ could be directly accessible at the (HL)LHC@13TeV, improving th
 The dominant $t \bar{t}$ background is mostly generated via gluon fusion, which is a charge symmetric process. There are subleading contributions from processes like $u \bar{u} \rightarrow t \bar{t}$ which are charge asymmetric but only at higher orders in QCD. This is the main reason the dominant $t \bar{t}$ background has a strongly suppressed charge asymmetry. At higher collision energies, the probability of finding energetic-enough gluons in the proton increases faster than that of valence quarks. Consequently the fraction of $t\bar t$ events from the quark-antiquark initial state is reduced~\cite{Khachatryan:2016ysn}.  This leads to a shrinking charge asymmetry with growing collision energy. %A further significant reduction in systematic uncertainties below our current estimate of $0.2 \%$ could allow the (HL)LHC eventually to probe values as low as $|V_{td}| \sim 0.06$ at $13$ TeV. 
 Unfortunately, the same happens to the signal, this time because at higher energies the asymmetry between $d$ and $\bar{d}$ partons inside the proton is reduced. Combined with the growing contribution of the (mostly charge symmetric) $t\bar t$ background to the denominator, the end effect is severely diminishing the end significance as observed at $27$\,TeV compared to 13\,TeV at comparable luminosities. 
 %On the other hand, at $7$ TeV the significance does increase and with $3000 fb^{-1}$, values of $r<10$ could be accesible with $3 \sigma$ and values of $r \sim 10$ with $5 \sigma$.
-\begin{figure}[h]
+\begin{figure}[t]
 \centering
-\includegraphics[width=0.4\textwidth]{section8/figs/contour_r-L.pdf}
-\hspace{3mm}
-\includegraphics[width=0.4\textwidth]{section8/figs/contour_r-L_27.pdf}
-\hspace{3mm}
+\includegraphics[width=0.45\textwidth]{section8/figs/contour_r-L.pdf}
+\hspace{7mm}
+\includegraphics[width=0.45\textwidth]{section8/figs/contour_r-L_27.pdf}
+%\hspace{3mm}
 \caption{Contour lines for the projected $2\sigma$, $3\sigma$ and $5\sigma$ upper bounds on $|V_{td}|$, parameterized as a function of $r\equiv|V_{td}/V_{td}^{\rm SM}|$ and the LHC luminosity. The $13$ TeV energy results are shown on the left hand side and $27$ TeV on the right. Dashed lines correspond to the estimation of the same analysis assuming a further reduction of the dominant $t\bar t$ background by half. See text for details.} 
 \label{figure}
 \end{figure}
@@ -95,10 +95,10 @@ U^\beta_1=\sum_{i,j\in \mathrm{jet}} z_T^i z_T^j\,(R_{ij})^\beta\ ,\ \ z_T^i\equ
 \end{align}
 where $R_{ij}^2=(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2$ and $\beta$ is a free real parameter for which quark/gluon discrimination is optimized at $\beta=0.2$. For more details on these observables in the context of the $q$-tagger we refer the reader to~Ref.\cite{thePaper}. The resulting performance of the $q$-tagger in simulated samples of $pp\to Zj$ for $j=s,b,c,g$ and $Z\to\mu\bar\mu$ in a realistic LHC environment at $13$\,TeV is presented in figure~\ref{figROC}, where we show the ROC curves for the $q$-tagger obtained by sliding the values of the cuts $z_{\mathrm{max}}$ (solid lines) or $U_1$ (dashed lines), independently. 
 \begin{figure}[t]
-  \vspace{-0.3cm}
+ % \vspace{-0.3cm}
 \begin{center}{
-\includegraphics[width=6cm]{section8/figs/quark-gluon_ROC.pdf}
-  \vspace{-0.3cm}
+\includegraphics[width=8cm]{section8/figs/quark-gluon_ROC.pdf}
+%  \vspace{-0.3cm}
 \caption{{ ROC curves for the two $q$-taggers}} \label{figROC}}
 \end{center}
 \end{figure}
@@ -109,15 +109,19 @@ A reference working point for the utilized taggers is shown in Table~\ref{tab:ef
 %\begin{table}[htbp!]
 \begin{table}[t!]
 \begin{center}
- \small{
+% \small
+ {
 %\renewcommand{\arraystretch}{1}
 \centering
-\footnotesize
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
-(t) type & Cuts &\  $\epsilon^{\mathrm t}_{q}$\ &\ $\epsilon^{\mathrm t}_{b}$\ &\ $\epsilon^{\mathrm t}_{c}$\ &\ $\epsilon^{\mathrm t}_{g}$\ \\ \hline\hline
+%\footnotesize
+\begin{tabular}{cccccccc}
+\hline\hline 
+(t) type & Cuts &\  $\epsilon^{\mathrm t}_{q}$\ &\ $\epsilon^{\mathrm t}_{b}$\ &\ $\epsilon^{\mathrm t}_{c}$\ &\ $\epsilon^{\mathrm t}_{g}$
+\\ 
+\hline
 $q$-tagger &$N_{\mathrm SV}=0$ \& $z_{\mathrm max}>0.3$    &  $0.18$ & $0.0031$ & $0.038$ & $ 0.049$ \\
-$b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0.64$ & $0.09$ & $0.016$ \\ \hline
+$b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0.64$ & $0.09$ & $0.016$ \\ 
+\hline\hline
 \end{tabular}
 }
 \end{center}
@@ -134,10 +138,10 @@ $b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0
 
 
 \begin{figure}[h!]
-  \vspace{-0.3cm}
+%  \vspace{-0.3cm}
 \begin{center}{
-\includegraphics[width=6cm]{section8/figs/LHC_Resolved_lep_tops.pdf} 
-\vspace{-0.3cm}
+\includegraphics[width=8cm]{section8/figs/LHC_Resolved_lep_tops.pdf} 
+%\vspace{-0.3cm}
 \caption{{Illustration of statistical limits on the ratio $\rho \simeq \sqrt{|V_{ts}|^2 + |V_{td}|^2}/|V_{tb}|$ from an analysis of Cabbibo-suppressed top decays in leptonic $t\bar t$ events at 13TeV LHC. See text for details.}} \label{fig:master}}
 \end{center}
 \end{figure}
@@ -172,21 +176,38 @@ Here we briefly discuss both the direct and indirect limits on the operators in 
 
 \subsubsection{Direct probes}
 %
+
 \begin{table}\label{tab:directWtb}
-\center\small
+\center
 \caption{$95\%$ CL constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels.}
 \vspace{.2cm}
-\begin{tabular}{l|ccc}
- &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-Re &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-3.9,\,3.2]$\\
-Im &$[-1.5,\,2.2]$ &$[-2.2,\,2.1]$ &$[-3.5,\,3.5]$
-\end{tabular} \hfill
-\begin{tabular}{l|ccc}
-$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-Re &\\
-Im &
+\begin{tabular}{lccclccc}
+\hline\hline
+Current &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$ & ~~~~$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
+Re$(\ldots)$ &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-3.9,\,3.2]$ & Re$(\ldots)$ &
+\\
+Im$(\ldots)$ &$[-1.5,\,2.2]$ &$[-2.2,\,2.1]$ &$[-3.5,\,3.5]$ & Im$(\ldots)$ &
+%\end{tabular} \hfill
+%\begin{tabular}{lccc}
+\\
+\hline\hline
 \end{tabular}
 \end{table}
+%\begin{table}\label{tab:directWtb}
+%\center\small
+%\caption{$95\%$ CL constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels.}
+%\vspace{.2cm}
+%\begin{tabular}{l|ccc}
+% &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
+%Re &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-3.9,\,3.2]$\\
+%Im &$[-1.5,\,2.2]$ &$[-2.2,\,2.1]$ &$[-3.5,\,3.5]$
+%\end{tabular} \hfill
+%\begin{tabular}{l|ccc}
+%$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
+%Re &\\
+%Im &
+%\end{tabular}
+%\end{table}
 %
 As mentioned above, the $Wtb$ interactions can be probed directly in single-top production and the $W$ boson helicity fractions in top decays. Furthermore, in the case of polarized top quarks, it is possible to construct additional observables that are sensitive to the $Wtb$ couplings, and in particular to their $T$-odd effects. Here we briefly discuss these observables and the resulting (projected) constraints.
 
