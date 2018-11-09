@@ -69,15 +69,20 @@
 \section{Testing the CKM unitarity}\label{sec:metro-CKM}
 {\bf Author(s): Luca Silvestrini, J\'er\^ome Charles, Marco Ciuchini, Vincenzo Vagnoni, S\'ebastien Descotes-Genon, Olivier Deschamps}\\
 (25 pages, TH:EXP= 50\%:50\%)
+In the Standard Model (SM), the weak charged-current transitions mix quarks of different generations, which is encoded in the
+unitary Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}.
+The SM does not predict the values of the weak flavour-couplings, and so all matrix elements must be measured experimentally.
+However, the unitary nature of the CKM matrix, and the assumptions of the SM, impose relations between the elements that are
+often expressed graphically in the complex plane as the so-called unitarity triangle.
+Overconstraining the apex of this unitarity triangle from tree- and loop-level quark mixing processes is therefore a powerful way to probe for virtual BSM effects at mass scales complementary or superior to those which can be directly searched for at the HL-LHC. As we shall see below, such indirect probes of BSM physics will not be limited by either experimental or theoretical systematics in the HL-LHC era.
 
 \subsection{Structure of the CKM matrix}
 
 %\subsubsection{The CKM parameters}
 % S. Descotes-Genon
 
-In the Standard Model (SM), the weak charged-current transitions mix quarks of different generations, which is encoded in the
-unitary Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}. The relevant part of the SM 
- Lagrangian is
+ The part of the SM 
+ Lagrangian which is relevant for describing quark mixing is
 \begin{equation}\label{eq:chargeInteraction}
 \mathcal{L}_{W^{\pm}} = -
 \frac{g}{\sqrt{2}}\overline{U}_{i}\gamma^{\mu}\frac{1-\gamma^5}{2}\left(V_{\rm
@@ -364,98 +369,7 @@ $\Delta m_d/\Delta m_s$ gives a much better constraint in the $(\bar \rho,\bar \
 %$\Delta m_d$. 
 The hadronic
 parameters, $f_{B_{s}}$, $B_{B_{s}}$, as well as $f_{B_s}/f_{B_d}$ and $B_{B_s}/B_{B_d}$,
-are set to have their errors significantly reduced  by future lattice QCD computations, see Table \ref{table:Proj}.
-
-
-\begin{table}
-\caption{Constraints used for the global fit by CKMFitter collaboration, and the main experimental inputs involved (more information, especially for the theory inputs used, can be found in Ref.~\cite{CKMfitterwebsite}).
- \label{tab:expinputs}}
-\begin{center}
-\begin{tabular}{cccccc}
-\hline\hline
-CKM  &  Process  & \multicolumn{4}{c}{Observables}\\
-\hline
-$|V_{ud}|$ & $0^+\to 0^+$ $\beta$
-                  & $|V_{ud}|_{\rm nucl}$&=& $0.97420\pm 0 \pm 0.00021$
-                  &   \\
- %                   \hline
-\multirow{4}{*}{\qquad$|V_{us}| \left\{\begin{matrix}&\\&\\&\\&\end{matrix}\right.$}  & $K\to\pi\ell\nu$ 
-                  & $|V_{us}|_{\rm semi}f_+(0)$&=& $0.2165 \pm 0.0004$ & 
-                  \\
-                 &  $K\to e\nu_e$ 
-                 & ${\cal B}(K\to e\nu_e)$&=&$ (1.582\pm 0.007)\cdot 10^{-5}$ & 
-                 \\
-                &  $K\to \mu\nu_\mu$ 
-                &  ${\cal B}(K\to \mu\nu_\mu)$&=& $0.6356\pm 0.0011$
-                & \\
-                 &  $\tau \to K \nu_\tau$ 
-                 & ${\cal B}(\tau \to K\nu_\tau)$&=&$0.006960\pm 0.000096$
-                 & \\
- %                \hline
-\multirow{2}{*}{$|V_{us}|/|V_{ud}|\left\{\begin{matrix}&\\&\\&\end{matrix}\right.$ }                &  $K(\pi)\to \mu\nu$ & 
-                 $\displaystyle \frac{{\cal B}(K\to \mu\nu_\mu)}{{\cal B}(\pi \to \mu\nu_\mu)}$
-                         &=&$(1.3367\pm 0.0029)\cdot 10^{-2}$
-                 & 
-                  \\
-                 &  $\tau\to K(\pi)\nu$ &   
-                 $\displaystyle \frac{{\cal B}(\tau \to K\nu_\tau)}{{\cal B}(\tau \to \pi\nu_\tau)}$
-                        &=& $(6.438\pm 0.094)\cdot 10^{-2}$
-                 &  \\
- %                \hline
-$|V_{cd}|$ & $D\to \mu\nu $ & ${\cal B}(D\to \mu\nu)$ &=& $(3.74\pm 0.17)\cdot 10^{-4}$ 
-                   & 
-                   \\
- %                  \hline
-\multirow{2}{*}{$\qquad|V_{cs}|\left\{\begin{matrix}&\\&\end{matrix}\right.$}   & $D_s\to \tau\nu$ 
-                   & ${\cal B}(D_s\to \tau\nu)$&=& $(5.55\pm 0.24)\cdot 10^{-2}$ 
-                   &  
-                   \\
-                   & $D_s\to \mu\nu$ 
-                   & ${\cal B}(D_s\to \mu\nu_\mu)$&=& $(5.39\pm 0.16)\cdot 10^{-3}$ 
-                   &  \\
- %                  \hline
-\multirow{2}{*}{$\qquad|V_{ub}| \left\{\begin{matrix}&\\&\end{matrix}\right.$ }   & semilept. decays 
-                  & $|V_{ub}|_{\rm semi}$ &=& $(3.98\pm 0.08\pm 0.22)\cdot 10^{-3}$ 
-                  & \\
-                  & $B\to \tau\nu$ 
-                  & ${\cal B}(B\to\tau\nu)$ &=& $(1.08\pm 0.21)\cdot 10^{-4}$ & 
-                  \\
- %                 \hline
-$|V_{cb}|$ & semilept. decays
-                 & $|V_{cb}|_{\rm semi}$ &=& $(41.8\pm 0.4 \pm 0.6)\cdot 10^{-3}$ & 
-                 \\
-$|V_{ub}/V_{cb}|$ & $\Lambda_b$ decays
-      & 
-      $\frac{{\cal B}(\Lambda_p\to p\mu^-\bar\nu_\mu)_{q^2>15}}{{\cal B}(\Lambda_p\to \Lambda_c\mu^-\bar\nu_\mu)_{q^2>7}}$ 
-                &=& $(0.947\pm 0.081) \times 10^{-2}$ & \\
-%\hline
-$\alpha$ & $B\to\pi\pi$, $\rho\pi$, $\rho\rho$ 
-                & \multicolumn{3}{c}{branching ratios, CP asymmetries} & 
-                \\
- %               \hline
-$\beta$   & $B\to (c\bar{c}) K$ 
-               & $\sin(2\beta)_{[c\bar{c}]}$ &=& $0.699\pm 0.017$ 
-               & \\
-%\hline
-$\gamma$ & $B\to D^{(*)} K^{(*)}$ 
-                 & \multicolumn{3}{c}{GGSZ, GLW, ADS methods}
-                 &   \\
- %\hline
-\multirow{2}{*}{$\quad V_{tq}^*V_{tq'} \left\{\begin{matrix}&\\&\end{matrix}\right.$ }        & $\Delta m_d$ 
-                & $\Delta m_d$ &=& $0.5065\pm 0.0019$ ps${}^{-1}$
-                & 
-                \\
-                 & $\Delta m_s$ & $\Delta m_s$ &=& $17.757\pm 0.021$ ps${}^{-1}$ 
-                 & 
-                 \\
- %                \hline
-$V_{tq}^*V_{tq'},V_{cq}^*V_{cq'}$  
-      & $\epsilon_K$ & $|\epsilon_K|$ &=& $(2.228\pm 0.011)\cdot 10^{-3}$
-       & \\
-       \hline\hline
-\end{tabular}
-\end{center}
-\end{table}
+are set to have their errors significantly reduced  by future lattice QCD computations, see Section \ref{sec:lattice}.
 
 \subsection{Combined contraints on the CKM parameters}\label{sec:2018ckmfit}
 Due to its economical structure in terms of only four parameters 
@@ -531,12 +445,12 @@ Here $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, 
 
 % S. Descotes-Genon
 \subsubsection{Current combined constraints on the CKM parameters}
-Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used by CKMfitter collaboration to assess the
-validity of the Kobayashi--Maskawa mechanism for CP violation, and, assuming the
-validity of the SM,
-to perform the metrology of the CKM parameters. This is the same 
+%Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used by CKMfitter collaboration to assess the
+%validity of the Kobayashi--Maskawa mechanism for CP violation, and, assuming the
+%validity of the SM,
+%to perform the metrology of the CKM parameters. This is the same 
 %corresponds to 
-as the Summer 2018 update available on CKMfitter website~\cite{CKMfitterwebsite}, where also the lattice inputs can be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
+%as the Summer 2018 update available on CKMfitter website~\cite{CKMfitterwebsite}, where also the lattice inputs can be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
 
 From the SM global fit the CKMfitter collaboration finds for 
 %, we find that
