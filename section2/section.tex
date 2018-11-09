@@ -339,7 +339,7 @@ The SM prediction for the mass splitting, $\Delta m_q=M_H^q-M_L^q$,  is dominate
 	   \dm_q = \frac{G_F^2}{6 \pi^2}\eta_B m_{B_q}f_{B_q}^2 {\hat{B}}_q
 		  m_W^2 S(x_t) \left|V_{tq} V_{tb}^*\right|^2,
 	\end{equation}
-with  the Inami-Lim function $S$~\cite{Inami:1980fz} evaluated at $x_{t}=\overline{m}_t^2/m_W^2$,
+with  the Inami-Lim function $S(x_t)$~\cite{Inami:1980fz} evaluated at $x_{t}=\overline{m}_t^2/m_W^2$, while
 $\eta_B$ encodes the perturbative QCD corrections, 
 %. The value and uncertainty for the perturbative QCD
 %correction $\eta_{B}$ was 
@@ -351,20 +351,25 @@ The decay constant $f_{B_q}$ and the so-called bag parameter, $\hat{B}_q$, param
 
 The translation of the measured value for $\Delta m_d$ into constraints
 on the CKM parameter combination ${|V_{td}^{\phantom{*}} V_{tb}^{*}|}^{2}$
-suffers from significant uncertainties in the theoretical calculation of the
-product $f_{B_{d}} \sqrt{B_{B_{d}}}$ of hadronic parameters.
-The dependence of the Standard Model prediction for $\Delta m_s$ on
-$\bar \rho-\bar \eta$ coordinates appears to be very weak through the relevant
-CKM matrix elements term $\vert V^*_{ts}V^{\phantom{*}}_{tb}\vert^2$.
-When combined with the $\Delta m_d$ measurement the measured $\Delta m_s$ value
-improves the ${|V_{td}^{\phantom{*}} V_{tb}^{*}|}^{2}$ constraint obtained from
-$\Delta m_d$. The relevant hadronic
-parameters, $f_{B_{s}}$ and $B_{B_{s}}$ as well as $f_{B_s}/f_{B_d}$ and $B_{B_s}/B_{B_d}$,
-can be obtained from lattice QCD computation.	
+is limited at present by uncertainties in the lattice QCD calculation of the
+hadronic parameters $f_{B_{d}},  B_{B_{d}}$. The ratios $f_{B_s}/f_{B_d}$ and $B_{B_s}/B_{B_d}$ are much better determined, so that 
+%it makes sense to consider 
+$\Delta m_d/\Delta m_s$ gives a much better constraint in the $(\bar \rho,\bar \eta)$ plane, see Fig. \ref{CKMfitterSummer2018}. 
+%The SM prediction for $\Delta m_s$ depends on CKM matrix elements $\vert V^*_{ts}V^{\phantom{*}}_{tb}\vert^2$, which only weakly depend on $\bar \rho,\bar \eta$.
+%%   of the Standard Model prediction  on
+%%$\bar \rho-\bar \eta$ coordinates appears to be very weak through the relevant
+%%CKM matrix elements term $\vert V^*_{ts}V^{\phantom{*}}_{tb}\vert^2$.
+%When combined with the $\Delta m_d$ measurement the measured $\Delta m_s$ value
+%improves the ${|V_{td}^{\phantom{*}} V_{tb}^{*}|}^{2}$ constraint obtained from
+%$\Delta m_d$. 
+The hadronic
+parameters, $f_{B_{s}}$, $B_{B_{s}}$, as well as $f_{B_s}/f_{B_d}$ and $B_{B_s}/B_{B_d}$,
+are set to have their errors significantly reduced  by future lattice QCD computations, see Table \ref{table:Proj}.
 
 
 \begin{table}
-\caption{Constraints used for the global fit, and the main experimental inputs involved (more information, in particular concerning the theory inputs used, can be found in ref.~\cite{CKMfitterwebsite}. \label{tab:expinputs}}
+\caption{Constraints used for the global fit by CKMFitter collaboration, and the main experimental inputs involved (more information, especially for the theory inputs used, can be found in Ref.~\cite{CKMfitterwebsite}).
+ \label{tab:expinputs}}
 \begin{center}
 \begin{tabular}{cccccc}
 \hline\hline
@@ -453,17 +458,22 @@ $V_{tq}^*V_{tq'},V_{cq}^*V_{cq'}$
 \end{table}
 
 \subsection{Combined contraints on the CKM parameters}\label{sec:2018ckmfit}
+Due to its economical structure in terms of only four parameters 
+%and
+%its consequences for \CP violation, 
+the CKM matrix can be
+determined through many different quark transitions, both the 
+ $\Delta F = 1$ decays and the $\Delta F=2$ neutral-meson mixing transitions. A consistent determination of the four CKM parameters from all these processes is a fundamental test of the Kobayashi-Maskawa mechanism. 
+Extracting from data the information on the four CKM parameters poses both experimental and theoretical challenges.
+% for both experimentalists and theorists. 
+First of all, the SM depends on a number of other parameters, masses and couplings, which are not predicted within the SM, but rather need to also be determined experimentally. An additional difficulty relates to the presence of strong interactions, binding quarks into hadrons. This is responsible for most of the theoretical uncertainties in the determinations of CKM matrix elements. 
+
 
 \subsubsection{Statistical approaches}
 
-Due to its economical structure in terms of only four parameters and
-its consequences for \CP violation, the CKM matrix can be
-determined through many different quark transitions. These
-correspond to $\Delta F = 1$ decays or $\Delta F=2$ processes
-related to neutral-meson mixing.
-Extracting information on these parameters from data is a challenge for both experimentalists and theorists. First of all the SM depends on a large set of parameters, masses, mixings, and couplings, which are not predicted within the SM, but rather need to be determined experimentally. An additional difficulty relates to the presence of strong interaction, binding quarks into hadrons. This is responsible for most of the theoretical uncertainties in the determinations of CKM matrix elements. 
 
-The CKMfitter group aims at the goal  of determining the CKM parameters by combining a large set of constraints from flavour physics, using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic:
+
+The CKMfitter group determines the CKM parameters from a large set of flavour physics constraints using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic,
 \begin{equation}
 \chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p)),
 \end{equation}
@@ -482,8 +492,7 @@ Confidence intervals at a given confidence level (CL) are obtained by selecting 
 In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (i.e., systematics not scaling with the size of the sample) which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, corresponding to a constraint to $\chi^2$ restricting the value of the theoretical parameter/observable to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
 
 	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions that is quite intuitive and easy to implement.
-	
-	Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
+Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
 	\begin{equation}
 	f(\bar\rho,\bar\eta|\mathbf{\hat{c}}, \mathbf{\hat{f}}) \propto 
 	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta)\,,
@@ -559,7 +568,7 @@ in the Wolfenstein one.
 
 \begin{figure}[tb]
   \centering
-  \includegraphics[width=0.5\textwidth]{section2/figures/rhoeta-fullfit-sm.pdf}
+  \includegraphics[width=0.45\textwidth]{section2/figures/rhoeta-fullfit-sm.pdf}
   \caption{Selected region in the UT plane from the global fit by the UTfit Collaboration~\cite{UTfitwebsite18}. Individual constraints are also shown.}
   \label{fig:UTfitUTplane}
 \end{figure}
@@ -589,9 +598,9 @@ Another highly discussed issue is the compatibility of the inclusive with exclus
 
 % S. Descotes-Genon
 
-As discussed above, HL-LHC will naturally provide an improvement in the determination of several flavour observables crucial for the determination of the CKM parameters
-We can then consider two phases for the HL-LHC projections: in Phase 1, we assum that the collected data amount for LHCb to 23 fb$^{-1}$ and for CMS/ATLAS to 300 fb$^{-1}$, whereas for Phase 2, we have for LHCb 300 fb$^{-1}$ and for CMS/ATLAS 3000 fb$^{-1}$.
-Further observables will be measured at a higher precision thanks to Belle II, and we will assume that the uncertainties reached on these observables correspond to the projections for 50 ab$^{-1}$~\cite{Kou:2018nap}. We also take into account the projected increase in the measurement of $D$ and $D_s$ semi-leptonic decay by BESIII, with an experimental accuracy of 1.2\% on $|V_{cd}|$ and $|V_{cs}|$ combined with the current lattice QCD uncertainties for the decay constant of 0.9\% and 0.8\% respectively)~\cite{BESIII}.
+As discussed above, HL-LHC will improve the determination of several flavour observables crucial for the extraction of  CKM parameters.
+We consider two phases for the HL-LHC projections: in Phase 1, we assume integrated luminosity of 23 fb$^{-1}$ for LHCb to  and 300 fb$^{-1}$ for CMS/ATLAS; in Phase 2 we have 300 fb$^{-1}$ for LHCb  and 3000 fb$^{-1}$ for CMS/ATLAS.
+Several observables will be measured more precisely at Belle II. For uncertainties on these observables we use the 50 ab$^{-1}$ projections in Ref.~\cite{Kou:2018nap}. We also take into account the projected improvements in the measurements of $D$ and $D_s$ semi-leptonic decays by BESIII, projecting an experimental accuracy of 1.2\% on $|V_{cd}|$ and $|V_{cs}|$ combined with the current lattice QCD uncertainties for the decay constant of 0.9\% and 0.8\% respectively)~\cite{BESIII}.
  Since we are
 interested in  the future sensitivity for Phase I and Phase II, we choose the central values of future measurements to coincide
 with their SM predictions using the current best-fit values of $\rhobar$ and
@@ -602,52 +611,55 @@ $\etabar$.
 
 % S. Descotes-Genon
 
-The inputs used for the fits are shown in Tab.~\ref{tab:CKMfitterprojinputs}. For an easier comparison with the current situation,
-we have added a column ``Current'' corresponding to the current situation concerning uncertainties, but taking central values corresponding to a perfect agreement of the various constraints in the SM. Indeed, the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies (in particular for $|V_{us}|$) which increase the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we will therefore compare the three scenarios presented in Tab.~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement rather than the results for the Summer 2018 update.
+The inputs used by CKMfitter collaboration for the fits are shown in Table~\ref{tab:CKMfitterprojinputs}. For easier comparison the ``Current'' column shows present uncertainties. In the fit we  
+%with current situation,
+%we have added a column  corresponding to the current situation concerning uncertainties, but 
+take central values corresponding to a perfect agreement of the various constraints in the SM also for the "Current" case). Note that this choice does change slightly the present determination of CKM parameters -- the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies, in particular for $|V_{us}|$, which increases the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we therefore compare the three scenarios presented in Table~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement (rather than comparing the future projections with the CKMfitter results for the Summer 2018 update).
 
-From the global fit, we can determined the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. The uncertainties obtained are given in Tab.~\ref{tab:CKMfitterprojresults} and the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. We also show the corresponding constraints in the $B_s$ meson in Fig.~\ref{fig:CKMfitterglobalBs}, and various details of the constraints
+From the global fit, we can determined the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. The uncertainties obtained are given in Table~\ref{tab:CKMfitterprojresults}, while the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. We also show the corresponding constraints for the $B_s$ meson system in Fig.~\ref{fig:CKMfitterglobalBs}, and the determinations using only subsets of constraints (tree only or loop only) 
+%details various details of the constraints
 in Fig.~\ref{fig:CKMfitterglobalsmall}.
 
 \begin{table}
+\caption{Uncertainties for the CKMfitter projections.}\label{tab:CKMfitterprojinputs}
 \begin{center}
 {%\scriptsize
-\begin{tabular}{c|cccc}
+\begin{tabular}{ccccc}
 \hline\hline
   &  Current  &  Phase I  & Phase II & Ref.  \\
-\hline\hline
+\hline
 $|V_{ud}|$  &  $\pm 0.00021$ & $\pm 0.00021$ & $\pm 0.00021$ & \cite{CKMfitterwebsite} \\
 $|V_{us}|f_+^{K\to\pi}(0)$  & $\pm 0.0004$  & $\pm 0.0004$ & $\pm 0.0004$ & \cite{CKMfitterwebsite}\\
-$|\epsilon_K|\times 10^{3}$ & $\pm 0.011$   & $\pm 0.011$  & $\pm 0.011$ & \cite{CKMfitterwebsite}\\
+$|\epsilon_K|\cdot 10^{3}$ & $\pm 0.011$   & $\pm 0.011$  & $\pm 0.011$ & \cite{CKMfitterwebsite}\\
 $|V_{cd}|$ & $\pm 0.005$ & $\pm 0.003$ & $\pm 0.003$ & \cite{BESIII}\\
 $|V_{cs}|$ & $\pm 0.016$ & $\pm 0.014$ & $\pm 0.014$ & \cite{BESIII}\\
 $\Delta m_d$ [${\rm ps}^{-1}$]   &  $\pm 0.0019$ & $\pm 0.0019$ & $\pm 0.0019$ & \cite{Amhis:2016xyh} \\
 $\Delta m_s$ [${\rm ps}^{-1}$]  &  $\pm 0.021$ & $\pm 0.021$ & $\pm 0.021$ &  \cite{Amhis:2016xyh} \\
-$|V_{ub}|\times 10^3$ ($b\to u\ell\bar\nu$)  &  $\pm 0.23$ & $\pm 0.10$ & $\pm 0.10$ & \cite{Kou:2018nap}\\
-$|V_{cb}|\times 10^3$  ($b\to c\ell\bar\nu$) &  $\pm 0.7$ & $\pm 0.60$ & $\pm 0.60$ & \cite{Kou:2018nap}\\
+$|V_{ub}|\cdot 10^3$ ($b\to u\ell\bar\nu$)  &  $\pm 0.23$ & $\pm 0.10$ & $\pm 0.10$ & \cite{Kou:2018nap}\\
+$|V_{cb}|\cdot 10^3$  ($b\to c\ell\bar\nu$) &  $\pm 0.7$ & $\pm 0.60$ & $\pm 0.60$ & \cite{Kou:2018nap}\\
 $|V_{ub}/V_{cb}|$ ($\Lambda_b$) & $\pm 0.0050$ & $\pm 0.0025$ & $\pm 0.0008$ &  Above \\
 \hline
 $\sin 2\beta$ &  $\pm 0.017$ & $\pm 0.005$ & $\pm 0.003$ & Above\\
 $\alpha\ [^\circ]$  &  $\pm 4.4$ & $\pm 1$ & $\pm 1$& Above\\
-$\gamma\ [^\circ]$  &  $\pm 5.6$ & $\pm 1.0$ & $\pm 0.35$& Above and Ref.~\cite{Kou:2018nap}\\
+$\gamma\ [^\circ]$  &  $\pm 5.6$ & $\pm 1.0$ & $\pm 0.35$& Above \&~\cite{Kou:2018nap}\\
 $\beta_s\ [{\rm rad}]$ &  $\pm 0.031$ & $\pm 0.014$ & $\pm 0.004$ & Above\\
-${\cal B}(B\to\tau\nu)\times 10^4$ &  $\pm 0.21$ & $\pm 0.04$ & $\pm 0.04$ & \cite{Kou:2018nap}\\
-${\cal B}(B_s\to\mu\mu)\times 10^9$ &  $\pm 0.66$ & $\pm 0.34$ & $\pm 0.17$ & Above\\
-${\cal B}(B_d\to\mu\mu)\times 10^{11}$ &  $-$ & $\pm 3.5$ & $\pm 1.0$ & Above\\
+${\cal B}(B\to\tau\nu)\cdot10^4$ &  $\pm 0.21$ & $\pm 0.04$ & $\pm 0.04$ & \cite{Kou:2018nap}\\
+${\cal B}(B_s\to\mu\mu)\cdot10^9$ &  $\pm 0.66$ & $\pm 0.34$ & $\pm 0.17$ & Above\\
+${\cal B}(B_d\to\mu\mu)\cdot10^{11}$ &  $-$ & $\pm 3.5$ & $\pm 1.0$ & Above\\
 $\frac{{\cal B}(B_d\to\mu\mu)}{{\cal B}(B_s\to\mu\mu)}$ &  $-$ & $\pm 0.010$ & $\pm 0.003$ & Above\\
 \hline
-$\bar{m}_c$ [GeV] &  $\pm 0.012$ $(0.9\ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & Sec.~\ref{sec:lattice}\\
-$\bar{m}_t$ [GeV] &  $\pm 0.73$ $(0.4\ \%)$ & $\pm 0.73$ $(0.4\ \%)$& $\pm 0.73$ $(0.4\ \%)$ & \cite{CKMfitterwebsite}\\
-$\alpha_s(m_Z)$  &  $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & Sec.~\ref{sec:lattice}\\
-$f_+^{K\to\pi}(0)$ &  $\pm 0.0026$ $(0.3\ \%)$ & $\pm 0.0012$ $(1.2\ \%)$ & $\pm 0.0012$ $(1.2\ \%)$ & Sec.~\ref{sec:lattice}\\
-$f_K$ & $\pm 0.0006$ $(0.5\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & Sec.~\ref{sec:lattice}\\
-$B_K$  &  $\pm 0.012$ $(1.6\ \%)$ & $\pm 0.005$ $(0.7\ \%)$ & $\pm 0.005$ $(0.7\ \%)$ & Sec.~\ref{sec:lattice}\\
-$f_{B_s}$ [GeV] &  $\pm 0.0025$ $(1.0\ \%)$ & $\pm 0.0025$ $(1.0\ \%)$ & $\pm 0.0014$ $(0.6\ \%)$ & Sec.~\ref{sec:lattice}\\
-$B_{B_s}$ &   $\pm 0.034$ $(2.8\ \%)$ & $\pm 0.010$ $(0.8\ \%)$ & $\pm 0.010$ $(0.8\ \%)$ & Sec.~\ref{sec:lattice}\\
-$f_{B_s}/f_{B_d}$  &  $\pm 0.007$ $(0.6\ \%)$ & $\pm 0.007$ $(0.6\ \%)$ & $\pm 0.005$ $(0.4\ \%)$ & Sec.~\ref{sec:lattice}\\
-$B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & Sec.~\ref{sec:lattice}\\
+$\bar{m}_c$ [GeV] &  $\pm 0.012$ $(0.9\%)$ & $\pm 0.005$ $(0.4 \%)$ & $\pm 0.005$ $(0.4 \%)$ & Sec.~\ref{sec:lattice}\\
+$\bar{m}_t$ [GeV] &  $\pm 0.73$ $(0.4\%)$ & $\pm 0.73$ $(0.4\%)$& $\pm 0.73$ $(0.4\%)$ & \cite{CKMfitterwebsite}\\
+$\alpha_s(m_Z)$  &  $\pm 0.0011$ $(0.9\%)$ & $\pm 0.0011$ $(0.9\%)$ & $\pm 0.0011$ $(0.9\%)$ & Sec.~\ref{sec:lattice}\\
+$f_+^{K\to\pi}(0)$ &  $\pm 0.0026$ $(0.3\%)$ & $\pm 0.0012$ $(1.2\%)$ & $\pm 0.0012$ $(1.2\%)$ & Sec.~\ref{sec:lattice}\\
+$f_K$ & $\pm 0.0006$ $(0.5\%)$ & $\pm 0.0005$ $(0.4\%)$ & $\pm 0.0005$ $(0.4\%)$ & Sec.~\ref{sec:lattice}\\
+$B_K$  &  $\pm 0.012$ $(1.6\%)$ & $\pm 0.005$ $(0.7\%)$ & $\pm 0.005$ $(0.7\%)$ & Sec.~\ref{sec:lattice}\\
+$f_{B_s}$ [GeV] &  $\pm 0.0025$ $(1.0\%)$ & $\pm 0.0025$ $(1.0\%)$ & $\pm 0.0014$ $(0.6\%)$ & Sec.~\ref{sec:lattice}\\
+$B_{B_s}$ &   $\pm 0.034$ $(2.8\%)$ & $\pm 0.010$ $(0.8\%)$ & $\pm 0.010$ $(0.8\%)$ & Sec.~\ref{sec:lattice}\\
+$f_{B_s}/f_{B_d}$  &  $\pm 0.007$ $(0.6\%)$ & $\pm 0.007$ $(0.6\%)$ & $\pm 0.005$ $(0.4\%)$ & Sec.~\ref{sec:lattice}\\
+$B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\%)$ & $\pm 0.005$ $(0.5\%)$ & $\pm 0.005$ $(0.5\%)$ & Sec.~\ref{sec:lattice}\\
 \hline\hline
 \end{tabular}}
-\caption{Uncertainties for the CKMfitter projections.}\label{tab:CKMfitterprojinputs}
 \end{center}
 \end{table}
 
@@ -683,7 +695,7 @@ $\beta_s\ ({\rm rad})$ & 0.00042 & 0.00042 & 0.00020 & 0.00010 \\
 \centering
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_large_Stage1.pdf} 
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_large_Stage2.pdf} 
-\caption{Constraints on the Unitarity Triangle from the CKMfitter global analysis for phase 1 (left) and phase 2 (right).}
+\caption{Constraints on the Unitarity Triangle from the CKMfitter global analysis for phase 1 (left) and phase 2 (right). \td{Phase 1 logo missing on the left panel}}
 \label{fig:CKMfitterglobal}
 \end{center}
 \end{figure}
@@ -693,7 +705,7 @@ $\beta_s\ ({\rm rad})$ & 0.00042 & 0.00042 & 0.00020 & 0.00010 \\
 \centering
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage1.pdf} 
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage2.pdf} 
-\caption{Constraints on the Unitarity Triangle for the $B_s$ meson from the CKMfitter global analysis for phase 1 (left) and phase 2 (right).}
+\caption{Constraints on the Unitarity Triangle for the $B_s$ meson from the CKMfitter global analysis for phase 1 (left) and phase 2 (right). \td{did we define $\bar \rho_{sb}$ and $\bar \eta_{sb}$ somewhere?}}
 \label{fig:CKMfitterglobalBs}
 \end{center}
 \end{figure}
@@ -719,52 +731,57 @@ $\beta_s\ ({\rm rad})$ & 0.00042 & 0.00042 & 0.00020 & 0.00010 \\
 
 
 \subsubsection{UTfit results}
-The projection of the UT analysis in the HL-LHC era is obtained by performing a global fit using expected values of experimental and theoretical input parameters, as discussed in this Chapter. In particular, lattice uncertainties in 2025 are taken from table~\ref{table:Proj} of section~\ref{sec:lattice}. Given this timescale, we use  experimental uncertainties expected at the end of Run 3 for LHCb and with the full statistics for Belle II. Central values for both theoretical and experimental parameter are taken from a SM point in order to ensure the compatibility of the extrapolated constraints. In table~\ref{tab:utfit_global_inpout} we summarize the extrapolated uncertainties used in the fit. 
+The projection of the UT analysis in the HL-LHC era is obtained by performing a global fit using expected values of experimental and theoretical input parameters, as discussed in this Chapter \td{cite more precisely}. In particular, lattice uncertainties in 2025 are taken from table~\ref{table:Proj},  Section~\ref{sec:lattice}. Given this timescale, we use  experimental uncertainties expected at the end of Run 3 for LHCb \td{is this 23 or $50 {\rm fb}^{-1}$, i.e. is this equivalent of Phase 1 of CKMfitter?} and with the full statistics for Belle II. Central values for both theoretical and experimental parameter are taken from a SM point in order to ensure the compatibility of the extrapolated constraints. In Table~\ref{tab:utfit_global_inpout} we summarize the extrapolated uncertainties used in the fit. 
+
 \begin{table}
+\caption{Extrapolated input parameter uncertainties used in the UTfit analysis. \td{Phase 1? What about Phase 2?}} 
+\label{tab:utfit_global_inpout}
   \begin{center}
-	\begin{tabular}{|c|c||c|c||c|c||c|c|}
-		\hline 
-		 $m_t$ & $0.25$ GeV & $m_b$ & $10$ MeV & $m_c$ & $5$ MeV & $V_{us}$ & $4\times 10^{-4}$\\\hline
-		 $|V_{cb}|$ & $4\times 10^{-4}$ & $|V_{ub}|$ & $4\times10^{-5}$ & $|V_{ub}/V_{cb}|$ & $8\times 10^{-4}$ & $\Delta M_d$ & $2\times 10^{-4}$\\\hline
-		 $\Delta M_s$ & $6\times 10^{-3}$ & $\sin2\beta$ & $5\times10^{-3}$ & $\alpha$ & $1^\circ$ & $\gamma$ & $1^\circ$\\\hline
- 		 $A_\mathrm{SL}^d$ & $5\times 10^{-4}$ & $A_\mathrm{SL}^s$ & $7\times 10^{-4}$ & $\phi_{B_s}$  & $0.01$ & $B_K$ & $5\times10^{-3}$\\\hline
+	\begin{tabular}{cccccccc}
+		\hline \hline
+		 Input & Uncer. & Input & Uncer. & Input & Uncer. & Input & Uncer.
+		 \\\hline
+		 $m_t$ & $0.25$ GeV & $m_b$ & $10$ MeV & $m_c$ & $5$ MeV & $V_{us}$ & $4\times 10^{-4}$
+		 \\
+		 $|V_{cb}|$ & $4\times 10^{-4}$ & $|V_{ub}|$ & $4\times10^{-5}$ & $|V_{ub}/V_{cb}|$ & $8\times 10^{-4}$ & $\Delta M_d$ & $2\times 10^{-4}$
+		 \\
+		 $\Delta M_s$ & $6\times 10^{-3}$ & $\sin2\beta$ & $5\times10^{-3}$ & $\alpha$ & $1^\circ$ & $\gamma$ & $1^\circ$
+\\
+ 		 $A_\mathrm{SL}^d$ & $5\times 10^{-4}$ & $A_\mathrm{SL}^s$ & $7\times 10^{-4}$ & $\phi_{B_s}$  & $0.01$ & $B_K$ & $5\times10^{-3}$
+		 \\
  		 $F_{B_s}$ & $1\times10^{-3}$ & $F_{B_s}/F_{B_d}$ & $6\times10^{-3}$
- 		 & $B_s/B_d$ & $5\times10^{-3}$ & $B_s$ & $7\times10^{-3}$ \\\hline
- 		 
-		 \hline
+ 		 & $B_s/B_d$ & $5\times10^{-3}$ & $B_s$ & $7\times10^{-3}$ \\\hline \hline
 	\end{tabular} 
 \end{center}
-\caption{Extrapolated input parameter uncertainties used in the UTfit analysis.} 
-\label{tab:utfit_global_inpout}
 \end{table}
 
-The improvement of the UT global analysis can be appreciated in fig.~\ref{fig:UTfitFut}, where the present and future constraints on the UT plane
-are shown next to each other zooming on the SM preferred region.
+The improvement of the UT global analysis can be appreciated in Fig.~\ref{fig:UTfitFut}, where the present and future constraints on the UT plane
+are shown next to each other, after zooming on the SM preferred region.
 
 \begin{figure}
 \begin{center}
 \centering
 \includegraphics[width=0.45\linewidth]{section2/figures/utfit_zoom18.pdf} 
 \includegraphics[width=0.45\linewidth]{section2/figures/utfit_zoomfut.pdf} 
-\caption{Present (left) and future (right) constraints on the UT plane.}
+\caption{Present (left) and future (right) constraints in the $(\bar \rho, \bar \eta)$ plane (UTfit collaboration).}
 \label{fig:UTfitFut}
 \end{center}
 \end{figure}
 
-To be more quantitative, We collect in table~\ref{tab:utfit_global} the uncertainties of the indirect determination of CKM parameters and angles, obtained from the predictive posterior p.d.f.'s (namely obtained without including the corresponding direct measurements in the fit). These uncertainties are reduced by a factor 3--5,
+To be more quantitative, we collect in Table~\ref{tab:utfit_global} the uncertainties of the indirect determination of CKM parameters and angles, obtained from the predictive posterior p.d.f.'s (namely obtained without including the corresponding direct measurements in the fit). These uncertainties are reduced by a factor 3--5,
 allowing for an improved test of the SM, as discussed in the next section.
 
 \begin{table}
+\caption{Relative uncertainties of UT parameters and angles with current and extrapolated input values for measurements and theoretical parameters (UTfit collaboration).} 
+\label{tab:utfit_global}
   \begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|}
-		\hline 
-		 & $\rho/\bar{\rho}$ & $\eta/\bar{\eta}$ & $A$ &  $\sin2\beta$ & $\gamma$ & $\alpha$ & $\beta_s$ \\ \hline
-		present & 9\% & 3\% & 1.5\% & 4.5\% & 3\% & 2.5\% & 3\% \\ \hline
-		future  & 2\% & 0.7\% & 0.6\% & 0.6\% & 0.5\% & 0.7\% & 0.7\%\\ \hline
+	\begin{tabular}{cccccccc}
+		\hline\hline 
+		 & $\bar{\rho}$ & $\bar{\eta}$ & $A$ &  $\sin2\beta$ & $\gamma$ & $\alpha$ & $\beta_s$ \\ \hline
+		present & 9\% & 3\% & 1.5\% & 4.5\% & 3\% & 2.5\% & 3\% \\ 
+		future  & 2\% & 0.7\% & 0.6\% & 0.6\% & 0.5\% & 0.7\% & 0.7\%\\ \hline 	\hline
 	\end{tabular} 
 \end{center}
-\caption{Relative uncertainties of UT parameters and angles with current and extrapolated input values for measurements and theoretical parameters.} 
-\label{tab:utfit_global}
 \end{table}
 
 \subsection{Future extrapolation of constraints on NP in $\Delta F=2$
@@ -798,21 +815,21 @@ Using semileptonic asymmetries it is possible to break the degeneracy
 for $\gamma \leftrightarrow \gamma + 180^\circ$ present in the
 tree-level determination of the CKM matrix \cite{Laplace:2002ik},
 getting rid of the solution in the third quadrant. We obtain the
-results in Tab.~\ref{tab:UTAGen} for the CKM and NP parameters. The
+results in Tab.~\ref{tab:UTAgen} for the CKM and NP parameters. The
 corresponding two-dimensional distributions are shown in
-Fig.~\ref{fig:UTAGen}. 
+Fig.~\ref{fig:UTAgen}. 
 
 \begin{table}
   \begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|}
-		\hline 
+  \caption{Present and future uncertainties on CKM and NP parameters from the generalized UT analysis.
+  }   \label{tab:UTAgen}
+	\begin{tabular}{cccccccc}
+		\hline \hline
 		 & $\bar{\rho}$ & $\bar{\eta}$ & $C_{\varepsilon_K}$ &  $C_{B_d}$ & $\phi_{B_d}[^\circ]$ & $C_{B_s}$ & $\phi_{B_s}[^\circ]$ \\ \hline
-		present & 0.030 & 0.028 & 0.12 & 0.11 & 1.8 & 0.09 & 0.89 \\ \hline
-		future  & 0.0047 & 0.0040 & 0.036 & 0.030 & 0.28 & 0.026 & 0.29\\ \hline
+		present & 0.030 & 0.028 & 0.12 & 0.11 & 1.8 & 0.09 & 0.89 \\ 
+		future  & 0.0047 & 0.0040 & 0.036 & 0.030 & 0.28 & 0.026 & 0.29\\ \hline \hline
 	\end{tabular} 
 \end{center}
-\caption{Present and future uncertainties on CKM and NP parameters from the generalized UT analysis.} 
-\label{tab:UTAgen}
 \end{table}
 
 
@@ -828,7 +845,7 @@ Fig.~\ref{fig:UTAGen}.
 \end{figure}
 
 Combining the results of the generalized UT analysis with the
-constraints on CP violation in $D$ mixing from Sec. \textbf{refer to
+constraints on CP violation in $D$ mixing from Sec. \td{cite}\textbf{refer to
   $D$ mixing combination}, we can consider the most general $\Delta
 F=2$ effective Hamiltonian and bound its coefficients (barring
 accidental cancellations).
@@ -894,6 +911,8 @@ Fig. \ref{fig:DF2Lambda}.
 
 \begin{table}[!h]
 \begin{center}
+\caption{95\% probability ranges for the the Wilson coefficients in Eq.~\ref{eq:defheff} and corresponding bounds on the NP scale. See text for details.}
+\label{tab:DF2Cbounds}
 \begin{tabular}{@{}cccc}
 \hline\hline
 Parameter &~~ $95\%$ allowed range~~ &~~ Lower limit on $\Lambda$ (TeV)\\
@@ -925,12 +944,9 @@ $\mathrm{Im} C_{B_s}^2$  & $[-5.5,5.5] \cdot 10^{-13}$  &  $1.3\cdot 10^{3}$  \\
 $\mathrm{Im} C_{B_s}^3$  & $[-2.1,2.0] \cdot 10^{-12}$  &  $696.7$  \\ 
 $\mathrm{Im} C_{B_s}^4$  & $[-1.7,1.7] \cdot 10^{-13}$  &  $2.4\cdot 10^{3}$   \\ 
 $\mathrm{Im} C_{B_s}^5$  & $[-4.8,4.8] \cdot 10^{-13}$  &  $1.4\cdot 10^{3}$  \\ 
-
-  \hline\hline
+ \hline\hline
 \end{tabular}
-\caption{95\% probability ranges for the the Wilson coefficients in eq.~\ref{eq:defheff} and corresponding bounds on the NP scale. See the text for details.}
 \end{center}
-\label{tab:DF2Cbounds}
 \end{table}
 
 \begin{figure}[htb]
