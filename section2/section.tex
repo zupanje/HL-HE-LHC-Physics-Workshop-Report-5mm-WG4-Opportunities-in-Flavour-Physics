@@ -531,23 +531,28 @@ Here $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, 
 
 % S. Descotes-Genon
 \subsubsection{Current combined constraints on the CKM parameters}
-Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used by CKMfitter collaboration, to assess the
-validity of the Kobayashi--Maskawa mechanism for CP violation and
-to perform the metrology of the CKM parameters, assuming the
-validity of the SM. This corresponds to the Summer 2018 update available in ref.~\cite{CKMfitterwebsite}, where the lattice inputs used can also be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
+Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used by CKMfitter collaboration to assess the
+validity of the Kobayashi--Maskawa mechanism for CP violation, and, assuming the
+validity of the SM,
+to perform the metrology of the CKM parameters. This is the same 
+%corresponds to 
+as the Summer 2018 update available on CKMfitter website~\cite{CKMfitterwebsite}, where also the lattice inputs can be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
 
-From the SM global fit, we find that
-the four CKM parameters are determined as
+From the SM global fit the CKMfitter collaboration finds for 
+%, we find that
+the four CKM parameters, 
+%are determined as
 \begin{equation}
-A=0.8403^{\,+0.0056}_{\,-0.0201}
+\label{eq:CKMfitter:Alambdarhoeta}
+A=0.8403^{\,+0.0056}_{\,-0.0201},
 \quad
-\lambda=0.224747^{\,+0.000254}_{\,-0.000059}
+\lambda=0.224747^{\,+0.000254}_{\,-0.000059},
 \quad
-\bar\rho=0.1577^{\,+0.0096}_{\,-0.0074}
+\bar\rho=0.1577^{\,+0.0096}_{\,-0.0074},
 \quad
-\bar\eta=0.3493^{\,+0.0095}_{\,-0.0071}
+\bar\eta=0.3493^{\,+0.0095}_{\,-0.0071}.
 \end{equation}
-The asymmetric errors come from the combination of several constraints containing both statistical and systematic uncertainties, so that the resulting $\chi^2$ has a rather complicated (and asymmetric) shape. The corresponding results are shown in Fig.~\ref{CKMfitterSummer2018}
+The asymmetric errors come from the combination of several constraints containing both statistical and systematic uncertainties, so that the resulting $\chi^2$ has a rather complicated asymmetric shape. The corresponding results are shown in Fig.~\ref{CKMfitterSummer2018}.
 The fit shows a good overall consistency among the various constraints. The main pulls come from the kaon and charm sector, but nothing exceeds the 2-$\sigma$ level, confirming the very good overall agreement of the various constraints involved here.
 
 \begin{figure}[!tb]
@@ -559,25 +564,31 @@ The fit shows a good overall consistency among the various constraints. The main
   }
 \end{figure}
 
-The results of the UT analysis in the SM from the UFfit collaboration are summarized by the plots in fig.~\ref{fig:UTfitUTplane}. Detailed input values as well as predictions for various CKM-related parameters and observables cab be found in the Summer 2018 update page on the UTfit website~\cite{UTfitwebsite18}.
+The results of the UT analysis in the SM from the UTfit collaboration are summarized 
+%by the plots 
+in Fig.~\ref{fig:UTfitUTplane}. Detailed input values as well as predictions for various CKM-related parameters and observables cab be found in the Summer 2018 update page on the UTfit website~\cite{UTfitwebsite18}.
 The CKM matrix is determined as
 \begin{eqnarray}
-&&\!\!\!\!\! V_{CKM}=\nonumber\\ 
+&&\!\!\!\!\! V_{\rm CKM}=\nonumber\\ 
 &&\!\!\! \left(\begin{array}{ccc} 0.97431(12) & 0.22514(55) & 0.00365(10)e^
 {-i 66.8(2.0)^\circ}\\ -0.22500(54)e^{i 0.0351(10)^\circ} & 0.97344(12)e^{-i 0
 .00188(5)^\circ} & 0.04241(65) \\ 0.00869(14)e^{-i 22.2(0.6)^\circ} & -
 0.04124(56)e^{i 1.056(32)^\circ} & 0.999112(24)\end{array}\right)\,.
 \end{eqnarray}
-The corresponding CKM parameters are
-\begin{eqnarray}
-&& \sin\theta_{12}=0.2250\pm0.0010\,,\quad \sin\theta_{23}=0.00420\pm0.0006\,,\nonumber\\
-&&\sin\theta_{13}=0.00368\pm 0.00010\,,\quad\delta=(67\pm2)^circ\,,
-\end{eqnarray}
-in the PDG parametrization and
+The corresponding CKM parameters in the PDG parametrization are
 \begin{equation}
-\lambda=0.2250\pm0.0010\,,\quad A=0.826\pm,0.012\,,\quad \rho=0.152\pm0.014\,,\quad \eta=0.357\pm 0.010\,,
+\begin{split}
+ \sin\theta_{12}&=0.2250\pm0.0010,\qquad \sin\theta_{23}=0.00420\pm0.0006,
+\\
+\sin\theta_{13}&=0.00368\pm 0.00010,\qquad~\quad\delta=(67\pm2)^\circ,
+\end{split}
 \end{equation}
-in the Wolfenstein one.
+while the Wolfenstein parameters are,
+\begin{equation}
+\lambda=0.2250\pm0.0010\,,\quad A=0.826\pm,0.012\,,\quad \rho=0.152\pm0.014\,,\quad \eta=0.357\pm 0.010,
+\end{equation}
+%in the Wolfenstein one.
+in good agreement with the CKMfitter determination in \eqref{eq:CKMfitter:Alambdarhoeta}.
 
 \begin{figure}[tb]
   \centering
@@ -597,7 +608,7 @@ in the Wolfenstein one.
 \subsubsection{Other theoretical issues}
 
 % J. Charles
-
+\td{to be shortened}
 In contrast to the determination of $\gamma$ from decays with a single CKM amplitude, the extraction of $\beta$ and $\beta_s$ (or $\phi_d=2\beta$, $\phi_s=-2\beta_s$) from $b\to c\bar cs$ transitions is plagued by a small theoretical uncertainty from penguin diagrams, that may however compete with the statistical error in the next future. Techniques to estimate the penguin contributions from data on SU(3)-related channels are described in Sec.~\ref{sec:b2ccspenguin}. A different, more theory-driven approach has been proposed in Ref.~\cite{Frings:2015eva}: an Operator Product Expansion is used to calculate the penguin-to-tree ratio and constraint the penguin contribution to the CKM phase. It thus provides an independent cross-check of the SU(3) approach. For present data, however, it is assumed that penguin contributions in $b\to c\bar cs$ are negligible.
 
 In the case of $\alpha$ where penguin contributions are clearly not negligible, they are constrained by isospin symmetry, so that the dominant source of theoretical uncertainty comes from isospin symmetry breaking. Depending on the considered channel ($\pi\pi$, $\rho\rho$ or $\rho\pi$), it can take the form of electroweak penguins, light meson mixing or resonance effects. In all cases then impact on $\alpha$ has been estimated at the subdegree level~\cite{Charles:2017evz} and is neglected for present data, but will have to be taken into account when large statistics samples from next experiments are available.
