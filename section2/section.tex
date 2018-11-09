@@ -474,31 +474,45 @@ First of all, the SM depends on a number of other parameters, masses and couplin
 
 
 The CKMfitter group determines the CKM parameters from a large set of flavour physics constraints using a standard $\chi^2$-like frequentist approach, in addition to a specific (Rfit) scheme to treat theoretical uncertainties~\cite{Charles:2004jd,Charles:2011va,Charles:2015gya}. The set of experimental observables, denoted $\vec {\cal O}_{exp}$, is measured in terms of likelihoods that can be used to build a \chisq-like test statistic,
-\begin{equation}
-\chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p)),
-\end{equation}
-where $\vec {\cal O}_{th}(\vec p)$ represent the theoretical value of the observables for the N fixed parameters $\vec p$. The absolute minimum value of the test statistic, $\chi^2_{\rm min}$, quantifies the agreement of the data with the theoretical model, once converted into a $p$-value (interpreting $\chi^2(\vec{p})$
-as a random variable distributed according to a $\chi^2$ law, generally relying on Wilks' theorem). It is also possible to perform the metrology of specific parameters of the model~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt}. Indeed, if we consider the $\vec\mu$ hadronic parameters as ``nuisance parameters'', 
-we can define the test statistic from the \chisq difference:
-\begin{equation}\label{eq:deltachisq}
- \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}
-\end{equation}
-where  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom:
+%\begin{equation}
+$\chi^2(\vec{p})=-2\log {\mathcal{L}}(\vec {\cal O}_{exp}-\vec {\cal O}_{th}(\vec p))$,
+%\end{equation}
+with $\vec {\cal O}_{th}(\vec p)$ the theoretical values of the observables depending on $N$ fixed parameters $\vec p$. The absolute minimum value of the test statistic, $\chi^2_{\rm min}$, quantifies the agreement of the data with the theoretical model, once converted into a $p$-value (interpreting $\chi^2(\vec{p})$
+as a random variable distributed according to a $\chi^2$ law).
+%, generally relying on Wilks' theorem). 
+It is also possible to perform the metrology of specific parameters of the model, 
+%Indeed, if we c
+by considering the $\vec\mu$ hadronic parameters as ``nuisance parameters'', 
+and 
+%we can 
+defining the test statistic,
+% from the \chisq difference:
+%\begin{equation}\label{eq:deltachisq}
+$ \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}$~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt}.
+%\end{equation}
+Here,  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom,
 \begin{equation}\label{eq:prob}
  p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,.
 \end{equation}
-Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with a $p$-value larger than $1-$CL.
+Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with $p$-value larger than $1-$CL.
 
-In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (i.e., systematics not scaling with the size of the sample) which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, corresponding to a constraint to $\chi^2$ restricting the value of the theoretical parameter/observable to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
+In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (e.g., systematics due to uncertainties on hadronic matrix elements not scaling with the size of the sample).
+% which are particularly relevant in the field of flavour physics (e.g. uncertainties on hadronic matrix elements). 
+The current approach is the so-called Rfit~\cite{Hocker:2001xe,Charles:2004jd,Charles:2016qtt} model, 
+%corresponding to a constraint to $\chi^2$ restricting the value of the 
+where the theoretical parameter/observable is restricted to a range, without any possibility to exceed this range. Most of the systematic uncertainties come from lattice QCD. The CKMfitter collaboration follows the recommendations of the Flavour Lattice Averaging Group~\cite{Aoki:2016frl} and uses a specific procedure to perform the average of the lattice inputs based on the Rfit model combined with a linear addition of systematic uncertainties for the individual inputs~\cite{Charles:2016qtt}.
 
-	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions that is quite intuitive and easy to implement.
-Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is written as
+	The UTfit collaboration follows a Bayesian approach to combine the constraints in the UT plane.  Bayesian statistics allows for a unified treatment of systematic and theoretical uncertainties in a scheme of "updating of knowledge" from prior to posterior distributions.
+	% that is quite intuitive and easy to implement.
+Following Bayes theorem, the unnormalized posterior probability density function (p.d.f.)\ for $\bar\rho$ and $\bar\eta$ (given the constraints) is,
+% written as
 	\begin{equation}
 	f(\bar\rho,\bar\eta|\mathbf{\hat{c}}, \mathbf{\hat{f}}) \propto 
-	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta)\,,
+	{\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})\, f_0(\bar\rho,\bar\eta).
 	\label{eq:flat_inf}
 	\end{equation}
-	where $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, whose theoretical expressions are given by the functions $c_j(\bar\rho,\bar\eta;\mathbf{x})$ depending on $\bar\rho$, $\bar\eta$, and a set of additional experimental and theoretical parameters ${\mathbf x}=\{x_1,x_2,\dots,x_N\}$, $f_0(\bar\rho,\bar\eta)$ is the prior p.d.f.\ for $\bar\rho$ and $\bar\eta$, assumed to be flat on the UT plane, and the effective overall likelihood ${\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})$ is
+Here $\mathbf{\hat{c}}=\{c_1,c_2,\dots,c_M\}$ is a set of measured constraints, whose theoretical expressions are given by functions $c_j(\bar\rho,\bar\eta;\mathbf{x})$ that depend on $\bar\rho$, $\bar\eta$, and a set of additional experimental and theoretical parameters ${\mathbf x}=\{x_1,x_2,\dots,x_N\}$. The $f_0(\bar\rho,\bar\eta)$ is the prior p.d.f.\ for $\bar\rho$ and $\bar\eta$, assumed to be flat on the UT plane, and is multiplied by the effective overall likelihood,
+%${\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})$ is
     \begin{equation}
     {\cal L}(\mathbf{\hat{c}}\,|\,\bar\rho,\bar\eta,\mathbf{f})
     = \int 
@@ -512,13 +526,12 @@ Following Bayes theorem, the (unnormalized) posterior p.d.f.\ for $\bar\rho$ and
 	\exp\left[-\frac{(c_j(\bar\rho, \bar\eta; \mathbf{x})-
 		\hat{c}_j)^2}{2\,\sigma^2(c_j)}\right]\,.
     \end{equation}
-    The integration in eq.(\ref{eq:lik_int}) is usually carried out using Monte Carlo methods. More details on the Bayesian approach of the UTfit collaboration can be found in ref.\cite{Ciuchini:2000de}.
+    The integration in Eq. (\ref{eq:lik_int}) is usually carried out using Monte Carlo methods. More details on the Bayesian approach of the UTfit collaboration can be found in Ref.\cite{Ciuchini:2000de}.
 
 
 % S. Descotes-Genon
 \subsubsection{Current combined constraints on the CKM parameters}
-In the CKMfitter case,
-Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used to assess the
+Table~\ref{CKMfitterSummer2018} summarises the current status of the inputs used by CKMfitter collaboration, to assess the
 validity of the Kobayashi--Maskawa mechanism for CP violation and
 to perform the metrology of the CKM parameters, assuming the
 validity of the SM. This corresponds to the Summer 2018 update available in ref.~\cite{CKMfitterwebsite}, where the lattice inputs used can also be found, coming from an average of the results selected by the Flavour Lattice Averaging group.
@@ -541,7 +554,7 @@ The fit shows a good overall consistency among the various constraints. The main
   \centering
   \includegraphics[width=0.60\textwidth]{section2/figures/CKMfitter_rhoeta_small_Vub.pdf}
    \includegraphics[width=0.35\textwidth]{section2/figures/CKMfitter_Pulls.pdf}
-  \caption{Results for the CKMfitter global fit of the CKM parameters as of Summer 2018. See ref.~\cite{CKMfitterwebsite} for more detail.
+  \caption{Results for the CKMfitter global fit of the CKM parameters as of Summer 2018. See Ref.~\cite{CKMfitterwebsite} for more detail.
     \label{CKMfitterSummer2018}
   }
 \end{figure}
@@ -575,6 +588,7 @@ in the Wolfenstein one.
 
 \subsection{Theoretical prospects}
 \subsubsection{Lattice extrapolations (UTfit)}
+\td{what do we do with this? A few sentences about Chapter 11?}
 \begin{itemize}
 \item Lattice extrapolations
 \item Issue of isospin and radiative corrections
