@@ -525,7 +525,7 @@ $\Gamma_s$ and the weak phase difference $\phi_s$ will require excellent flavour
 Improvements in the decay time resolution are expected in ATLAS and CMS thanks to their upgraded inner detectors.
  %simulations show an improved decay time resolution, %independent on pile-up conditions. 
 Figure~\ref{jpsiphiSensitivity:Mass} shows the ATLAS proper time resolution for Run 1, Run 2, and HL-LHC as a function of the B meson transverse momentum. %: HL-LHC projections are also compared with the Run 1 and Run 2 performances.
-Similarly Fig~\ref{fig:CMSreso} shows the CMS expected Phase-2 performances in the $B^0_s$ mass resolution and proper decay length uncertainty, obtained from a full simulation of the upgraded detector with realistic alignment conditions for the Phase-2 start-up. Besides the improvements in the inner tracker, the extended pseudorapidity 
+Similarly Fig~\ref{fig:CMSreso} shows the CMS expected HL-LHC (Phase 2) performances in the $B^0_s$ mass resolution and proper decay length uncertainty, obtained from a full simulation of the upgraded detector with realistic alignment conditions for the Phase-2 start-up. Besides the improvements in the tracker, which include the L1 trigger capability to reconstruct charged tracks above 2 GeV in transverse momentum with almost offline-like resolutions, the extended pseudorapidity 
 coverage ( up to $|\eta|$ = 4) will increase the CMS acceptance for track reconstruction.
 
 \begin{figure}[t]
@@ -537,14 +537,14 @@ coverage ( up to $|\eta|$ = 4) will increase the CMS acceptance for track recons
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=0.5\textwidth]{section2/figures/CMSmassplot.png}
+\includegraphics[width=0.4\textwidth]{section2/figures/CMSmassplot.png}
 \includegraphics[width=0.5\textwidth]{section2/figures/CMSresoPlot.png}
-\caption{Left: Phase 2 and Phase 1 CMS invariant mass resolution. Right:Normalized proper decay decay lenght uncertainty in 2012 data(blue) and Phase 2 Monte Carlo (red) samples}
+\caption{Left: Phase 2 and Phase 1 CMS $J/\psi K^+K^-$ invariant mass resolution. Right: Normalized proper decay decay length uncertainty in 2012 data (blue) and Phase 2 Monte Carlo (red) samples}
 \label{fig:CMSreso}
 \end{figure}
 
 \begin{table}[t]
-\caption{Summary of the ATLAS $B_s\to J/\psi\phi$ performance at the HL-LHC compared with the Run 1 measurements and projections. Numbers in parenthesis are predictions.}
+\caption{Summary of the ATLAS $B_s\to J/\psi\phi$ performance at the HL-LHC compared with the Run 1 measurements and projections. Numbers in parenthesis are predictions. $\epsilon$ is the flavour-tagging efficiency, D=1-2$\omega$ is the dilution factor, $\omega$ the wrong tag fraction, and $\sigma(t)$ is the proper time resolution.}
 \label{jpsiphitable}
 \center
 \begin{tabular}{lcccccc}
@@ -562,19 +562,27 @@ HL-LHC $\mu 10\mu 10$ & 3000 & $1.7\cdot 10^6$ & 1.5 & 0.04 & (0.009) & (0.003)\
 \end{tabular}
 \end{table}
 
-The ATLAS sensitivity study is based on the extrapolation of the atlas 2012 analysis \cite{Aad:2016tdj}, correcting for the full-simulation based observation of the signal invariant mass and proper-time resolutions. An offline emulation of HL-LHC trigger responses is employed to evaluate the signal yield expectations corresponding to different dimuon transverse momentum thresholds: $(p_T^1,p_T^2)$= (6 GeV, 6 GeV), (6 GeV, 10 GeV) and (10 GeV, 10 GeV). 
-Table \ref{jpsiphitable} summarises the expected sensitivities, compared to the atlas Run 1 measurements and extrapolations to Run 2 statistics. The CMS study  is based on fully simulated signal events using the same model as in the previous CMS analysis \cite{CMSPhis} and toy Monte Carlo experiments for some assumed realistic tagging scenarios:$a$ where the flavour tagging performance is based on muons and 
-jet-charge, $b$ where a muon and electron  flavour tagging is used ( as in the CMS Run1 analysis), and $c$ where 
+The ATLAS sensitivity study is based on the extrapolation of the ATLAS 2012 analysis \cite{Aad:2016tdj}, correcting for the full-simulation based observation of the signal invariant mass and proper-time resolutions. An offline emulation of HL-LHC trigger responses is employed to evaluate the signal yield expectations corresponding to different dimuon transverse momentum thresholds: $(p_T^1,p_T^2)$= (6 GeV, 6 GeV), (6 GeV, 10 GeV) and (10 GeV, 10 GeV). 
+Table \ref{jpsiphitable} summarises the expected sensitivities, compared to the ATLAS Run 1 measurements and extrapolations to Run 2 statistics. 
+The CMS study  is based on fully simulated signal events using the same model as in the previous CMS analysis \cite{CMSPhis} and toy Monte Carlo experiments for some assumed realistic tagging scenarios: $a$ where the flavour tagging performance is based on muons and 
+jet-charge, $b$ where a muon and electron  flavour tagging is used ( as in the CMS Run 1 analysis), and $c$ where 
 a well performing flavour tagging based on leptons, jet-charge, and same side jet-charge/kaon tagging is assumed.
-The performances of the three scenarios are summarizied in Table~\ref{tab:tagging}.
+Fig.~\ref{fig:CMStag} shows the CMS $\phi_s$ statistical uncertainty distribution in the different tagging scenarios, while Table~\ref{tab:tagging} summarizes the corresponding performances.
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{section2/figures/CMS_tagging_power.png}
+\caption{Variation of the $\phi_s$ statistical uncertainty as function of the tagging power in different flavour tagging scenarios discussed in the text.}
+\label{fig:CMStag}
+\end{center}
+\end{figure}
 Both the ATLAS and CMS systematic uncertainty is expected to be reduced to 1 mrad in the HL-LHC period, and thus the total $\phi_S$  uncertainty will still be statistically limited.
 
 \begin{table}[t]
 \begin{center}
-\caption{CMS statistical uncertainty of $\phi_s$ obtained through MC pseudo-experiments in three different flavour tagging scenarios}
+\caption{CMS statistical uncertainty of $\phi_s$ obtained through Monte Carlo  pseudo-experiments in three different flavour tagging scenarios, explained in the text. $\epsilon$ is the flavour-tagging efficiency, $\omega$ the wrong tag fraction, and D=1-2$\omega$ is the dilution factor.}
 \label{tab:tagging}
 \begin{tabular}{lcccc}\hline
-scenario & $\epsilon$ [\%] & $\omega$[\%] & $\epsilon D^2$ [\%] & $\Delta \phi_s$ [mrad] \\ \hline
+tagging scenario & $\epsilon$ [\%] & $\omega$[\%] & $\epsilon D^2$ [\%] & $\delta^{stat}_{\phi_s}$ [mrad] \\ \hline
 $a$        & 32  	           & 39.4         &   1.4               & 5.6   		  \\
 $b$        & 8  	           & 30.2         &   1.2               & 5.8   		  \\
 $c$        & 33  	           & 36.4         &   2.4               & 4.6   		  \\
