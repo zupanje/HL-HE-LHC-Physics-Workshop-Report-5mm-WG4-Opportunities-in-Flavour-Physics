@@ -111,8 +111,7 @@ The latter category is parameterized as a function of the signal yields where de
 This study extrapolates the same systematic uncertainties including the same signal yield parameterization found in the Run 1 studies. As for the external sources of systematic uncertainties, it is plausible to expect that these will be reduced with other measurements and could optimistically scale for the most part like
 statistical uncertainties. This study however conservatively assumes their values to be those used in the Run 1 analysis.
 
-Figures~\ref{fig:HLLHCextrapolation_x15}, \ref{fig:HLLHCextrapolation_x60} and \ref{fig:HLLHCextrapolation_x75} summarise the contours derived in these assumptions,
-in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane. Table~\ref{BMuMUTable} provides the estimated statistical and statistical+systematic uncertainties on the two branching ratios expected for the extrapolations discussed.
+Figure~\ref{fig:HLLHCextrapolation_x15}, summarizes the contours derived in these assumptions, in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane. Table~\ref{tab:BMuMuTable} provides the estimated statistical and statistical+systematic uncertainties on the two branching ratios expected for the extrapolations discussed.
 
 \begin{table}
   \centering
@@ -121,7 +120,7 @@ in the $BR\left[B^0 \to \mu\mu\right]$-$BR\left[B_{s}^0 \to \mu\mu\right]$ plane
     The table reports a sufficient number of significant digits to highlight the difference between statistical+systematics and
     systematics-only uncertainties.
   }
-  \label{BMuMuTable}
+  \label{tab:BMuMuTable}
   \renewcommand{\arraystretch}{1.3}
   \begin{tabular}{ l c c c c }
     \hline
@@ -198,7 +197,7 @@ The uncertainty on the muon identification(ID) efficiency ratio is determined by
 from $\mathrm{B^+ \to  J}/\psi K^+$ and $\mathrm{B^0_s \to J}/\psi \phi$ is assumed to diminish to 1 \% 
 for the Phase-II case.  In this study, it is expected that the dimuon trigger for the signal and normalization channels will 
 remain the same 
-The major systematics shown in Table~\ref{tab:b2msys} are implemented in the PDFs as nuisance parameters.The external input to UML, the value of 
+The major systematics shown in Table~\ref{tab:CMSb2musys} are implemented in the PDFs as nuisance parameters.The external input to UML, the value of 
 $f_u/f_s$ relative uncertainty is currently 5.8\%: This uncertainty is assumed to be 3.5 \%, which is dominated by systematic uncertainties 
 from form-factor ratios and branching fraction measurements.
 
@@ -298,13 +297,13 @@ Scenarios~I and II are inspired by the current discrepancies. The first scenario
 \begin{table}[!tb]
    \centering
 \caption{
-    Benchmark NP scenarios. The first scenario is inspired by the present discrepancies in the
+    Wilson coefficiencts in benchmark NP scenarios. The first scenario is inspired by the present discrepancies in the
     rare decays, including the angular distributions of the decay \decay{\Bz}{\Kstarz\mumu} and the measurements of the branching fraction ratios $R_K$ and $R_{K^*}$. 
     The second
     scenario is inspired by the possibility of explaining the
     rare decays discrepancies and those measured in the observables
     $R(D^{(*)})$. The third and fourth scenarios assume a small 
-    right-handed chirality coupling. The Wilson coefficients ($C_i$) are discussed in Sec.~\ref{sec:penguins:framework}} 
+    right-handed chirality coupling.} 
             \label{tab:penguins:NPscenarios}
    \begin{tabular}{crrrr}
        \hline
@@ -325,7 +324,7 @@ discrepancy with respect to SM predictions~\cite{LHCb-PAPER-2013-037,LHCb-PAPER-
 This discrepancy is largest in the so-called form-factor independent observable $P'_{5}$~\cite{LHCb-PAPER-2015-051}. 
 The decay \decay{\Bs}{\phi\mumu} can also be described by the same angular formalism as the \decay{\Bz}{\Kstarz\mumu} decay.
 However, in this case the \Bs and the \Bsb mesons decay to a common final state and it is not possible to determine the full set of observables   without tagging the initial flavour of the \Bs. 
-This is discussed further in Sec.~\ref{sec:penguin:timedependent}. 
+%This is discussed further in Sec.~\ref{sec:penguin:timedependent}. 
  
  %\subsubsubsection{CMS P5' sensitivity}
 %\par\noindent
@@ -567,7 +566,7 @@ In order to maximise the sensitivity to the photon polarisation,
 the angular analysis should be performed as close as possible 
 to the low $q^2$ endpoint. However, the events at extremely low $q^2$ have worse $\phi$ resolution (because the two electrons are almost collinear) and are polluted by $B^0\to\Kstarz\gamma$ decays with the $\gamma$ converting in the VELO material. In the Run 1 analysis~\cite{LHCb-PAPER-2014-066} the minimum required $m(\epem)$ was set at 20\mevcc, but this should
 be reduced as the \upgradetwo VELO detector will have a significantly lower material budget (multiple scattering is the main effect worsening the $\phi$ resolution). 
-Similarly, the background from $\gamma$ conversions will be reduced with a lighter RF-foil or with the complete removal of it in \upgradetwo~\cite{LHCb-PII-EoI}.
+Similarly, the background from $\gamma$ conversions will be reduced with a lighter RF-foil or with the complete removal of it in \upgradetwo~\cite{EoI}.
 
 Using the signal yield as given in Table~\ref{tab:penguin:LU_extrapolations} leads to the following statistical sensitivities to $A_{\rm T}^{(2)}$ and $A_{\rm T}^{\rm Im}$: 12\% with 8\invfb, 7\% with 23\invfb and 2\% with 300\invfb.
 The theoretical uncertainty induced when this observable is translated into a photon polarisation measurement is currently at the level of $2\%$ but should improve by the time of the \upgradetwo analyses.
@@ -601,7 +600,7 @@ statistics from the \upgradetwo even more relevant. With a similar sensitivity t
 \centering
 \includegraphics[width=0.7\linewidth]{section7/figures/RX_projection_stat_syst.pdf}
 \caption{
-The projected absolute uncertainties on $\mathcal{R}(D^{\ast}$ and $\mathcal{R}(J/\psi)$ (see Sect.~\ref{subsec:OtherBhadronRX}) from the current sensitivities (at 3\invfb) to 23\invfb, 50\invfb, and 300\invfb.
+The projected absolute uncertainties on $\mathcal{R}(D^{\ast}$ and $\mathcal{R}(J/\psi)$ from the current sensitivities (at 3\invfb) to 23\invfb, 50\invfb, and 300\invfb.
 }
 \label{fig:RXproj}
 \end{figure} 

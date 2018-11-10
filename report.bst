@@ -1119,6 +1119,64 @@ FUNCTION {unpublished}
   fin.entry
 }
 
+STRINGS{replace find text}
+INTEGERS{find_length}
+FUNCTION{find.replace}
+{ 'replace :=
+   'find :=
+   'text :=
+   find string.length 'find_length :=
+   ""
+   { text empty$ not }
+   { text #1 find_length substring$ find =
+       {
+	 replace *
+	 text #1 find_length + global.max$ substring$ 'text :=
+       }{
+	 text #1 #1 substring$ *
+	 text #2 global.max$ substring$ 'text :=
+       }
+     if$
+   }
+   while$
+}
+
+FUNCTION {format.lhcbid}
+{ number
+  "{" "" find.replace
+  "}" "" find.replace
+  's :=
+  s #6 #3 substring$ "ANA" =
+  { "LHCb+Analysis+Notes" }
+  { s #6 #3 substring$ "INT" = 
+      { "LHCb+Internal+Notes"}
+      { s #6 #4 substring$ "CONF" = 
+	  { "LHCb+Conference+Contributions"}
+	  { s #6 #3 substring$ "PUB" = 
+	      { "LHCb+Notes"}
+	      { s #6 #5 substring$ "PAPER" = 
+		  { "LHCb+Papers" }
+		  { s #6 #4 substring$ "PROC" = 
+		      { "LHCb+Conference+Proceedings" }
+		      { s #6 #6 substring$ "THESIS" = 
+			  { "LHCb+Theses" }
+			  { s #6 #4 substring$ "TALK" = 
+  			      { "LHCb+Talks" }
+			      { "LHCb+Reports" 
+			      } if$
+			  } if$
+		      } if$
+		  } if$
+	      } if$
+	  } if$
+      } if$
+  } if$
+
+  "\href{http://cdsweb.cern.ch/search?p=" s * 
+  "&f=reportnumber&action_search=Search&c=" * swap$ * "} {" * 
+  s * "}" *
+}
+
 FUNCTION {lhcbreport}
 { output.bibitem
   format.collaboration output
