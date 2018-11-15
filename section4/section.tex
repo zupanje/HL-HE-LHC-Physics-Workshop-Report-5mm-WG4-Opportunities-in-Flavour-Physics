@@ -19,7 +19,7 @@ As with their charm and beauty counterparts, the HL-LHC will be a uniquely power
 
 
 
-The capabilities of LHCb for strangeness decays are due to the large strange-hadron production rates at the LHC, combined with the specific features of LHCb in comparison with the other LHC detectors. These are the higher efficiency for low transverse-momentum particles and the better invariant-mass and vertex resolutions. A simple estimate with {\tt Pythia} {\td which version?} yields a $K^0$ cross section in 14 TeV $pp$ collisions of about 0.6 barn, as well as another 0.6 barn for $K^{\pm}$. These are roughly 1000 times larger than the production cross sections for $B$ mesons. Hyperon cross sections are also large, attaining in {\tt Pythia} 0.14, 0.04, 0.01 barn for $\Lambda^0$, $\Sigma^+$, and $\Xi^-$, respectively (including their antiparticles), while the cross section for $\Omega^-$ is similar to that of $B$'s. 
+The capabilities of LHCb for strangeness decays are due to the large strange-hadron production rates at the LHC, combined with the specific features of LHCb in comparison with the other LHC detectors. These are the higher efficiency for low transverse-momentum particles and the better invariant-mass and vertex resolutions. A simple estimate with {\tt Pythia 8.226} yields a $K^0$ cross section in 14 TeV $pp$ collisions of about 0.6 barn, as well as another 0.6 barn for $K^{\pm}$. These are roughly 1000 times larger than the production cross sections for $B$ mesons. Hyperon cross sections are also large, attaining in {\tt Pythia} 0.14, 0.04, 0.01 barn for $\Lambda^0$, $\Sigma^+$, and $\Xi^-$, respectively (including their antiparticles), while the cross section for $\Omega^-$ is similar to that of $B$'s. 
 
 The LHCb capabilities for strange decays were first demonstrated in Ref.~\cite{Aaij:2012rt}, which achieved world's best result in $\mathcal{B}(K_S^0\to\mu^+\mu^-)$ even though the trigger efficiency on well reconstructed decays was only $\sim 1\%$ (to be compared to $\sim 90\%$ for $B_s^0\to\mu^+\mu^-$). In Run 2, dedicated trigger lines have been implemented, selecting muons down to 80 MeV in transverse momentum and increasing the trigger efficiency by one order of magnitude for strangeness decays to dimuons ~\cite{Dettori:2297352}. The main limitations is the hardware trigger (L0). In Run 3 the LHCb  trigger will be fully software-based, which can in principle allow for efficiencies as high as those achieved for $B$'s. The main challenge for LHCb \upgradetwo will be to fully exploit the software trigger, and enable high trigger efficiency at low transverse momentum using the displacement of the decay products. In addition, using downstream reconstruction in the trigger may boost the LHCb capabilities for charged kaon decays by up to a factor 5~\cite{kaon_paper}.
 
@@ -153,9 +153,14 @@ Using the effective branching ratio in Eq.~\eqref{eq:effBR}, one can define the 
 {\mathcal{B} (K_S \to \mu^+ \mu^-)_{\rm eff}(D)  + \mathcal{B} (K_S \to \mu^+ \mu^-)_{\rm eff}(D')},
 \end{align}
 where $D'$ is obtained by a requiring opposite flavor tagging.
-This asymmetry is a theoretically clean quantity that emerges from a genuine direct $\CP$ violation in general new physics models. \td{check:} The $\CP$ asymmetry vanishes in the SM, but is sensitive to a new $CP$-violating phase beyond the SM. In a similar way, $\CP$ asymmetry of $B_{d,s} \to \mu^+ \mu^- $ has been studied  \cite{DeBruyn:2012wk,Buras:2013uqa}. However, for $B_s$ system the situation differs substantially from $K_S$, since 
-the LD contributions are negligible and the life-time difference between the two mass eigenstates is small compared to $K_{S,L}$. 
+This asymmetry is a theoretically clean quantity that emerges from a genuine direct $\CP$ violation in general new physics models. 
+\td{check:} 
+In the SM, $ A_{CP} (K_S \to \mu^+ \mu^-)^{\textrm{SM}}_{D,-D} = \mathcal{O}(0.7)\times D$ is predicted in the case of $D' = -D$ \cite{Chobanova:2017rkj}. 
 
+In a similar way, $\CP$ asymmetry of $B_{d,s} \to \mu^+ \mu^- $ has been studied  \cite{DeBruyn:2012wk,Buras:2013uqa}. However, for $B_s$ system the situation differs substantially from $K_S$, since 
+the LD contributions are negligible and the life-time difference between the two mass eigenstates is small compared to $K_{S,L}$. 
+The $\CP$ asymmetry in $B_{d,s} \to \mu^+ \mu^- $ vanishes in the SM, 
+but is also sensitive to a new $CP$-violating phase beyond the SM.
 
 Before closing this section, we briefly comment on $K_L \to e^+ e^-$.
 Both $K_L \to e^+ e^-$ and $K_L \to \mu^+ \mu^-  $ are dominated by LD two-photon contributions \cite{GomezDumm:1998gw,Cirigliano:2011ny}.
