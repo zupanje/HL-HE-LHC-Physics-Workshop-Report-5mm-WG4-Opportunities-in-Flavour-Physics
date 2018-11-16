@@ -1,6 +1,5 @@
-\subsubsection{$B\rightarrow D^{(*)}l\nu$ Form factors and Anatomy of $R(D^{(*)})$}
-
-Quite unexpectedly, signs of lepton flavor universality violation have not only been seen in loop-suppressed flavor-changing 
+\subsubsection{$B\rightarrow D^{(*)}l\nu$ form factors and anatomy of $R(D^{(*)})$}
+Quite unexpectedly, signs of LFUV have not only been seen in loop-suppressed flavor-changing 
 neutral currents discussed above, but also in tree-level decays, namely in tensions with the SM predictions for the ratios
 \begin{equation}
   R(D^{(*)}) = \frac{\mathcal{B}(B \to D^{(*)}\tau\nu)}{\mathcal{B}(B \to D^{(*)}l\nu)},\,\hspace{0.5cm}(l=\mu,~e).
@@ -9,78 +8,84 @@ neutral currents discussed above, but also in tree-level decays, namely in tensi
 Assuming for the moment only SM particle content, the $b\to c\ell\nu_{\ell^\prime}$ transitions at scales near $m_b$ can be described by a $SU(3) \times U(1)$-invariant effective Hamiltonian, {\bf\color{red}[Check]}
 \begin{equation}\label{eq:Heffbcellnu}
   \mathcal H_\text{eff}^{b\to c\tau\nu_{\ell}} = \frac{4 G_F}{\sqrt{2}} V_{cb}
-    \sum_{\ell}\left(O_{V_L}^{\ell\ell} + \sum_{i,\ell'} C_i^{\ell\ell'} O_i^{\ell\ell'} + \text{h.c.}\right),
+    \sum_{\ell}\Big(O_{V_L}^{\ell\ell} + \sum_{i,\ell'} C_i^{\ell\ell'} O_i^{\ell\ell'} + \text{h.c.}\Big),
 \end{equation}
-where $\ell,\ell'=e,\mu,\tau$ denotes the charged lepton and neutrino flavor, respectively, and the sum over $i$ runs over the following operators:
+where $\ell,\ell'=e,\mu,\tau$ denotes the charged lepton and neutrino flavor, respectively, and the sum over $i$ runs over the following operators,
 \begin{equation}
 \label{eq:ops}
 \begin{split}
-  O_{V_{L,R}}^{\ell\ell'} &= (\bar c_{L,R} \gamma^\mu b_{L,R})(\bar \ell_L \gamma_\mu \nu_{\ell' L}) \,, \\
-  O_{S_{L,R}}^{\ell\ell'} &= (\bar c_{R,L} b_{L,R})(\bar \ell_R \nu_{\ell' L}) \,, \\
-  O_T^{\ell\ell'} &= (\bar c_R \sigma^{\mu\nu} b_L)(\bar \ell_R \sigma_{\mu\nu}\nu_{\ell' L}) \,,
+  O_{V_{L,R}}^{\ell\ell'} &= (\bar c_{L,R} \gamma^\mu b_{L,R})(\bar \ell_L \gamma_\mu \nu_{\ell' L}), 
+  %\\
+  \qquad O_{S_{L,R}}^{\ell\ell'} = (\bar c_{R,L} b_{L,R})(\bar \ell_R \nu_{\ell' L}), 
+  \\
+  O_T^{\ell\ell'} &= (\bar c_R \sigma^{\mu\nu} b_L)(\bar \ell_R \sigma_{\mu\nu}\nu_{\ell' L}).
 \end{split}
 \end{equation}
-with NP coefficients $C_i^{\ell\ell'}$ dependent on both charged-lepton and neutrino flavor in general. These operators arise from more fundamental interactions at a higher scale $\Lambda$ which, in accordance with available LHC data, can be taken to be larger than the electroweak scale $v˜$. The operators of Eq.~(\ref{eq:ops}) should then be embedded in ones consisting of fields with full SM gauge quantum numbers. For $C_{V_R}$ this is impossible at dimension-6, leading to a parametric suppression of at least $v^2/\Lambda^2$ for tree-level UV completions. Linearly realized electroweak symmetry breaking, captured by the \emph{Standard Model effective field theory} (SMEFT)~\cite{Buchmuller:1985jz,Grzadkowski:2010es}, also yields the prediction $C_{V_R}^{\ell\ell'} \equiv C_{V_R}\delta_{\ell\ell'}$~\cite{Cirigliano:2009wk,Cata:2015lta}, in which case sizable contributions to $C_{V_R}$ are excluded by $b\to c(e,\mu)\nu$~\cite{Jung:2018lfu}. While deviations from this prediction are possible in a non-linear realization of electroweak symmetry breaking~\cite{Cata:2015lta}, at least one of the above-named sources of suppression always remains and right-handed currents do not play a role.
+The NP coefficients $C_i^{\ell\ell'}$ dependent on both charged-lepton and neutrino flavor in general. These operators arise from more fundamental interactions at a higher scale $\Lambda$ which, in accordance with available LHC data, can be taken to be larger than the electroweak scale $v˜$. The operators of Eq.~(\ref{eq:ops}) should then be embedded in ones consisting of fields with full SM gauge quantum numbers. For $C_{V_R}$ this is impossible at dimension-6, leading to a parametric suppression of at least $v^2/\Lambda^2$ for tree-level UV completions. Linearly realized electroweak symmetry breaking, captured by the Standard Model effective field theory (SMEFT)~\cite{Buchmuller:1985jz,Grzadkowski:2010es}, also yields the prediction $C_{V_R}^{\ell\ell'} \equiv C_{V_R}\delta_{\ell\ell'}$~\cite{Cirigliano:2009wk,Cata:2015lta}, in which case sizable contributions to $C_{V_R}$ are excluded by $b\to c(e,\mu)\nu$~\cite{Jung:2018lfu}. While deviations from this prediction are possible in a non-linear realization of electroweak symmetry breaking~\cite{Cata:2015lta}, at least one of the above-named sources of suppression always remains and right-handed currents do not play a role.
 
-The meson form factors stemming from the hadronic matrix elements of the SM operator $O_{V_L}^{\ell\ell}$ can be parametrized as~\cite{Caprini:1997mu}
-\begin{align}
-  \bra{D(v_D)} \bar{c} \gamma^\mu b \ket{\bar{B}(v_B)} &= h_+(w) (v_B + v_D)^\mu + h_-(w)(v_B - v_D)^\mu \,, \\
+The relevant hadronic matrix elements of the SM operator $O_{V_L}^{\ell\ell}$, i.e., the $ \bra{D} \bar{c} \gamma^\mu b \ket{\bar{B}}$, $\bra{D^*} \bar{c} \gamma^\mu b \ket{\bar{B}}$, and 
+$\bra{D^*} \bar{c} \gamma^\mu \gamma_5 b \ket{\bar{B}}$, are parametrized using one, two, and three form factors, respectively~\cite{Caprini:1997mu}. \td{JZ: shortened, ok?}
 %
-  \bra{D^*(v_{D^*}, \varepsilon_{D^*})} \bar{c} \gamma^\mu b \ket{\bar{B}(v_B)} &= 
-	i h_V \varepsilon^{\mu\nu\alpha\beta} \varepsilon^*_{D^* \nu} v_{D^* \alpha} v_{B\, \beta} \,, \\
-%
-  \bra{D^*(v_{D^*}, \varepsilon_{D^*})} \bar{c} \gamma^\mu \gamma_5 b \ket{\bar{B}(v_B)} &= 
-	h_{A_1}(w) (w+1) \varepsilon^{*\, \mu}_{D^*} - 
-	\left(h_{A_2}(w) v_B^\mu + h_{A_3}(w) v_{D^*}^\mu\right) \varepsilon_{D^*}^* \cdot v_B\,,
-\end{align}
-with form factors $h_i$, polarization vector $\varepsilon_{D^*}$, velocities $v_P$, and the dimensionless variable
-$w = (m_B^2 + m_{D^{(*)}}^2-q^2)/(2 m_B m_{D^{(*)}})$. 
-One can reformulate the above parametrization in terms of helicity amplitudes with definite parity and spin in the 
-convention of Caprini, Lellouch, and Neubert (CLN) as~\cite{Caprini:1997mu}
-\begin{multline}
-  V_1 = h_+ - \frac{1-r}{1+r} h_-\,, \qquad
-  S_1 = h_+ - \frac{1+r}{1-r} \frac{w-1}{w+1} h_-\,, \qquad
-  V_4 = h_V, \qquad 
-  A_1 = h_{A_1}\,, \\  
-  A_5 = \frac{(w-r) h_{A_1} - (w-1) (r h_{A_2} + h_{A_3} )}{1-r}\,, \,
-  P_1 = \frac{(w+1) h_{A_1} - (1 - w r) h_{A_2} - (w - r) h_{A_3} }{1+r} \,,
-\end{multline}
-where $r=m_{D^{(*)}}/m_B$.
-The translation table to the form factor convention of Boyd, Grinstein, and Lebed (BGL) \cite{Boyd:1997kz} can be found in Ref.~\cite{Bigi:2017jbd}.
-Using the helicity basis has the advantage that the unitarity bounds can be written in an elegant way. 
-Employing the BGL parametrization \cite{Boyd:1997kz}
-\begin{equation}
-  F(z) = \frac{1}{P_F(z) \phi_F(z)} \sum_{n=0}^{\infty} a_n^F z^n, \qquad
-  z = \frac{\sqrt{1+w}-\sqrt{2}}{\sqrt{1+w} + \sqrt{2}},
-\end{equation} 
-with Blaschke factor $P_F(z)$ and outer function $\phi_F(z)$, the unitarity bounds have the simple form
-\begin{equation}
-\label{eq:unitarity-constr}
-  \sum_{n=0}^\infty \left( a_n^F \right)^2 \leq 1\,,
-\end{equation}
-where \emph{e.g.}, the coefficients of $A_1$ and $A_5$ contribute to the same sum.
+%The meson form factors stemming from the hadronic matrix elements of the SM operator $O_{V_L}^{\ell\ell}$ can be parametrized as~\cite{Caprini:1997mu}
+%\begin{align}
+%  \bra{D(v_D)} \bar{c} \gamma^\mu b \ket{\bar{B}(v_B)} &= h_+(w) (v_B + v_D)^\mu + h_-(w)(v_B - v_D)^\mu \,, \\
+%%
+%  \bra{D^*(v_{D^*}, \varepsilon_{D^*})} \bar{c} \gamma^\mu b \ket{\bar{B}(v_B)} &= 
+%	i h_V \varepsilon^{\mu\nu\alpha\beta} \varepsilon^*_{D^* \nu} v_{D^* \alpha} v_{B\, \beta} \,, \\
+%%
+%  \bra{D^*(v_{D^*}, \varepsilon_{D^*})} \bar{c} \gamma^\mu \gamma_5 b \ket{\bar{B}(v_B)} &= 
+%	h_{A_1}(w) (w+1) \varepsilon^{*\, \mu}_{D^*} - 
+%	\left(h_{A_2}(w) v_B^\mu + h_{A_3}(w) v_{D^*}^\mu\right) \varepsilon_{D^*}^* \cdot v_B\,,
+%\end{align}
+%with form factors $h_i$, polarization vector $\varepsilon_{D^*}$, velocities $v_P$, and the dimensionless variable
+%$w = (m_B^2 + m_{D^{(*)}}^2-q^2)/(2 m_B m_{D^{(*)}})$. 
+%One can reformulate the above parametrization in terms of helicity amplitudes with definite parity and spin in the 
+%convention of Caprini, Lellouch, and Neubert (CLN) as~\cite{Caprini:1997mu}
+%\begin{multline}
+%  V_1 = h_+ - \frac{1-r}{1+r} h_-\,, \qquad
+%  S_1 = h_+ - \frac{1+r}{1-r} \frac{w-1}{w+1} h_-\,, \qquad
+%  V_4 = h_V, \qquad 
+%  A_1 = h_{A_1}\,, \\  
+%  A_5 = \frac{(w-r) h_{A_1} - (w-1) (r h_{A_2} + h_{A_3} )}{1-r}\,, \,
+%  P_1 = \frac{(w+1) h_{A_1} - (1 - w r) h_{A_2} - (w - r) h_{A_3} }{1+r} \,,
+%\end{multline}
+%where $r=m_{D^{(*)}}/m_B$.
+%The translation table to the form factor convention of Boyd, Grinstein, and Lebed (BGL) \cite{Boyd:1997kz} can be found in Ref.~\cite{Bigi:2017jbd}.
+%Using the helicity basis has the advantage that the unitarity bounds can be written in an elegant way. 
+%Employing the BGL parametrization \cite{Boyd:1997kz}
+%\begin{equation}
+%  F(z) = \frac{1}{P_F(z) \phi_F(z)} \sum_{n=0}^{\infty} a_n^F z^n, \qquad
+%  z = \frac{\sqrt{1+w}-\sqrt{2}}{\sqrt{1+w} + \sqrt{2}},
+%\end{equation} 
+%with Blaschke factor $P_F(z)$ and outer function $\phi_F(z)$, the unitarity bounds have the simple form
+%\begin{equation}
+%\label{eq:unitarity-constr}
+%  \sum_{n=0}^\infty \left( a_n^F \right)^2 \leq 1\,,
+%\end{equation}
+%where \emph{e.g.}, the coefficients of $A_1$ and $A_5$ contribute to the same sum.
 The contribution of the helicity form factors $S_1$ and $P_1$ to the branching ratios of $B\rightarrow Dl\nu$ and $B\rightarrow D^*l\nu$ are
 suppressed by the mass of the final state lepton. In view of the lack of experimental information on these form factors we need  input from theory. 
 In case of $B \to D$ we are in the fortunate position that lattice results
-for both $V_1$ and $S_1$ at $w\geq 1$ exist~\cite{Lattice:2015rga,Na:2015kha,Aoki:2016frl}.
+for both $V_1$ and $S_1$ at $w\geq 1$ exist~\cite{Lattice:2015rga,Na:2015kha,Aoki:2016frl}, where $w = (m_B^2 + m_{D^{(*)}}^2-q^2)/(2 m_B m_{D^{(*)}})$.
 This is the reason for the very good agreement of all SM predictions in this case, see Table~\ref{tab:RD-and-RDstar-anomaly}.
 For $B \to D^*$ we have only one data point from lattice, namely $A_1(w=1)$~\cite{Bailey:2014tva,Harrison:2017fmw}, so that it is necessary to use 
 Heavy Quark Effective Theory (HQET)~\cite{Bernlochner:2017jka,Caprini:1997mu,Luke:1990eg,Neubert:1991xw,Neubert:1993mb,Neubert:1992wq,Neubert:1992pn,Ligeti:1993hw}
 to relate the $B \to D$ and $B \to D^*$ form factors order-by-order in the heavy quark expansion in terms of Isgur--Wise functions,
 in order to obtain a prediction for $P_1$ and hence $R(D^*)$. 
 
-At NLO in the heavy quark expansion, \emph{i.e.}, expanding to linear order in $\alpha_s/\pi$ and $1/m_{c,b}$,
+At NLO in the heavy quark expansion, {i.e.}, expanding to linear order in $\alpha_s/\pi$ and $1/m_{c,b}$,
 there is sufficient differential information in the $B \to D^{(*)}l\nu$ decays to fit to the four Isgur-Wise functions
 that arise at this order \cite{Bernlochner:2017jka,Jaiswal:2017rve}. 
 In the literature the theoretical error from using NLO HQET results is under discussion, leading to different 
 results for the error of the SM prediction. 
-HQET can also be used to obtain a stronger version of the unitarity bounds than Eq.~(\ref{eq:unitarity-constr}); 
+HQET can also be used to obtain a stronger version of the unitarity bounds,
+% than Eq.~(\ref{eq:unitarity-constr}); 
 see Refs.~\cite{Boyd:1997kz,Bigi:2017jbd} for details.
 Additional model dependent theoretical input at maximal $w$ can be provided by Light Cone Sum Rules (LCSR)~\cite{Faller:2008tr},
 or at zero recoil by QCD sum rules~\cite{Neubert:1992wq,Neubert:1992pn,Neubert:1993mb,Ligeti:1993hw}.
 We give a summary of theoretical predictions for $R(D^{(*)})$ in Table~\ref{tab:RD-and-RDstar-anomaly}.
 
-Because lattice data is presently available only at zero recoil for $B \to D^*$
+Because lattice data is presently available only at zero recoil for $B \to D^*$,
 and since kinematic suppression requires $d\Gamma[B \to D^*l\nu]/dw$ to vanish at $w=1$,  
 $|V_{cb}|$ can be obtained from $B \to D^*l\nu$ only by extrapolating the slope of $d\Gamma[B \to D^*l\nu]/dw$,
 fitted to $w > 1$ data, back to zero recoil. 
@@ -93,7 +98,7 @@ Combined with abundant future data for $B \to D^*l\nu$ from HL-LHC, extractions 
 will become possible, thereby either resolving or more concretely establishing tensions between exclusive and inclusive measurements of $|V_{cb}|$.
 
 With future experimental data and lattice QCD results (see Sec.~\ref{sec:lattice} and Table~\ref{table:Proj} therein) the SM 
-prediction of $R(D^*)$ will improve considerably. For an estimate, one may note that the dependence of $d\Gamma/dw$ on $P_1$ arises 
+prediction of $R(D^*)$ will improve considerably. For an estimate, one may note that the dependence of $d\Gamma/dw$ on $P_1$ form factor arises 
 only incoherently, via a contribution of the form $m_l^2|P_1(w)|^2$. This $P_1$ term contributes approximately 10\% of the total 
 integrated $B \to D^*\tau\nu$ rate, which suggests that the dependence of $R(D^*)$ on this form factor should be limited. 
 Assuming a 1\% future precision for $P_1$, using the 50 ab$^{-1}$ which Belle~II will presumably gather by 2025, and taking into 
@@ -101,8 +106,17 @@ account the expected improvement of the form factors $A_{1,5}$ and $V_4$ from th
 an error of 0.001 for the SM value of $R(D^*)$ might be achieved.
 
 \begin{table*}[t]
+\caption{
+Current SM $R(D^{(*)})$ theory predictions and their deviation from experiment 
+$R(D)^{\mathrm{exp}} = 0.407(39)(24)$ \cite{Amhis:2016xyh,Lees:2012xj,Lees:2013uzd,Huschle:2015rga}
+and
+$R(D^*) = 0.306(13)(7)$ \cite{Amhis:2016xyh,Lees:2012xj,Lees:2013uzd,Huschle:2015rga,Sato:2016svk,Aaij:2015yra,Hirose:2016wfn,Hirose:2017dxl,Aaij:2017uff,Aaij:2017deq}
+(HFLAV 2018 summer update). 
+For older SM predictions see Refs.~\cite{Fajfer:2012vx,Celis:2012dk,Tanaka:2012nw}.
+Table adapted and extended from Ref.~\cite{Schacht:2017vfd}.
+\label{tab:RD-and-RDstar-anomaly}} 
 \begin{center}
-\begin{tabular}{|ccc|}
+\begin{tabular}{ccc}
   \hline\hline
   Ref.                       & $R(D)$      &  Exp. deviation \\
   \hline
@@ -112,7 +126,7 @@ an error of 0.001 for the SM value of $R(D^*)$ might be achieved.
   \hline\hline 
 \end{tabular}
 \qquad
-\begin{tabular}{|ccc|}
+\begin{tabular}{ccc}
   \hline\hline
   Ref.                       & $R(D^*)$   &  Exp. deviation \\
   \hline 
@@ -121,15 +135,6 @@ an error of 0.001 for the SM value of $R(D^*)$ might be achieved.
   \cite{Jaiswal:2017rve}     & $0.257(5)$ & $3.1\sigma$ \\
   \hline\hline
 \end{tabular}
-\caption{
-Current SM $R(D^{(*)})$ theory predictions and their deviation from experiment 
-$R(D)^{\mathrm{exp}} = 0.407(39)(24)$ \cite{Amhis:2016xyh,Lees:2012xj,Lees:2013uzd,Huschle:2015rga}
-and
-$R(D^*) = 0.306(13)(7)$ \cite{Amhis:2016xyh,Lees:2012xj,Lees:2013uzd,Huschle:2015rga,Sato:2016svk,Aaij:2015yra,Hirose:2016wfn,Hirose:2017dxl,Aaij:2017uff,Aaij:2017deq}
-(HFLAV 2018 summer update). 
-See for older SM predictions Refs.~\cite{Fajfer:2012vx,Celis:2012dk,Tanaka:2012nw}.
-Table adapted and extended from Ref.~\cite{Schacht:2017vfd}.
-\label{tab:RD-and-RDstar-anomaly}} 
 \end{center}
 \end{table*}
 
