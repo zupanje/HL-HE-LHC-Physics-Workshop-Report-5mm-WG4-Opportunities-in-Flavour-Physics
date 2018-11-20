@@ -58,7 +58,7 @@ Among the operators contributing to top-quark FCNC processes,
 several categories can be distinguished. We consider operators involving
 exactly two quarks, as well as those involving two quarks and two leptons.
 Operators containing four quarks only start contributing at next-to-leading order in QCD in most of the measurements we consider ($pp\to tj$ is the exception).
-The corresponding Warsaw-basis operators have been listed in Eq.\,(12-20) and (21-28) of Ref.~\cite{AguilarSaavedra:2018nen}.
+The corresponding Warsaw-basis operators have been listed in Eqs.\,(12-20) and (21-28) of Ref.~\cite{AguilarSaavedra:2018nen}.
 They are:
 \begin{equation}
 	\begin{aligned}
@@ -124,8 +124,10 @@ They are:
 	  (\bar d_k q_l)
   \end{aligned}
 \end{equation}
-Note however that the $\qq{}{\varphi ud}{}$, $\qq{}{dW}{}$ and $\qq{}{ledq}{}$ operators only contribute to charged top-quark currents {\color{red} at tree-level?} and are therefore not relevant for our purpose.
-The EFT degrees of freedom appearing in top-quark FCNC processes were defined in Appendices~E.1-2 of Ref.\,\cite{AguilarSaavedra:2018nen}. They are:
+Note however that the $\qq{}{\varphi ud}{}$, $\qq{}{dW}{}$ and $\qq{}{ledq}{}$ operators only contribute to charged top-quark currents {\color{red} (when one does not consider SM electroweak corrections)} and are therefore not relevant for our purpose.
+The EFT degrees of freedom appearing in top-quark FCNC processes were defined in Appendices~E.1-2 of Ref.\,\cite{AguilarSaavedra:2018nen}. They are:%
+{%
+\renewcommand*{\cc }[4][]{\tmp{#2}{#3}{#4}{#1{C}}}%
 \begin{gather}
 \begin{aligned}
 \ccc{[I]}{t\varphi}{3a} &\equiv \ReIm\{\cc{}{u\varphi}{3a}\},\\
@@ -164,7 +166,8 @@ The EFT degrees of freedom appearing in top-quark FCNC processes were defined in
 %\ccc{S[I]}{ledq}{\ell,3a} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell 3a}\},\\
 %\ccc{S[I]}{ledq}{\ell,a3} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell a3}\},\\
 \end{aligned}
-\end{gather}
+\end{gather}%
+}%
 
 
 \begin{figure}[tb]\centering
@@ -173,7 +176,7 @@ The EFT degrees of freedom appearing in top-quark FCNC processes were defined in
 are overlooked in the anomalous coupling approach although they contribute in
 FCNC processes at the same order in $1/\Lambda^2$ as three-point ones.
 Representative diagrams are shown for $ug\to th$ production (or radiative $t\to
-hug$ decay), and $e^+e^-\to t\,\bar u$ (or $t\to u\,e^+e^-$ decay).}
+hug$ decay), and $e^+e^-\to t\,\bar u$ (or $t\to u\,e^+e^-$ decay). Figure taken from Ref.~\cite{Durieux:2014xla}.}
 \label{fig:missing_four_point_operators}
 \end{figure}
 
@@ -406,7 +409,8 @@ Assuming that new physics arises at a scale well above the electroweak scale, th
 \begin{align}\label{eq:Wtb}
 \mathcal L_{tb} =-\bar t\left[ \frac{g}{\sqrt{2}}\,\gamma^\mu (V_{tb}(1+\frac{v^2}{2}c_{\varphi q}^{-})P_L+\frac{v^2}{2} C_{\varphi tb}P_R)W_\mu^+-v\sigma^{\mu\nu}W_{\mu\nu}^+\left(C_{bW}P_R+C_{tW}^*P_L\right)\right]b+{\rm h.c.}\,\,,
 \end{align}
-where $C_i = (c_{i}+ic_i^{ [I]})/\Lambda^2$.~\footnote{Here we followed Ref.~\cite{Grzadkowski:2008mf} and assumed that no flavor-changing neutral currents are induced at tree level, which implies $C_{\varphi q}^{1(33)}+C_{\varphi q}^{3(33)} = 0$ such that only the (real) combination $c_{\varphi q}^-=C_{\varphi q}^{1(33)}-C_{\varphi q}^{3(33)}$ {\color{red}\bf[check]} appears in the Eq.\ \eqref{eq:Wtb}.}
+where $C_i = (c_{i}+ic_i^{ [I]})/\Lambda^2$.~\footnote{Here we followed Ref.~\cite{Grzadkowski:2008mf} and assumed that no flavor-changing neutral currents are induced at tree level, which implies $C_{\varphi q}^{1(33)}+C_{\varphi q}^{3(33)} = 0$ such that only the (real) combination $c_{\varphi q}^-=C_{\varphi q}^{1(33)}-C_{\varphi q}^{3(33)}$ appears in Eq.\ \eqref{eq:Wtb}.}
+
 %
 These Wilson coefficients are related to the often-used anomalous couplings \cite{AguilarSaavedra:2008zc,AguilarSaavedra:2006fy} as follows
 \begin{align}
@@ -415,50 +419,35 @@ V_L = V_{tb}^*(1+\frac{v^2}{2}c_{\varphi q}^{-}),\qquad V_R = \frac{v^2}{2} C_{\
 It should be mentioned that, within the SMEFT, gauge invariance links the above vertices to additional interactions, the full forms of the relevant operators are given in Sec.~\ref{sec:top:FCNC}.
 
 The above interactions give tree-level contributions to single-top production and observables in $t\to W^+b$, in particular, the $W$-boson helicity fractions. Apart from these processes that are `directly' sensitive the $Wtb$ vertices, there are `indirect' observables that receive contributions from the same operators through loop diagrams; examples are $h\to \bar bb$, $B\to X_s\gamma$, and searches for electric dipole moments (EDMs).
-Here we briefly discuss both the direct and indirect limits on the operators in Eq.\ \eqref{eq:Wtb}, as well as the projections for the HE/HL-LHC.
+Here we briefly discuss both the direct and indirect limits on the operators in Eq.\ \eqref{eq:Wtb}, as well as the projections for the HL-LHC.
 
 \subsubsection{Direct probes}
 %
-
-\begin{table}\label{tab:directWtb}
-\center
-\caption{$95\%$ CL constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels. {\color{red}\bf[Why no sensitivity to $c_{\varphi q}^-$?]}}
+\begin{table}
+\center\small
+\caption{$95\%$ C.L.\ constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels. 
+%{\color{red}\bf[Why no sensitivity to $c_{\varphi q}^-$?]}
+}
 \vspace{.2cm}
 \begin{tabular}{lccclccc}
-\hline\hline
-Current &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$ & ~~~~$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-Re$(\ldots)$ &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-3.9,\,3.2]$ & Re$(\ldots)$ &{\color{red}$[x,x]$}&{\color{red}$[x,x]$}&{\color{red}$[x,x]$}
-\\
-Im$(\ldots)$ &$[-1.5,\,2.2]$ &$[-2.2,\,2.1]$ &$[-3.5,\,3.5]$ & Im$(\ldots)$ &{\color{red}$[x,\,x]$}&{\color{red}$[x,\,x]$}&{\color{red}$[x,x]$}
-%\end{tabular} \hfill
-%\begin{tabular}{lccc}
-\\
-\hline\hline
+	\hline\hline
+	Current &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$ & ~~~~$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
+	Re$(\ldots)$ &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-8.9,\,10.9]$ & Re$(\ldots)$ &$[-0.23,\,0.58]$&$[-2.2,\,2.0]$&$[-9.3,\,10.6]$
+	\\
+	Im$(\ldots)$ &$[-1.5,\,2.2]$ &$[-2.1,\,2.2]$ &$[-9.9,\,9.9]$ & Im$(\ldots)$ &$[-1.2,\,1.3]$&$[-2.2,\,2.1]$&$[-9.9,\,9.9]$
+	\\
+	\hline\hline
 \end{tabular}
+\label{tabdirectWtb}
 \end{table}
-%\begin{table}\label{tab:directWtb}
-%\center\small
-%\caption{$95\%$ CL constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels.}
-%\vspace{.2cm}
-%\begin{tabular}{l|ccc}
-% &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-%Re &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-3.9,\,3.2]$\\
-%Im &$[-1.5,\,2.2]$ &$[-2.2,\,2.1]$ &$[-3.5,\,3.5]$
-%\end{tabular} \hfill
-%\begin{tabular}{l|ccc}
-%$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-%Re &\\
-%Im &
-%\end{tabular}
-%\end{table}
 %
-As mentioned above, the $Wtb$ interactions can be probed directly in single-top production and the $W$ boson helicity fractions in top decays. Furthermore, in the case of polarized top quarks, it is possible to construct additional $T$-odd observables that are sensitive to CP-violating phases in the $Wtb$ couplings. Here we briefly discuss these observables and the resulting (projected) constraints.
+The $Wtb$ interactions can be probed directly in single-top production and the $W$ boson helicity fractions in top decays. Furthermore, in the case of polarized top quarks, it is possible to construct additional $T$-odd observables that are sensitive to CP-violating phases in the $Wtb$ couplings. Here we briefly discuss these observables and the resulting (projected) constraints.
 
 \smallskip
 {\bf Single top production~~}
 The single-top production cross section has been measured in the $t$ and $s$ channels at the LHC at $\sqrt{s} = 7$, $8$, and $13$ TeV \cite{Aad:2014fwa,Aaboud:2016ymp,Aaboud:2017pdi,Chatrchyan:2012ep,Khachatryan:2014iya,Sirunyan:2016cdg}. These cross sections in principle receive contributions from all $Wtb$ couplings and the measurements can be compared with the SM prediction \cite{Brucherseifer:2014ama} at NNLO in QCD, while BSM contributions have been evaluated at NLO in \cite{Alioli:2017ce,Cirigliano:2016nyn}.
 %
-It should be mentioned that the single-top cross sections can receive contributions from other operators in the SMEFT, in particular from several four-quark operators. Thus, in order to perform an exhaustive global analysis one would have to include these additional as well. For discussions on such operators in the context of single-top production, see e.g.\ Refs.\ \cite{Buckley:2015lku,Buckley:2015nca}.
+It should be mentioned that the single-top cross sections can receive contributions from other operators in the SMEFT, in particular from several four-quark operators. Thus, in order to perform an exhaustive global analysis one would have to include these effects as well. For discussions on such operators in the context of single-top production, see e.g.\ Refs.\ \cite{Buckley:2015lku,Buckley:2015nca}.
 
 \smallskip
 {\bf Top quark decays~~}
@@ -466,16 +455,24 @@ The helicity fractions of the $W$ boson in top decays are mostly sensitive to $c
 The SM predictions for the helicity fractions are known to NNLO in QCD \cite{Czarnecki:2010gb}, while the BSM contributions have been computed to NLO \cite{Drobnak:2010ej}.  
 
 As mentioned above, in the case of polarized top-quark decays, it becomes possible to construct additional observables that are sensitive to both the real and imaginary parts of the $Wtb$ couplings. In particular, both the asymmetries constructed in Ref.\ \cite{Aguilar-Saavedra:2015yza,AguilarSaavedra:2010nx} and the triple-differential measurements of Ref.\ \cite{Aaboud:2017yqf} are sensitive to $c_{tW}^{[I]}$. As a result, the limits on $c_{tW}^{[I]}$ already improve noticeably when including current experimental measurements of these angular asymmetries \cite{Deliot:2017byp}.
+
+
+It should be noted that top decays can in principle be used to probe physics beyond that of the top sector. For example, it was recently suggested \cite{Harrison:2018bqi} that the process $t\to bW\to b\bar b c$ can used to measure $V_{cb}$ at the $m_W$ scale, instead of $V_{cb}(m_b)$ which is probed in $B$ decays.
 \newline
 
-After taking into account the experimental results on single-top production, the helicity fraction, and angular asymmetries one obtains the limits in Table \ref{tab:current_limits} \cite{Deliot:2017byp}. 
+After taking into account the current experimental results on single-top production, the helicity fractions, and angular asymmetries one obtains the current (projected) limits in the left (right) panel of Table \ref{tabdirectWtb} \cite{Deliot:2017byp,Deliot:2018jts}.
+These limits were obtained by assuming that $c_{\varphi q}^-=0$.~\footnote{This coupling is harder to constrain as it is degenerate with a shift in $V_{tb}$, see Eq.\ \eqref{eq:Wtb}. This degeneracy can be broken by using CKM unitarity tests, or by considering the additional interactions, such as the $Wts$, $Wtd$, and $Ztt$ vertices, that are linked to $c_{\varphi q}^-$ by gauge invariance. A more naive constraint, obtained by setting $V_{tb}=1$, leads to $|c_{\varphi q}^-|\lesssim 1$ \cite{Alioli:2017ce}.}
+%
+ Comparing the two panels one sees that the current and projected limits on the $c_{bW}$ and $c_{\varphi tb}$ couplings are very similar, while the projected limits on the real and imaginary parts of $c_{tW}$ are roughly a factor of $2$ stronger than the current constraints.
+
+
 
 
 \subsubsection{Indirect probes}
 %
-\begin{table}\label{tabindirectWtb}
+\begin{table}
 \center\small
-\caption{Indicative constraints on the SM-EFT operators contributing to the $Wtb$ vertex from indirect observables. A single Wilson coefficient was turned on at a time and we assumed $\Lambda = 1$ TeV.}
+\caption{Indicative constraints on the SMEFT operators contributing to the $Wtb$ vertex from indirect observables. A single Wilson coefficient was turned on at a time and we assumed $\Lambda = 1$ TeV.}
 \vspace{.2cm}
 \begin{tabular}{l|llll}
 &$h\to \bar bb$ & EWPT&$B\to X_s\gamma$ &EDMs\\\hline
@@ -484,14 +481,13 @@ $c^{}_{\varphi tb}$&$[-0.3,4.3]$ & -&$[-4.6,4.9]\cdot 10^{-2}$&-\\
 $c^{}_{tW}$&-&$[-1.1,0.7]$&$[-0.22,0.89]$&  -\\
  $c^{}_{bW}$ &-&-& $[-13,3.5]\cdot 10^{-3}$& -\\\hline
 $c^{[I]}_{\varphi tb}$&$[-7.3,7.3]$ &-&$[-0.20,0.20]$&$[-0.019,0.019]$ \\
-$c^{[I]}_{tW}$&-&-& $[-2.4, 4.5]$ & $[-8.1,8.1]\cdot 10^{-3}$\\
+$c^{[I]}_{tW}$&-&-& $[-2.4, 4.5]$ & $[-1.0,1.0]\cdot 10^{-3}$\\
  $c^{[I]}_{bW}$ &-&-& $[-4.3, 2.3] \cdot 10^{-2}$& $[-5.5,5.5] \cdot 10^{-4}$\\
-\end{tabular}
+\end{tabular}\label{tabindirectWtb}
 \end{table}
 %
 As mentioned above, the anomalous $Wtb$ interactions can contribute to processes without top quarks through loop diagrams.  Although this can give rise to stringent constraints, their interpretation requires some care. As indirect observables receive contributions from additional operators apart from the $Wtb$ couplings, cancellations between different Wilson coefficients are possible. 
 We will nevertheless consider the limits in the case that a single dimension-six operator is generated at the BSM scale.
-
 
 \smallskip
 {\bf Electric dipole moments~~}
@@ -499,25 +495,28 @@ Electric dipole moments are probes of CP violation and, therefore, receive contr
 The most stringent experimental limits have been obtained on the EDMs of the neutron, mercury, and the ThO molecule, the latter of which can be interpreted as a limit on the electron EDM for our purposes.
 To obtain the contributions to EDMs one first has to evolve the $Wtb$ operators to low energies, $\mu\sim 2$ GeV. QCD becomes non-perturbative below this scale, and one has to match to Chiral perturbation theory, which describes the CP-odd interactions in terms of hadrons, photons, and electrons. These interactions can then be used to calculate the EDMs of nucleons, atoms, and molecules.
 
-Of the operators in Eq.\ \eqref{eq:Wtb}, the $c_{\varphi tb}^{[I]}$ and $c_{bW}^{[I]}$ couplings are mainly constrained by the neutron EDM, while $c_{ tW}^{[I]}$ contributes to the electron EDM. In the first step $c_{\varphi tb}^{[I]}$ and $c_{bW}^{[I]}$  generate the bottom-quark chromo EDM,  $O_{dG}^{(33)}$ (in the notation of \cite{Grzadkowski:2008mf}), through one-loop diagrams \cite{Dekens:2013zca,Alonso:2013hga,Alioli:2017ce}, which induces the Weinberg operators,$O_{\tilde G}$, after integrating out the bottom quark \cite{Dicus:1989va,Weinberg:1989dx,BraatenPRL,Boyd:1990bx}. The hadronic matrix element of the contribution of the Weinberg operator to the neutron EDM is poorly known. Combining naive-dimensional-analysis and sum-rule estimates \cite{Pospelov_Weinberg,Weinberg:1989dx,deVries:2010ah} one has $ |d_n|  = 6|e\,(50\, {\rm MeV})\, C_{\tilde G}(1\, {\rm GeV})|$, with an $\mathcal O(100\%)$ uncertainty. 
+
+Of the operators in Eq.\ \eqref{eq:Wtb}, the $c_{\varphi tb}^{[I]}$ and $c_{bW}^{[I]}$ couplings are mainly constrained by the neutron EDM, while $c_{ tW}^{[I]}$ contributes to the electron EDM. $c_{\varphi tb}^{[I]}$ and $c_{bW}^{[I]}$ first generate the bottom-quark chromo EDM,  $O_{dG}^{(33)}$ (in the notation of \cite{Grzadkowski:2008mf}), through one-loop diagrams \cite{Dekens:2013zca,Alonso:2013hga,Alioli:2017ce}, which subsequently induces the Weinberg operator, $O_{\tilde G}$, after integrating out the bottom quark \cite{Dicus:1989va,Weinberg:1989dx,BraatenPRL,Boyd:1990bx}. The hadronic matrix element of the contribution of the Weinberg operator to the neutron EDM is poorly known. Combining naive-dimensional-analysis and sum-rule estimates \cite{Pospelov_Weinberg,Weinberg:1989dx,deVries:2010ah} one has $ |d_n|  = 6|e\,(50\, {\rm MeV})\, C_{\tilde G}(1\, {\rm GeV})|$, with an $\mathcal O(100\%)$ uncertainty.
+
 
 The contributions to the electron EDM also arise from a two-step process: $c_{ tW}^{[I]}$ first induces CP-odd operators of the form $X_{\mu\nu }\tilde X^{\mu\nu }\varphi^\dagger\varphi$, with $X_{\mu\nu}$ a $SU(2)_L$ or $U(1)_Y$ field strength, as well as semileptonic interactions of the form, $(\bar e_L \sigma_{\mu\nu}\,e_R) \, (\bar t_L\sigma^{\mu\nu}t_R)$, through the renormalization group equations \cite{Cirigliano:2016nyn,Cirigliano:2016njn,Fuyuto:2017xup}. These additional operators then induce the electron EDM at one loop. 
 %
-Using the above contributions and the current experimental limits \cite{Afach:2015sja,Baker:2006ts,Baron:2013eja}, we obtain the constraints in Table \ref{tabindirectWtb}.
+Using the above contributions and the current experimental limits \cite{Afach:2015sja,Baker:2006ts,Andreev:2018ayy}, we obtain the constraints in Table \ref{tabindirectWtb}.
 
 \smallskip
 {\bf Rare B decays~~}
-Unlike EDMs, measurements of $B\to X_s\gamma$ are sensitive to both the real imaginary parts of the couplings. Although all four of the $Wtb$ vertices give rise to  flavor-changing $b\to s$ transitions through one-loop diagrams \cite{Grzadkowski:2008mf,Aebischer:2015fzz}, the largest effects are due to $C_{\varphi tb}$ and $C_{bW}$. Both of these couplings induce contributions proportional to $m_t$ instead of a factor of $m_b$ that appears in SM (as well as for $c^-_{\varphi q}$ and $C_{tW}$), leading to a relative enhancement of $m_t/m_b$. Here we consider the constraints from measurements of the branching ratio and the CP asymmetry \cite{Amhis:2016xyh}, for which we use the theoretical expressions of \cite{Hurth:2003dk} and \cite{Benzke:2010tq}, respectively. This leads to the constraints  in Table \ref{tab:indirectWtb}.
+Unlike EDMs, measurements of $B\to X_s\gamma$ are sensitive to both the real imaginary parts of the couplings. Although all four of the $Wtb$ vertices give rise to  flavor-changing $b\to s$ transitions through one-loop diagrams \cite{Grzadkowski:2008mf,Aebischer:2015fzz}, the largest effects are due to $C_{\varphi tb}$ and $C_{bW}$. Both of these couplings induce contributions proportional to $m_t$ instead of a factor of $m_b$ that appears in SM (as well as for $c^-_{\varphi q}$ and $C_{tW}$), leading to a relative enhancement of $m_t/m_b$. Here we consider the constraints from measurements of the branching ratio and the CP asymmetry \cite{Amhis:2016xyh}, for which we use the theoretical expressions of \cite{Hurth:2003dk} and \cite{Benzke:2010tq}, respectively. This leads to the constraints  in Table \ref{tabindirectWtb}.
 
 \smallskip
 {\bf Electroweak precision tests~~}
 The $Wtb$ operators also modify the self energies of the SM gauge bosons through one-loop diagrams, which are often parametrized by the $S$, $T$, and $U$ parameters \cite{Peskin:1990zt,Peskin:1991sw,Barbieri:2004qk}.
-Taking into account the RGE contributions, only $c_{tW}$ induces the $S$ parameter by mixing with the $O_{\varphi WB}$ operator ($c_{bW}$ contributions are proportional to $m_b$), which leading to the limits in Table \ref{tab:indirectWtb}. Here we assumed only a single dimension-six operator is present at $\mu = \Lambda$, but one can include the couplings of the operators that induce $S$ and $T$ at tree level, $O_{\varphi WB}$ and $O_{HD}$, marginalizing over them. This can be done because electroweak precision observables carry more information than is captured by the $S$, $T$, and $U$ parameters alone. This approach is discussed Ref.\ \cite{Greiner:2011tt,Zhang:2012cd} and leading to weaker limits, $c_{tW}\in [-1.6,0.8]$, $c_{bW}\in [-2,24]$, $c_{\varphi q}^-\in [-0.7,4.7]$ for $\Lambda= 1\,{\rm TeV}$.
+
+Taking into account the RGE contributions, only $c_{tW}$ induces the $S$ parameter by mixing with the $O_{\varphi WB}$ operator ($c_{bW}$ contributions are proportional to $m_b$), which leads to the limits in Table \ref{tabindirectWtb}. Here we assumed only a single dimension-six operator is present at $\mu = \Lambda$, but one can include the couplings of the operators that induce $S$ and $T$ at tree level, $O_{\varphi WB}$ and $O_{HD}$, and marginalize over them. This can be done because electroweak precision observables carry more information than is captured by the $S$, $T$, and $U$ parameters alone. This approach is discussed Ref.\ \cite{Greiner:2011tt,Zhang:2012cd} and leads to weaker limits, $c_{tW}\in [-1.6,0.8]$, $c_{bW}\in [-2,24]$, $c_{\varphi q}^-\in [-0.7,4.7]$ for $\Lambda= 1\,{\rm TeV}$.
 
 
 \smallskip
 {\bf Higgs decays~~}
-Finally, the $Wtb$ interactions contribute to the process $h\to \bar bb$ by inducing corrections to the SM bottom-quark Yukawa coupling \cite{Alioli:2017ce}. In particular, the $C_{\varphi tb}$ coupling generates a contribution to the Yukawa coupling that scales as $y_b\sim \frac{y_t}{(4\pi)^2} v^2C_{\varphi tb}$. Thus, although this contribution only appears at one loop, the suppression is offset by the appearance of the top-quark Yukawa instead of that of the bottom quark. Using the combined ATLAS and CMS analysis \cite{Khachatryan:2016vau} of the Higgs decays to $\gamma\gamma$, $WW$, $ZZ$, $\tau\tau$, $\mu\mu$, and $\bar bb$ signal strengths we obtain the limits in Table \ref{tab:indirectWtb}.
+Finally, the $Wtb$ interactions contribute to the process $h\to \bar bb$ by inducing corrections to the SM bottom-quark Yukawa coupling \cite{Alioli:2017ce}. In particular, the $C_{\varphi tb}$ coupling generates a contribution to the Yukawa coupling that scales as $y_b\sim \frac{y_t}{(4\pi)^2} v^2C_{\varphi tb}$. Thus, although this contribution only appears at one loop, the suppression is offset by the appearance of the top-quark Yukawa instead of that of the bottom quark. Using the combined ATLAS and CMS analysis \cite{Khachatryan:2016vau} of the Higgs decays to $\gamma\gamma$, $WW$, $ZZ$, $\tau\tau$, $\mu\mu$, and $\bar bb$ signal strengths we obtain the limits in Table \ref{tabindirectWtb}.
 
 
 \subsection{Determinations of $V_{tx}$} 
@@ -660,6 +659,16 @@ For more reliable (HL/HE-)LHC projections it is necessary to carefully categoriz
 Another interesting direction, specially relevant for the HE-LHC, is to measure $t\to (s,d)W$ from boosted semi-leptonic $t\bar t$ events. Events with one top-tagged fat jet, one narrow jet and one lepton (both daughter candidates of the leptonic top) can be categorized by the flavor content of the narrow jet. A preliminary analysis~\cite{thePaper} suggests comparable sensitivity to the leptonic $t\bar t$ dataset already at the 13TeV LHC. As a final note, given the small signal-to-background ratio of Cabibbo-suppressed top decays, advanced machine learning approaches to data analysis should be able to further improve upon these simple search strategies.
 
 \subsection{Experimental perspectives}
+\subsubsection{Top-gluon}
+
+The $gqt$ FCNC process was studied by ATLAS~\cite{Aad:2015gea} and CMS~\cite{Khachatryan:2016sib} in single top quark events. The event signature includes the
+requirement of one isolated lepton and the presence of a significant amount of transverse
+missing energy ($E^{miss}_{T}$). The analysis at CMS requires exactly one b and one non-b jet to b present in the final state with the dominant background arising from the $t\bar{t}$+jets
+production, while the analysis at ATLAS vetoes any additional jets resulting in the dominant source of background associated with the $W$+jets production. A neural network-based
+technique is used to separate signal from background events.
+The observed~(expected) 95\% CL upper limits in the CMS analysis are $\mathcal{B}(t \to gu) < 2.0~(2.8) \times 10^{-5}$ and
+$\mathcal{B}(t \to gc) < 4.1~(2.8) \times 10^{-4}$, while the resultant limits in case of ATLAS are $\mathcal{B}(t \to gu) < 4.0~(3.5) \times 10^{-5}$ 
+and $\mathcal{B}(t \to gc) < 2.0~(1.8) \times 10^{-4}$. The projected limits for $3 ab^{-1}$ are $\mathcal{B}(t \to gu) < 3.8 \times 10^{-6}$ and $\mathcal{B}(t \to gc) < 32.1 \times 10^{-6}$~\cite{CMS:2018kwi}.
 
 
 \end{document}
