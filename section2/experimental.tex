@@ -532,7 +532,7 @@ $\Gamma_s$ and the weak phase difference $\phi_s$ will require excellent flavour
 Improvements in the decay time resolution are expected in ATLAS and CMS thanks to their upgraded inner detectors.
  %simulations show an improved decay time resolution, %independent on pile-up conditions. 
 Figure~\ref{jpsiphiSensitivity:Mass} shows the ATLAS proper time resolution for Run~1, Run~2, and HL-LHC as a function of the B meson transverse momentum. %: HL-LHC projections are also compared with the Run 1 and Run 2 performances.
-Similarly Fig~\ref{fig:CMSreso} shows the CMS \cite{ CMS-PAS-FTR-18-041} expected HL-LHC performances in the proper decay length uncertainty, obtained from a full simulation of the upgraded detector with realistic alignment conditions at the HL-LHC start-up. Besides the improvements in the tracker, which include the L1 trigger capability to reconstruct charged tracks above 2 GeV in transverse momentum with almost offline-like resolutions, the extended pseudorapidity 
+Similarly Fig~\ref{fig:CMSreso} shows the CMS \cite{ CMS-PAS-FTR-18-041} expected HL-LHC performances in the proper decay length uncertainty, obtained from a simulation of an ideal upgraded detector response. Besides the improvements in the tracker, which include the L1 trigger capability to reconstruct charged tracks above 2 GeV in transverse momentum with almost offline-like resolutions, the extended pseudorapidity 
 coverage (up to $|\eta|$ = 4) will increase the CMS acceptance for track reconstruction.
 
 \begin{figure}[t]
@@ -571,19 +571,24 @@ HL-LHC $\mu 10\mu 10$ & 3000 & $1.7\cdot 10^6$ & 1.5 & 0.04 & (0.009) & (0.003)\
 \end{table}
 
 The ATLAS sensitivity study is based on the extrapolation of the ATLAS 2012 analysis \cite{Aad:2016tdj}, correcting for the full-simulation based observation of the signal invariant mass and proper-time resolutions. An offline emulation of HL-LHC trigger responses is employed to evaluate the signal yield expectations corresponding to different dimuon transverse momentum thresholds: $(p_T^1,p_T^2)$= (6 GeV, 6 GeV), (6 GeV, 10 GeV) and (10 GeV, 10 GeV). 
-Table \ref{jpsiphitable} summarises the expected sensitivities, compared to the ATLAS Run~1 measurements.% and extrapolations to Run~2 statistics. 
+Table \ref{jpsiphitable} summarises the expected sensitivities, compared to the ATLAS Run~1 measurements and Fig.~\ref{CMS:tag} left shows the $\delta \phi_s$ distributions .% and extrapolations to Run~2 statistics. 
 The CMS study  is based on fully simulated signal events using the same model as in the previous CMS analysis \cite{CMSPhis} and toy Monte Carlo experiments for some assumed realistic tagging scenarios: $a$ where the flavour tagging performance is based on muons and 
 jet-charge, $b$ where a muon and electron  flavour tagging is used (as in the CMS Run~1 analysis), and $c$ where 
 a well performing flavour tagging based on leptons, jet-charge, and same side jet-charge/kaon tagging is assumed.
-Fig.~\ref{fig:CMStag} shows the CMS $\phi_s$ statistical uncertainty distributions for different tagging scenarios.
+Fig.~\ref{fig:CMStag} right shows the CMS $\phi_s$ statistical uncertainty distributions for different tagging scenarios.
 Assuming the new tagging power to be in the range 1.2-2.4\% , and a
 total of 9 million fully reconstructed $B^0_s \to J/\psi\phi(1020)$ candidates, we expect the $\phi_s$ statistical
 uncertainty to be 5-6 mrad at the end of the HL-LHC data taking.
 %while Table~\ref{tab:tagging} summarizes the corresponding %performances.
 \begin{figure}[t]
 \begin{center}
+\includegraphics[width=0.5\textwidth]{section2/figures/tagging_power_ATLAS.pdf}
 \includegraphics[width=0.4\textwidth]{section2/figures/CMS_tagging_power.png}
-\caption{Variation of the $\phi_s$ statistical uncertainty in CMS as function of the tagging power in the three different flavour tagging scenarios $a, b$ and $c$ discussed in the text, marked in green, blue and red respectively. The function $1/\sqrt{t}$, where $t$ is the tagging power (\%), is also shown to describe the $\phi_s$ uncertainty behaviour in a continuous range of the tagging power from 1.0 to 2.6 \% (taken from \cite{CMS-PAS-FTR-18-041}).}
+\caption{Variation of the $\phi_s$ statistical uncertainty in ATLAS (left) and CMS (right)  as function of the tagging power.
+ The behaviour is shown for different ATLAS triggers and CMS flavour tagging scenarios as explained in the text. 
+ The vertical dashed line in the ATLAS plot corresponds to the value assumed in the
+analysis extrapolation.
+The function $1/\sqrt{t}$, where $t$ is the tagging power (\%), is shown in the CMS plot to describe the $\phi_s$ uncertainty behaviour in a continuous range of the tagging power from 1.0 to 2.6 \% (CMS plot taken from \cite{CMS-PAS-FTR-18-041}).}
 %\td{can we denote a), b), c) in the plot?}
 \label{fig:CMStag}
 \end{center}
