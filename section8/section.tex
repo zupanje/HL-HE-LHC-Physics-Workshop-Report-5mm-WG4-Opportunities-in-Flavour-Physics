@@ -50,17 +50,17 @@ The LHC is already a top factory and the currently available statistics has allo
 Starting from an Effective Field Theory (EFT) with full $SU(3)_C\times SU(2)_L\times U(1)_Y$ gauge symmetry and matter content of the SM,
 one can show that odd-dimensional operators all violate baryon or lepton 
 numbers~\cite{Degrande:2012wf}. Imposing the conservation of these quantum numbers, the leading higher dimensional operators of the SM arise at dimension six.
-We follow the top-quark EFT standards set by the LHC TOP WG in 
-Ref.~\cite{AguilarSaavedra:2018nen}. They employ the linear
+We follow the top-quark EFT conventions set by the LHC TOP WG in 
+Ref.~\cite{AguilarSaavedra:2018nen}. The LHC TOP WG employs linear
 combinations of Warsaw-basis operators~\cite{Grzadkowski:2010es} which appear in
 interactions with physical fields after electroweak symmetry breaking.
 
-Among the operators contributing to top-quark FCNC processes,
-several categories can be distinguished. We consider operators involving
+The operators contributing to top-quark FCNC processes fall into
+several categories. We consider operators involving
 exactly two quarks, as well as those involving two quarks and two leptons.
 Operators containing four quarks only start contributing at next-to-leading order in QCD in most of the measurements we consider ($pp\to tj$ is the exception).
-The corresponding Warsaw-basis operators have been listed in Eqs.\,(12-20) and (21-28) of Ref.~\cite{AguilarSaavedra:2018nen}.
-They are:
+The corresponding Warsaw-basis operators are~\cite{AguilarSaavedra:2018nen} 
+%(see also Eqs.\,(12-20) and (21-28) in Ref.~\cite{AguilarSaavedra:2018nen})
 \begin{equation}
 	\begin{aligned}
 	\hc{\qq{}{u\varphi}{ij}}
@@ -125,57 +125,87 @@ They are:
 	  (\bar d_k q_l)
   \end{aligned}
 \end{equation}
-Note however that the $\qq{}{\varphi ud}{}$, $\qq{}{dW}{}$ and $\qq{}{ledq}{}$ operators only contribute to charged top-quark currents {\color{red} (when one does not consider SM electroweak corrections)} and are therefore not relevant for our purpose.
+The operators $\qq{}{\varphi ud}{}$, $\qq{}{dW}{}$, and $\qq{}{ledq}{}$,  only contribute to charged top-quark currents (not considering SM electroweak corrections) and are therefore not relevant for our purposes.
 The EFT degrees of freedom appearing in top-quark FCNC processes were defined in Appendices~E.1-2 of Ref.\,\cite{AguilarSaavedra:2018nen}. They are:%
 {%
 \renewcommand*{\cc }[4][]{\tmp{#2}{#3}{#4}{#1{C}}}%
-\begin{gather}
-\begin{aligned}
-\ccc{[I]}{t\varphi}{3a} &\equiv \ReIm\{\cc{}{u\varphi}{3a}\},\\
-\ccc{[I]}{t\varphi}{a3} &\equiv \ReIm\{\cc{}{u\varphi}{a3}\},\\[2mm]
-\ccc{-[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{1}{\varphi q}{3a}-\cc{3}{\varphi q}{3a}\},\\
+\begin{align}
+\ccc{[I]}{t\varphi}{3a} &\equiv \ReIm\{\cc{}{u\varphi}{3a}\}, &\ccc{[I]}{uA}{3a} &\equiv \ReIm\{\cw\cc{}{uB}{3a}+\sw\cc{}{uW}{3a}\},
+\\
+\ccc{[I]}{t\varphi}{a3} &\equiv \ReIm\{\cc{}{u\varphi}{a3}\},&\ccc{[I]}{uA}{a3} &\equiv \ReIm\{\cw\cc{}{uB}{a3}+\sw\cc{}{uW}{a3}\},
+\\
+\ccc{-[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{1}{\varphi q}{3a}-\cc{3}{\varphi q}{3a}\},
+&\ccc{[I]}{uZ}{3a} &\equiv \ReIm\{-\sw\cc{}{uB}{3a}+\cw\cc{}{uW}{3a}\},
+\\
 %\ccc{3[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{3}{\varphi q}{3a}\},\\
-\ccc{[I]}{\varphi u}{3+a}  &\equiv \ReIm\{\cc{}{\varphi u}{3a}\},\\
+\ccc{[I]}{\varphi u}{3+a}  &\equiv \ReIm\{\cc{}{\varphi u}{3a}\},
+&\ccc{[I]}{uZ}{a3} &\equiv \ReIm\{-\sw\cc{}{uB}{a3}+\cw\cc{}{uW}{a3}\},
 %\ccc{[I]}{\varphi ud}{3a} &\equiv \ReIm\{\cc{}{\varphi ud}{3a}\},\\
 %\ccc{[I]}{\varphi ud}{a3} &\equiv \ReIm\{\cc{}{\varphi ud}{a3}\},\\
-\end{aligned}
-\qquad
-\begin{aligned}
-\ccc{[I]}{uA}{3a} &\equiv \ReIm\{\cw\cc{}{uB}{3a}+\sw\cc{}{uW}{3a}\},\\
-\ccc{[I]}{uA}{a3} &\equiv \ReIm\{\cw\cc{}{uB}{a3}+\sw\cc{}{uW}{a3}\},\\
-\ccc{[I]}{uZ}{3a} &\equiv \ReIm\{-\sw\cc{}{uB}{3a}+\cw\cc{}{uW}{3a}\},\\
-\ccc{[I]}{uZ}{a3} &\equiv \ReIm\{-\sw\cc{}{uB}{a3}+\cw\cc{}{uW}{a3}\},\\
-%\ccc{[I]}{dW}{3a} &\equiv \ReIm\{\cc{}{dW}{3a}\},\\
-%\ccc{[I]}{dW}{a3} &\equiv \ReIm\{\cc{}{dW}{a3}\},\\
-\ccc{[I]}{uG}{3a} &\equiv \ReIm\{\cc{}{uG}{3a}\},\\
-\ccc{[I]}{uG}{a3} &\equiv \ReIm\{\cc{}{uG}{a3}\},\\
-\end{aligned}
-\\
-\begin{aligned}
+\end{align}
+as well as 
+$\ccc{[I]}{uG}{3a} \equiv \ReIm\{\cc{}{uG}{3a}\}$, 
+$\ccc{[I]}{uG}{a3} \equiv \ReIm\{\cc{}{uG}{a3}\},$ and 
+\begin{align}
 %\ccc{3[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{3}{lq}{\ell\ell 3a}\},\\
-\ccc{-[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{-}{lq}{\ell\ell 3a}\},\\
-\ccc{[I]}{eq}{\ell,3+a} &\equiv \ReIm\{\cc{}{eq}{\ell\ell 3a}\},\\
-\ccc{[I]}{lu}{\ell,3+a} &\equiv \ReIm\{\cc{}{lu}{\ell\ell 3a}\},\\
-\ccc{[I]}{eu}{\ell,3+a} &\equiv \ReIm\{\cc{}{eu}{\ell\ell 3a}\},\\
-\end{aligned}
-\qquad
-\begin{aligned}
-\ccc{S[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell 3a}\},\\
-\ccc{S[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell a3}\},\\
-\ccc{T[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell 3a}\},\\
-\ccc{T[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell a3}\}.
-%\ccc{S[I]}{ledq}{\ell,3a} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell 3a}\},\\
-%\ccc{S[I]}{ledq}{\ell,a3} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell a3}\},\\
-\end{aligned}
-\end{gather}%
+\ccc{-[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{-}{lq}{\ell\ell 3a}\}, &\ccc{S[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell 3a}\},
+\\
+\ccc{[I]}{eq}{\ell,3+a} &\equiv \ReIm\{\cc{}{eq}{\ell\ell 3a}\},& \ccc{S[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell a3}\},\\
+\ccc{[I]}{lu}{\ell,3+a} &\equiv \ReIm\{\cc{}{lu}{\ell\ell 3a}\},& \ccc{T[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell 3a}\},\\
+\ccc{[I]}{eu}{\ell,3+a} &\equiv \ReIm\{\cc{}{eu}{\ell\ell 3a}\},& \ccc{T[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell a3}\}.
+\end{align}
 }%
+
+%{%
+%\renewcommand*{\cc }[4][]{\tmp{#2}{#3}{#4}{#1{C}}}%
+%\begin{gather}
+%\begin{aligned}
+%\ccc{[I]}{t\varphi}{3a} &\equiv \ReIm\{\cc{}{u\varphi}{3a}\},\\
+%\ccc{[I]}{t\varphi}{a3} &\equiv \ReIm\{\cc{}{u\varphi}{a3}\},\\[2mm]
+%\ccc{-[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{1}{\varphi q}{3a}-\cc{3}{\varphi q}{3a}\},\\
+%%\ccc{3[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{3}{\varphi q}{3a}\},\\
+%\ccc{[I]}{\varphi u}{3+a}  &\equiv \ReIm\{\cc{}{\varphi u}{3a}\},\\
+%%\ccc{[I]}{\varphi ud}{3a} &\equiv \ReIm\{\cc{}{\varphi ud}{3a}\},\\
+%%\ccc{[I]}{\varphi ud}{a3} &\equiv \ReIm\{\cc{}{\varphi ud}{a3}\},\\
+%\end{aligned}
+%\qquad
+%\begin{aligned}
+%\ccc{[I]}{uA}{3a} &\equiv \ReIm\{\cw\cc{}{uB}{3a}+\sw\cc{}{uW}{3a}\},\\
+%\ccc{[I]}{uA}{a3} &\equiv \ReIm\{\cw\cc{}{uB}{a3}+\sw\cc{}{uW}{a3}\},\\
+%\ccc{[I]}{uZ}{3a} &\equiv \ReIm\{-\sw\cc{}{uB}{3a}+\cw\cc{}{uW}{3a}\},\\
+%\ccc{[I]}{uZ}{a3} &\equiv \ReIm\{-\sw\cc{}{uB}{a3}+\cw\cc{}{uW}{a3}\},\\
+%%\ccc{[I]}{dW}{3a} &\equiv \ReIm\{\cc{}{dW}{3a}\},\\
+%%\ccc{[I]}{dW}{a3} &\equiv \ReIm\{\cc{}{dW}{a3}\},\\
+%\ccc{[I]}{uG}{3a} &\equiv \ReIm\{\cc{}{uG}{3a}\},\\
+%\ccc{[I]}{uG}{a3} &\equiv \ReIm\{\cc{}{uG}{a3}\},\\
+%\end{aligned}
+%\\
+%\begin{aligned}
+%%\ccc{3[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{3}{lq}{\ell\ell 3a}\},\\
+%\ccc{-[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{-}{lq}{\ell\ell 3a}\},\\
+%\ccc{[I]}{eq}{\ell,3+a} &\equiv \ReIm\{\cc{}{eq}{\ell\ell 3a}\},\\
+%\ccc{[I]}{lu}{\ell,3+a} &\equiv \ReIm\{\cc{}{lu}{\ell\ell 3a}\},\\
+%\ccc{[I]}{eu}{\ell,3+a} &\equiv \ReIm\{\cc{}{eu}{\ell\ell 3a}\},\\
+%\end{aligned}
+%\qquad
+%\begin{aligned}
+%\ccc{S[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell 3a}\},\\
+%\ccc{S[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell a3}\},\\
+%\ccc{T[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell 3a}\},\\
+%\ccc{T[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell a3}\}.
+%%\ccc{S[I]}{ledq}{\ell,3a} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell 3a}\},\\
+%%\ccc{S[I]}{ledq}{\ell,a3} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell a3}\},\\
+%\end{aligned}
+%\end{gather}%
+%}%
 
 
 \begin{figure}[tb]\centering
-\includegraphics[width=.4\linewidth]{section8/figs/4f.png}
+\includegraphics[width=.49\linewidth]{section8/figs/4fa}
+\includegraphics[width=.49\linewidth]{section8/figs/4fb}
 \caption{Effective operators give rise to four-point contact interactions that
-are overlooked in the anomalous coupling approach although they contribute in
-FCNC processes at the same order in $1/\Lambda^2$ as three-point ones.
+are overlooked in the approach with anomalous couplings,  although they contribute to
+FCNC processes at the same order in $1/\Lambda^2$ as the three-point ones.
 Representative diagrams are shown for $ug\to th$ production (or radiative $t\to
 hug$ decay), and $e^+e^-\to t\,\bar u$ (or $t\to u\,e^+e^-$ decay). Figure taken from Ref.~\cite{Durieux:2014xla}.}
 \label{fig:missing_four_point_operators}
@@ -183,8 +213,8 @@ hug$ decay), and $e^+e^-\to t\,\bar u$ (or $t\to u\,e^+e^-$ decay). Figure taken
 
 Compared to the anomalous coupling parametrization, the EFT approach has two
 features that are worth emphasizing. First, it includes four-fermion operators,
-which have unduly been neglected in most
-experimental analyses (Ref.~\cite{Achard:2002vv} excepted).  
+which have  been unduly neglected in most
+experimental analyses (apart from Ref.~\cite{Achard:2002vv}).  
 Second, the EFT approach captures the correlations between interaction terms that derive from electroweak gauge invariance. For instance, the $\bar
 t\sigma^{\mu\nu}T^Aq \; h\; G_{\mu\nu}^A$ and $\bar t\sigma^{\mu\nu}T^Aq\;
 G_{\mu\nu}^A$ interactions arise from the same
@@ -193,7 +223,7 @@ In Fig.~\ref{fig:missing_four_point_operators}, we show examples of four-point i
 Correlations also arise from the fact that left-handed down- and up-type quarks
 belong to a single
 gauge-eigenstate doublet. Operator coefficients measurable in $B$-meson physics
-are actually related to those relevant to top-quark physics (see Secs.~\ref{}).
+are thus related to those relevant to top-quark physics (see Secs.~\ref{})\td{missing}.
 
 %(see Ref.~\cite{Alonso:2014csa, Buras:2014fpa} for recent EFT analyses
 %exploiting the full standard-model gauge invariance) 
