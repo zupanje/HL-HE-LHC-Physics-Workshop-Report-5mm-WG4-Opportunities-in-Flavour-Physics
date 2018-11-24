@@ -251,29 +251,39 @@ through two-quark and two-quark--two-lepton operators can be found in
 Ref.~\cite{Zhang:2014rja}.
 Single top-quark production associated with a neutral gauge boson, $\gamma$, $Z$, or
 the scalar boson $h$ have also been studied.  Two-quark operators have been
-implemented in the {\sc FeynRules}/{\sc MadGraph5\_aMC@NLO} simulation
+implemented in the {\tt FeynRules}/{\tt MadGraph5\_aMC@NLO} simulation
 chain~\cite{Alloul:2013bka,Degrande:2011ua,Alwall:2014hca}, allowing for
 automated NLO QCD predictions matched to parton shower. 
 Details on this implementation have been presented in Ref.~\cite{Degrande:2014tta}.
 Two-quark-two-lepton operators are now also
-available in {\sc MadGraph5\_aMC@NLO}. Finally, the direct top-quark
-production with decay process, $pp\to bW^+$, involves some additional technical
-difficulty due to the intermediate top-quark resonance. It is now being
+available in {\tt MadGraph5\_aMC@NLO}. Finally, the direct top-quark
+production with decay process, $pp\to bW^+$, involves additional technical
+difficulties due to the intermediate top-quark resonance. It is now being
 studied, and the corresponding NLO generator matched to parton shower will be
 available in the future \cite{directtop}.
 
-\begin{table}[tbh]\centering
+\begin{table}[t]\centering
+\caption{%
+Summary of the existing $95\%$~C.L.\ limits on top-quark FCNC branching fractions obtained at the LHC.
+A summary plot is available at \protect\url{https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCTopWGSummaryPlots\#table21}.
+% by the LHC TOP WG. 
+%Interestingly,
+ Ref.\,\cite{Khachatryan:2015att} has set limits in a fiducial volume at the particle level for $pp\to t\gamma$ (not displayed in this table).
+Numbers in bold are used as inputs to the global EFT analysis.}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}c@{}r@{\,}*{4}{c@{\,}}c}
-	& $\br^{95\%\text{CL}}$
+\hline\hline
+Mode	& $\br^{95\%\text{CL}}$
 	& Ref.
 	& exp.
 	& $\sqrt{s}$
 	& $\mathcal{L}$
 	& remarks
 \\
+\hline
 $t\to q Z$
 % ATLAS t>qll
-\\\hline\noalign{\vskip1mm}
+\\
+\noalign{\vskip1mm}
 $u$ 	& $\bf 1.7\times 10^{-4}$
 	& \cite{Aaboud:2018nyl}		& ATLAS	& $13\,\tev$	& $36.1\,\ifb$
 	& decay, $|m_{\ell\ell}-m_Z|<15\,\gev$
@@ -295,8 +305,9 @@ $u$	& $2.2\times 10^{-4}$
 $c$	& $4.9\times 10^{-4}$
 \\[2mm]
 % ATLAS t>jj
+\hline
 $t\to qg$
-\\\hline\noalign{\vskip1mm}
+\\\noalign{\vskip1mm}
 $u$	& $0.40\times 10^{-4}$
 	& \cite{Aad:2015gea}		& ATLAS	& $8\,\tev$	& $20.3\,\ifb$
 	& $\sigma(pp\to t)\times \br(t\to bW) < 3.4\,\pb$
@@ -311,8 +322,9 @@ $u$	&  $\bf 0.20\times 10^{-4}$
 $c$	& $4.1\times 10^{-4}$
 \\[2mm]
 % CMS t>qA
+\hline
 $t\to q\gamma$
-\\\hline\noalign{\vskip1mm}
+\\\noalign{\vskip1mm}
 $u$	& $\bf 1.3\times 10^{-4}$
 	& \cite{Khachatryan:2015att}	& CMS	& $8\,\tev$	& $19.8\,\ifb$
 	& $\sigma(pp\to t\gamma)\times \br(t\to bl\nu)<26\,\fb$
@@ -321,8 +333,9 @@ $c$	& $\bf 17\times 10^{-4}$
 	&&&&
 	& $\sigma(pp\to t\gamma)\times \br(t\to bl\nu)<37\,\fb$
 \\[2mm]
+\hline
 $t\to qh$
-\\\hline\noalign{\vskip1mm}
+\\\noalign{\vskip1mm}
 $u$	& $\bf 19\times 10^{-4}$
 	& \cite{Aaboud:2018pob}		& ATLAS	& $13\,\tev$	& $36.1\,\ifb$
 	& multilepton channel
@@ -343,48 +356,46 @@ $u$	& $47\times 10^{-4}$
 \\
 $c$	& $47\times 10^{-4}$
 	&
-\\[1mm]\hline
+\\[1mm]\hline\hline
 \end{tabular*}
-\caption{%
-Summary of the existing $95\%$~C.L.\ limits on top-quark FCNC branching fractions obtained at the LHC.
-A summary plot is made available at \protect\url{https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCTopWGSummaryPlots\#table21} by the LHC TOP WG. 
-Interestingly, Ref.\,\cite{Khachatryan:2015att} has set limits in a fiducial volume at the particle level for $pp\to t\gamma$ (not displayed in this table).
-Bold numbers are used as input to our global effective-field-theory analysis.}
 \label{tab:current_limits}
 \end{table}
 
 
 \subsubsection{Existing limits}
-In Tab.~\ref{tab:current_limits}, we list the existing limits on FCNC processes.
+Table~\ref{tab:current_limits} lists the existing limits on FCNC processes.
 %
 We follow Ref.\,\cite{Durieux:2014xla} and interpret them in
-a global effective field theory. Few additional remarks are in order:
+a global EFT analysis. Several additional remarks are in order:
 %
 \begin{itemize}
 
-\item[$\bullet$] For $t\to q\ell\ell$ we use the predictions at NLO in QCD provided in Ref.\,\cite{Durieux:2014xla} for the $m_{\ell\ell}\in[78,102]\,\gev$ range although the most stringent constraints by ATLAS are set using $|m_{\ell\ell}-m_Z|<15\,\gev$. The bounds obtained by CMS by combining production and decay process cannot be reinterpreted to include four-fermion operators.
+\item[$\bullet$] For $t\to q\ell\ell$ we use the predictions at NLO in QCD provided in Ref.\,\cite{Durieux:2014xla} for the $m_{\ell\ell}\in[78,102]\,\gev$ range although the most stringent constraints by ATLAS are set using $|m_{\ell\ell}-m_Z|<15\,\gev$. The CMS bounds obtained by combining production and decay process cannot be reinterpreted to include four-fermion operators.
 
-\item[$\bullet$] For single top-quark production through the $tqg$ interaction, we use the best constraints in the up-quark channel by CMS and in the charm-quark channel by ATLAS and naively combine them together using the numerical value at NLO in QCD for the $t\to jj$ branching fraction provided in Ref.\,\cite{Durieux:2014xla} (Sec.V.B).
+\item[$\bullet$] For single top-quark production through the $tqg$ interaction, we use the best constraints: in the up-quark channel by CMS and in the charm-quark channel by ATLAS. We naively combine them using the numerical value at NLO in QCD for the $t\to jj$ branching fraction provided in Section V.B of Ref.\,\cite{Durieux:2014xla}.
 
-\item[$\bullet$] For single top-quark production in association with a photon, we note the very interesting fiducial limit provided by Ref.\,\cite{Khachatryan:2015att} which allows for an accurate reinterpretation. Here, however, we use the simplified approach of Ref.\,\cite{Durieux:2014xla} based on the limit quoted on the total cross section and use the numerical values computed at NLO in QCD for $pp\to t\gamma+\bar{t}\gamma$ with a $30\,\gev$ cut on the photon $p_T$ although a $50\,\gev$ cut was applied in Ref.\,\cite{Khachatryan:2015att}.
+\item[$\bullet$] For single top-quark production in association with a photon, we note the very interesting fiducial limit provided by Ref.\,\cite{Khachatryan:2015att} which allows for an accurate reinterpretation. 
+%Here, however, w
+However, we use the simplified approach of Ref.\,\cite{Durieux:2014xla} based on the limit quoted on the total cross section and use the numerical values computed at NLO in QCD for $pp\to t\gamma+\bar{t}\gamma$ with a $30\,\gev$ cut on the photon $p_T$ although a $50\,\gev$ cut was applied in Ref.\,\cite{Khachatryan:2015att}.
 
-\item[$\bullet$] For top-quark decay to a Higgs boson and a jet, we use the most stringent limits set by ATLAS in the multilepton channel. The dependence on all operator coefficients but $C_{t\phi}$ and $C_{tG}$ is assumed negligible.
+\item[$\bullet$] For $t\to h j$ decay we use the most stringent limits set by ATLAS in the multilepton channel. The dependence on all operator coefficients, except $C_{t\phi}$ and $C_{tG}$, is assumed to be negligible.
 
-\item[$\bullet$] Limits on $e^+e^-\to tj+\bar{t}j$ obtained at LEP~II~\cite{Aleph:2001dzz} still set the dominant constraints on four-fermion operators involving electrons while $t\to q\ell\ell$ at hadron colliders are the only measurements constraining four-fermion operators featuring a pair of muons.
-Limits on the latter are however not explicitly shown below.
-We employ as input, the limit set at the highest centre-of-mass energy of $\sqrt{s}=207\,\gev$ which is the most sensitive to four-fermion operators: $\sigma(e^+e^-\to tj+\bar tj)<170\,\fb$.
-
+\item[$\bullet$] Limits on $e^+e^-\to tj+\bar{t}j$ obtained at LEP~II~\cite{Aleph:2001dzz} still dominate constraints on four-fermion operators involving electrons, while $t\to q\ell\ell$ at hadron colliders are the only measurements constraining four-fermion operators featuring a pair of muons. However, 
+the latter limits are not explicitly shown below.
+We use the limit from the highest LEP II centre-of-mass energy, $\sqrt{s}=207\,\gev$, which is the most sensitive to four-fermion operators, $\sigma(e^+e^-\to tj+\bar tj)<170\,\fb$.
 \end{itemize}
 
-The results of a global analysis based on existing data are displayed
-in Fig.~\ref{fig:limits_current} (left panel). They are presented as $95\%\,$C.L.\ limits
-on the EFT degrees of freedom defined in Ref.\,\cite{AguilarSaavedra:2018nen}.
-As explained in Ref.\,\cite{Durieux:2014xla}, no statistical combination is
-attempted, i.e.~limits from different measurements are only overlaid.
-In addition, we show two-dimensional constraints in the $c_{\varphi q,\varphi
-u}^-$,$c_{eq,eu}$ plane in Fig.~\ref{fig:limits_pu_eu_current} (left panel)
-to illustrate the complementarity between the LHC and the LEP~II measurements:
-the former gives better constraints on two-fermion operators, while the latter
+The global analysis based on existing data gives $95\%\,$C.L.\ limits
+on the EFT Wilsons coefficients in the notation of Ref.\,\cite{AguilarSaavedra:2018nen}, shown 
+in Fig.~\ref{fig:limits_current} (left panel). 
+%They are presented as 
+As explained in Ref.\,\cite{Durieux:2014xla}, 
+no statistical combination is
+attempted, i.e.,~limits from different measurements are only overlaid.
+ Fig.~\ref{fig:limits_pu_eu_current} (left panel) show two-dimensional constraints in the $c_{\varphi q,\varphi
+u}^-$,$c_{eq,eu}$ plane. 
+This illustrates the complementarity between the LHC and the LEP~II measurements;
+the former gives better constraints on two-fermion operators, the latter
 on four-fermion operators.
 
 
@@ -392,7 +403,7 @@ on four-fermion operators.
 \hfil\includegraphics[scale=1]{section8/figs/limits.mps}%
 \hfil\includegraphics[scale=1]{section8/figs/limits_prospects.mps}
 \hfil
-\caption{Current (left) and prospective HL-LHC (right) $95\%\,$C.L.\ limits on top-quark FCNC operator coefficients in the conventions of Ref.\,\cite{AguilarSaavedra:2018nen}. Red and blue bars stand for $a=1$ and $2$, respectively, i.e.\ for top-up and top-charm FCNCs. White marks indicate individual limits, obtained under the unrealisitic assumption that all other operator coefficients vanish.}
+\caption{Current (left) and projected HL-LHC (right) $95\%\,$C.L.\ limits on top-quark FCNC operator coefficients in the conventions of Ref.\,\cite{AguilarSaavedra:2018nen}. Red and blue bars denote  top-up and top-charm FCNCs, respectively. White marks indicate individual limits, obtained under the unrealistic assumption that all the other operator coefficients vanish.}
 \label{fig:limits_current}
 \label{fig:limits_prospects}
 \end{figure}
@@ -406,7 +417,7 @@ on four-fermion operators.
 \label{fig:limits_pu_eu_prospects}
 \end{figure}
 
-\subsubsection{Prospective limits}
+\subsubsection{Future limits}
 We use the prospects presented in Sec.~\ref{WG1:top_fcnc}\textcolor{red}{[top fcnc experimental section]} to derive
 approximate global constraints for the HL-LHC scenario. Few remarks are in order:
 \begin{itemize}
