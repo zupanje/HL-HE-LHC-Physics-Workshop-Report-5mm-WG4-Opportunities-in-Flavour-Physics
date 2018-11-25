@@ -20,7 +20,7 @@ Both sets of measurements are compatible with the SM predictions.% but statistic
 
 HL-LHC will offer a compelling opportunity to extend the ATLAS and CMS  $B^0_s \to \mu^+\mu^-$ and  $B^0\to \mu^+\mu^-$ studies to the expected integrated high luminosity.
 Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low $p_T$ dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to\mu^+\mu^-$ analysis.
-Fig.~\ref{fig:GPDMass} demonstrates the ATLAS and CMS reconstructed $B \to \mu^+\mu^-$ invariant mass capabilities in the HL-LHC era. %\td{something about LHCb detector enhancements relevant for Bmm?}
+Fig.~\ref{fig:GPDMass} demonstrates the ATLAS and CMS reconstructed $B \to \mu^+\mu^-$ invariant mass capabilities in the HL-LHC era. The LHCb detector is already well optimised for this decay, and planned improvements to the tracking and muon detector shielding in LHCb's upgrades will ensure that the muon reconstruction and identification performance does not degrade with increasing pileup.   %\td{something about LHCb detector enhancements relevant for Bmm?}
 %Fig.~\ref{fig:ATLASMass} compares the ATLAS $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$ with the current (Run~2) and upgraded tracking detector (ITk).
  \begin{figure}[t]
    \begin{center}
@@ -43,10 +43,11 @@ The current systematic uncertainty is dominated by sources external to the analy
 
 Systematic uncertainties are treated slightly differently in the projections of the three experiments.
 ATLAS conservatively assumes in the HL-LHC projections that the $f_s/f_d$ and the normalization modes branching fractions uncertainties will be at the same level as previously used, i.e., $5.8\%$ and $3\%$, while 
- CMS and LHCb project them to be $3.5\%$ and $1.4\%$, respectively.
- A more complete discussion of systematic uncertainty projections from ATLAS, CMS and LHCb can be found in
+ CMS and LHCb project them to be $3.5\%$ and $1.4\%$, respectively, based on reasonable assumptions about additional Belle~II inputs and improvements in our knowledge of form-factor ratios and branching fraction measurements.
+ A more complete discussion of systematic uncertainty projections from ATLAS and CMS %and LHCb can be found in
  % in order in 
- \cite{ATL-PHYS-PUB-2018-005}, \cite{CMS-PAS-FTR-18-013} and \cite{}\td{missing}, respectively. 
+ \cite{ATL-PHYS-PUB-2018-005}, \cite{CMS-PAS-FTR-18-013}, respectively. 
+For LHCb, the remaining experimental systematic uncertainties are already at the $\sim 3$~percent level, and because they rely on data-driven corrections from calibration samples they can be expected to reduce to the $\sim 1.4$~percent level in \upgradetwo.
 %The remaining analysis-dependent systematic uncertainties are combined together by ATLAS and parameterized as a function of the signal yield, while e.g. CMS provides the detailed breakdown shown in table~\ref{tab:CMSb2musys} (a more complete discussion of the CMS systematic uncertainty treatment an be found in \cite{CMS-PAS-FTR-18-013}). 
 The resulting HL-LHC projected statistical and systematic uncertainties for the three experiments are summarized in table~\ref{LHC_Bmumu_Reach}.
 
@@ -73,35 +74,50 @@ The resulting HL-LHC projected statistical and systematic uncertainties for the 
   \centering
   \caption{Projected ATLAS, CMS and LHCb uncertainty on $\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ and $\cal{B}$$(B^0 \to \mu^+ \mu^-)$. 
   %The results are centered on the SM theoretical prediction~\cite{Bobeth}.
-    For each extrapolation the statistical and statistical+systematic uncertainties are reported. \td{The uncertainty on ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is reported
-    for the LHCb reach on $\decay{\Bd}{\mumu}$, assuming the uncertainty to be statistics-dominated for that channel.}
+    For each extrapolation the statistical and statistical+systematic uncertainties are reported. %\td{The uncertainty on ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is reported
+    %for the LHCb reach on $\decay{\Bd}{\mumu}$, assuming the uncertainty to be statistics-dominated for that channel.}
   }
   \label{LHC_Bmumu_Reach}
   \renewcommand{\arraystretch}{1.3}
-  \begin{tabular}{ l c c c c c }
+  %\begin{tabular}{ l c c c c c }
+  %  \hline\hline
+  %  & & \multicolumn{2}{c}{$\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ } & %\multicolumn{2}{c}{$\cal{B}$$(B^0 \to \mu^+ \mu^-)$} \\
+  % Experiment & Scenario & stat $\%$ & stat + syst $\%$ & stat $\%$ & stat + syst %$\%$ \\
+  %  \hline
+  %  LHCb   & 23\invfb          &       &   8.2  &       &  33       \\
+  %  LHCb   & 300\invfb         &    1.8   &  4.4  &   9.2    &  9.4      \\
+  %   CMS   & 300\invfb         &       &   12 &       & 46  \\
+  %   CMS   & 3 \invab          &       &   7  &       & 16  \\
+  %  ATLAS & Run 2              & 19.1 & 22.7 & 130 & 135\\
+  %  ATLAS & 3 \invab Conservative  & 8.8 & 15.1 & 50 & 51\\
+  %  ATLAS & 3 \invab Intermediate   & 5.2 & 12.9 & 28 & 29\\
+  %  ATLAS & 3 \invab High-yield       & 4.9 & 12.6 & 25 & 26\\
+  %  \hline\hline
+  %\end{tabular}
+  \begin{tabular}{ l c c c }
     \hline\hline
-    & & \multicolumn{2}{c}{$\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ } & \multicolumn{2}{c}{$\cal{B}$$(B^0 \to \mu^+ \mu^-)$} \\
-   Experiment & Scenario & stat $\%$ & stat + syst $\%$ & stat $\%$ & stat + syst $\%$ \\
+    & & & $\cal{B}$ $(B^0_s \to \mu^+ \mu^-)$ & $\cal{B}$ $(B^0 \to \mu^+ \mu^-)$ \\
+   Experiment & Scenario & stat + syst $\%$ & stat + syst $\%$ \\
     \hline
-    LHCb   & 23\invfb          &       &   8.2  &       &  33       \\
-    LHCb   & 300\invfb         &       &  4.4  &       &  9.4      \\
-     CMS   & 300\invfb         &       &   12 &       & 46  \\
-     CMS   & 3 \invab          &       &   7  &       & 16  \\
-    ATLAS & Run 2              & 19.1 & 22.7 & 130 & 135\\
-    ATLAS & 3 \invab Conservative  & 8.8 & 15.1 & 50 & 51\\
-    ATLAS & 3 \invab Intermediate   & 5.2 & 12.9 & 28 & 29\\
-    ATLAS & 3 \invab High-yield       & 4.9 & 12.6 & 25 & 26\\
+    LHCb   & 23\invfb          &   8.2  &  33       \\
+    LHCb   & 300\invfb         &   4.4  &  9.4      \\
+     CMS   & 300\invfb         &   12   &  46  \\
+     CMS   & 3 \invab          &   7    &  16  \\
+    ATLAS & Run 2              & 22.7 & 135\\
+    ATLAS & 3 \invab Conservative  & 15.1 & 51\\
+    ATLAS & 3 \invab Intermediate   &  12.9 & 29\\
+    ATLAS & 3 \invab High-yield       & 12.6 & 26\\
     \hline\hline
   \end{tabular}
 \end{table}
 
 %The HL-LHC projected relative statistical uncertainty of the current LHCb analysis is 1.8\%.  
 At the end of the Upgrade II data taking period, LHCb assumes to achieve an overall uncertainty on $\BR(\decay{\Bs}{\mumu})$ of about $4.4\%$, which
-would imply an uncertainty on $\BR(\decay{\Bs}{\mumu})$ to be approximately $0.30\times 10^{-9}$ with 23\invfb and $0.16\times 10^{-9}$ with $300\invfb$.  The LHCb reach on the ratio of branching fractions ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is expected to remain limited only by statistics and decrease from $90\%$ for the current measurement to about $34\%$ with $23\invfb$ and $10\%$ with $300\invfb$. 
+would imply an uncertainty on $\BR(\decay{\Bs}{\mumu})$ to be approximately $0.30\times 10^{-9}$ with 23\invfb and $0.16\times 10^{-9}$ with $300\invfb$.  The LHCb reach on the ratio of branching fractions ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is expected to remain limited by statistics and decrease from $90\%$ for the current measurement to $\sim 34\%$ with $23\invfb$ and $\sim 10\%$ with $300\invfb$. 
 
 %The CMS study is performed under the assumption of maintaining the current trigger selection for the signal and normalization channel. The major sources of systematic uncertainties for the CMS extrapolation are listed in table~\ref{tab:CMSb2musys}. The uncertainty on the normalization channel branching ratio is assumed to be improved by the Belle collaboration measurements to an uncertainty of 1.4\% . CMS determines the uncertainty on the muon identification(ID) efficiency ratio
 %from $\mathrm{B^+ \to  J}/\psi K^+$ and $\mathrm{B^0_s \to J}/\psi \phi$, extrapolating its value at the HL-LHC to be 1\%, and the relative uncertainties on the yield of the semileptonic and peaking backgrounds - arising from a hadron mis-identification uncertainty of 10\% - to be 20\% and 15\% in Run 2. These same uncertainties are extrapolated to reduce by an additional factor 2 for the HL-LHC era. The trigger efficiency is estimated by the difference between the dimuon triggers for signal and for j/$\psi$ which is assumed to diminish to 1.5 \%. Other sources of systematics (acceptance, selection, etc) have been studied and the related uncertainties halved: the sensitivity for  the significance of the $\mathrm{B^0}$ observation and its branching fraction is not significantly affected whereas there is a 1 \% improvement on the sensitivity for the $\mathrm{B^0_s}$ branching fraction. The quadratic sum of these uncertainties is 3\%.
-The CMS stdudy is based on the Run 2 analysis strategy that is applied to the upgraded
+The CMS study is based on the Run 2 analysis strategy that is applied to the upgraded
 CMS tracking system; the inner tracker of the CMS HL-LHC detector will provide about 40-50\% improvement on the mass resolution over the Run 2 case. 
 Compared to the CMS Run 1 analysis \cite{CMSRun1}, it includes a more advanced UML fit and an improved muon identification algorithm.
 The analysis is performed under the assumption of maintaining the current trigger selection for the signal and normalization channel.
@@ -122,8 +138,7 @@ to the Run 1 analysis (x15, x60 and x75 respectively), yielding the projected $6
 \end{figure}
 
 
-\td{JZ: why this statement? It is quite unclear what is meant here, and why MSSM, it comes out of the blue} 
-Figure \ref{fig:HLCombinedReachFromVava} compares the projected experimental sensitivities with the BR predictions from potential new sources of FCNC.
+%\td{JZ: why this statement? It is quite unclear what is meant here, and why MSSM, it comes out of the blue} 
 
 \begin{figure}[htb]
   \centering  
@@ -132,8 +147,8 @@ Figure \ref{fig:HLCombinedReachFromVava} compares the projected experimental sen
   \label{fig:HLCombinedReachFromVava}
 \end{figure}
 
-The increased precision will be able to cover larger part of the unconstrained parameter space of MSSM models. 
-All estimates use the quoted SM predictions as central values for the branching ratios and similar detector and analysis performance as in Ref.~\cite{LHCb-PAPER-2017-001}.  The estimated experimental uncertainties at HL-LHC are close to the uncertainty of the current SM prediction from theory, which is dominated by the uncertainty on the $\Bs$ decay constant, $f_{B_s}$, determined from lattice QCD calculations, and the CKM matrix elements. Both are expected to improve in precision in the future. {\bf\color{red}[Discussion on systematics above from ATLAS and CMS unclear]}
+Figure \ref{fig:HLCombinedReachFromVava} compares the projected experimental sensitivities of ATLAS, CMS, and LHCb with the BR predictions from a particular class of BSM models~\cite{Dutta:2015dla}.   
+All estimates use the quoted SM predictions as central values for the branching ratios. The estimated experimental sensitivity at HL-LHC is close to the uncertainty of the current SM prediction from theory, which is dominated by the uncertainty on the $\Bs$ decay constant, $f_{B_s}$, determined from lattice QCD calculations, and the CKM matrix elements. Both are expected to improve in precision in the future. The power of the HL-LHC dataset to discriminate not only between the SM and BSM models, but also within the parameter space of those BSM models, is clear. %{\bf\color{red}[Discussion on systematics above from ATLAS and CMS unclear]}
 
 With the HL-LHC datasets, precise measurements of additional observables are possible, namely the effective lifetime, $\tau_{\mu\mu}^{\rm eff}$, and the time-dependent \CP\ asymmetry of \Bsmm decays. Both quantities are sensitive to possible new contributions from the scalar and pseudo-scalar sector in a way complementary to the branching ratio measurement\cite{DeBruyn:2012wk}. The effective lifetime is related to the mean \Bs lifetime $\tau_{B_s}$ through the relation 
 \begin{equation}
@@ -191,7 +206,7 @@ The main difficulty of the measurement is therefore the combinatorial
 background, because the uncertainty on the photon momentum enlarges the signal 
 width and blurs its kinematics.
 Based on current reconstruction efficiencies, the expected sensitivity at the 
-end of Upgrade I \td{keep?} (Upgrade II) data taking period is $\sim 9 \sigma$ ($\sim 22 \sigma$).
+end of Run~3 (Upgrade II) is $\sim 9 \sigma$ ($\sim 22 \sigma$).
 The use of $B_s \to J/\psi \eta \xspace$ and $B_d \to K\pi\gamma \xspace$ as 
 normalisation channels reduces the systematic uncertainties due to the selection.
 
@@ -216,7 +231,8 @@ bins of \qsq or using a \qsq-unbinned approach~\cite{Hurth:2017sqw}; LHCb forese
  The current CMS and LHCb measurements are statistically limited.
  For LHCb 
  %the measurement is currently heavily statistically limited, and
- the major systematics are those which affect the calculation of the angular acceptance. Most of the systematic uncertainties are expected to reduce significantly with more integrated luminosity due to larger control samples. Both the LHCb statistical and systematic uncertainties are therefore scaled with integrated luminosity when obtaining the projections. In this context it is interesting to note that \upgradetwo will provide signal yields that are of the order of the current tree-level control modes $B^0\to \jpsi \Kstarz$ and $B^0_s\to \jpsi\phi$. The most recent determination of $\phis$ is done via a time-dependent angular analysis of $B^0_s\to \jpsi\phi$. {\bf\color{red}[Check]}The systematic uncertainties on the decay amplitudes due to modeling of the angular acceptance are already at the 0.001-0.002 level which would be sufficient to not systematically limit the \upgradetwo analysis.
+ the major systematics are those which affect the calculation of the angular acceptance. Most of the systematic uncertainties are expected to reduce significantly with more integrated luminosity due to larger control samples. Both the LHCb statistical and systematic uncertainties are therefore scaled with integrated luminosity when obtaining the projections. In this context it is interesting to note that \upgradetwo will provide signal yields that are of the order of the current tree-level control modes $B^0\to \jpsi \Kstarz$ and $B^0_s\to \jpsi\phi$. %The most recent determination of $\phis$ is done via a time-dependent angular analysis of $B^0_s\to \jpsi\phi$. {\bf\color{red}[Check]}
+ In the most recent measurement of $\phis$ from $B^0_s\to \jpsi\phi$, the systematic uncertainties on the decay amplitudes due to modeling of the angular acceptance were already at the 0.001-0.002 level. Therefore, even without considering further improvements from the larger control samples available in \upgradetwo, these uncertainties will not systematically limit the \upgradetwo analysis.
  
  In CMS the expected $B^0$ signal yield per each $q^2$ bin is measured using a full simulation of the upgraded detector.
 %An extended unbinned maximum likelihood fit is performed to the $K^+\pi^-\mu^+\mu^-$ invariant mass in each bin, parametrizing the signal with 
@@ -292,9 +308,9 @@ These scenarios are also clearly distinguishable with the precision that will be
 \centering
 \includegraphics[width=0.45\linewidth]{section7/figures/P5p_Run3.pdf}
 \includegraphics[width=0.45\linewidth]{section7/figures/P5p_HL.pdf}
-\caption{Experimental sensitivity at LHCb to the $P_5^{\prime}$ angular observable in the SM,
+\caption{Total experimental sensitivity, including systematics, at LHCb to the $P_5^{\prime}$ angular observable in the SM,
   Scenarios~I and II for  the Run~3 (left) and  the \upgradetwo (right) data sets. 
-  The computed sensitivity is computed assuming that the charm-loop contribution is determined from the data. {\bf\color{red}[What do these errorrs contain? Experimental only?]}
+  The computed sensitivity is computed assuming that the charm-loop contribution is determined from the data. %{\bf\color{red}[What do these errorrs contain? Experimental only?]}
 }
 \label{fig:penguin:P5primeUnbinned}
 \end{figure}
@@ -314,8 +330,8 @@ These scenarios are also clearly distinguishable with the precision that will be
 \begin{figure}[t]
   \begin{center}
   \includegraphics[width=0.6\textwidth]{section7/figures/R1_and_errorP2_rebinningSystButStatOnly_scaleFitBiasLumi.pdf}
- \caption{Projection of the CMS sensitivity on the $P'_5$ parameter versus $q^2$ in the HL-LHC scenario at 3000 fb$^{-1}$ shown with the black shaded \td{gray?} region. The red shaded bands denote to the projected statistical uncertainty. The measurement of $P'_5$ from the CMS Run~1 analysis is reported in pale-blue: the statistical uncertainties are shown by the  vertical bars, while the outer vertical bars represent the total uncertainties. 
- The vertical shaded regions correspond to the $J/\psi$ and $\psi'$ resonances. The lower pads represent the total (black \td{gray?}) and statistical (red) 
+ \caption{Projection of the CMS sensitivity on the $P'_5$ parameter versus $q^2$ in the HL-LHC scenario at 3000 fb$^{-1}$ shown with the gray shaded region. The red shaded bands denote to the projected statistical uncertainty. The measurement of $P'_5$ from the CMS Run~1 analysis is reported in pale-blue: the statistical uncertainties are shown by the  vertical bars, while the outer vertical bars represent the total uncertainties. 
+ The vertical shaded regions correspond to the $J/\psi$ and $\psi'$ resonances. The lower pads represent the total (gray) and statistical (red) 
 uncertainties for an optimized finer $q^2$ binning (taken from \cite{CMS-PAS-FTR-18-033}).} 
  \label{fig:CMSP5presults}
  \end{center}
@@ -350,7 +366,8 @@ The upgrade will provide samples of thousands, or tens of thousands of such deca
 The ability to measure the properties of these processes depends heavily on the PID performance of the LHCb subdetectors. 
 In the case of the \decay{\Bs}{\Kstarzb\mumu} decay, excellent mass resolution is also critical to separate \Bs and \Bz decays. 
 
-The ratio of branching fractions between the CKM-suppressed $b \to d\ell\ell$ transitions and their CKM-favoured  $\bquark \to \squark \ellell$ counterparts, together with theoretical input on the ratio of the relevant form factors, enables the ratio of CKM elements  $|V_{td}|/|V_{ts}|$ to be determined. The precision on $|V_{td}|/|V_{ts}|$ from such decays is dominated at present by the statistical uncertainty on the experimental measurements of \decay{\Bp}{\pip\mumu}, and is much less precise than the determination from mixing measurements. The theoretical uncertainty is at the level of $4\%$ {\bf\color{red}[Where does this number come from? Long-distance is even more serious than in $b\to s\mu\mu$]} and is expected to improve with further progress on the form factors from lattice QCD. Around 17\,000 \decay{\Bp}{\pip\mumu} decays are expected in the full 300\invfb dataset, allowing an experimental precision better than $2\%$.
+The ratio of branching fractions between the CKM-suppressed $b \to d\ell\ell$ transitions and their CKM-favoured  $\bquark \to \squark \ellell$ counterparts, together with theoretical input on the ratio of the relevant form factors, enables the ratio of CKM elements  $|V_{td}|/|V_{ts}|$ to be determined. The precision on $|V_{td}|/|V_{ts}|$ from such decays is dominated at present by the statistical uncertainty on the experimental measurements of \decay{\Bp}{\pip\mumu}, and is much less precise than the determination from mixing measurements. The theoretical uncertainty is at the level of $4\%$ %{\bf\color{red}[Where does this number come from? Long-distance is even more serious than in $b\to s\mu\mu$]} 
+and is expected to improve with further progress on the form factors from lattice QCD. Around 17\,000 \decay{\Bp}{\pip\mumu} decays are expected in the full 300\invfb dataset, allowing an experimental precision better than $2\%$.
 
 The current set of measurements of $\bquark\to\squark \ell\ell$ processes have demonstrated the importance of angular measurements in the precision determination of Wilson coefficients. With the LHCb \upgradetwo dataset, where a sample of 4300  \decay{\Bs}{\Kstarzb\mumu} decays is expected,  it will be possible to make a full angular analysis of a $\bquark\to\dquark \ellell$ transition. The \decay{\Bs}{\Kstarzb\mumu} decay is both self-tagging and has a final state involving only charged particles. The LHCb \upgradetwo data set will allow the angular observables in this decay to be measured with better precision than the existing measurements of the \decay{\Bz}{\Kstarz\mumu} angular distribution. 
 
@@ -421,7 +438,8 @@ Excellent NP sensitivity can be achieved irrespective of the assumptions made ab
 \includegraphics[width=0.49\textwidth]{section7/figures/ellipses_DeltaC_Run3.pdf}
 \includegraphics[width=0.49\textwidth]{section7/figures/ellipses_DeltaC_HL.pdf}
 \caption{
-Constraints on the difference in the $C_9^\ell$ and $C_{10}^\ell$ Wilson coefficients from electron and muon modes with (left) Run~3 and (right) \upgradetwo data sets. The $3\sigma$ regions are shown for the SM (blue), for a vector-axial-vector new physics contribution (red) and for a purely vector new physics contribution (green). {\color{red}\bf[Which data? (e.g. $B_s\to\mu\mu$?) Uncertainties?]}}
+Constraints on the difference in the $C_9^\ell$ and $C_{10}^\ell$ Wilson coefficients from electron and muon $b\to s \ellell$ modes with (left) Run~3 and (right) \upgradetwo data sets. The $3\sigma$ regions are shown for the SM (blue), for a vector-axial-vector new physics contribution (red) and for a purely vector new physics contribution (green). %{\color{red}\bf[Which data? (e.g. $B_s\to\mu\mu$?) Uncertainties?]}
+}
 \label{fig:penguin:DeltaC}
 \end{figure}
 
@@ -581,7 +599,7 @@ governing the \dsttaunu decay, serving as an essential baseline for SM and non-S
 The helicity-suppressed amplitude which presently dominates the theoretical uncertainty on \RDb is too strongly suppressed in the 
 \dbmunu decays to be measurable, however this can be accessed in the \dbtaunu decay directly.
 If any potential NP contributions are assumed not to contribute via the helicity-suppressed amplitude then the combined measurements of \dbmunu and \dbtaunu decays will allow for a fully data-driven prediction for
-\RDb under the assumption of lepton universality, eliminating the need for any theory input relating to hadronic form factors. {\bf\color{red}[I don't understand completely the logic of the previous sentences. Are we saying that assuming SM we determine the FF from $R(D^*)?$]}
+\RDb under the assumption of lepton universality, eliminating the need for any theory input relating to hadronic form factors. %{\bf\color{red}[I don't understand completely the logic of the previous sentences. Are we saying that assuming SM we determine the FF from $R(D^*)?$] WHAT WE ARE SAYING IS THAT IF YOU DO A COMBINED ANGULAR ANALYSIS OF DSTMUNU AND DSTTAUNU YOU CAN FIT FOR RDST AND THE FFS AT THE SAME TIME, IF YOU ASSUME NO NP IN THE HELICITY SUPPRESSED AMPLITUDE}
 However, these measurements have yet to be demonstrated with existing data.
 This exciting programme of differential measurements needs to be developed on Run~1 and 2 data before any statement is made about the precise sensitivity, 
 but it offers unparalleled potential to fully characterise both the SM and non-SM contributions to the $b \to c \tau \nu$ transition.
