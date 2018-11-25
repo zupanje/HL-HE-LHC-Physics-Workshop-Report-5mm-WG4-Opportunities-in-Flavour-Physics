@@ -644,38 +644,49 @@ The net effect is a severely diminished significance at $27$\,TeV compared to 13
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\subsubsection{Measuring Cabibbo-suppressed decays of the top quark at (HL, HE)LHC}
+\subsubsection{Measuring Cabibbo-suppressed decays of the top quark at HL-LHC and HE-LHC}
 %Jernej Kamenik
 %Darius Faroughy,
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	With the large $t\bar t$ statistics at the LHC, one might attempt a direct measurement of Cabibbo-suppressed decays of the top quark, $t\to (s,d)\,W^\pm$ in leptonic $t\bar t$ events. Given that there is no practical way of distinguishing between strange and down quark jets at the detector level (without dedictated PID systems), the method described here could only provide a direct measurement of $\sqrt{|V_{ts}|^2+|V_{td}|^2}$ by measuring the ratio of branching fractions
+	With the large $t\bar t$ statistics at the LHC, one might attempt a direct measurement of Cabibbo-suppressed decays of the top quark, $t\to (s,d)\,W^\pm$, in leptonic $t\bar t$ events. Since there is no practical way to distinguish between strange and down quark jets at the detector level (without dedictated PID systems), one measures 
 \begin{equation}
-\rho\equiv\sqrt{\frac{\mathcal{B}(t\to sW)+\mathcal{B}(t\to dW)}{\mathcal{B}(t\to bW)}}\,.
+\rho\equiv\sqrt{\big(\BR(t\to sW)+\BR(t\to dW)\big)/\BR(t\to bW)}\,.
 \end{equation}
-This quantity measures the hierarchy between diagonal and off-diagonal entries in the third row of the CKM matrix and is supposed to be approximately given by $\rho\approx |V_{ts}|\approx0.04$ in the SM. 
+This gives
+%the method described here could 
+a direct information on $({|V_{ts}|^2+|V_{td}|^2})^{1/2}$, but not on $V_{ts}$ and $V_{td}$ separately. 
+%by measuring the ratio of branching fractions
+%This quantity measures the hierarchy between diagonal and off-diagonal entries in the third row of the CKM matrix and is supposed to be approximately given by
+ In the SM, $\rho\approx |V_{ts}|\approx0.04$. 
 
-In order to measure top decays into light quarks, it is necessary to discriminate between heavy-flavour jets, e.g. $b$-jets arising from the $t\to b W$ background, gluons from ISR/FSR contamination, and the signal light-quark jets (denoted in the following as {\it $q$-jets}) from the Cabibbo-suppressed top decays. This can be achieved through a {\it $q$-tagger} based on existing techniques used for $b$-tagging and quark/gluon jet discrimination~\cite{Gallicchio:2011xq}. There are several known useful observables which can be used in a $q$-tagger. In the following we use: (i) The multiplicity $N_{\mathrm{SV}}$ of secondary vertices (SV) in the jet within a fiducial volume of the tracker, (ii) the fraction of longitudinal momentum of the hardest prompt charged track (i.e. originating from the primary vertex of the collision) with respect to the total momentum of the jet 
-\begin{equation}\label{zmax}
- z_{\mathrm{max}}\equiv\mathrm{max}\Big[\frac{\vec{p}_{x}\cdot\vec{p}_{\text{jet}}}{|\vec{p}_\text{jet}|^2}\Big]_{x\in\mathrm{jet}}\,,
-\end{equation}
-$x$ being a reconstructed prompt track and (iii) the 2-point energy correlation function \cite{Larkoski:2013eya,Moult:2016cvt} defined as
-\begin{align}
-U^\beta_1=\sum_{i,j\in \mathrm{jet}} z_T^i z_T^j\,(R_{ij})^\beta\ ,\ \ z_T^i\equiv p_T^i /p_T^{\mathrm{jet}}\,,
-\end{align}
-where $R_{ij}^2=(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2$ and $\beta$ is a free real parameter for which quark/gluon discrimination is optimized at $\beta=0.2$. For more details on these observables in the context of the $q$-tagger we refer the reader to~Ref.\cite{thePaper}. The resulting performance of the $q$-tagger in simulated samples of $pp\to Zj$ for $j=s,b,c,g$ and $Z\to\mu\bar\mu$ in a realistic LHC environment at $13$\,TeV is presented in figure~\ref{figROC}, where we show the ROC curves for the $q$-tagger obtained by sliding the values of the cuts $z_{\mathrm{max}}$ (solid lines) or $U_1$ (dashed lines), independently. 
-\begin{figure}[t]
+%In order to measure top decays into light quarks, 
+To perform the measurement it is necessary to discriminate between heavy-flavoured jets, e.g., $b$-jets from the $t\to b W$ background, gluons from ISR/FSR contamination, and the signal -- the light-quark jets ($q$-jets) from the Cabibbo-suppressed top decays. This can be achieved through a $q$-tagger based on existing techniques used for $b$-tagging and quark/gluon jet discrimination~\cite{Gallicchio:2011xq}. There are several known useful observables which can be used in a $q$-tagger. In the following we use: (i) the multiplicity $N_{\mathrm{SV}}$ of secondary vertices (SV) in the jet within a fiducial volume of the tracker, (ii) the fraction of longitudinal momentum of the jet carried by the hardest prompt charged track 
+%\begin{equation}\label{zmax}
+$ z_{\mathrm{max}}\equiv\mathrm{max}\big[{\vec{p}_{x}\cdot\vec{p}_{\text{jet}}}/{|\vec{p}_\text{jet}|^2}\big]_{x\in\mathrm{jet}}$,
+%\end{equation}
+%with $x$ the reconstructed prompt track, 
+and (iii) the 2-point energy correlation function 
+% defined as
+%\begin{align}
+$U^\beta_1=\sum_{i,j\in \mathrm{jet}} z_T^i z_T^j\,(R_{ij})^\beta$, $z_T^i\equiv p_T^i /p_T^{\mathrm{jet}}$,
+%\end{align}
+where $R_{ij}^2=(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2$ and $\beta$ is a free real parameter for which quark/gluon discrimination is optimized at $\beta=0.2$~\cite{Larkoski:2013eya,Moult:2016cvt}, see
+%. For more details on these observables in the context of the $q$-tagger we refer the reader to~
+Ref.\cite{thePaper} for more details. 
+%The resulting performance of the $q$-tagger in simulated samples of $pp\to Zj$ for $j=s,b,c,g$ and $Z\to\mu\bar\mu$ in a realistic LHC environment at $13$\,TeV is presented in Figure~\ref{figROC}, where we show the ROC curves for the $q$-tagger obtained by sliding the values of the cuts $z_{\mathrm{max}}$ (solid lines) or $U_1$ (dashed lines), independently. 
+%\begin{figure}[t]
  % \vspace{-0.3cm}
-\begin{center}{
-\includegraphics[width=8cm]{section8/figs/quark-gluon_ROC.pdf}
-%  \vspace{-0.3cm}
-\caption{{ ROC curves for the two $q$-taggers}} \label{figROC}}
-\end{center}
-\end{figure}
+%\begin{center}{
+%\includegraphics[width=8cm]{section8/figs/quark-gluon_ROC.pdf}
+%%  \vspace{-0.3cm}
+%\caption{{ ROC curves for the two $q$-taggers}} \label{figROC}}
+%\end{center}
+%\end{figure}
 %\paragraph{light-quark content in top decays}
 %Equipped with the light-quark tagger we are now in position to study the flavour content of top quark decays from $t\bar t$ production. 
-A reference working point for the utilized taggers is shown in Table~\ref{tab:effs}.
+
 %%%%%%%%%%%%%%%%%%%%%
 %\begin{table}[htbp!]
 \begin{table}[t!]
@@ -684,7 +695,7 @@ A reference working point for the utilized taggers is shown in Table~\ref{tab:ef
  {
 %\renewcommand{\arraystretch}{1}
 \centering
-\caption{ Tagging and mis-tagging efficiencies for the $q$-tagging working point used in the analysis.}
+\caption{ Tagging and mis-tagging efficiencies for the $q$-tagging working point used in the $V_{tq}$ analysis.}
 \label{tab:effs} 
 %\footnotesize
 \begin{tabular}{cccccccc}
@@ -701,11 +712,17 @@ $b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0
 \end{table}
 
 	%First we generated MC samples of $t\bar t$ and $tW$ plus jets in {\tt Madgraph 5} at LO and decayed the tops into both $t\to bW$ and $t\to (s,d)W$ channels with the W-boson decaying leptonically and SM values for the CKM matrix. Jet matching, parton showering and hadronization were performed in {\tt pythia8} and jet clustering with {\tt FastJet}. 
-	
-	A possible extraction of $\rho$ using leptonic $t\bar t$ events then proceeds as follows.
-	After pre-selection requirements, two selected highest $p_T$ jets in an event are subjected to the $b$- and $q$-taggers (for the working points in Table \ref{tab:effs}). The results are binned into one of the six tagged dijet categories $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ where $q$, $b$ and $\jmath$ represent $q\,$-jets, $b\,$-jets and non-tagged jets (i.e. a jet failing both taggers), respectively. 
+
+For the projections we use the reference working point 
+%for the utilized taggers is 
+shown in Table~\ref{tab:effs}.	
+%	A possible extraction of $\rho$ using leptonic $t\bar t$ events then proceeds as follows.
+%	After pre-selection requirements, two selected highest $p_T$ jets in an event are subjected to the $b$- and $q$-taggers (for the working points in Table \ref{tab:effs}). The results are b
+	We bin preselected events into one of the six tagged dijet categories $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ where $q$, $b$ and $\jmath$ represent $q\,$-jets, $b\,$-jets and non-tagged jets (a jet failing both taggers), respectively. 
 %	A fit to event yields in all the categories can then be used to extract $\rho$ together with the ISR/FSR contamination fractions. 
-	Solely for the purpose of illustration we present  in Figure \ref{fig:master} the hypothetical upper limits on $\rho$ taking into account only statistical uncertainties in the $qb$ category for the signal significance $S/\sqrt{B}$ at $2\sigma$ (solid boundary) and $5\sigma$ (dashed boundary) as a function of the LHC luminosity, compared to the current best limit by CMS shown by the gray dashed curve. These results suggest that the HL-LHC could find evidence of Cabbibo-suppressed top decays and provide an additional experimental handle for the direct determination of the $V_{tx}$ CKM elements. %For a more detailed study of these prospects we refer the reader to Ref.~\cite{thePaper}
+	%Solely for the purpose of illustration we present  in 
+	Figure \ref{fig:master} shows the resulting upper limits on $\rho$ taking into account only statistical uncertainties in the $qb$ category for the signal significance $S/\sqrt{B}$ at $2\sigma$ (solid boundary) and $5\sigma$ (dashed boundary) as a function of the LHC luminosity, compared to the current best limit by CMS shown by the gray dashed curve. The results suggest that the HL-LHC could find evidence of Cabbibo-suppressed top decays and determine $V_{ts}$ CKM element directly, though the precise precision depends crucially on how well systematic uncertainties can be controlled. %For a more detailed study of these prospects we refer the reader to Ref.~\cite{thePaper}
+	The uncertainties in $q$- and $b$-tagging efficiencies could be controlled using $Zj$ production. Then a fit of the categorized dijet data $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ in inclusive dilepton events to a probabilistic model taking into account the tagging efficiencies could be performed, similar to that performed in \cite{Silva:2010qt,Khachatryan:2014nda} for the extraction of $V_{tb}$. Especially relevant for the HE-LHC would be to measure $t\to (s,d)W$ from boosted semi-leptonic $t\bar t$ events. Events with one top-tagged fat jet, one narrow jet and one lepton (both daughter candidates of the leptonic top) can be categorized by the flavour content of the narrow jet. A preliminary analysis~\cite{thePaper} suggests comparable sensitivity to the leptonic $t\bar t$ dataset already at the 13TeV LHC. 
 
 
 \begin{figure}[t]
@@ -719,9 +736,12 @@ $b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0
 
 
 %\paragraph{Outlook}
-For more reliable (HL/HE-)LHC projections it is necessary to carefully categorize and estimate the main sources of systematic uncertainties. The dominating source of uncertainties is expected to come from the extraction and mapping of the $q$- and $b$-tagging efficiencies from $Zj$ production onto $t\bar t$ events. A complete assessment of these uncertainties is outside the scope of this report. Nevertheless, once these uncertainties are extracted from experimental data the following step is to perform a fit of the categorized dijet data $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ in inclusive dilepton events to a probabilistic model taking into account the tagging efficiencies, similar to that performed in \cite{Silva:2010qt,Khachatryan:2014nda} for the extraction of $V_{tb}$. For further details on this search strategy see Ref.~\cite{thePaper}.
+%For more reliable (HL/HE-)LHC projections it is necessary to carefully categorize and estimate the main sources of systematic uncertainties. The dominating source of uncertainties is expected to come from the extraction and mapping of The uncertainties in $q$- and $b$-tagging efficiencies could be controlled using $Zj$ production.
+%% onto $t\bar t$ events. 
+%A complete assessment of these uncertainties is outside the scope of this report. Nevertheless, once these uncertainties are extracted from experimental data the following step is to perform a fit of the categorized dijet data $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ in inclusive dilepton events to a probabilistic model taking into account the tagging efficiencies, similar to that performed in \cite{Silva:2010qt,Khachatryan:2014nda} for the extraction of $V_{tb}$. For further details on this search strategy see Ref.~\cite{thePaper}.
 
-Another interesting direction, specially relevant for the HE-LHC, is to measure $t\to (s,d)W$ from boosted semi-leptonic $t\bar t$ events. Events with one top-tagged fat jet, one narrow jet and one lepton (both daughter candidates of the leptonic top) can be categorized by the flavour content of the narrow jet. A preliminary analysis~\cite{thePaper} suggests comparable sensitivity to the leptonic $t\bar t$ dataset already at the 13TeV LHC. As a final note, given the small signal-to-background ratio of Cabibbo-suppressed top decays, advanced machine learning approaches to data analysis should be able to further improve upon these simple search strategies.
+
+%As a final note, given the small signal-to-background ratio of Cabibbo-suppressed top decays, advanced machine learning approaches to data analysis should be able to further improve upon these simple search strategies.
 
 \subsection{Experimental perspectives}
 \subsubsection{Top-gluon}
