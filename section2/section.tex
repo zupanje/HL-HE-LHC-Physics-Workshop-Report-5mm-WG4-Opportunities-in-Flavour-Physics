@@ -578,23 +578,23 @@ The inputs used by CKMfitter collaboration for the fits are shown in Table~\ref{
 %we have added a column  corresponding to the current situation concerning uncertainties, but 
 take central values corresponding to a perfect agreement of the various constraints in the SM. Note that this choice does change slightly the present determination of CKM parameters -- the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies, in particular for $|V_{us}|$, which currently increases the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we therefore compare the three scenarios presented in Table~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement (rather than comparing the future projections with the CKMfitter results for the Summer 2018 update).
 
-From the global fit, we can determined the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. 
-In Fig.~\ref{fig:CKMfitterglobalsmall} we show the Phase 1 (left panels) and Phase 2 (right panels)  determinations in the standard UT plane for a global fit (upper), as well as when using only subsets of constraints, tree only (middle) or loop only (lower).
+From the global fit we determine the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. 
+In Fig.~\ref{fig:CKMfitterglobalsmall} we show the Phase 1 (left panels) and Phase 2 (right panels)  determinations in the standard UT plane for a global fit (upper), as well as when using only subsets of constraints, tree only (middle) or loop only (lower panels).
 %details various details of the constraints
 %The uncertainties obtained are given in Table~\ref{tab:CKMfitterprojresults}, while the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. 
-We also show the corresponding constraints for the $B_s$ meson system in Fig.~\ref{fig:CKMfitterglobalBs}, defining the apex of the $B_s$ unitarity triangle as~\ref{Charles:2015gya}
+We also show in Fig.~\ref{fig:CKMfitterglobalBs} the corresponding constraints for the $B_s$ meson system, defining the apex of the $B_s$ unitarity triangle as~\cite{Charles:2015gya}
 \begin{equation}
-\bar\rho_{sb}+i\bar\eta_{sb}=-\frac{V_{us}V_{ub}^*}{V_{cs}V_{cb}^*}    
+\bar\rho_{sb}+i\bar\eta_{sb}=-\frac{V_{us}V_{ub}^*}{V_{cs}V_{cb}^*}.    
 \end{equation}
 
 
 \begin{table}
-\caption{Uncertainties for the CKMfitter projections.}\label{tab:CKMfitterprojinputs}
+\caption{Uncertainties on inputs for the CKMfitter and UTFit projections.}\label{tab:CKMfitterprojinputs}
 \begin{center}
 {%\scriptsize
-\begin{tabular}{c|cccc}
+\begin{tabular}{ccccc}
 \hline\hline
-  &  Current  &  Phase I  & Phase II & Ref.  \\
+  &  Current  &  Phase 1  & Phase 2 & Ref.  \\
 \hline\hline
 $|V_{ud}|$  &  $\pm 0.00021$ & $\pm 0.00021$ & $\pm 0.00021$ & \cite{CKMfitterwebsite} \\
 $|V_{us}|f_+^{K\to\pi}(0)$  & $\pm 0.0004$  & $\pm 0.0004$ & $\pm 0.0004$ & \cite{CKMfitterwebsite}\\
@@ -605,22 +605,22 @@ $|V_{ub}|\times 10^3$ ($b\to u\ell\bar\nu$)  &  $\pm 0.23$ & $\pm 0.04$ & $\pm 0
 $|V_{cb}|\times 10^3$  ($b\to c\ell\bar\nu$) &  $\pm 0.7$ & $\pm 0.5$ & $\pm 0.5$ & \cite{Kou:2018nap}\\
 $|V_{ub}/V_{cb}|$ ($\Lambda_b$) & $\pm 0.0050$ & $\pm 0.0025$ & $\pm 0.0008$ &  See above \\
 \hline
-$\sin 2\beta$ &  $\pm 0.017$ & $\pm 0.005$ & $\pm 0.003$ & See above and  \cite{Kou:2018nap}\\
+$\sin 2\beta$ &  $\pm 0.017$ & $\pm 0.005$ & $\pm 0.003$ & Above \& \cite{Kou:2018nap}\\
 $\alpha\ [^\circ]$  &  $\pm 4.4$ & $\pm 0.6$ & $\pm 0.6$& \cite{Kou:2018nap}\\
-$\gamma\ [^\circ]$  &  $\pm 5.6$ & $\pm 1$ & $\pm 0.35$& See above and  \cite{Kou:2018nap}\\
+$\gamma\ [^\circ]$  &  $\pm 5.6$ & $\pm 1$ & $\pm 0.35$& Above \&  \cite{Kou:2018nap}\\
 $\beta_s\ [{\rm rad}]$ &  $\pm 0.031$ & $\pm 0.014$ & $\pm 0.004$ & See above\\
 ${\cal B}(B\to\tau\nu)\times 10^4$ &  $\pm 0.21$ & $\pm 0.04$ & $\pm 0.04$ & \cite{Kou:2018nap}\\
 \hline
-$\bar{m}_c$ [GeV] &  $\pm 0.012$ $(0.9\ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & $\pm 0.005$ $(0.4 \ \%)$ & See Sec. 11\\
-$\bar{m}_t$ [GeV] &  $\pm 0.73$ $(0.4\ \%)$ & $\pm 0.35$ $(0.2\ \%)$& $\pm 0.35$ $(0.2\ \%)$ & \cite{CKMfitterwebsite}\\
-$\alpha_s(m_Z)$  &  $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & $\pm 0.0011$ $(0.9\ \%)$ & \cite{CKMfitterwebsite}\\
-$f_+^{K\to\pi}(0)$ &  $\pm 0.0026$ $(0.3\ \%)$ & $\pm 0.0012$ $(0.12\ \%)$ & $\pm 0.0012$ $(0.12\ \%)$ & See Sec. 11\\
-$f_K$ & $\pm 0.0006$ $(0.5\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & $\pm 0.0005$ $(0.4\ \%)$ & See Sec. 11\\
-$B_K$  &  $\pm 0.012$ $(1.6\ \%)$ & $\pm 0.005$ $(0.7\ \%)$ & $\pm 0.004$ $(0.5\ \%)$ & See Sec. 11\\
-$f_{B_s}$ [GeV] &  $\pm 0.0025$ $(1.1\ \%)$ & $\pm 0.0011$ $(0.5\ \%)$ & $\pm 0.0011$ $(0.5\ \%)$ & See Sec. 11\\
-$B_{B_s}$ &   $\pm 0.034$ $(2.8\ \%)$ & $\pm 0.010$ $(0.8\ \%)$ & $\pm 0.007$ $(0.5\ \%)$ & See Sec. 11\\
-$f_{B_s}/f_{B_d}$  &  $\pm 0.007$ $(0.6\ \%)$ & $\pm 0.005$ $(0.4\ \%)$ & $\pm 0.005$ $(0.4\ \%)$ & See Sec. 11\\
-$B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & $\pm 0.003$ $(0.3\ \%)$ & See Sec. 11\\
+$\bar{m}_c$ [GeV] &  $\pm 0.012$ $(0.9\%)$ & $\pm 0.005$ $(0.4 \%)$ & $\pm 0.005$ $(0.4\%)$ & See Sec. 11\\
+$\bar{m}_t$ [GeV] &  $\pm 0.73$ $(0.4\%)$ & $\pm 0.35$ $(0.2\%)$& $\pm 0.35$ $(0.2\%)$ & \cite{CKMfitterwebsite}\\
+$\alpha_s(m_Z)$  &  $\pm 0.0011$ $(0.9\%)$ & $\pm 0.0011$ $(0.9\%)$ & $\pm 0.0011$ $(0.9\%)$ & \cite{CKMfitterwebsite}\\
+$f_+^{K\to\pi}(0)$ &  $\pm 0.0026$ $(0.3\%)$ & $\pm 0.0012$ $(0.12\%)$ & $\pm 0.0012$ $(0.12\%)$ & See Sec. 11\\
+$f_K$ & $\pm 0.0006$ $(0.5\%)$ & $\pm 0.0005$ $(0.4\%)$ & $\pm 0.0005$ $(0.4\%)$ & See Sec. 11\\
+$B_K$  &  $\pm 0.012$ $(1.6\%)$ & $\pm 0.005$ $(0.7\%)$ & $\pm 0.004$ $(0.5\%)$ & See Sec. 11\\
+$f_{B_s}$ [GeV] &  $\pm 0.0025$ $(1.1\%)$ & $\pm 0.0011$ $(0.5\%)$ & $\pm 0.0011$ $(0.5\%)$ & See Sec. 11\\
+$B_{B_s}$ &   $\pm 0.034$ $(2.8\%)$ & $\pm 0.010$ $(0.8\%)$ & $\pm 0.007$ $(0.5\%)$ & See Sec. 11\\
+$f_{B_s}/f_{B_d}$  &  $\pm 0.007$ $(0.6\%)$ & $\pm 0.005$ $(0.4\%)$ & $\pm 0.005$ $(0.4\%)$ & See Sec. 11\\
+$B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\%)$ & $\pm 0.005$ $(0.5\%)$ & $\pm 0.003$ $(0.3\%)$ & See Sec. 11\\
 \hline\hline
 \end{tabular}}
 \end{center}
@@ -663,41 +663,40 @@ $B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\ \%)$ & $\pm 0.005$ $(0.5\ \%)$ & $\pm 0
 %\end{center}
 %\end{figure}
 
-\begin{figure}
-\begin{center}
-\centering
-\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage1.pdf} 
-\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage2.pdf} 
-\caption{Constraints on the Unitarity Triangle for the $B_s$ meson from the CKMfitter global analysis for phase 1 (left) and phase 2 (right).}
-\label{fig:CKMfitterglobalBs}
-\end{center}
-\end{figure}
 
 
 \begin{figure}
 \begin{center}
 \centering
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_global_Stage1.pdf} 
-\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_global_Stage2.pdf} 
-
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_global_Stage2.pdf}\\ 
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_tree_nogammaimproved_Stage1.pdf} 
-\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_tree_nogammaimproved_Stage2.pdf} 
-
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_tree_nogammaimproved_Stage2.pdf} \\
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_loop_Stage1.pdf} 
 \includegraphics[width=0.45\linewidth]{section2/figures/rhoeta_small_loop_Stage2.pdf} 
-
-
-\caption{Constraints on the Unitarity Triangle for the Unitarity triangle from the CKMfitter global analysis: global fit (top), tree only (center), loop only (bottom),  for phase 1 (left) and phase 2 (right).}
+\caption{Constraints on the Unitarity Triangle for the Unitarity triangle from the CKMfitter global analysis: global fit (top), tree only (center), loop only (bottom),  for Phase 1 (left) and Phase 2 (right).}
 \label{fig:CKMfitterglobalsmall}
 \end{center}
 \end{figure}
 
+\begin{figure}
+\begin{center}
+\centering
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage1.pdf} 
+\includegraphics[width=0.45\linewidth]{section2/figures/rhoetaBs_large_Stage2.pdf} 
+\caption{Constraints on the Unitarity Triangle for the $B_s$ meson from the CKMfitter global analysis for Phase 1 (left) and Phase 2 (right).}
+\label{fig:CKMfitterglobalBs}
+\end{center}
+\end{figure}
+
+
 
 \subsubsection{UTfit results}
-The projection of the UT analysis in the HL-LHC era is obtained by performing a global fit using expected values of experimental and theoretical input parameters, as discussed in this Chapter \td{cite more precisely}. In particular, lattice uncertainties in 2025 are taken from table~\ref{table:Proj}, Section~\ref{sec:lattice} while future experimental uncertainties are collected in Table~\ref{tab:CKMfitterprojinputs} for phase 1 and 2. Central values for both theoretical and experimental parameter are taken from a SM point in order to ensure the compatibility of the extrapolated constraints.
+The projection of the UT analysis in the HL-LHC era is obtained by performing a global fit using the same future expected values of experimental and theoretical input parameters as CKMfitter, Table \ref{tab:CKMfitterprojinputs}. In particular, the lattice uncertainties for Phase 1 and Phase 2 are the same as Table~\ref{table:Proj} in Section~\ref{sec:lattice}. 
+%while future experimental uncertainties are collected in Table~\ref{tab:CKMfitterprojinputs} for phase 1 and 2. 
+For both theoretical and experimental parameters the SM expectations were takes as central values, in order to ensure the compatibility of the extrapolated constraints.
 
-The improvement of the UT global analysis can be appreciated in Fig.~\ref{fig:UTfitFut}, where the present and future constraints on the UT plane
-are shown next to each other, after zooming on the SM preferred region.
+
 
 \begin{figure}
 \begin{center}
@@ -710,19 +709,20 @@ are shown next to each other, after zooming on the SM preferred region.
 \end{center}
 \end{figure}
 
-To be more quantitative, we collect in Table~\ref{tab:utfit_global} the uncertainties of the indirect determination of CKM parameters and angles, obtained from the predictive posterior p.d.f.'s (namely obtained without including the corresponding direct measurements in the fit). These uncertainties are reduced by a factor 3--5,
-allowing for an improved test of the SM, as discussed in the next section.
+The improvement of the UT global analysis can be appreciated in Fig.~\ref{fig:UTfitFut}, where the present and future Phase 1 and Phase 2 constraints on the standard UT plane are shown next to each other, after zooming on the SM preferred region.
+For a more quantitative comparison we collect in Table~\ref{tab:utfit_global} the uncertainties on the indirect determination of CKM parameters and angles, obtained from the predictive posterior p.d.f.'s (i.e., obtained without including the corresponding direct measurements in the fit). These uncertainties are reduced by a factor 3--5 for Phase 1, and are further reduced by up to a factor of 2 for Phase 2,
+allowing for an increasingly improved tests of the SM, as discussed next. Similar progression of improvements is seen in the projections from CKMfitter collaboration, cf. Fig.~\ref{fig:CKMfitterglobalsmall}.
 
 \begin{table}
-\caption{Relative uncertainties of the predictions of UT parameters and angles with current and extrapolated input values for measurements and theoretical parameters (UTfit collaboration).} 
+\caption{Relative uncertainties on the predictions of UT parameters and angles, using current and extrapolated input values for measurements and theoretical parameters (UTfit collaboration).} 
 \label{tab:utfit_global}
   \begin{center}
 	\begin{tabular}{cccccccc}
 		\hline\hline 
 		 & $\bar{\rho}$ & $\bar{\eta}$ & $A$ &  $\sin2\beta$ & $\gamma$ & $\alpha$ & $\beta_s$ \\ \hline
-			present & 9\% & 3\% & 1.5\% & 4.5\% & 3\% & 2.5\% & 3\% \\ 
-			phase 1 & 2\% & 0.8\% & 0.6\% & 0.9\% &  0.9\% & 0.7\% & 0.8\%\\ 
-			phase 2 & 1\% & 0.6\% & 0.5\% & 0.6\% & 0.8\% & 0.4\% & 0.5\%\\ \hline
+			Current & 9\% & 3\% & 1.5\% & 4.5\% & 3\% & 2.5\% & 3\% \\ 
+			Phase 1 & 2\% & 0.8\% & 0.6\% & 0.9\% &  0.9\% & 0.7\% & 0.8\%\\ 
+			Phase 2 & 1\% & 0.6\% & 0.5\% & 0.6\% & 0.8\% & 0.4\% & 0.5\%\\ \hline
  	\hline
 	\end{tabular} 
 \end{center}
@@ -735,10 +735,10 @@ allowing for an improved test of the SM, as discussed in the next section.
 % Luca Silvestrini and Marco Ciuchini
 
 The Unitarity Triangle Analysis can be generalized beyond the SM to
-obtain a simultaneous determination of CKM parameters and of NP
+obtain a simultaneous determination of CKM parameters and NP
 contributions to $\Delta F=2$ amplitudes \cite{Bona:2007vi}. Assuming
 that NP is absent (or negligible) in charged current amplitudes, but
-allowing it to be present in FCNC amplitudes, where its virtual
+allowing for NP to be present in FCNC amplitudes, where its virtual
 effects compete with loop-level SM amplitudes, we can still use the
 measurements of $\vert V_{ud}\vert$, $\vert V_{us}\vert$, $\vert
 V_{cb}\vert$, $\vert V_{ub}\vert$, $\gamma$ and $\alpha$ (allowing for
@@ -746,8 +746,9 @@ NP contributions in penguins, but barring order-of-magnitude
 enhancements of electroweak penguins) to obtain the ``tree-level''
 determination of the UT. This allows us
 to obtain the SM prediction for $K$, $B_{d}$ and $B_{s}$ mixing
-amplitudes; comparing the latter with the experimental results we can
-extract $C_{\varepsilon_K} = \varepsilon_K/\varepsilon_K^\mathrm{SM}$
+amplitudes. Comparing them with the experimental results we can
+extract 
+$C_{\varepsilon_K} = \varepsilon_K/\varepsilon_K^\mathrm{SM}$
 and
 \begin{equation}
   \label{eq:cbqphibq}
@@ -755,23 +756,24 @@ and
     \rvert \bar{B}_q \rangle}{\langle B_q \lvert H^\mathrm{SM}
     \rvert \bar{B}_q \rangle}\,.
 \end{equation}
+The SM point is $C_i=1, \phi_i=0$. 
 Using semileptonic asymmetries it is possible to break the degeneracy
 for $\gamma \leftrightarrow \gamma + 180^\circ$ present in the
 tree-level determination of the CKM matrix \cite{Laplace:2002ik},
-getting rid of the solution in the third quadrant. We obtain the
-results in Tab.~\ref{tab:UTAgen} for the CKM and NP parameters. The
-corresponding two-dimensional distributions are shown in
+getting rid of the solution in the third quadrant. We then obtain the
+results in Table~\ref{tab:UTAgen} for the projected errors on CKM parameters and on the NP parameters. Note that at present the NP contribution that are about an order of magnitude smaller than the SM are still perfectly allowed. At the end or Phase 2 we will be able to probe amplitudes that are another factor of 4 smaller than it is possible at present (corresponding to about a factor of 2 higher reach in the NP scale for dimension 6 NP operators).  The
+corresponding two-dimensional distributions for $B_d$ and $B_s$ mixing are shown in
 Fig.~\ref{fig:UTAgen}. 
 
 \begin{table}
   \begin{center}
-  \caption{Present and future uncertainties on CKM and NP parameters from the generalized UT analysis.
+  \caption{Present and future uncertainties on CKM and NP parameters from the generalized UT analysis (UTfit collaboration).
   }   \label{tab:UTAgen}
 	\begin{tabular}{cccccccc}
 		\hline \hline
 		 & $\bar{\rho}$ & $\bar{\eta}$ & $C_{\varepsilon_K}$ &  $C_{B_d}$ & $\phi_{B_d}[^\circ]$ & $C_{B_s}$ & $\phi_{B_s}[^\circ]$ \\ \hline
-		present & 0.030 & 0.028 & 0.12 & 0.11 & 1.8 & 0.09 & 0.89 \\ 
-		future  & 0.0047 & 0.0040 & 0.036 & 0.030 & 0.28 & 0.026 & 0.29\\ \hline \hline
+		Current & 0.030 & 0.028 & 0.12 & 0.11 & 1.8 & 0.09 & 0.89 \\ 
+		Phase 2  & 0.0047 & 0.0040 & 0.036 & 0.030 & 0.28 & 0.026 & 0.29\\ \hline \hline
 	\end{tabular} 
 \end{center}
 \end{table}
@@ -779,79 +781,72 @@ Fig.~\ref{fig:UTAgen}.
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=0.45\linewidth]{section2/figures/phibd_cbd-np.pdf}
-\includegraphics[width=0.4\linewidth]{section2/figures/cbdvsphibd_fit1.pdf} 
-\includegraphics[width=0.45\linewidth]{section2/figures/phibs_cbs-np.pdf}
-\includegraphics[width=0.4\linewidth]{section2/figures/cbsvsphibs_fit1.pdf} 
-\caption{Present (left) and future (right) constraints on NP contributions to $B_q$-$\bar{B}_q$ mixing.}
+\includegraphics[width=0.34\linewidth]{section2/figures/phibd_cbd-np.pdf}~~~~~~~~~~~~
+\includegraphics[width=0.37\linewidth]{section2/figures/cbdvsphibd_fit1.pdf} 
+\\
+\includegraphics[width=0.34\linewidth]{section2/figures/phibs_cbs-np.pdf}~~~~~~~~~~~~
+\includegraphics[width=0.37\linewidth]{section2/figures/cbsvsphibs_fit1.pdf} 
+\caption{Present (left) and future Phase 2 (right) constraints on NP contributions to $B_q$-$\bar{B}_q$ mixing. Note the change in the scale in the figures.}
 \label{fig:UTAgen}
 \end{center}
 \end{figure}
 
 Combining the results of the generalized UT analysis with the
-constraints on CP violation in $D$ mixing from Sec. \td{cite}\textbf{refer to
-  $D$ mixing combination}, we can consider the most general $\Delta
+constraints on CP violation in $D$ mixing from Sec. \ref{sec:CPV:mixing:Dmeson},
+%\td{cite}\textbf{refer to
+%  $D$ mixing combination},
+   we can consider the most general $\Delta
 F=2$ effective Hamiltonian and bound its coefficients (barring
-accidental cancellations).
-
-The most general effective Hamiltonians for $\Delta F=2$ processes
-beyond the SM have the following form \cite{Gabbiani:1996hi}:
-\begin{eqnarray}
+accidental cancellations). The most general effective Hamiltonians for $\Delta F=2$ processes
+beyond the SM have the following form \cite{Gabbiani:1996hi} (with $q_1q_2=sd,uc,bq$ for $M=K,D,B_q$)
+\begin{equation}
   \label{eq:defheff}
-  {\cal H}_{\rm eff}^{K-\bar K}=\sum_{i=1}^{5} C_i\, Q_i^{sd} +
-  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{sd} \\
-  {\cal H}_{\rm eff}^{D-\bar D}=\sum_{i=1}^{5} C_i\, Q_i^{uc} +
-  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{uc} \\
-  {\cal H}_{\rm eff}^{B_q-\bar B_q}=\sum_{i=1}^{5} C_i\, Q_i^{bq} +
-  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{bq} \nonumber
-\end{eqnarray}
-where
-\begin{eqnarray}
-         \label{Qi}
-         Q_1^{q_iq_j} & = & \bar q^{\alpha}_{jL} \gamma_\mu
-         q^{\alpha}_{iL} \bar q^{\beta}_{jL} \gamma^\mu 
-         q^{\beta}_{iL}\; ,
-         \nonumber \\
-         Q_2^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\alpha}_{iL} \bar
-         q^{\beta}_{jR} q^{\beta}_{iL}\; , 
-         \nonumber \\
-         Q_3^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\beta}_{iL} \bar
-         q^{\beta}_{jR} q^{\alpha}_{iL}\; , 
-         \\
-         Q_4^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\alpha}_{iL} \bar
-         q^{\beta}_{jL} q^{\beta}_{iR}\; , 
-         \nonumber \\
-         Q_5^{q_iq_j} & = & \bar q^{\alpha}_{jR}  q^{\beta}_{iL} \bar
-         q^{\beta}_{jL} q^{\alpha}_{iR}\; , 
-         \nonumber
-\end{eqnarray}
-and the operators $\tilde{Q}_{1,2,3}^{q_iq_j}$ are obtained from the
-$Q_{1,2,3}^{q_iq_j}$ by the exchange $ L \leftrightarrow R$.  Here
+  {\cal H}_{\rm eff}^{M-\bar M}=\sum_{i=1}^{5} C_i\, Q_i^{q_1q_2} +
+  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{q_1q_2}, 
+%  \\
+%  {\cal H}_{\rm eff}^{D-\bar D}=\sum_{i=1}^{5} C_i\, Q_i^{uc} +
+%  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{uc} \\
+%  {\cal H}_{\rm eff}^{B_q-\bar B_q}=\sum_{i=1}^{5} C_i\, Q_i^{bq} +
+%  \sum_{i=1}^{3} \tilde{C}_i\, \tilde{Q}_i^{bq} \nonumber
+\end{equation}
+where the operator basis consists of  dimension 6 operators
+$Q_1^{q_iq_j} =\big(\bar q^{\alpha}_{jL} \gamma_\mu q^{\alpha}_{iL}\big)\big( \bar q^{\beta}_{jL} \gamma^\mu q^{\beta}_{iL}\big)$, 
+$ Q_2^{q_iq_j}=\big(\bar q^{\alpha}_{jR}  q^{\alpha}_{iL}\big)\big( \bar q^{\beta}_{jR} q^{\beta}_{iL}\big)$, 
+ $Q_3^{q_iq_j} =\big(\bar q^{\alpha}_{jR}  q^{\beta}_{iL}\big)\big(\bar q^{\beta}_{jR} q^{\alpha}_{iL}\big)$, 
+$ Q_4^{q_iq_j} = \big(\bar q^{\alpha}_{jR}  q^{\alpha}_{iL}\big)\big(\bar q^{\beta}_{jL} q^{\beta}_{iR}\big)$, 
+$ Q_5^{q_iq_j} = \big(\bar q^{\alpha}_{jR}  q^{\beta}_{iL}\big)\big(\bar q^{\beta}_{jL} q^{\alpha}_{iR}\big)$, 
+and the operators $\tilde{Q}_{1,2,3}^{q_iq_j}$ that are obtained from the
+$Q_{1,2,3}^{q_iq_j}$ by exchanging $ L \leftrightarrow R$.  Here
 $q_{R,L}=P_{R,L}\,q$, with $P_{R,L}=(1 \pm \gamma_5)/2$, and $\alpha$
-and $\beta$ are colour indices.
-
-Following the procedure detailed in ref.~\cite{Bona:2007vi}, we obtain
+and $\beta$ are colour indices. Following the procedure detailed in Ref.~\cite{Bona:2007vi}, the UTFit collaboration obtained
 p.d.f.'s for the Wilson coefficients based on the extrapolated UT and
-$D$ mixing analyses. For self-consistency, we compute the coefficients
+$D$ mixing analyses. For self-consistency, the coefficients are computed
 at a scale $\mu_H$ roughly corresponding to the bound on the NP scale
-$\Lambda$ that one can obtain from the analysis (see below). The
-allowed regions at $95\%$ probability are reported in Table
-\ref{tab:DF2Cbounds}. The regions for $\tilde{C}_i$ are identical to
-the ones for the corresponding $C_i$.
-
-In general, the coefficients at the NP scale can be written as
+$\Lambda$ that one obtains from the analysis (see below). The
+present and expected Phase 2 allowed regions at $95\%$ probability on the Wilson coefficients 
 \begin{equation}
   \label{eq:CiLambda}
   C_i(\Lambda) = \frac{F_i L_i}{\Lambda^2}\,,
 \end{equation}
-where $\Lambda$ is the NP scale corresponding to the new heavy
-particles mediating the $\Delta F=2$ transition, $F_i$ is a flavour
-coupling and $L_i$ is the overall strength, \textit{e.g.} a loop
-factor. For a strongly-interacting NP model with arbitrary flavour
-structure one expects $F_i \sim L_i \sim 1$, so with this assumption
-we can convert the allowed regions for $C_i$ in the lower bounds on the
-NP scale $\Lambda$ reported in Table \ref{tab:DF2Cbounds} and in
-Fig. \ref{fig:DF2Lambda}.
+are reported in Fig.  \ref{fig:DF2Lambda}. In left panel in Fig.  \ref{fig:DF2Lambda} the flavour and loop factors were set to $F_i=L_i=1$, i.e., this shows the limits on the mass of NP states that contribute to meson mixing at tree level and couple with ${\mathcal O}(1)$ strength to the corresponding SM fermions. In Fig. \ref{fig:DF2Lambda} right, the flavour factor was set to $F_i=V_{t q_1}V_{t q_2}^*$, and the loop factor to $L_i=\alpha_2/(4\pi)$, with $\alpha_2$ the weak structure constant. That is, the right panel of Fig. \ref{fig:DF2Lambda} shows the reach for masses of NP states that have MFV like couplings to SM fermions and contribute only at one loop level. 
+
+%in Table
+%\ref{tab:DF2Cbounds}. The regions for $\tilde{C}_i$ are identical to
+%the ones for the corresponding $C_i$.
+%
+%In general, the coefficients at the NP scale can be written as
+%\begin{equation}
+%  \label{eq:CiLambda}
+%  C_i(\Lambda) = \frac{F_i L_i}{\Lambda^2}\,,
+%\end{equation}
+%where $\Lambda$ is the NP scale corresponding to the new heavy
+%particles mediating the $\Delta F=2$ transition, $F_i$ is a flavour
+%coupling and $L_i$ is the overall strength, \textit{e.g.} a loop
+%factor. For a strongly-interacting NP model with arbitrary flavour
+%structure one expects $F_i \sim L_i \sim 1$, so with this assumption
+%we can convert the allowed regions for $C_i$ in the lower bounds on the
+%NP scale $\Lambda$ reported in Table \ref{tab:DF2Cbounds} and in
+%Fig. \ref{fig:DF2Lambda}.
 
 %\begin{table}[!h]
 %\begin{center}
@@ -893,18 +888,18 @@ Fig. \ref{fig:DF2Lambda}.
 %\end{center}
 %\end{table}
 
-\begin{figure}[htb]
+\begin{figure}[t]
 \begin{center}
 \includegraphics[width=0.49\linewidth]{section2/figures/df2-npscale-cernyb.pdf}
 \includegraphics[width=0.49\linewidth]{section2/figures/df2-npscale-cernyb_nmfv.pdf}
-\caption{Present (lighter) and future (darker) constraints on the NP scale from the UTfit NP analysis. The right panel shows constraints assuming NP is weakly coupled, has MFV structure of couplings, and enters observables only at one loop, see text for details. }
+\caption{Present (lighter) and future Phase 2 (darker) constraints on the NP scale from the UTfit NP analysis. The right panel shows constraints assuming NP is weakly coupled, has MFV structure of couplings, and enters observables only at one loop, see text for details. }
 \label{fig:DF2Lambda}
 \end{center}
 \end{figure}
 
 
-\textbf{It would be nice to have a few lines of comparison with bounds
-from other sectors like EW or Higgs taken from other chapters of the
-YB. Maybe editors can add them during the final editing.}
+%\textbf{It would be nice to have a few lines of comparison with bounds
+%from other sectors like EW or Higgs taken from other chapters of the
+%YB. Maybe editors can add them during the final editing.}
 
 \end{document}
