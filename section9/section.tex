@@ -1204,7 +1204,8 @@ The sensitivities expected at HL-LHC are shown in Fig.~\ref{fig:HiggsDistFuture}
     -8.7 (-18.0) < \kappa_c < 10.6 (22.9),  \qquad
     -1.9(-2.8) < \kappa_b < 2.9(9.9),
 \end{align}
-assuming the branching fractions  depend only on $\kappa_c$ or $\kappa_b$ (or are floated freely \td{JZ: be more precise, what was floated?}). 
+assuming the branching fractions  depend only on $\kappa_c$ or $\kappa_b$ (or are floated freely). 
+%\td{JZ: be more precise, what was floated?}). 
 %In case the branching fractions are allowed to float freely the results are
 %\begin{align}
 %    -2.8 < \kappa_c < 9.9 \, , \qquad
@@ -1231,11 +1232,19 @@ These bounds on the $c$ and $b$ Yukawa are  weaker than the bounds from the glob
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Fig.~\ref{fig:kbkc_couplingdependentBRs} shows expected one sigma $\kappac, \kappab$ contours from $3000$fb$^{-1}$ global fits to \td{JZ: correct?} $\kappac, \kappab$ and $\kappa_t$ \td{is $/\cg$ also varied? YS: I do not think so}, obtained by extrapolating the measured constraints in Ref.~\cite{CMS:2018hhg}. The fit uses expected differential distributions, obtained by extrapolating the $\sqrt{s}=13\,$TeV $p_T$ distributions in the $\hgg$~\cite{Sirunyan:2018kta} and 
+Fig.~\ref{fig:kbkc_couplingdependentBRs} shows expected one sigma $\kappac, \kappab$ contours from $3000$fb$^{-1}$ global fits to 
+%\td{JZ: correct?} 
+$\kappac, \kappab$ and $\kappa_t$, 
+%\td{is $/\cg$ also varied? YS: I do not think so}, 
+obtained by extrapolating the measured constraints in Ref.~\cite{CMS:2018hhg}. The fit uses expected differential distributions, obtained by extrapolating the $\sqrt{s}=13\,$TeV $p_T$ distributions in the $\hgg$~\cite{Sirunyan:2018kta} and 
 %$\hzztofourl$
-$\hzz^{(*)}\to 4\ell$~\cite{CMS_AN_2016-442}\td{missing} ($\ell = e$ or $\muon$) decay channels, as well as 
+$\hzz^{(*)}\to 4\ell$~\cite{Sirunyan:2017exp}
+%\td{missing} 
+($\ell = e$ or $\muon$) decay channels, as well as 
 % 
- a search for the $\hbb$ at large \pt~\cite{CMS_AN_2016-366}\td{missing}, which enhances the sensitivity  to $\kappat$.
+ a search for the $\hbb$ at large \pt~\cite{Sirunyan:2017dgc},
+ %\td{missing}, 
+ which enhances the sensitivity  to $\kappat$.
  The simultaneous extended maximum likelihood fit to the diphoton mass, four-lepton mass, and soft-drop mass, $\msd$,~\cite{Dasgupta:2013ihk,Larkoski:2014wba} spectra in all the analysis categories of the $\hgg$, $\hzz$, and $\hbb$ channels, gives the results in Fig.~\ref{fig:kbkc_couplingdependentBRs} (left) when only $\kappa_i$ are varied, and in Fig.~\ref{fig:kbkc_couplingdependentBRs} (right), if in addition the Higgs total decay width is allowed to float. 
 In Fig.~\ref{fig:kbkc_couplingdependentBRs} the systematic uncertainties are conservatively kept at current level (dubbed Scenario 1 in \td{cite WG2}). The results for reduced systematic uncertainties (Scenario 2) can be found in \td{cite WG2}. There is only a minor change in the projected constraints on $\kappa_c, \kappa_b$ compared to Scenario 1. 
 
@@ -1418,10 +1427,30 @@ exception are the flavour-violating couplings involving a tau lepton. The
 strongest constraints on $\kappa_{\tau\mu}, \kappa_{\mu\tau},
 \kappa_{\tau e}, \kappa_{e \tau}$ are thus from direct searches of flavour-violating Higgs decays at
 the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
-The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is ${|\kappa_{ct}|^2+|\kappa_{tc}|^2}<(0.06)^2$ at 95\%CL.
-% where the latest ATLAS bound was converted to a bound on the Yukawa modifier at leading order.
+Currently, the CMS 13\,TeV with 35.9\,fb$^{-1}$~\cite{Sirunyan:2017xzt} sets the strongest constraints 
+%
+\begin{equation}
+ ( {y_{\mu\tau}^2 + y^2_{\tau\mu}})^{1/2} < 1.43 \times 10^{-3}\, , \qquad
+    ({y_{e\tau}^2 + y^2_{\tau e}})^{1/2} < 2.26 \times 10^{-3}\, ,
+\end{equation}
+%
+which corresponds to 95\,\%~CL upper limit on the branching ratio of $0.25\,$\% and $0.61\,$\% for $\mu\tau$ and $e\tau$, respectively. 
+Naively, assuming that both systematics and statistical error scale with square root of the luminosity, one can expect that the sensetivity of the HL-LHC with $3000\,$fb$^{-1}$ will be  around the half per-mil level for the branching ratio of $h\to e\tau$ or $h\to \mu\tau$. 
 
-\td{Projections are missing; YS: there are no official projection for this - see the new version of the WG2 I think you can just copy it to here}
+
+The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is ${|\kappa_{ct}|^2+|\kappa_{tc}|^2}<(0.06)^2$ at 95\,\%~CL.
+
+%The flavour violating Yukawa couplings are well constrained by the low-energy
+%flavour-changing neutral current measurements
+%\cite{Harnik:2012pb,Blankenburg:2012ex,Gorbahn:2014sha}. A notable
+%exception are the flavour-violating couplings involving a tau lepton. The
+%strongest constraints on $\kappa_{\tau\mu}, \kappa_{\mu\tau},
+%\kappa_{\tau e}, \kappa_{e \tau}$ are thus from direct searches of flavour-violating Higgs decays at
+%the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
+%The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is ${|\kappa_{ct}|^2+|\kappa_{tc}|^2}<(0.06)^2$ at 95\%CL.
+%% where the latest ATLAS bound was converted to a bound on the Yukawa modifier at leading order.
+%
+%\td{Projections are missing; YS: there are no official projection for this - see the new version of the WG2 I think you can just copy it to here}
 
 \subsection{CP violating Yukawa couplings}
 The CP-violating flavour-diagonal Yukawa couplings, $\tilde \kappa_{f_i}$,
