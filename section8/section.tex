@@ -791,9 +791,10 @@ shown in Table~\ref{tab:effs}.
 
 %%CHECK really experiment dependent? 
 
-The generation of signal events at ATLAS is done at NLO with MadGraph5\_aMC@NLO~\cite{Alwall:2014hca, Mangano:2006rw} and the effective field theory framework developed in the TopFCNC model is used~\cite{Degrande:2014tta,Durieux:2014xla}. In the case of $gqt$ coupling, the MEtop generator is used instead~\cite{Coimbra:2012ys}. At CMS signal events are simulated at LO with MadGraph5\_aMC@NLO with the effective lagrangian implemented by means of the FEYNRULES package, except in the simulation of signal events for $gqt$ and $\gamma qt$ couplings where CompHEP~\cite{Boos:2004kh} and PROTOS 2.0~\cite{AguilarSaavedra:2010rx} are used, respectively. In both experiments Pythia 8 is used to simulate the parton showering and hadronization. The generation of signal events is done under the assumption of only one non-vanishing FCNC coupling at a time. 
+The generation of signal events at ATLAS is done at NLO with {\tt MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca, Mangano:2006rw} and the effective field theory framework developed in the TopFCNC model is used~\cite{Degrande:2014tta,Durieux:2014xla}. In the case of $gqt$ coupling, the MEtop generator is used instead~\cite{Coimbra:2012ys}. At CMS signal events are simulated at LO with {\tt MadGraph5\_aMC@NLO} with the effective lagrangian implemented by means of the {\tt FEYNRULES} package, except in the simulation of signal events for $gqt$ and $\gamma qt$ couplings where {\tt CompHEP}~\cite{Boos:2004kh} and {\tt PROTOS 2.0}~\cite{AguilarSaavedra:2010rx} are used, respectively. In both experiments {\tt Pythia 8} is used to simulate the parton showering and hadronization. The generation of signal events is done under the assumption of only one non-vanishing FCNC coupling at a time. 
 
-\begin{table}[h]\center
+\begin{table}[t]\center
+\caption{Summary of the projected reach for the 95\% C.L. limits on the branching ratio for anomalous flavor changing top couplings.}
 \begin{tabular}{cccc}
 \hline\hline
 $\mathcal{B}$ limit at 95\%C.L. & 3 ab$^{-1}$, 14 TeV & 15ab$^{-1}$, 27 TeV & Ref. \\
@@ -801,12 +802,11 @@ $\mathcal{B}$ limit at 95\%C.L. & 3 ab$^{-1}$, 14 TeV & 15ab$^{-1}$, 27 TeV & Re
 $t\to gu $ & $3.8\times 10^{-6}$ & $5.6\times 10^{-7}$ & \cite{CMS:2018kwi}\\
 $t\to gc $ & $32.1\times 10^{-6}$ &  $19.1\times 10^{-7}$ & \cite{CMS:2018kwi}\\
 $t\to qZ $ & $2.4\times 10^{-5}$ &  & \cite{ATL-PHYS-PUB-2016-019}\\
-$t\to \gamma u $ & $8.6\times 10^{-6}$ & & \cite{CMS ENDCAP TDR} \\
-$t\to \gamma c $ & $7.4\times 10^{-5}$ & & \cite{CMS ENDCAP TDR}  \\
+$t\to \gamma u $ & $8.6\times 10^{-6}$ & & \cite{CMS ENDCAP TDR} \td{missing}\\
+$t\to \gamma c $ & $7.4\times 10^{-5}$ & & \cite{CMS ENDCAP TDR} \td{missing} \\
 $t\to Hq $ & 10$^{-4}$ & & \cite{ATL-PHYS-PUB-2016-019} \\
 \hline\hline
 \end{tabular}
-\caption{Summary of the projected reach for the 95\% C.L. limits on the branching ratio for anomalous flavor changing top couplings.}
 \end{table}
 
 
