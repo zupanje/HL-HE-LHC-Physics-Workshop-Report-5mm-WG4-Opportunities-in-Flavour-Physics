@@ -790,7 +790,7 @@ break the degeneracy between $y_b$ and $y_c$, e.g., by using more than one taggi
 %It is, however, encouraging that the results presented there would only be mildly 
 %affected by this (see discussion within Ref.~\cite{Aaboud:2018fhh}).
 
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.45\textwidth]{\main/section9/plots/plot_chi2_14TeV_kappabkappac_A_ctagII}
 	\includegraphics[width=0.45\textwidth]{\main/section9/plots/plot_chi2_14TeV_kappabkappac_A_ctagIII}
@@ -1064,7 +1064,9 @@ Ref.~\cite{Perez:2015lra}.
 %, which we follow here. 
 Rescaling with luminosity and the increased production cross sections both the signal and backgrounds, while ignoring any changes to the analysis that may change the ratios of the two, gives the projected sensitivities 
 %to different light quark Yukawa couplings 
-listed in Table \ref{tab:exclusiveproj}. We see that only large enhancements, with Yukawa coupling of light quarks well above the values of bottom Yukawa will be probed. To be phenomenologically viable, these would require large cancellations in the contributions to the light quark masses (and a mechanism to avoid indirect bounds from global fits to the Higgs data).
+listed in Table \ref{tab:exclusiveproj}.
+We note that the estimation in Table~\ref{tab:exclusiveproj} is in agreement with the ATLAS projection of $h\to J/\psi\gamma$~\cite{ATL-PHYS-PUB-2015-043}, which quate $cR_{J/\psi\gamma,ZZ^*}<0.34^{+0.14}_{-0.1}$
+We see that only large enhancements, with Yukawa coupling of light quarks well above the values of bottom Yukawa will be probed. To be phenomenologically viable, these would require large cancellations in the contributions to the light quark masses (and a mechanism to avoid indirect bounds from global fits to the Higgs data).
 % and fine tuned deviations 
 
 %%One of the important implications of t
@@ -1424,6 +1426,7 @@ strange quarks.
 
 
 \subsection{LFV decays of the Higgs}
+
 The flavour violating Yukawa couplings are well constrained by the low-energy
 flavour-changing neutral current measurements
 \cite{Harnik:2012pb,Blankenburg:2012ex,Gorbahn:2014sha}. A notable
@@ -1431,18 +1434,40 @@ exception are the flavour-violating couplings involving a tau lepton. The
 strongest constraints on $\kappa_{\tau\mu}, \kappa_{\mu\tau},
 \kappa_{\tau e}, \kappa_{e \tau}$ are thus from direct searches of flavour-violating Higgs decays at
 the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
-Currently, the CMS 13\,TeV with 35.9\,fb$^{-1}$~\cite{Sirunyan:2017xzt} sets the strongest constraints 
+Currently, the CMS 13\,TeV with 35.9\,fb$^{-1}$~\cite{Sirunyan:2017xzt} is the strongest constrain 
 %
-\begin{equation}
- ( {y_{\mu\tau}^2 + y^2_{\tau\mu}})^{1/2} < 1.43 \times 10^{-3}\, , \qquad
-    ({y_{e\tau}^2 + y^2_{\tau e}})^{1/2} < 2.26 \times 10^{-3}\, ,
-\end{equation}
+\begin{align}
+    \sqrt{y_{\mu\tau}^2 + y^2_{\tau\mu}} < 1.43 \times 10^{-3}\, , \qquad
+    \sqrt{y_{e\tau}^2 + y^2_{\tau e}} < 2.26 \times 10^{-3}\, ,
+\end{align}
 %
-which corresponds to 95\,\%~CL upper limit on the branching ratio of $0.25\,$\% and $0.61\,$\% for $\mu\tau$ and $e\tau$, respectively. 
-Naively, assuming that both systematics and statistical error scale with square root of the luminosity, one can expect that the sensetivity of the HL-LHC with $3000\,$fb$^{-1}$ will be  around the half per-mil level for the branching ratio of $h\to e\tau$ or $h\to \mu\tau$. 
+which corresponds to upper 95\,\%~CL on the branching ratio of $0.25\,$\% and $0.61\,$\% fpr $\mu\tau$ and $e\tau$, respectively. In addition, we note that once can directly measure the difference between the branching ratios of $h\to\tau e$ and $h\to\tau\mu$ as proposed in~\cite{Bressler:2014jta}.
+Naively, assuming that both systematics and statistical error scale with square root of the luminosity, one can expect that the sensetivity of the HL-LHC with $3000\,$fb$^{-1}$ will be  around the half per-mil level for the branching ratio of $h\to e\tau$ or $\to \mu\tau$. 
 
 
-The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is ${|\kappa_{ct}|^2+|\kappa_{tc}|^2}<(0.06)^2$ at 95\,\%~CL.
+The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is $\sqrt{|\kappa_{ct}|^2+|\kappa_{tc}|^2}<0.06$ at 95\,\%~CL.
+
+
+
+%The flavour violating Yukawa couplings are well constrained by the low-energy
+%flavour-changing neutral current measurements
+%\cite{Harnik:2012pb,Blankenburg:2012ex,Gorbahn:2014sha}. A notable
+%exception are the flavour-violating couplings involving a tau lepton. The
+%strongest constraints on $\kappa_{\tau\mu}, \kappa_{\mu\tau},
+%\kappa_{\tau e}, \kappa_{e \tau}$ are thus from direct searches of flavour-violating Higgs decays at
+%the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
+%Currently, the CMS 13\,TeV with 35.9\,fb$^{-1}$~\cite{Sirunyan:2017xzt} sets the strongest constraints 
+%
+%\begin{equation}
+ %( {y_{\mu\tau}^2 + y^2_{\tau\mu}})^{1/2} < 1.43 \times 10^{-3}\, , \qquad
+ %   ({y_{e\tau}^2 + y^2_{\tau e}})^{1/2} < 2.26 \times 10^{-3}\, ,
+%\end{equation}
+%
+%which corresponds to 95\,\%~CL upper limit on the branching ratio of $0.25\,$\% and $0.61\,$\% for $\mu\tau$ and $e\tau$, respectively. 
+%Naively, assuming that both systematics and statistical error scale with square root of the luminosity, one can expect that the sensetivity of the HL-LHC with $3000\,$fb$^{-1}$ will be  around the half per-mil level for the branching ratio of $h\to e\tau$ or $h\to \mu\tau$. 
+
+
+%The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is ${|\kappa_{ct}|^2+|\kappa_{tc}|^2}<(0.06)^2$ at 95\,\%~CL.
 
 %The flavour violating Yukawa couplings are well constrained by the low-energy
 %flavour-changing neutral current measurements
