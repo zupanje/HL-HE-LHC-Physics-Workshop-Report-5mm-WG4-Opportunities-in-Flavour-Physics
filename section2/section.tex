@@ -66,7 +66,7 @@
 \def        \dbpos         {\ensuremath{(\mmpsq,\mpmsq)\xspace}}
 \newcommand{\rbk}{\ensuremath{r_{B}^{DK}}\xspace}
 
-\section[Testing the CKM unitarity]{Testing the CKM unitarity\footnote{Author(s) (TH): Luca Silvestrini, J\'er\^ome Charles, Marco Ciuchini, Vincenzo Vagnoni, S\'ebastien Descotes-Genon, Olivier Deschamps.}}
+\section[Testing the CKM unitarity]{Testing the CKM unitarity\footnote{Author(s) (TH): J\'er\^ome Charles, Marco Ciuchini,  Olivier Deschamps, S\'ebastien Descotes-Genon, Luca Silvestrini, Vincenzo Vagnoni.}}
 \label{sec:metro-CKM}
 
 In the SM, the weak charged-current transitions mix quarks of different generations, which is encoded in the
@@ -85,11 +85,11 @@ Overconstraining the apex of this unitarity triangle from tree- and loop-level q
  Lagrangian which is relevant for describing quark mixing is
 \begin{equation}\label{eq:chargeInteraction}
 \mathcal{L}_{W^{\pm}} = -
-\frac{g}{\sqrt{2}}\overline{U}_{i}\gamma^{\mu}\frac{1-\gamma^5}{2}\left(V_{\rm
-CKM} \right )_{ij} D_{j} W_{\mu}^{+} + \mathrm{h.c.},
+\frac{g}{\sqrt{2}}\left(V_{\rm
+CKM} \right )_{ij}  \big(\overline{u}_{i}\gamma^{\mu}\tfrac{(1-\gamma_5)}{2}d_{j}\big) W_{\mu}^{+} + \mathrm{h.c.},
 \end{equation}
 where $g$ is the electroweak coupling constant, and $V_{\rm
-CKM}=V_{u{L}}^\dag V_{d{L}}$ the unitary CKM matrix,
+CKM}$ the unitary CKM matrix,
 \begin{equation}\label{eq:ckmMatrix}
 V_{\rm CKM} = \left(
 \begin{array}{lcr}
@@ -148,7 +148,7 @@ Orthogonality relations can be written involving two columns or two rows of the 
 \end{equation}
 as the three products of CKM elements 
 %are involved in $B$-meson weak decays 
-are of similar size, $O(\lambda^3)$. Fig.~\ref{fig:UTtriangle} shows the standard unitarity triangle (UT), obtained from \eqref{eq:orthog:rel} by rescaling with $V_{cd}V_{cb}^{*}$ the three terms in the orthogonality relation. 
+are of similar size, ${\mathcal O}(\lambda^3)$. Fig.~\ref{fig:UTtriangle} shows the standard unitarity triangle (UT), obtained from \eqref{eq:orthog:rel} by rescaling with $V_{cd}V_{cb}^{*}$ the three terms in the orthogonality relation. 
 %with apices located at $(0,0)$, $(1,0)$ and $(\bar\rho,\bar\eta)$. 
 The apex of the UT is at $(\bar\rho,\bar\eta)$, while 
 the angles 
@@ -501,7 +501,7 @@ The CKM matrix is determined as
 %\end{equation}
 while the Wolfenstein parameters are,
 \begin{equation}
-A=0.826\pm,0.012,\quad \lambda=0.2250\pm0.0010, \quad \rho=0.152\pm0.014,\quad \eta=0.357\pm 0.010,
+A=0.826\pm,0.012,\quad \lambda=0.2255\pm0.0005, \quad \bar\rho=0.148\pm0.013,\quad \bar \eta=0.348\pm 0.010,
 \end{equation}
 %in the Wolfenstein one.
 in good agreement with the CKMfitter determination in \eqref{eq:CKMfitter:Alambdarhoeta}.
@@ -521,6 +521,9 @@ Advancement in the lattice QCD determination of hadronic matrix elements, used i
 %\item Lattice extrapolations
 %\item Issue of isospin and radiative corrections
 %\end{itemize}
+
+The accuracy of the projections below will also require an improvement in the understanding of electromagnetic corrections, which for the moment are only partially addressed in theoretical predictions. Further details on the inclusion of QED corrections in lattice predictions are discussed in Section \ref{sec:lattice}.
+
 
 \subsubsection{Other theoretical issues}
 
@@ -552,6 +555,7 @@ Recently, the $|V_{cb}|$ discrepancy was shown to depend significantly on the ch
 %more specifically 
 on the hypotheses made about the underlying heavy quark symmetry~\cite{Grinstein:2017nlq,Bigi:2017njr}. Relaxing these choices leads to an exclusive determination of $|V_{cb}|$  that is in good agreement with the inclusive one, but with unexpectedly large corrections to the heavy quark symmetry predictions~\cite{Bernlochner:2017xyx}. As for $|V_{ub}|$ no satisfying explanation of the discrepancy has been found so far. In the future more precise exclusive measurements by LHCb and Belle II, and more precise inclusive analysis by Belle II, should shed light on this topic by investigating whether it could be an experimental effect or not.
 
+
 %Final comment is that, if deviation from the SM are observed in the CKM fits, it will be very important to measuring its imprint on different observables
 %
 %To properly identify the BSM model, if deviations are observed,  is very important, as stressed, e.g., in Ref. \cite{Buras:2013ooa}.
@@ -571,26 +575,6 @@ Several observables will be measured more precisely at Belle II. For uncertainti
 interested in  the future sensitivity for Phase 1 and Phase 2, we choose the central values of future measurements to coincide
 with their SM predictions using the current best-fit values of $\rhobar$ and
 $\etabar$.
-
-
-\subsubsection{CKMfitter results}
-
-% S. Descotes-Genon
-
-The inputs used by CKMfitter collaboration for the fits are shown in Table~\ref{tab:CKMfitterprojinputs}. For easier comparison the ``Current'' column shows present uncertainties, taking  
-%with current situation,
-%we have added a column  corresponding to the current situation concerning uncertainties, but 
-take central values corresponding to a perfect agreement of the various constraints in the SM. Note that this choice does change slightly the present determination of CKM parameters -- the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies, in particular for $|V_{us}|$, which currently increases the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we therefore compare the three scenarios presented in Table~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement (rather than comparing the future projections with the CKMfitter results for the Summer 2018 update).
-
-From the global fit we determine the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. 
-In Fig.~\ref{fig:CKMfitterglobalsmall} we show the Phase 1 (left panels) and Phase 2 (right panels)  determinations in the standard UT plane for a global fit (upper), as well as when using only subsets of constraints, tree only (middle) or loop only (lower panels).
-%details various details of the constraints
-%The uncertainties obtained are given in Table~\ref{tab:CKMfitterprojresults}, while the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. 
-We also show in Fig.~\ref{fig:CKMfitterglobalBs} the corresponding constraints for the $B_s$ meson system, defining the apex of the $B_s$ unitarity triangle as~\cite{Charles:2015gya}
-\begin{equation}
-\bar\rho_{sb}+i\bar\eta_{sb}=-\frac{V_{us}V_{ub}^*}{V_{cs}V_{cb}^*}.    
-\end{equation}
-
 
 \begin{table}
 \caption{Uncertainties on inputs for the CKMfitter and UTFit projections.}\label{tab:CKMfitterprojinputs}
@@ -629,6 +613,28 @@ $B_{B_s}/B_{B_d}$  &  $\pm 0.020$ $(1.9\%)$ & $\pm 0.005$ $(0.5\%)$ & $\pm 0.003
 \end{tabular}}
 \end{center}
 \end{table}
+
+
+\subsubsection{CKMfitter results}
+% S. Descotes-Genon
+
+The inputs used by CKMfitter collaboration for the fits are shown in Table~\ref{tab:CKMfitterprojinputs}. For easier comparison the ``Current'' column shows present uncertainties, taking  
+%with current situation,
+%we have added a column  corresponding to the current situation concerning uncertainties, but 
+take central values corresponding to a perfect agreement of the various constraints in the SM. Note that this choice does change slightly the present determination of CKM parameters -- the global fit described in Sec.~\ref{sec:2018ckmfit} exhibits slight discrepancies, in particular for $|V_{us}|$, which currently increases the accuracy of the determination of the CKM parameters. In order to determine the increase in accuracy on the CKM parameters in a fair way, we therefore compare the three scenarios presented in Table~\ref{tab:CKMfitterprojinputs} with the same central values taken to have perfect agreement (rather than comparing the future projections with the CKMfitter results for the Summer 2018 update).
+
+From the global fit we determine the 68\% CL intervals for the 4 CKM parameters and other parameters of interest. 
+In Fig.~\ref{fig:CKMfitterglobalsmall} we show the Phase 1 (left panels) and Phase 2 (right panels)  determinations in the standard UT plane for a global fit (upper), as well as when using only subsets of constraints, tree only (middle) or loop only (lower panels).
+%details various details of the constraints
+The uncertainties obtained are listed in Table~\ref{tab:CKMfitterprojresults}.
+% while the corresponding constraints in the $(\bar\rho,\bar\eta$) plane are shown in Fig.~\ref{fig:CKMfitterglobal}. 
+We also show in Fig.~\ref{fig:CKMfitterglobalBs} the corresponding constraints for the $B_s$ meson system, defining the apex of the $B_s$ unitarity triangle as~\cite{Charles:2015gya}
+\begin{equation}
+\bar\rho_{sb}+i\bar\eta_{sb}=-\frac{V_{us}V_{ub}^*}{V_{cs}V_{cb}^*}.    
+\end{equation}
+
+
+
 
 \begin{table}
 \caption{The 68\% CL uncertainties on the determination from the CKMfitter global fit.}\label{tab:CKMfitterprojresults}
@@ -832,7 +838,7 @@ present and expected Phase 2 allowed regions at $95\%$ probability on the Wilson
   \label{eq:CiLambda}
   C_i(\Lambda) = \frac{F_i L_i}{\Lambda^2}\,,
 \end{equation}
-are reported in Fig.  \ref{fig:DF2Lambda}. In left panel in Fig.  \ref{fig:DF2Lambda} the flavour and loop factors were set to $F_i=L_i=1$, i.e., this shows the limits on the mass of NP states that contribute to meson mixing at tree level and couple with ${\mathcal O}(1)$ strength to the corresponding SM fermions. In Fig. \ref{fig:DF2Lambda} right, the flavour factor was set to $F_i=V_{t q_1}V_{t q_2}^*$, and the loop factor to $L_i=\alpha_2/(4\pi)$, with $\alpha_2$ the weak structure constant. That is, the right panel of Fig. \ref{fig:DF2Lambda} shows the reach for masses of NP states that have MFV like couplings to SM fermions and contribute only at one loop level. 
+are reported in Fig.  \ref{fig:DF2Lambda}. In left panel in Fig.  \ref{fig:DF2Lambda} the flavour and loop factors were set to $F_i=L_i=1$, i.e., this shows the limits on the mass of NP states that contribute to meson mixing at tree level and couple with ${\mathcal O}(1)$ strength to the corresponding SM fermions. In Fig. \ref{fig:DF2Lambda} right, the flavour factor was set to $F_i=V_{t q_1}V_{t q_2}^*$, and the loop factor to $L_i=\alpha_2^2$, with $\alpha_2$ the weak structure constant. That is, the right panel of Fig. \ref{fig:DF2Lambda} shows the reach for masses of NP states that have MFV like couplings to SM fermions and contribute only at one loop level. 
 
 %in Table
 %\ref{tab:DF2Cbounds}. The regions for $\tilde{C}_i$ are identical to
