@@ -6,8 +6,8 @@ neutral currents discussed above, but also in tree-level decays, namely, in tens
 \end{equation}
 Assuming for the moment SM particle content only, the $b\to c\ell\nu_{\ell^\prime}$ transitions at scales near $m_b$ can be described by a $SU(3) \times U(1)$-invariant effective Hamiltonian,
 \begin{equation}\label{eq:Heffbcellnu}
-  \mathcal H_\text{eff}^{b\to c\tau\nu_{\ell}} = \frac{4 G_F}{\sqrt{2}} V_{cb}
-    \sum_{\ell}\Big(O_{V_L}^{\ell\ell} + \sum_{i,\ell'} C_i^{\ell\ell'} O_i^{\ell\ell'} + \text{h.c.}\Big),
+  \mathcal H_\text{eff}^{b\to c\tau\nu} = \frac{4 G_F}{\sqrt{2}} V_{cb}
+    \sum_{\ell\ell^\prime}\Big(\Blu{(\delta_{\ell\ell^\prime}+C_L^{\ell\ell^\prime})}O_{V_L}^{\ell\ell^\prime} + \sum_{i} C_i^{\ell\ell'} O_i^{\ell\ell'} + \text{h.c.}\Big),
 \end{equation}
 where $\ell,\ell'=e,\mu,\tau$ denotes the charged-lepton and neutrino flavor, respectively, and the sum over $i$ runs over the following operators,
 \begin{equation}
@@ -62,11 +62,11 @@ $\bra{D^*} \bar{c} \gamma^\mu \gamma_5 b \ket{\bar{B}}$, are parametrized using 
 %  \sum_{n=0}^\infty \left( a_n^F \right)^2 \leq 1\,,
 %\end{equation}
 %where \emph{e.g.}, the coefficients of $A_1$ and $A_5$ contribute to the same sum.
-The helicity form factors obey unitarity bounds which can be written in an elegant way using the parametrization of Boyd Grinstein Lebed (BGL) \cite{Boyd:1997kz}. The contribution of the helicity form factors $S_1$ and $P_1$ \Blu{(as defined in~\cite{Caprini:1997mu})} to the branching ratios of $B\rightarrow Dl\nu$ and $B\rightarrow D^*l\nu$ are
+The helicity form factors obey unitarity bounds which can be written in an elegant way using the parametrization of Boyd-Grinstein-Lebed (BGL) \cite{Boyd:1997kz}. The contribution of the helicity form factors $S_1$ and $P_1$ \Blu{(as defined in~\cite{Caprini:1997mu})} to the branching ratios of $B\rightarrow Dl\nu$ and $B\rightarrow D^*l\nu$ are
 suppressed by the mass of the final-state lepton. In view of the lack of experimental information on these form factors we need  input from theory. 
 In the case of $B \to D$ we are in the fortunate position that lattice results
 for both $V_1$ and $S_1$ at $w\geq 1$ exist~\cite{Lattice:2015rga,Na:2015kha,Aoki:2016frl}, where $w = (m_B^2 + m_{D^{(*)}}^2-q^2)/(2 m_B m_{D^{(*)}})$.
-This is the reason for the very good agreement of all SM predictions in this case, see Table~\ref{tab:RD-and-RDstar-anomaly}.
+This is the reason for the very good agreement of all SM predictions in this case, see Table~\ref{tab:RD-and-RDstar-anomaly}. \Blu{Recently, also soft photon corrections to $R(D)$ have been discussed~\cite{deBoer:2018ipi}.}
 For $B \to D^*$ we have only one data point from lattice, namely $A_1(w=1)$~\cite{Bailey:2014tva,Harrison:2017fmw}, so that it is necessary to use 
 Heavy Quark Effective Theory (HQET)~\cite{Bernlochner:2017jka,Caprini:1997mu,Luke:1990eg,Neubert:1991xw,Neubert:1993mb,Neubert:1992wq,Neubert:1992pn,Ligeti:1993hw}
 to relate the $B \to D$ and $B \to D^*$ form factors order-by-order in the heavy quark expansion in terms of Isgur--Wise functions,
@@ -80,13 +80,13 @@ results for the error of the SM prediction.
 HQET can also be used to obtain a stronger version of the unitarity bounds
 % than Eq.~(\ref{eq:unitarity-constr}); 
 (see Refs.~\cite{Boyd:1997kz,Bigi:2017jbd} for details).
-Additional model-dependent theoretical input at maximal $w$ can be provided by Light Cone Sum Rules (LCSR)~\cite{Faller:2008tr},
+Additional model-dependent theoretical input at maximal $w$ can be provided by Light Cone Sum Rules (LCSR)~\cite{Faller:2008tr,Gubernari:2018wyi},
 or at zero recoil by QCD sum rules~\cite{Neubert:1992wq,Neubert:1992pn,Neubert:1993mb,Ligeti:1993hw}.
 We give a summary of theoretical predictions for $R(D^{(*)})$ in Table~\ref{tab:RD-and-RDstar-anomaly}.
 
 Because lattice data is presently available only at zero recoil for $B \to D^*$,
 and since kinematic suppression requires $d\Gamma[B \to D^*l\nu]/dw$ to vanish at $w=1$,  
-$|V_{cb}|$ can be obtained from $B \to D^*l\nu$ only by extrapolating the slope of $d\Gamma[B \to D^*l\nu]/dw$,
+$|V_{cb}|$ can be obtained from $B \to D^*l\nu$ only by extrapolating $d\Gamma[B \to D^*l\nu]/dw$,
 fitted to $w > 1$ data, back to zero recoil. 
 This procedure can be highly sensitive to the chosen form-factor parameterization and other theoretical inputs;
 for recent analyses see 
@@ -101,7 +101,7 @@ prediction of $R(D^*)$ will improve considerably. For an estimate, one may note 
 only incoherently, via a contribution of the form $m_l^2|P_1(w)|^2$. This $P_1$ term contributes approximately 10\% of the total 
 integrated $B \to D^*\tau\nu$ rate, which suggests that the dependence of $R(D^*)$ on this form factor should be limited. 
 Assuming a 1\% future precision for $P_1$, using the 50 ab$^{-1}$ which Belle~II will presumably gather by 2025, and taking into 
-account the expected improvement of the form factors $A_{1,5}$ and $V_4$ from the lattice, it is hence reasonable to assume
+account the expected improvement of the form factors $A_{1,5}$ and $V_4$ from the lattice, it is hence reasonable to assume that
 an error of 0.001 for the SM value of $R(D^*)$ might be achieved.
 
 \begin{table*}[t]
@@ -256,7 +256,7 @@ Right: Correlations between $R(D^*)$ and the $\tau$-polarization asymmetry $A_\l
 The tree-level mediators that can explain the $R(D)$-$R(D^*)$ anomaly
 %and to the contribution they give in terms of the effective operators in Eq.~(\ref{eq:Heffbcellnu}), the options 
 are a $W'$~\cite{Greljo:2015mma,Boucenna:2016wpr,Boucenna:2016qad,Megias:2017ove} generating $C_{V_L}$, a charged color-neutral scalar~\cite{Crivellin:2012ye,Celis:2012dk,Crivellin:2015hha,Celis:2016azn,Chen:2017eby,Iguro:2017ysu,Chen:2018hqy,Li:2018rax} generating $C_{S_{L,R}}$ in Eq.~(\ref{eq:Heffbcellnu}), and leptoquarks~\cite{Fajfer:2012jt,Deshpande:2012rr,Sakaki:2013bfa,Duraisamy:2014sna,Calibbi:2015kma,Fajfer:2015ycq,Barbieri:2015yvd,Alonso:2015sja,Bauer:2015knc,Das:2016vkr,Deshpand:2016cpw,Sahoo:2016pet,Dumont:2016xpj,Li:2016vvp,Becirevic:2016yqi,Barbieri:2016las,DiLuzio:2017vat,Chen:2017hir,Bordone:2017bld,Altmannshofer:2017poe,Becirevic:2018afm,Iguro:2018vqb} generating various couplings, mostly $C_{V_L}$ or $C_{S_L} \sim C_T$. For comparisons between these models,  see for instance~\cite{Tanaka:2012nw,Freytsis:2015qca,Bhattacharya:2016zcw,Ivanov:2017mrj,Alok:2017qsi,Bifani:2018zmi,Blanke:2018yud}.
-Allowing for additional light particles opens up the possibility to address the anomalies with contributions involving right-handed neutrinos~\cite{He:2012zp,He:2017bft,Greljo:2018ogz,Asadi:2018wea,Robinson:2018gza,Azatov:2018kzb,Heeck:2018ntp}, since the neutrino is not detected. 
+Allowing for additional light particles opens up the possibility to address the anomalies with contributions involving right-handed neutrinos~\cite{He:2012zp,He:2017bft,Becirevic:2016yqi,Greljo:2018ogz,Asadi:2018wea,Robinson:2018gza,Azatov:2018kzb,Heeck:2018ntp}, since the neutrino is not detected. 
 
 %The large number of possibilities reflects the fact that models typically introduce at least 2 degrees of freedom (one complex coupling), which mostly allows to address $R(D^{(*)})$.\footnote{Models generating only $C_{V_L}$ effectively introduce only one degree of freedom, since they amount to rescaling $V_{cb}$ in the modes involving $\tau$; hence this class of models implies universal $\hat R(X)$ ratios, specifically $\hat R(D)=\hat R(D^*)$.} 
 \Blu{In order to differentiate between the different combinations of NP operators that these models produce at low energies,} information beyond $R(D^{(*)})$ is needed. Presently, the available additional observables in $b\to c\tau\nu$ transitions are: {\em (i)} differential distributions in $q^2$~\cite{Lees:2013uzd,Huschle:2015rga}, already excluding some fine-tuned scenarios despite their large uncertainties; {\em (ii)} the first measurements of the $\tau$ polarization asymmetry and the longitudinal fraction in $B\to D^*\tau\nu$~\cite{Hirose:2016wfn,Hirose:2017dxl}; {\em (iii)} the measurement of $R(J/\psi)$~\cite{LHCb-PAPER-2017-035}, which is up to $2\sigma$ above the SM prediction, as well as that of any NP model (see the previous subsection); {\em (iv)} the measurement of the inclusive rate $b\to X\tau\nu$ at LEP~\cite{Abbaneo:2001bv}, yielding $\hat R_b(X_c)=0.99\pm0.10$, in slight tension with the measurements for $R(D^{(*)})$~\cite{Ligeti:2014kia,Freytsis:2015qca,Celis:2016azn,Mannel:2017jfk}; {\it (v)} the (indirect) bound on $B_c \to \tau\nu$ from the $B_c$ lifetime~\cite{Li:2016vvp,Alonso:2016oyd,Akeroyd:2017mhr}, providing a strong constraint on models with only scalar couplings and disfavoring them as a solution for $R(D^*)$ for values close to the present central value.
@@ -290,3 +290,5 @@ Observation of NP in $b\to c\tau\nu$ would warrant precise measurements at HL-/H
 %analysis of its flavor structure, \emph{e.g.}, in 
 $b\to c (e,\mu)\nu$, $b\to u\tau\nu$ and $t\to b\tau\nu$ transitions. 
 %While these are not a focus here, it is worth emphasizing that the HL/HE-LHC will be a powerful instrument to analyze these modes. 
+
+\FloatBarrier
