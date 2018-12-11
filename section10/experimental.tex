@@ -50,9 +50,9 @@ BaBar~\cite{Lees:2012xj, Lees:2013uzd}, Belle~\cite{Matyja:2007kt, Bozek:2010xy,
 and LHCb~\cite{Aaij:2015yra} Collaborations. 
 
 This analysis from CMS~\cite{CMS-PAS-FTR-18-028} presents future discovery and exclusion prospects for singly and pair produced 
-third-generation scalar LQs, each decaying to $\tauh$ and a bottom quark. Here, $\tauh$ denotes a hadronically decaying 
+third-generation scalar LQs, each decaying to $\tau_h$ and a bottom quark. Here, $\tau_h$ denotes a hadronically decaying 
 $\tau$ lepton. 
-The relevant Feynman diagrams of the signal processes at leading order (LO) are shown in \fig{LQ3-diagram}.
+The relevant Feynman diagrams of the signal processes at leading order (LO) are shown in Fig. \ref{LQ3-diagram}.
 
 \begin{figure}[h!t]
 \centering
@@ -66,33 +66,33 @@ The relevant Feynman diagrams of the signal processes at leading order (LO) are 
 
 The analysis uses DELPHES~\cite{deFavereau:2013fsa} event samples of simulated pp collisions at a center-of-mass energy of 14 TeV, corresponding to integrated luminosities of 300 and 3000\fbinv. %Additional pp interactions (pileup or PU) within the same or adjacent bunch crossings are included, with an average of 200 interactions per event. 
 The matrix elements of LQ signals for both single and pair LQ production are generated at LO using version 2.6.0 of
-$\MGvATNLO$~\cite{aMCatNLO} for $m_{LQ}=$500, 1000, 1500, and 2000 \GeV. The branching fraction $\beta$ of the LQ to a charged
+{\tt MadGraph5\_aMC@NLO}~\cite{aMCatNLO} for $m_{LQ}=$500, 1000, 1500, and 2000 GeV. The branching fraction $\beta$ of the LQ to a charged
 lepton and a quark, in this case LQ$\to \tau b$, is assumed to be $\beta=1$. The unknown Yukawa coupling $\lambda$ of the LQ to a
 $\tau$ lepton and a bottom quark is set to $\lambda=1$. The width $\Gamma$ is calculated using $\Gamma = m_{LQ} \lambda^2 /
 (16\pi)$~\cite{Plehn:1997az}, and is less than 10\% of the LQ mass for most of the considered search range. The signal samples are
 normalized to the cross section calculated at LO, multiplied by a $K$ factor to account for higher order contributions~\cite{Dorsner:2018ynv}.
 
 Similar event selections are used in both the singly and pair produced LQ searches, except for the requirement on the number of jets. 
-In both channels, two reconstructed $\tauh$ with opposite-sign charge are required, each with transverse momentum $p_{T,\tau}>50$\GeV\ and a maximum pseudorapidity  $\abs{\eta_{\tau}}<2.3$. 
-In the search for single production, the presence of at least one reconstructed jet with $p_T > 50\GeV$ is required, while at least
-two are required in the search for pair production. Jets are reconstructed with FASTJET~\cite{Cacciari:2011ma}, using the anti-\kt algorithm~\cite{Cacciari:2008gp}, with a distance parameter of 0.4. 
+In both channels, two reconstructed $\tau_h$ with opposite-sign charge are required, each with transverse momentum $p_{T,\tau}>50$GeV\ and a maximum pseudorapidity  $\abs{\eta_{\tau}}<2.3$. 
+In the search for single production, the presence of at least one reconstructed jet with $p_T > 50$GeV is required, while at least
+two are required in the search for pair production. Jets are reconstructed with FASTJET~\cite{Cacciari:2011ma}, using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, with a distance parameter of 0.4. 
 
-To reduce background due to Drell-Yan (particularly Z$\to\tau\tau$) events, the invariant mass of the two selected $\tauh$,
-$m_{\tau\tau}$, is required to be $>95$\GeV.
+To reduce background due to Drell-Yan (particularly Z$\to\tau\tau$) events, the invariant mass of the two selected $\tau_h$,
+$m_{\tau\tau}$, is required to be $>95$GeV.
 In addition, at least one of the previously selected jets is required to be b-tagged to reduce QCD multijet backgrounds. 
-Finally, an event is rejected if it contains identified and isolated electrons (muons), with $p_T>10$\GeV, $|\eta|<$2.4 (2.5).
+Finally, an event is rejected if it contains identified and isolated electrons (muons), with $p_T>10$GeV, $|\eta|<$2.4 (2.5).
 The acceptance of the signal events is 4.9\%  (11\%) for single (pair) production, where the branching ratio of two $\tau$ leptons decaying hadronically is included in the numerator of the acceptance.
 
 Signal extraction is based on a binned maximum likelihood fit to the distribution of the scalar $p_T$ sum S$_{\text{T}}$, which 
-is defined as the sum of the transverse momenta of the two $\tauh$ and either the highest-$p_T$ jet in the 
+is defined as the sum of the transverse momenta of the two $\tau_h$ and either the highest-$p_T$ jet in the 
 case of single LQ production, or the two highest-$p_T$ jets in the case of LQ pair production. These distributions are shown 
-in \fig{fig:scalarptsums} for the HL-LHC 3000 $\fbinv$ scenario.
+in Fig. \ref{fig:scalarptsums} for the HL-LHC 3000 $\fbinv$ scenario.
 
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt1sum.png}
 \includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt2sum.png}
-\caption{Left: scalar sum of the \pt\ of the two selected $\tau$ leptons and the highest-$p_T$ jet in the single LQ selection region. Right: scalar sum of the $p_T$ of the two selected $\tau$ leptons and the two highest-$p_T$ jets in the LQ pair search region. The considered backgrounds are shown as stacked histograms, while empty histograms for signals for the single LQ and LQ pair channels (for $m_{LQ}=1000$\GeV) are overlaid to illustrate the sensitivity. Both signal and backround are normalised to a luminosity of 3000 $\fbinv$.} %Signal is normalized to $\lambda=1$, $\beta=1$ and $\sigma=1$ pb.}
+\caption{Left: scalar sum of the \pt\ of the two selected $\tau$ leptons and the highest-$p_T$ jet in the single LQ selection region. Right: scalar sum of the $p_T$ of the two selected $\tau$ leptons and the two highest-$p_T$ jets in the LQ pair search region. The considered backgrounds are shown as stacked histograms, while empty histograms for signals for the single LQ and LQ pair channels (for $m_{LQ}=1000$GeV) are overlaid to illustrate the sensitivity. Both signal and backround are normalised to a luminosity of 3000 $\fbinv$.} %Signal is normalized to $\lambda=1$, $\beta=1$ and $\sigma=1$ pb.}
 \label{fig:scalarptsums}
 \end{figure}
 
