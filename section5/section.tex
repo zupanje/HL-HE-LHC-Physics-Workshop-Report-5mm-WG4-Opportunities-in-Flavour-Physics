@@ -179,14 +179,14 @@ Even when $m_V$ is too heavy to be directly produced at the LHC, the effective i
 % an important piece of 
 information about the theory that completes the SM. 
 
-At the LHC, contact interactions between quarks and 3rd generation leptons can be probed via the processes $p p \to \tau^+ \tau^-$ and $p p \to \tau \nu$~\cite{Faroughy:2016osc,Cirigliano:2018dyk}. 
+At the LHC, contact interactions between quarks and 3rd generation leptons can be probed via the processes $p p \to \tau^+ \tau^- X$ and $p p \to \tau \nu X$~\cite{Faroughy:2016osc,Cirigliano:2018dyk}. 
 Here we focus on the latter, taking as a template the existing Run-2 ATLAS analysis in Ref.~\cite{Aaboud:2018vgh}. 
 This measured  the  $\tau \nu$ transverse mass
 %analysis relies on 
 %differential 
 distribution, where the transverse mass is given by
 % of pairs defined as 
-$m_T =\sqrt{ 2 p_{T} E_T (1-\cos \phi) }$, with $\vec p_{T}$  the transverse momentum of the (hadronic) tau candidate,  $\vec E_T$ the missing transverse momentum, and $\phi$ the azimuthal angle between the two. 
+$m_T =\sqrt{ 2 \pt E_T (1-\cos \phi) }$, with $\vec \pt$  the transverse momentum of the (hadronic) tau candidate,  $\vec E_T$ the missing transverse momentum, and $\phi$ the azimuthal angle between the two. 
 The effects of the interaction in Eq.~(\ref{eq:olq}) are most pronounced at higher $m_T$.
 To estimate the current and future sensitivity, we pick $m_T > 1.8$~TeV as our signal region (a more elaborate analysis with a wider, binned, $m_T$ range would lead to stronger bounds~\cite{Cirigliano:2018dyk}).
 Using the {\tt Madgraph}\cite{Alwall:2014hca}/{\tt Pythia~8}~\cite{Sjostrand:2014zea}/{\tt Delphes} \cite{deFavereau:2013fsa} simulation chain and imposing the selection cuts we can estimate the expected number of events in the presence of the interaction in Eq.~(\ref{eq:olq}): 
@@ -208,9 +208,7 @@ There are 3 more independent dimension-6 operators that can be probed by the $p 
  $O_{l e d q}  =  (\bar L_3 \tau_R)  (\bar d_R  Q_1)$,  $O_{l e q u} =  (\bar L_3 \tau_R) (Q_1 u_R)$, and  
  $O^{(3)}_{l e q u}  =   (\bar L_3  \sigma_{\mu \nu} \tau_R)  (\bar Q_1 \sigma^{\mu \nu} u_R)$~\cite{Cirigliano:2012ab,Grzadkowski:2010es}. 
 We estimate that the HL-LHC will be sensitive to $C / \Lambda^2 \sim (10~\tev)^{-2}$ through a one-bin analysis like the one presented above. 
-The slightly smaller sensitivity than for the operator in Eq.~(\ref{eq:olq}) follows from the fact that these do not interfere with the SM amplitudes, and thus their effect enters only at quadratic order in $C/\Lambda^2$.~\footnote{\Blu{One assumes that contributions from SMEFT
-dimension-8 operators can be neglected, which is expected to happen for a broad class of
-NP models (see e.g. Ref.~\cite{Contino:2016jqw}).}}
+The slightly smaller sensitivity than for the operator in Eq.~(\ref{eq:olq}) follows from the fact that these do not interfere with the SM amplitudes, and thus their effect enters only at quadratic order in $C/\Lambda^2$.~\footnote{Contributions from SMEFT dim-8 operators are assumed to be subleading with respect to dim-6 squared terms. Although not true in general, this is indeed the case for strongly coupled UV completions~\cite{Contino:2016jqw}.}
 
 We expect that our simple analysis provides a good qualitative estimate of the HL-LHC reach.  
 However, a more sophisticated analysis using the full information about the $m_T$ distribution (such as in Ref.~\cite{Cirigliano:2018dyk}), and possibly also about the $\tau$ polarization, should lead to a further $\cO(1)$ increase of sensitivity. 
@@ -282,12 +280,12 @@ Tau decays offer a  rich  landscape to search for CLFV.
 The  $\tau$  lepton is heavy enough to decay into hadrons. Until now already 48 LFV modes have been bounded at the level of $10^{-8}$~\cite{Amhis:2016xyh}.
 , cf. 
 as can be seen in 
-Figure~\ref{fig:Tau_LFV}.  
+Fig.~\ref{fig:Tau_LFV}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!!]
+\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=1.\textwidth]{section5/figs/TauLFV_ULv3.pdf}
+\includegraphics[width=1.\textwidth]{section5/figs/TauLFV_ULv5.pdf}
 \caption{Bounds on Tau Lepton Flavour %Branching Ratios from CLEO, BaBar, Belle and %projections for Belle II~\cite{Kou:2018nap}. 
 Data from the existing experiments are compiled by HFLAV~\cite{Amhis:2016xyh}; projections of the Belle II bounds were performed by the Belle II collaboration assuming 50 ab$^{-1}$ of integrated luminosity~\cite{Kou:2018nap}.}
 \label{fig:Tau_LFV}
@@ -300,7 +298,7 @@ Miyazaki:2008mw,Miyazaki:2010qb,Hayasaka:2010np,Miyazaki:2011xe}
 the previous CLEO bounds~\cite{Bowcock:1989mq,Bonvicini:1997bw,Chen:2002ug} for a significant 
 number of modes. 
 Some of the modes, for instance, $\tau \to \ell \omega$, have been bounded for the first time~\cite{Aubert:2007kx}. 
-%As shown in Figure~\ref{fig:Tau_LFV}, 
+%As shown in Fig.~\ref{fig:Tau_LFV}, 
 %a similar improvement is expected at Belle-II~\cite{Kou:2018nap}. 
 
 Table~\ref{tab:tauto3mu} shows a list of limits obtained for the $\tau \to 3\mu$ channel by different experiments. 
@@ -397,10 +395,10 @@ The additional events with muons at high $|\eta|$ have worse trimuon mass resolu
 Category 1 for events with all three muons reconstructed only with the Phase-1 detectors, and Category 2 for
 events with at least one muon 
 %with at least one muon 
-reconstructed by the new triple GEM detectors, which  will be installed in the first station of the upgraded muon system. The impact of the proposed ATLAS detector upgrades and CMS event categories is shown in Figure~\ref{fig:mass}. In the case of LHCb, the deployment of a fully software trigger will remove one of the key sources of inefficiency in the current analysis. In addition, the proposed calorimeter improvements during the LHCb \upgradetwo  will play an important role in suppressing backgrounds such as \Dsetamunu. 
+reconstructed by the new triple Gas Electron Multiplier (GEM) detectors, which  will be installed in the first station of the upgraded muon system. The impact of the proposed ATLAS detector upgrades and CMS event categories is shown in Fig.~\ref{fig:mass}. In the case of LHCb, the deployment of a fully software trigger will remove one of the key sources of inefficiency in the current analysis. In addition, the proposed calorimeter improvements during the LHCb \upgradetwo  will play an important role in suppressing backgrounds such as \Dsetamunu. 
 
 \begin{table}[t]
-\caption{Summary of the ATLAS expected 90\% CL upper limit on $\BR(\tau\to3\mu)$ for an assumed luminosity of 3 ab$^{-1}$ of $pp$ collisions at $\sqrt{s} = 14$ TeV in the HF and $W$-channels, for different signal and background yield scenarios.}
+\caption{Summary of the ATLAS expected 90\% CL upper limit on $\BR(\tau\to3\mu)$ for an assumed luminosity of 3 ab$^{-1}$ of $pp$ collisions at $\sqrt{s} = 14$ TeV in the Heavy Flavour (HF) and $W$-channels, for different signal and background yield scenarios.}
 \label{tab:limitsatlas}
 \center
 \begin{tabular}{lcc}
@@ -449,7 +447,7 @@ reconstruction efficiency. A 15\% systematic uncertainty dominated by the backgr
 estimation is derived. Varying the systematic uncertainty by 5\% translates into a 
 10\% change of the expected upper limit. Limits of up to $\BR(\tau\rightarrow 3\mu) = 
 1.03 (5.36) \times 10^{-9}$ are derived in the HF-($W$-)channel.
-In the case of CMS, the absence of tails in the signal trimuon mass distribution, shown in Figure~\ref{fig:mass}, demonstrates the robustness of the reconstruction even at the high pileup (PU=200) of HL-LHC.
+In the case of CMS, the absence of tails in the signal trimuon mass distribution, shown in Fig.~\ref{fig:mass}, demonstrates the robustness of the reconstruction even at the high pileup (PU=200) of HL-LHC.
 The projected exclusion sensitivity in the absence of a signal is $\BR( \tau \to 3 \mu) < 3.7 \times 10^{-9}$  at 90\% CL, while the expected 5 $\sigma$-observation sensitivity is $\BR(\tau \to 3 \mu) = 1.1  \times 10^{-8}$. CMS studies focusing on $\tau$~leptons originating from $W$~boson decays are ongoing.
 
 Extrapolations based on the current LHCb $\tau \to 3\mu$ result~\cite{LHCb-PAPER-2014-052} and assuming no detector or trigger improvements show that, similarly to \belletwo, CMS, and ATLAS, \upgradetwo LHCb would also be able to probe branching ratios down to ${\cal O}(10^{-9})$. This will allow \upgradetwo LHCb to independently confirm any earlier \belletwo discovery, or to
