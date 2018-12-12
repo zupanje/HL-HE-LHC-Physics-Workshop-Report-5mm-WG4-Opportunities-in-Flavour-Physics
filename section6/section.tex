@@ -1,0 +1,54 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+\def\Qbar    {{\kern 0.2em\overline{\kern -0.2em \PQ}{}}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\fk}[1]{{\color{blue}#1}}
+%\newcommand{\fkcor}[1]{{\color{blue}\st{#1}}}
+\newcommand{\sasa}[1]{{\color{brown}#1}}
+\newcommand{\others}[1]{{\color{red}#1}}
+\newcommand{\juan}[1]{{\color{green}#1}}
+\definecolor{gold}{rgb}{1.0, 0.65, 0.0}
+\newcommand{\ale}[1]{{\color{gold}#1}} 
+%\newcommand{\alecor}[1]{{\color{gold}\st{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\section{Hadron spectroscopy and QCD exotica}
+{\it \small Authors (TH): Angelo Esposito, Feng-Kun Guo, Juan Nieves, Alessandro Pilloni, Antonio Polosa, Sasa Prelovsek}
+
+% Hadronic spectroscopy has been a very challenging field historically, both experimentally and theoretically. 
+\Blu{Determination of hadron spectrum is key to understanding of strong interactions, in particular the mechanisms underlying color confinement.}
+While \Blu{BESIII is the leading experiment in the charm region, and} \belletwo will make a major impact 
+in the study of excited mesons and lighter exotic hadrons, only the HL-LHC experiments 
+have the potential to comprehensively study the full range of possible excited
+hadronic states. Such a comprehensive understanding and characterisation of quark
+structures would not only, in some sense, greatly enhance the taxonomy of the SM particles, but
+would also sharpen our understanding of QCD in a particularly difficult energy
+regime. Moreover, while not directly probing BSM physics, spectroscopy
+measurements will continue to make essential contributions to the interpretation
+of any observed BSM effects in the flavour sector. In addition, spectroscopy can provide tools to probe BSM effects by using a new observed state as a tagger\cite{LHCb-PAPER-2017-023}, \cite{LHCb-PAPER-2016-039}.
+
+While the \upgradetwo of LHCb will
+by design offer unparalleled capabilities in this area, the legacy of HL-LHC for
+spectroscopy will be much stronger, if ATLAS and CMS are also able to continue to
+pursue this work in the HL-LHC period. The planned hardware tracking
+triggers and much higher data rates sent to their software triggers are promising
+in this respect, and we encourage further study of what capabilities they might bring to this area of physics. 
+\Blu{In particular, heavy-ion experiments might have an advantage for doubly-heavy exotics, if they can improve their particle identification.}
+
+\Blu{Gauge theories are very likely to play a major role in BSM. Some of these gauge theories might be strongly coupled. Because of this, understanding strongly-coupled dynamics of gauge theories is essential for BSM physics.
+In this sense, QCD serves as a prototype of a strongly-coupled gauge theory. By studying hadron spectroscopy and the QCD exotica we learn about the range of possibilities of analogous states in BSM theories.}
+
+\input{section6/theory}
+\input{section6/experimental}
+
+%\subsection{Combined theory/experiment perspective}
+%Including how far ATLAS/CMS can contribute to finding new states, confirming the %pentaquark etc. observations, and studying their properties (?)
+
+\end{document}
