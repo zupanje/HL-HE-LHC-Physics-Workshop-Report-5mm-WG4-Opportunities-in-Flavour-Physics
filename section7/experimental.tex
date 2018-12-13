@@ -22,7 +22,7 @@ HL-LHC will offer a compelling opportunity to extend the ATLAS and CMS  $B^0_s \
 Flexible trigger systems and inner tracker improvements will allow both experiments to maintain efficient low-\pt dimuon triggers and achieve good mass resolution, which are the key ingredients for the $B_{d,s} \to\mu^+\mu^-$ analysis.
 Fig.~\ref{fig:GPDMass} demonstrates the ATLAS and CMS reconstructed $B \to \mu^+\mu^-$ invariant mass capabilities in the HL-LHC era.
  The pseudorapidity |$\eta_f$| of the most forward muon (of the candidate) is used to visualize the CMS results and compare the performances of  Phase~2 and Run~2. 
- In Fig.~\ref{fig:GPDMass} the signal mass distribution for |$\eta_f$|< 1.4 are overlaid. The CMS improved separation between $B^0 \to \mu^+\mu^-$ and $B^0_s \to \mu^+\mu^-$ in Phase~2 is evident.
+ In Fig.~\ref{fig:GPDMass} the signal mass distribution for |$\eta_f$| < 1.4 are overlaid. The CMS improved separation between $B^0 \to \mu^+\mu^-$ and $B^0_s \to \mu^+\mu^-$ in Phase~2 is evident.
  
 The LHCb detector is already well optimised for this decay, and planned improvements to the tracking and muon detector shielding in LHCb's upgrades will ensure that the muon reconstruction and identification performance does not degrade with increasing pileup.   %\td{something about LHCb detector enhancements relevant for Bmm?}
 %Fig.~\ref{fig:ATLASMass} compares the ATLAS $B^0_s \to \mu^+\mu^-$ reconstructed invariant mass for $|\eta| < 2.5$ with the current (Run~2) and upgraded tracking detector (ITk).
@@ -31,7 +31,7 @@ The LHCb detector is already well optimised for this decay, and planned improvem
     \includegraphics[width=0.4\textwidth]{\main/section7/figures/ATLASmass.pdf}\hbox{\hspace{-0.5cm}}
      \includegraphics[width=0.3\textwidth]{\main/section7/figures/CMS_B2mu_Run2.pdf}\hbox{\hspace{-0.2cm}}
      \includegraphics[width=0.3\textwidth]{\main/section7/figures/CMS_B2mu_Phase2.pdf}
-      \caption{Left: comparison of the ATLAS invariant mass spectra for simulated $B^0_s \to \mu^+\mu^-$ events with the current (Run~2) and upgraded (ITk) detectors. A vertical line at the $B_d$ mass value is drawn to visualize the $B_s$-$B_d$ signals separation. Middle and right plots show the CMS $B^0_s$ and $B^0$ invariant mass distributions in the Run~2 and Phase~2 scenario respectively. The $B^0_s$ distribution is normalized to unity and the $B^0$  distribution is normalized according to the SM expectation.
+      \caption{Left: comparison of the ATLAS invariant mass spectra for simulated $B^0_s \to \mu^+\mu^-$ events with the current (Run~2) and upgraded (ITk) detectors. A vertical line at the $B_d$ mass value is drawn to visualize the $B_s$-$B_d$ signals separation. Middle and right plots:  CMS $B^0_s$ and $B^0$ invariant mass distributions in the Run~2 and Phase~2 scenario respectively. The $B^0_s$ distribution is normalized to unity and the $B^0$  distribution is normalized according to the SM expectation.
  (CMS plots are taken from \cite{CMS-PAS-FTR-18-013}).}
      \label{fig:GPDMass}\end{center}\end{figure}\setlength{\extrarowheight}{4pt}    
 Both ATLAS and CMS make HL-LHC extrapolations with a PU scenario of 200 interactions per bunch-crossing, which was found not to have strong impact on the analysis performance. 
@@ -49,10 +49,10 @@ ATLAS conservatively assumes in the HL-LHC projections that the $f_s/f_d$ and th
  CMS and LHCb project them to be $3.5\%$ and $1.4\%$, respectively, based on reasonable assumptions about additional Belle~II inputs and improvements in our knowledge of form-factor ratios and branching fraction measurements.
  A more complete discussion of systematic uncertainty projections from ATLAS and CMS 
  can be found in 
- \cite{ATL-PHYS-PUB-2018-005}, \cite{CMS-PAS-FTR-18-013}, respectively. 
-For LHCb, the remaining experimental systematic uncertainties are already at the $\sim 3$~percent level, and because they rely on data-driven corrections from calibration samples they can be expected to reduce to the $\sim 1.4$~percent level in \upgradetwo.
-%The remaining analysis-dependent systematic uncertainties are combined together by ATLAS and parameterized as a function of the signal yield, while e.g. CMS provides the detailed breakdown shown in table~\ref{tab:CMSb2musys} (a more complete discussion of the CMS systematic uncertainty treatment an be found in \cite{CMS-PAS-FTR-18-013}). 
-The resulting HL-LHC projected statistical and systematic uncertainties for the three experiments are summarized in table~\ref{LHC_Bmumu_Reach}.
+ \cite{ATL-PHYS-PUB-2018-005} and \cite{CMS-PAS-FTR-18-013}, respectively. 
+For LHCb, the remaining experimental systematic uncertainties are already at the $\sim 3$~percent level, and because they rely on data-driven corrections from calibration samples they can be expected to be reduced to the $\sim 1.4$~percent level in \upgradetwo.
+%The remaining analysis-dependent systematic uncertainties are combined together by ATLAS and parameterised as a function of the signal yield, while e.g. CMS provides the detailed breakdown shown in table~\ref{tab:CMSb2musys} (a more complete discussion of the CMS systematic uncertainty treatment an be found in \cite{CMS-PAS-FTR-18-013}). 
+The resulting HL-LHC projected statistical and systematic uncertainties for the three experiments are summarized in table~\ref{LHC_Bmumu_Reach}; for the omparisons of the ATLAS, CMS and LHCb reaches (such as the one carried in Fig.~\ref{fig:HLCombinedReachFromVava}) , the reference scenarios considered are respectively the "3$\ab^{-1}$ Intermediate", "3 $\ab^{-1}$" and "300 $\fb^{-1}$".
 
 
 %\begin{table}
@@ -77,7 +77,8 @@ The resulting HL-LHC projected statistical and systematic uncertainties for the 
   \centering
   \caption{Projected ATLAS, CMS and LHCb uncertainty on $\cal{B}$$(B^0_s \to \mu^+ \mu^-)$ and $\cal{B}$$(B^0 \to \mu^+ \mu^-)$. 
   %The results are centered on the SM theoretical prediction~\cite{Bobeth}.
-    For each extrapolation the  statistical+systematic uncertainties are reported. %\td{The uncertainty on ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is reported
+    For each extrapolation the  total (statistical+systematic) uncertainties are reported. 
+    %\td{The uncertainty on ${\cal B}(\decay{\Bd}{\mumu})/{\cal B}(\decay{\Bs}{\mumu})$ is reported
     %for the LHCb reach on $\decay{\Bd}{\mumu}$, assuming the uncertainty to be statistics-dominated for that channel.}
   }
   \label{LHC_Bmumu_Reach}
@@ -122,7 +123,7 @@ would imply an uncertainty on $\BR(\decay{\Bs}{\mumu})$ to be approximately $0.3
 %from $\mathrm{B^+ \to  J}/\psi K^+$ and $\mathrm{B^0_s \to J}/\psi \phi$, extrapolating its value at the HL-LHC to be 1\%, and the relative uncertainties on the yield of the semileptonic and peaking backgrounds - arising from a hadron mis-identification uncertainty of 10\% - to be 20\% and 15\% in Run 2. These same uncertainties are extrapolated to reduce by an additional factor 2 for the HL-LHC era. The trigger efficiency is estimated by the difference between the dimuon triggers for signal and for j/$\psi$ which is assumed to diminish to 1.5 \%. Other sources of systematics (acceptance, selection, etc) have been studied and the related uncertainties halved: the sensitivity for  the significance of the $\mathrm{B^0}$ observation and its branching fraction is not significantly affected whereas there is a 1 \% improvement on the sensitivity for the $\mathrm{B^0_s}$ branching fraction. The quadratic sum of these uncertainties is 3\%.
 The CMS projections are obtained by
  extrapolating the Run~2 analysis performance to the HL-LHC scenario. Trigger efficiencies comparable to those of Run~2, with manageable rates, are expected to be attained \cite{CMS-PAS-FTR-14-015}
- and are here assumed. The effect of the increased pileup on the signal selection efficiency was also estimated to be manageable. The inner tracker of the CMS HL-LHC detector is estimated to provide a 40-50\% improvement relative to Run~2 on the dimuon mass resolution. This results in an improved separation of the $B^0_s$ and $B^0$ signals, lowering the signal cross-feed contamination that is specially crucial for the $B^0$ observation, and a reduction of the level of the semileptonic background in the signal region (see Fig.~\ref{fig:GPDMass}). With the full HL-LHC expected integrated luminosity of 3000  fb$^{−1}$, CMS expects to measure the 
+ and are here assumed. The effect of the increased pileup on the signal selection efficiency was also found to be manageable. The inner tracker of the CMS HL-LHC detector is estimated to provide a 40-50\% improvement relative to Run~2 on the dimuon mass resolution. This results in an improved separation of the $B^0_s$ and $B^0$ signals, lowering the signal cross-feed contamination that is specially crucial for the $B^0$ observation, and a reduction of the level of the semileptonic background in the signal region (see Fig.~\ref{fig:GPDMass}). With the full HL-LHC expected integrated luminosity of 3000  fb$^{−1}$, CMS expects to measure the 
  $B^0_s \to \mu^+ \mu^-$  branching fraction at the level of 7\%.
   precision, and observe 
   the $B^0 \to \mu^+\mu^-$ decay with a significance in excess of  $5\sigma$. 
@@ -133,11 +134,11 @@ for the $B_{s,d} \to \mu^+\mu^-$ analyses for an integrated luminosity of 3000 f
      \includegraphics[width=0.45\textwidth]{\main/section7/figures/CMS_mass_barrel.pdf}\hbox{\hspace{-0.2cm}}
      \includegraphics[width=0.45\textwidth]{\main/section7/figures/CMS_mass_forward.pdf}
       \caption{
-      Projected dimuon invariant mass distributions with overlaid fit results for the $B \to \mu^+\mu^-$ analyses by CMS for an integrated luminosity of  3000 fb$^{-1}$.  Events where the most forward muon lies in (left) the  barrel (left) and forward (right)  regions of the detector display different mass resolutions and are categorized accordingly in the analysis. The SM relative $B^0_s$ and $B^0$ contributions are here assumed.(CMS plots are taken from \cite{CMS-PAS-FTR-18-013}).}
+      Projected dimuon invariant mass distributions with overlaid fit results for the $B \to \mu^+\mu^-$ analyses by CMS for an integrated luminosity of  3000 fb$^{-1}$.  Events where the most forward muon lies in the  barrel (left) and forward (right)  regions of the detector display different mass resolutions and are categorized accordingly in the analysis. The SM relative $B^0_s$ and $B^0$ contributions are here assumed. (Plots taken from \cite{CMS-PAS-FTR-18-013}).}
      \label{fig:CMSFitMass}\end{center}\end{figure}\setlength{\extrarowheight}{4pt}     
 
 The ATLAS projections are extrapolated from the ATLAS Run~1 analysis \cite{Aaboud:2016ire}. Assumptions include the training of a multivariate classifier capable of similar background rejection and signal purities and an analysis selection with comparable pile-up immunity as Run~1. The study takes into account the scaling of $B$ production cross-section and integrated luminosity relative to Run~1, and explores different triggering scenarios corresponding to different dimuon transverse momentum thresholds, ($p_T^{\mu_1}$,$p_T^{\mu_2}$): $(6 \,\text{GeV},6 \,\text{GeV})$, $(6 \, \text{GeV},10 \,\text{GeV})$ and $(10 \,\text{GeV},10 \,\text{GeV})$. For each of these scenarios the sensitivity is categorized on the basis of the signal statistics expected relative
-to the Run~1 analysis (x15, x60 and x75 respectively), yielding the projected $68.3\%$, $95.5\%$ and $99.7\%$ likelihood contours in Fig.~\ref{fig:ATLAS_HLLHCextrapolation}.
+to the Run~1 analysis (x15, x60 and x75 respectively, in $3\ab^{-1}$ of HL-LHC ATLAS data), yielding the projected $68.3\%$, $95.5\%$ and $99.7\%$ likelihood contours in Fig.~\ref{fig:ATLAS_HLLHCextrapolation}.
 
 \begin{figure}[t]
   \centering  
@@ -175,7 +176,8 @@ The CMS sensitivity for a measurement of the
  $B^0_s \to \mu ^+ \mu^-$ effective 
 lifetime is estimated using an ensemble of  pseudo-experiments generated with parameters reflecting the projected Phase~2 conditions. 
 The signal lifetime distribution for each pseudo-experiment is obtained using the sPlot technique\cite{splot} to separate out the background, and then fitted with a model consisting of an exponential function, convolved with a Gaussian function that describes the expected decay time resolution, and multiplied by an efficiency function that accounts for reconstruction effects. The outcome of such a pseudo-experiment is shown in Fig.~\ref{fig:CMS_lifetime}.
-The effective lifetime is expected to be measured with a statistical precision of 3\% (9\%) at 3000 fb$^{-1}$ (300 fb$^{-1}$).
+The effective lifetime is expected to be measured with a statistical precision of 3\% at 3000 fb$^{-1}$.
+%A projection at 300 fb$^{-1}$ results in a statistical precision of 9\%.
 Fig.~\ref{fig:CMS_lifetime} shows the $B^0_s$ decay time distribution with the fit projection superimposed, for a simulated statistics comparable
 to the HL-LHC expectations. 
 
@@ -250,21 +252,23 @@ bins of \qsq or using a \qsq-unbinned approach~\cite{Hurth:2017sqw,Chrzaszcz:201
  the major systematics are those which affect the calculation of the angular acceptance. Most of the systematic uncertainties are expected to reduce significantly with more integrated luminosity due to larger control samples. Both the LHCb statistical and systematic uncertainties are therefore scaled with integrated luminosity when obtaining the projections. In this context it is interesting to note that \upgradetwo will provide signal yields that are of the order of the current tree-level control modes $B^0\to \jpsi \Kstarz$ and $B^0_s\to \jpsi\phi$. %The most recent determination of $\phis$ is done via a time-dependent angular analysis of $B^0_s\to \jpsi\phi$. {\bf\color{red}[Check]}
  In the most recent measurement of $\phis$ from $B^0_s\to \jpsi\phi$, the systematic uncertainties on the decay amplitudes due to modeling of the angular acceptance were already at the 0.001-0.002 level. Therefore, even without considering further improvements from the larger control samples available in \upgradetwo, these uncertainties will not systematically limit the \upgradetwo analysis.
  
- The CMS sensitivity for the measurement of the $P_5'$ parameter at HL-LHC is extrapolated 
+ The CMS sensitivity for the measurement of the $P_5'$ parameter at HL-LHC is extrapolated \cite{CMS-PAS-FTR-18-033} 
   from the CMS Run~1 results \cite{Sirunyan:2017dhj} under some assumptions: effects of improvements in the analysis strategy (e.g. different selection criteria or fits) are not considered and the trigger thresholds and efficiency are assumed to remain the same.  This latter is likely to be a conservative assumption since the availability of tracking information at the first level trigger may result in a higher efficiency than in Run~1. The extrapolation method also assumes that the signal-to-background is the same; indeed
   the main 
   source of background is from other b hadron decays, whose cross-section scales the same as the signal.
- Samples of simulated events are used to evaluate three relevant aspects of the analysis: mass resolution, CP mistagged rate, and the effect of pileup to justify  extrapolation strategy; no degradation in the projected analysis performance was found \cite{CMS-PAS-FTR-18-033}.
- The expected $B^0$ signal yield for each $q^2$ bin is determined from the Phase~2 MC sample and scaled to the integrated luminosity of 3000 fb $^{-1}$. For each $q^2$ bin, the expected $B^0 \to K^{*0}\mu^+\mu^-$ signal yields are obtained from a sample of simulated signal events generated with the Phase~2 conditions, including an average of 200 pileup. 
- 
+ Samples of simulated events are used to evaluate three relevant aspects of the analysis: mass resolution, CP mistagged rate, and the effect of pileup to justify the extrapolation method; no degradation in the projected analysis performance was found.
+  For each $q^2$ bin, the expected $B^0 \to K^{*0}\mu^+\mu^-$ signal yields are obtained from a sample of simulated signal events generated with the Phase~2 conditions, including an average of 200 pileup, and scaled to the integrated luminosity of 3000 fb $^{-1}$.
 %An extended unbinned maximum likelihood fit is performed to the $K^+\pi^-\mu^+\mu^-$ invariant mass in each bin, parametrizing the signal with 
 %the sum of two Gaussian distributions and the background with an exponential distribution.
 The estimated  statistical uncertainty on the ${P'_5}$  parameter at 3000 fb$^{-1}$ is obtained by scaling the statistical uncertainty measured in Run~1 
 by the square root of the ratio between the yields observed in Run~1 and the Phase~2 simulation.
  The evolution of the systematic uncertainties is also extrapolated from the Run~1 analysis.
- Improved understanding of theory and the experimental apparatus is expected to reflect in a factor of 2 reduction in many uncertainties in the Phase~2 scenario. These uncertainties are those related to contamination from resonant decays, signal mass shape, CP mistagging rate, efficiency, angular resolution, and other simulation modeling.
-The uncertainties which depend on the available amount of data, i.e., the description of the background mass distribution, those associated with the propagation of the uncertainty on $F_L, F_S$ abd $A_S$ (see \cite{Sirunyan:2017dhj,CMS-PAS-18-033} for their definitions) and the fit bias introduced by the fitting procedure are scaled the same as the statistical uncertainties. 
-The uncertainty related to the limited number of simulation events are neglected, under the assumption that sufficiently large simulation samples will be available by the time the HL-LHC becomes operational.
+ Improved understanding of theory and the experimental apparatus is expected to reflect in a factor of 2 reduction in many uncertainties in the Phase~2 scenario. 
+ %These uncertainties are those related to contamination from resonant decays, signal mass shape, CP mistagging rate, efficiency, angular resolution, and other simulation modeling.
+The uncertainties which depend on the available amount of data
+%, i.e., the description of the background mass distribution, those associated with the propagation of the uncertainty on $F_L, F_S$ abd $A_S$ () and the fit bias introduced by the fitting procedure %
+are scaled the same as the statistical uncertainties. 
+The uncertainty related to the limited number of simulation events is neglected, under the assumption that sufficiently large simulation samples will be available by the time the HL-LHC becomes operational.
 %A complete discussion can be found in %\cite{CMS-PAS-FTR-18-033}. 
 %Uncertainties concerning the simulation mismodeling,  efficiency determination,
  %$K\pi$ mistagging rate, choice of the signal mass PDF, effect of the contamination from feed-through events from the resonant decays,
@@ -281,7 +285,7 @@ The comparison between the predicted and measured branching fractions will in an
  
  \subsubsubsection{Sensitivity projections}
 
-In order to estimate our sensitivity to BSM effects in $b\to s\ell\ell$ decays, a number of benchmark NP scenarios are considered, see Table~\ref{tab:penguins:NPscenarios}. 
+In order to estimate the sensitivity to BSM effects in $b\to s\ell\ell$ decays, a number of benchmark NP scenarios are considered, see Table~\ref{tab:penguins:NPscenarios}. 
 Scenarios~I and II are inspired by the current discrepancies. The first scenario is the one that best explains the present $b\to s\mu\mu$ decay data. The second is the best explaining the rare semileptonic measurements within a purely left-handed scenario. This requirement is theoretically well motivated and arises in models designed to simultaneously explain the discrepancies seen in both tree-level semitauonic and loop-level semileptonic decays. The third and fourth scenarios assume that the current discrepancies are not confirmed but there is instead a small contribution from right-handed currents that would not be visible with the current level of experimental precision. These scenarios will serve to illustrate the power of the large LHCb \upgradetwo data set to distinguish between different NP models. This power relies critically on the ability to exploit multiple related decay channels. 
 
 \begin{table}[!tb]
@@ -332,7 +336,7 @@ These scenarios are also clearly distinguishable with the precision that will be
 \includegraphics[width=0.45\linewidth]{section7/figures/P5p_HL.pdf}
 \caption{Total experimental sensitivity, including systematics, at LHCb to the $P_5^{\prime}$ angular observable in the SM,
   Scenarios~I and II for  the Run~3 (left) and  the \upgradetwo (right) data sets. 
-  The computed sensitivity is computed assuming that the charm-loop contribution is determined from the data. %{\bf\color{red}[What do these errorrs contain? Experimental only?]}
+  The sensitivity is computed assuming that the charm-loop contribution is determined from the data. %{\bf\color{red}[What do these errorrs contain? Experimental only?]}
 }
 \label{fig:penguin:P5primeUnbinned}
 \end{figure}
@@ -358,20 +362,21 @@ The two lower pads represent the  statistical (upper pad) and total (lower pad) 
  \label{fig:CMSP5presults}
  \end{center}
  \end{figure}
-
-The CMS Run~1 results and the projected statistical and systematic uncertainties  for the measurement of $P'_5$ versus $q^2$ for an integrated luminosity of 3000 fb$^{-1}$ are shown in Fig.~\ref{fig:CMSP5presults}. The projections for the statistical-only scenario are also reported.
+ 
+The CMS projected statistical uncertainties and total uncertainties for the measurement of $P'_5$ versus $q^2$ for an integrated luminosity of 3000 fb$^{-1}$ are shown in Fig.~\ref{fig:CMSP5presults} along with the Run~1 results. 
 %CMS Improvements
 
-The $P_5'$ total uncertainties in the $q^2$ bins are estimated to improve up to a factor of 15 in the  3000 fb$^{-1}$ scenario, compared to those quoted in the Run~1 analysis.
-An extrapolation is also performed to 300 fb$^{-1}$ integrated luminosity following the same analysis method; an improvement of up to a factor of 7 is estimated with respect to the Run~1 analysis
-\cite{CMS-PAS-FTR-18-033}.
-The increased amount of collected data foreseen for the Phase~2 total integrated luminosity offers us the opportunity to perform the angular analysis in narrower $q^2$ bins, in order to measure the $P'_5$  shape as a function of $q^2$ with finer granularity. The $q^2$ region below the $J/\psi$ mass(-squared), which is more sensitive to possible NP effects, is considered. Each Run~1 $q^2$ bin is split into smaller and equal-size bins to achieve a statistical uncertainty of the order of the total systematic uncertainty in the same bin with the additional constraint of having a bin width at least 5 times larger than the dimuon mass resolution $\sigma_r$, as measured 
-on the MC simulation as a function of $q^2$ \cite{CMS-PAS-FTR-18-033}.
+The $P_5'$ total uncertainties in the $q^2$ bins are estimated to improve up to a factor of 15 in the  3000 fb$^{-1}$ scenario \cite{CMS-PAS-FTR-18-033}, compared to those quoted in the Run~1 analysis.
+The extrapolation to 300 fb$^{-1}$ integrated luminosity results in an improvement of up to a factor of 7 with respect to the Run~1 analysis.
+The foreseen Phase~2 total integrated luminosity offers the opportunity to perform the angular analysis in narrower $q^2$ bins, in order to measure the $P'_5$  shape as a function of $q^2$ with finer granularity. The $q^2$ region below the $J/\psi$ mass(-squared), which is more sensitive to possible new physics effects, is considered. Each Run~1 $q^2$ bin is split into smaller and equal-size bins to achieve a statistical uncertainty of the order of the total systematic uncertainty in the same bin with the additional constraint of having a bin width at least 5 times larger than the dimuon mass resolution $\sigma_r$, as measured 
+on the MC simulation as a function of $q^2$.
 If both conditions cannot be satisfied, then only the looser requirement on the 5 $\sigma_r$ bin width is imposed. 
 %The dimuon mass resolution is measured on the MC simulation as a function of $q^2$.
-Each systematic uncertainty in the Run~1 analysis bin is rescaled to the finer bins according to its classification and correlation between $q^2$ bins.
-The corresponding total and statistical only uncertainties on $P'_5$  are shown in the two lower pads of Fig.~\ref{fig:CMSP5presults}.
- In addition, with the foreseen HL-LHC statistics, CMS will also have the capability to perform a full angular analysis of the \decay{\Bz}{\Kstarz\mumu} decay mode.
+With respect to the Phase~2 systematic uncertainties with wider bins, the systematic uncertainties that were scaled the same as the statistical uncertainties are adjusted to account for less data in each finer bin while the other uncertainties are unchanged.
+The corresponding  statistical and total uncertainties on $P'_5$  are shown in the lower two pads of Fig.~\ref{fig:CMSP5presults}.
+
+The analysis in narrow $q^2$ bins provides a better determination of the $P_5'$ parameter shape which will allow us to test theoretical predictions. 
+The CMS projection is  for the single $P_5'$ angular parameter; however, it is worth noting that, with the foreseen HL-LHC statistics, CMS will have the capability to perform a full angular analysis of the \decay{\Bz}{\Kstarz\mumu} decay mode.
 
 %The major challenge for \decay{\B}{V \ellell} decays is to disentangle NP effects from SM contributions. 
 Furthermore,  with a large data set it will  be possible to probe \decay{\B}{V \ellell} SM contributions, under the premise that a genuine NP contribution is expected to have no $q^2$ dependence, while, \eg a 
