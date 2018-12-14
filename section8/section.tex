@@ -250,7 +250,7 @@ chain~\cite{Alloul:2013bka,Degrande:2011ua,Alwall:2014hca}, allowing for
 automated NLO QCD predictions matched to parton shower. 
 Details on this implementation have been presented in Ref.~\cite{Degrande:2014tta}.
 Two-quark-two-lepton operators are now also
-available in {\tt MadGraph5\_aMC@NLO}. Finally, the direct top-quark
+available in {\tt MadGraph5\_aMC@NLO} (see Ref.~\cite{Durieux:2018tev}). Finally, the direct top-quark
 production with decay process, $pp\to bW^+$, involves additional technical
 difficulties due to the intermediate top-quark resonance. It is now being
 studied, and the corresponding NLO generator matched to parton shower will be
@@ -507,37 +507,53 @@ $t\to Hq $ & 10$^{-4}$ & & \cite{ATL-PHYS-PUB-2016-019} \\
 %%%
 \subsubsubsection{Top-gluon}
 
+\begin{figure}[h]
+\includegraphics[scale=0.4]{section8/figs/CMS_topglue_7-c.pdf}
+\vspace{0.3cm}
+\includegraphics[scale=0.4]{section8/figs/CMS_topglue_7-d.pdf}
+\hfil
+\caption{The expected exclusion limits at 95\% C.L. on the branching fractions for the $t\to u g$ (left panel) and $t\to c g$ (right panel) FCNC processes as a function of integrated luminosity.}
+\label{fig:topglue_lumi}
+\end{figure}
+
 The $gqt$ FCNC process was studied by ATLAS~\cite{Aad:2015gea} and CMS~\cite{Khachatryan:2016sib} in single top quark events. The event signature includes the
 requirement of one isolated lepton and the presence of a significant amount of transverse
 missing energy ($E^{miss}_{T}$). The analysis at CMS requires exactly one $b$ and one non-$b$ jet to be present in the final state with the dominant background arising from the $t\bar{t}$+jets
 production, while the analysis at ATLAS vetoes any additional jets resulting in the dominant source of background associated with the $W$+jets production. A neural network-based
 technique is used to separate signal from background events.
-The observed~(expected) 95\% CL upper limits in the CMS analysis are $\mathcal{B}(t \to gu) < 2.0~(2.8) \times 10^{-5}$ and
+The observed~(expected) 95\% C.L. upper limits in the CMS analysis are $\mathcal{B}(t \to gu) < 2.0~(2.8) \times 10^{-5}$ and
 $\mathcal{B}(t \to gc) < 4.1~(2.8) \times 10^{-4}$, while the resultant limits in case of ATLAS are $\mathcal{B}(t \to gu) < 4.0~(3.5) \times 10^{-5}$ 
-and $\mathcal{B}(t \to gc) < 2.0~(1.8) \times 10^{-4}$. The projected limits for 3 ab$^{-1}$ are $\mathcal{B}(t \to gu) < 3.8 \times 10^{-6}$ and $\mathcal{B}(t \to gc) < 32.1 \times 10^{-6}$~\cite{CMS:2018kwi}. \td{Refer to new fig~\ref{fig:topglue}}
+and $\mathcal{B}(t \to gc) < 2.0~(1.8) \times 10^{-4}$. The projected limits for 3 ab$^{-1}$ are $\mathcal{B}(t \to gu) < 3.8 \times 10^{-6}$ and $\mathcal{B}(t \to gc) < 32.1 \times 10^{-6}$~\cite{CMS:2018kwi}. 
 
 \begin{figure}[t]
 %  \vspace{-0.3cm}
 \begin{center}{
 \includegraphics[width=10cm]{section8/figs/CMS-topglueFCNC.png}
 %\vspace{-0.3cm}
-\caption{{Two-dimensional expected limits on the FCNC couplings and the corresponding branching fractions at 68\% and 95\% C.L. for an integrated luminosity of 3000 fb$^{-1}$}} \label{fig:topglue}}
+\caption{{Two-dimensional expected limits on the $t\to u g$ vs and $t\to c g$ branching fractions at 68\% and 95\% C.L. for an integrated luminosity of 3000 fb$^{-1}$}} \label{fig:topglue}}
 \end{center}
 \end{figure}
 
+The dependence of the 
+$\mathcal{B}(t \to ug)$ and $\mathcal{B}(t \to cg)$
+exclusion upper limits on integrated luminosity is shown in Fig.~\ref{fig:topglue_lumi}
+ with 1 and 2 $\sigma$ bands corresponding to 68 \% and 95 \% C.L intervals of distributions of the limits .
+In addition the two-dimensional contour that reflects the possible simultaneous presence of both FCNC processes. is shown in Fig.~\ref{fig:topglue}.
 
 %%%
 \subsubsubsection{Top-Z}
 
-%The $t \rightarrow Z q$ FCNC decays are probed by ATLAS in top %quark
-%pair events at 13 TeV~\cite{Aaboud:2018nyl}. The event topology %includes 
-%the presence of two same-sign or three isolated leptons, %$E^{miss}_{T}$, exactly
-%one $b$ jet and at least one non-$b$ jet. Several control regions %are
-%defined for each of the dominant background processes: $WZ$+jets,
-%$ZZ$+jets, $ttZ$, and non-prompt leptons. The signal is extracted %from a simultaneous maximum likelihood fit over control and signal %regions using various event kinematic variables. The resultant %limits are $\mathcal{B}(t \to Zu) < 1.7~(2.4) \times 10^{-4}$ and %$\mathcal{B}(t \to Zc) < 2.3~(3.2) \times 10^{-4}$. The analysis of %the 13 TeV data at CMS explores a similar final state and %additionally considers a single top associated FCNC production with %a Z boson in the simulation of signal events~\cite{CMS:2017twu}. %Only the three lepton final state is considered. A boosted decision %tree (BDT) discriminant is defined to suppress background events. %The resultant limits are $\mathcal{B}(t \to Zu) < 2.4~(1.5) \times %10^{-4}$ and $\mathcal{B}(t \to Zc) < 4.5~(3.7) \times 10^{-4}$. %Preliminary projection studies suggest the expected upper limits of %$\mathcal{B}(t \to Zq) < 2.4 \times %10^{-5}$~\cite{ATL-PHYS-PUB-2016-019}.
 
+%%%%%OLD TEXT FROM ATLAS UNTIL NEW ANALYSIS GETS APPROVED 
+The $t \rightarrow Z q$ FCNC decays are probed by ATLAS in top quark
+pair events at 13 TeV~\cite{Aaboud:2018nyl}. The event topology includes 
+the presence of two same-sign or three isolated leptons, $E^{miss}_{T}$, exactly
+one b jet and at least one non-b jet. Several control regions are
+defined for each of the dominant background processes: $WZ$+jets,
+$ZZ$+jets, $ttZ$, and non-prompt leptons. The signal is extracted from a simultaneous maximum likelihood fit over control and signal regions using various event kinematic variables. The resultant limits are $\mathcal{B}(t \to Zu) < 1.7~(2.4) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 2.3~(3.2) \times 10^{-4}$. The analysis of the 13 TeV data at CMS explores a similar final state and additionally considers a single top associated FCNC production with a Z boson in the simulation of signal events~\cite{CMS:2017twu}. Only the three lepton final state is considered. A boosted decision tree (BDT) discriminant is defined to suppress background events. The resultant limits are $\mathcal{B}(t \to Zu) < 2.4~(1.5) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 4.5~(3.7) \times 10^{-4}$. Preliminary projection studies suggest the expected upper limits of $\mathcal{B}(t \to Zq) < 2.4 \times 10^{-5}$~\cite{ATL-PHYS-PUB-2016-019}.
 
-ATLAS studied the sensitivity to the $tqZ$ interaction, by performing an analysis~\cite{TOPQ-2018-35} based on simulated samples and following both the strategy of its 13~TeV data analysis on the same subject~\cite{TOPQ-2017-06} and of the general recommendations for this HL-LHC study. The study is performed in the three charged lepton final state of $t\bar t$ events, in which one of the top quarks decays to $qZ$, $(q=u,c)$ and the other one decays to $bW$ ($t\bar t\to bWqZ\to b\ell\nu q\ell\ell$). The kinematics of the events are reconstructed through a $\chi^2$ minimisation and dedicated control regions are used to normalize the main backgrounds and constrain systematic uncertainties. The main uncertainties, in both the background and signal estimations, are expected to come from theoretical normalization uncertainties and uncertainties in the modeling of background processes in the simulation. Different scenarios for the systematic uncertainties are considered, ranging from the full estimations obtained with the 13~TeV data analysis, to the ones expected with improvements in theoretical predictions, which should be half of the former ones. A binned likelihood function $L(\mu, \theta)$ is used to do the statistical analysis and extract the signal normalisation. An improvement by a factor of five is expected in relation to the current 13~TeV data analysis results. Obtained branching ratio limits are at the level of 4 to 5 $\times 10^{-5}$ depending on the considered scenarios for the systematic uncertainties.
+% %%%%NEW ATLAS TEXT ---- NEEDS TO BE ADDED IN VERSION 2 -- NOT APPROVED YET 
+% ATLAS studied the sensitivity to the $tqZ$ interaction, by performing an analysis~\cite{TOPQ-2018-35} based on simulated samples and following both the strategy of its 13~TeV data analysis on the same subject~\cite{TOPQ-2017-06} and of the general recommendations for this HL-LHC study. The study is performed in the three charged lepton final state of $t\bar t$ events, in which one of the top quarks decays to $qZ$, $(q=u,c)$ and the other one decays to $bW$ ($t\bar t\to bWqZ\to b\ell\nu q\ell\ell$). The kinematics of the events are reconstructed through a $\chi^2$ minimisation and dedicated control regions are used to normalize the main backgrounds and constrain systematic uncertainties. The main uncertainties, in both the background and signal estimations, are expected to come from theoretical normalization uncertainties and uncertainties in the modeling of background processes in the simulation. Different scenarios for the systematic uncertainties are considered, ranging from the full estimations obtained with the 13~TeV data analysis, to the ones expected with improvements in theoretical predictions, which should be half of the former ones. A binned likelihood function $L(\mu, \theta)$ is used to do the statistical analysis and extract the signal normalisation. An improvement by a factor of five is expected in relation to the current 13~TeV data analysis results. Obtained branching ratio limits are at the level of 4 to 5 $\times 10^{-5}$ depending on the considered scenarios for the systematic uncertainties.
 
 
 %%%
@@ -700,11 +716,11 @@ Among the operators in Eq.\ \eqref{eq:Wtb}, the $c_{\varphi tb}^{[I]}$ and $c_{b
 
 The contributions to the electron EDM also arise from a two-step process: $c_{ tW}^{[I]}$ first induces \CP-odd operators of the form $X_{\mu\nu }\tilde X^{\mu\nu }\varphi^\dagger\varphi$, with $X_{\mu\nu}$ a $SU(2)_L$ or $U(1)_Y$ field strength, as well as semileptonic interactions of the form, $(\bar e_L \sigma_{\mu\nu}\,e_R) \, (\bar t_L\sigma^{\mu\nu}t_R)$, through the renormalization group equations \cite{Cirigliano:2016nyn,Cirigliano:2016njn,Fuyuto:2017xup}. These additional operators then induce the electron EDM at one loop. 
 %
-Using the above contributions and the current experimental limits \cite{Afach:2015sja,Baker:2006ts,Andreev:2018ayy}, we obtain the constraints in Table \ref{tabindirectWtb}.
+Using the above contributions and the current experimental limits \cite{Afach:2015sja,Baker:2006ts,Andreev:2018ayy}, we obtain the constraints in Table \ref{tabindirectWtb}. \Blu{The limits from the neutron EDM are expected to improve by $1$ to $2$ orders of magnitude in the next generation of experiments \cite{Chupp:2017rkp}, while proposals exist to improve the electron EDM limits by several orders of magnitude \cite{Kozyryev:2017cwq,Vutha:2017pej,PhysRevLett.120.123201}.}
 
 \smallskip
 {\bf Rare $B$ decays.~}
-Unlike EDMs, measurements of $B\to X_s\gamma$ are sensitive to both the real and imaginary parts of the couplings. Although all four of the $Wtb$ vertices give rise to  flavour-changing $b\to s$ transitions through one-loop diagrams \cite{Grzadkowski:2008mf,Brod:2014hsa,Aebischer:2015fzz}, the largest effects are due to $C_{\varphi tb}$ and $C_{bW}$. Both of these couplings induce contributions proportional to $m_t$ instead of $m_b$ that appears in SM (as well as for $c^-_{\varphi q}$ and $C_{tW}$), leading to a relative enhancement of $m_t/m_b$. Here we consider the constraints from measurements of the $B\to X_s\gamma$ branching ratio and the \CP asymmetry \cite{Amhis:2016xyh}, for which we use the theoretical expressions of \cite{Hurth:2003dk} and \cite{Benzke:2010tq}, respectively. This leads to the constraints  in Table \ref{tabindirectWtb}.
+Unlike EDMs, measurements of $B\to X_s\gamma$ are sensitive to both the real and imaginary parts of the couplings. Although all four of the $Wtb$ vertices give rise to  flavour-changing $b\to s$ transitions through one-loop diagrams \cite{Grzadkowski:2008mf,Brod:2014hsa,Aebischer:2015fzz}, the largest effects are due to $C_{\varphi tb}$ and $C_{bW}$. Both of these couplings induce contributions proportional to $m_t$ instead of $m_b$ that appears in SM (as well as for $c^-_{\varphi q}$ and $C_{tW}$), leading to a relative enhancement of $m_t/m_b$. Here we consider the constraints from measurements of the $B\to X_s\gamma$ branching ratio and the \CP asymmetry \cite{Amhis:2016xyh}, for which we use the theoretical expressions of \cite{Hurth:2003dk} and \cite{Benzke:2010tq}, respectively. This leads to the constraints  in Table \ref{tabindirectWtb}, \Blu{which are expected to improve by a factor of a few in the future. In particular, the uncertainty on the branching ratio is expected to decrease by a factor of $2$ to $3$ at Belle II, while the improvement is projected to be a factor of $5$ for the CP asymmetry \cite{Kou:2018nap}.}
 
 \smallskip
 {\bf Electroweak precision tests.~}
@@ -719,9 +735,12 @@ Finally, the $Wtb$ interactions contribute to the process $h\to \bar bb$ by indu
 
 \subsection{Determinations of $V_{tx}$} 
 {\it\small Authors (TH): Mariel Estevez, Darius Faroughy, Jernej Kamenik }
-%
-% 
-%Fabio Maltoni
+
+The LHC as a top-quark factory has the ability to directly probe the $V_{tx}$ matrix elements. In particular, measuring the fractions of $b$-tagged jets in leptonic top decays $t\to Wj$ allows to set a limit on the ratio 
+\begin{equation}
+\mathcal {R}=\frac{\mathrm{Br}(t\to bW)}{\sum_{x=d,s,b}\mathrm{Br}(t\to Wx)}>0.995
+\end{equation}
+ at 95\% CL \cite{Khachatryan:2014nda}. This result, when combined with measurements of $t$-channel single-top production \cite{Aaboud:2016ymp}, provides a direct determination of $|V_{tb}|=1.07\pm0.09$ in the limit $|V_{tb}|\gg|V_{ts}|,\,|V_{td}|$. Given that these measurements are already dominated by systematic effects, in particular the knowledge of the $b$-tagging efficiencies and theoretical uncertainties in single-top production, significant improvement in precision of $V_{tb}$ measurement at the HL-LHC or HE-LHC would arguably require novel strategies.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -869,7 +888,7 @@ shown in Table~\ref{tab:effs}.
 \begin{figure}[t]
 %  \vspace{-0.3cm}
 \begin{center}{
-\includegraphics[width=8cm]{section8/figs/LHC_Resolved_lep_tops.pdf} 
+\includegraphics[width=10cm]{section8/figs/LHC_Resolved_lep_tops.pdf} 
 %\vspace{-0.3cm}
 \caption{{Illustration of statistical limits on the ratio $\rho \simeq \big(|V_{ts}|^2 + |V_{td}|^2\big)^{1/2}/|V_{tb}|$ from an analysis of Cabbibo-suppressed top decays in leptonic $t\bar t$ events at 13TeV LHC. See text for details.}} \label{fig:master}}
 \end{center}
