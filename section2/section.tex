@@ -412,8 +412,9 @@ $ \Delta\chi^2(\alpha) = \min_{\vec\mu}[\chi^2(\alpha)] - \chi^2_{\rm min}$~\cit
 %\end{equation}
 Here,  $\min_{\vec\mu}[\chi^2(\alpha)]$ is the value of  \chisq, minimised with respect to the nuisance parameters for a  fixed $\alpha$ value. This test statistic assesses how a given hypothesis on the true value of $\alpha$ agrees with the data, irrespective of the value of the nuisance parameters. Confidence intervals on $\alpha$ can be derived from the resulting $p$-value, which is computed assuming that $\Delta\chi^2(\alpha)$ is \chisq-distributed with one degree of freedom,
 \begin{equation}\label{eq:prob}
- p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,.
+ p(\alpha) = {\rm Prob}(\Delta\chi^2(\alpha),N_{dof}=1)\,, \qquad  {\rm Prob}\!\left(\Delta \chi^2,N_{dof}\right)=\frac{\Gamma(N_{dof}/2,\Delta\chi^2/2)}{\Gamma(N_{dof}/2)}\,,
 \end{equation}
+where $\Gamma(x)$ is the usual Euler factorial function, and $\Gamma(s,x)$ is the upper incomplete gamma function.
 Confidence intervals at a given confidence level (CL) are obtained by selecting the values of $\alpha$ with $p$-value larger than $1-$CL.
 
 In addition to the frequentist statistical treatment outline above, the CKMfitter collaboration relies on a specific treatment of theoretical uncertainties (e.g., systematics due to uncertainties on hadronic matrix elements not scaling with the size of the sample).
