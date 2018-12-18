@@ -1,20 +1,20 @@
-% don't remove the folling lines, and edit the defintion of \main if needed
+%
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-% until here
+%
 \def\Qbar    {{\kern 0.2em\overline{\kern -0.2em \PQ}{}}\xspace}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \newcommand{\fk}[1]{{\color{blue}#1}}
-%\newcommand{\fkcor}[1]{{\color{blue}\st{#1}}}
+%
 \newcommand{\sasa}[1]{{\color{brown}#1}}
 \newcommand{\others}[1]{{\color{red}#1}}
 \newcommand{\juan}[1]{{\color{green}#1}}
 \definecolor{gold}{rgb}{1.0, 0.65, 0.0}
 \newcommand{\ale}[1]{{\color{gold}#1}} 
-%\newcommand{\alecor}[1]{{\color{gold}\st{#1}}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
 
 
 \begin{document}
@@ -22,7 +22,7 @@
 \section{Hadron spectroscopy and QCD exotica}
 {\it \small Authors (TH): Angelo Esposito, Feng-Kun Guo, Juan Nieves, Alessandro Pilloni, Antonio Polosa, Sasa Prelovsek.}
 
-% Hadronic spectroscopy has been a very challenging field historically, both experimentally and theoretically. 
+%
 \Blu{Determination of hadron spectrum is key to understanding the strong interactions, in particular the mechanisms underlying color confinement.}
 While \Blu{BESIII is the leading experiment in the charm region, and} \belletwo will make a major impact 
 in the study of excited mesons and lighter exotic hadrons, only the HL-LHC experiments 
@@ -48,7 +48,7 @@ In this sense, QCD serves as a prototype of a strongly-coupled gauge theory. By 
 \input{section6/theory}
 \input{section6/experimental}
 
-%\subsection{Combined theory/experiment perspective}
-%Including how far ATLAS/CMS can contribute to finding new states, confirming the %pentaquark etc. observations, and studying their properties (?)
+%
+%
 
 \end{document}

@@ -1,11 +1,11 @@
-%cms don't remove the folling lines, and edit the defintion of \main if needed
+%
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-% until here
-%\input{definitions_notes}
+%
+%
 \renewcommand{\em}{\it} 
-%References   
+%
 \newcommand{\fref}[1]{Fig.~\ref{fig:#1}} 
 \newcommand{\eref}[1]{Eq.~\eqref{eq:#1}} 
 \newcommand{\erefn}[1]{ (\ref{eq:#1})}
@@ -16,14 +16,14 @@
 \newcommand{\tref}[1]{Table~\ref{tab:#1}}
   
  
-%Equation enviroment
+%
 \newcommand{\nn}{\nonumber \\}  
 \newcommand{\nnl}{\nonumber \\}  
 \newcommand{\nl}{& \nonumber \\ &}
 \newcommand{\bnl}{\right .  \nonumber \\  \left .}
 \newcommand{\dbnl}{\right .\right . & \nonumber \\ & \left .\left .}
 
-%Begin-end
+%
 \newcommand{\beq}{\begin{equation}} 
 \newcommand{\eeq}{\end{equation}} 
 \newcommand{\ba}{\begin{array}}  
@@ -41,30 +41,30 @@
 \newcommand{\bc}{\begin{center}}
 \newcommand{\ec}{\end{center}} 
 \newcommand{\bt}{\begin{table}}
-%\newcommand{\et}{\end{table}}  
+%
 \newcommand{\btb}{\begin{tabular}}
 \newcommand{\etb}{\end{tabular}}  
 \newcommand{\bvec}{\left ( \ba{c}}
 \newcommand{\evec}{\ea \right )}
 
 
-% caligraphic fonts 
+%
 \newcommand{\cO}{{\mathcal O}} 
 \newcommand{\co}{{\mathcal O}} 
-%\newcommand{\cL}{{\mathcal L}} 
+%
 \newcommand{\cl}{{\mathcal L}} 
 \newcommand{\cM}{{\mathcal M}}   
 
 
-%Physics
+%
 \newcommand{\const}{\mathrm{const}}
 
 
-%\newcommand{\ev}{ \mathrm{eV}}
-%\newcommand{\kev}{\mathrm{keV}}
-%\newcommand{\mev}{\mathrm{MeV}}
-%\newcommand{\gev}{\mathrm{GeV}}
-%\newcommand{\tev}{\mathrm{TeV}}
+%
+%
+%
+%
+%
 
 \newcommand{\mpl}{M_{\mathrm Pl}}
 
@@ -79,13 +79,13 @@
 
 \def\ads{AdS$_5$\,}
 \def\adse{AdS$_5$}
-%\def\ds{${\rm dS}_4\,$}
+%
 \def\intdk{\int {d^4 k \over (2 \pi)^4}} 
 
 \def\ra{\rangle}
 \def\la{\langle}  
 
-%Math
+%
 \def\sgn{{\rm sgn}}
 \def\pa{\partial}  
 \newcommand{\dlr}{\overleftrightarrow{\partial}}
@@ -109,14 +109,14 @@
 
 \newcommand{\ti}{\tilde}  
 \def\hc{{\rm h.c.}} 
-%\def\ZZ{\mathbb{Z}}    
+%
 \def\ov{\overline}  
   
-%\newcommand{\eps}{\epsilon}
+%
 
 \newcommand{\lz}{\lambda_z}
-%\newcommand{\gz}{g_{1,z}}
-%\newcommand{\kg}{\kappa_\gamma}
+%
+%
 \newcommand{\dgz}{\delta g_{1,z}}
 \newcommand{\dkg}{\delta \kappa_\gamma}
 
@@ -126,12 +126,12 @@
 \newcommand{\eS}{\epsilon_S}
 \newcommand{\eP}{\epsilon_P}
 \newcommand{\eT}{\epsilon_T}
-%\newcommand{\ket}[1]{| #1 \rangle}
-%\newcommand{\bra}[1]{\langle #1 |}
+%
+%
 
 
 
-%%Color shortcuts$$$$$$
+%
 \def\cog{\color{OliveGreen}}
 \def\cor{\color{Red}}
 \def\copu{\color{purple}}
@@ -148,22 +148,22 @@
 {\small\it Authors (TH):  Vincenzo Cirigliano, Martin Gonzalez-Alonso, Adam Falkowski, Emilie Passemar.}
 \label{sec:5}
 
-%\subsection{Introduction}
+%
 %
 The physics of the tau lepton is an exceptionally broad topic, both experimentally and theoretically. A large variety of processes involving taus have been used in the last decades to learn about fundamental physics~\cite{Pich:2013lsa}. 
 In some cases the results obtained in $e^+e^-$ machines~\cite{Schael:2005am} are very hard to improve in the LHC environment, due to large backgrounds, even if the number of taus produced is much larger. This is the case, {\it e.g.}, for the study of basic tau properties (mass, lifetime, etc.) or the standard tau decay channels. However, there are also many processes involving taus that are relevant for HL/HE-LHC. Here we focus on those that are more directly connected to flavour and that are not covered by other sections (for instance $h \to \tau \tau$, $h\to\tau\ell$, Sec.~\ref{sec:9} or heavy meson decays to taus, Sec.~\ref{sec:7} ).
 
 To simplify the discussion we will assume 
-%in the rest of this chapter 
+%
 that the scale of New Physics  (NP) relevant for the processes under consideration is much heavier than the energy scales probed by the  LHC. We can then use the SMEFT framework~\cite{Buchmuller:1985jz}. We first discuss lepton flavour conserving observables, where the SM contribution has to be calculated with some accuracy in order to probe NP. In contrast, the SM contribution is negligible for lepton flavour violating processes, where the challenges are purely experimental.
-%, since the SM contribution is negligible. 
+%
 As a result, the NP scales that are probed are much higher  in the latter case.
 
 \subsection{Lepton-flavour-conserving processes}
 
-%First of all, let us note that the c
+%
 Collider phenomenology is usually very different for the so-called vertex corrections and contact interactions. For vertex corrections the NP contributions mimic the structure of the SM gauge couplings, $Z\tau\tau$ and $W\tau\nu$. Their study requires, in most cases, very precise measurements, which are challenging in a hadron collider. On the other hand, four-fermion contact interactions (generated for example by the tree-level exchange of a heavy mediator) give a contribution to high-energy observables qualitatively different from the SM one. For instance, a contribution from an off-shell mediator grows with the partonic center of mass energy,
-% of the partonic process, 
+%
 and thus one does not require very high precision in order for the measurements to probe interesting NP scales~\cite{Cirigliano:2012ab,deBlas:2013qqa}. For these contact interactions, we focus on flavour-diagonal couplings involving first-generation quarks and third-generation leptons.
 
 \subsubsection{High-energy tails}
@@ -176,16 +176,16 @@ As an example, consider that the following dimension-6 interaction is added to t
 \end{equation}  
 where $\sigma^i$ are the Pauli matrices, $L_3 = (\nu^\tau_L,\tau_L)$ is the 3rd generation lepton doublet, and $Q_1 = (u_L,d_L)$ is the 1st generation quark doublet. This interaction term can be interpreted as an effective field theory (EFT) description of a more fundamental theory, for example an exchange of an $SU(2)$ triplet of vector bosons with masses $m_V = \Lambda \gg v$ that couples to $L_3$ and $Q_1$ with coupling strength $g_{V} \approx  2 |C_{lq}^{(3)}|^{1/2}$.  
 Even when $m_V$ is too heavy to be directly produced at the LHC, the effective interaction in Eq.~(\ref{eq:olq}) may produce observable effects, and therefore provide
-% an important piece of 
+%
 information about the theory that completes the SM. 
 
 At the LHC, contact interactions between quarks and 3rd generation leptons can be probed via the processes $p p \to \tau^+ \tau^- X$ and $p p \to \tau \nu X$~\cite{Faroughy:2016osc,Cirigliano:2018dyk}. 
 Here we focus on the latter, taking as a template the existing Run-2 ATLAS analysis in Ref.~\cite{Aaboud:2018vgh}. 
 This measured  the  $\tau \nu$ transverse mass
-%analysis relies on 
-%differential 
+%
+%
 distribution, where the transverse mass is given by
-% of pairs defined as 
+%
 $m_T =\sqrt{ 2 \pt E_T (1-\cos \phi) }$, with $\vec \pt$  the transverse momentum of the (hadronic) tau candidate,  $\vec E_T$ the missing transverse momentum, and $\phi$ the azimuthal angle between the two. 
 The effects of the interaction in Eq.~(\ref{eq:olq}) are most pronounced at higher $m_T$.
 To estimate the current and future sensitivity, we pick $m_T > 1.8$~TeV as our signal region (a more elaborate analysis with a wider, binned, $m_T$ range would lead to stronger bounds~\cite{Cirigliano:2018dyk}).
@@ -196,7 +196,7 @@ N_{p p \to \tau \tau}^{m_T > 1.8~\tev} \approx  \left ({ {\cal L} \over 36.1~{\r
 \end{equation}
  where $ {\cal L}$ is the integrated luminosity, $v \approx 246$~GeV, and we will ignore the theoretical error of this estimation. 
 The ATLAS collaboration observed $0$ events in  ${\cal L} = 36.1~{\rm fb}^{-1}$~\cite{Aaboud:2018vgh},  from which  one can derive the 68\%~CL limit on the Wilson coefficient in Eq.~(\ref{eq:olq}):  $- (5.3~\tev)^{-2} \leq  C_{lq}^{(3)} / \Lambda^2 \leq (7.7~\tev)^{-2}$.  
-%$- {1 \over (5.3~\tev)^2} \leq  {C_{lq}^{(3)} \over \Lambda^2} \leq {1 \over (7.7~\tev)^2}$.  
+%
 For the HL-LHC with ${\cal L} = 3000~{\rm fb}^{-1}$,  assuming the observed number of events will be exactly equal to the SM prediction, the expected limit becomes
 \beq
 - {1 \over (17.5~\tev)^2} \leq  {C_{lq}^{(3)} \over \Lambda^2} \leq {1 \over (20.5~\tev)^2} \qquad @~68\%~{\rm CL}. 
@@ -233,10 +233,10 @@ It has been pointed out recently that there is an interesting complementarity be
 Finally, it is interesting to mention the possibility of accessing LFU violations in the vertex corrections at the (HL/HE) LHC. In the ratio of $W\to\tau\nu$ and $W\to\ell\nu$ many experimental and QCD uncertainties  cancel, which make a per-cent level extraction a bit less complicated. In fact, past studies carried out by the D0 collaboration~\cite{Abbott:1999pk} showed that such precision is indeed possible in a collider environment.
 
 
-%%%%%%%%%%%%%%%%%%%%%%
+%
 \subsection{Lepton Flavour Violation}
 \label{LFV}
-%%%%%%%%%%%%%%%%%%%%%%%
+%
 Lepton Flavour Violating (LFV)   processes  involving charged leptons  are  very interesting because 
 their observation would be a clear indication of physics beyond the SM. 
 While lepton family number is an accidental symmetry of the SM, 
@@ -274,12 +274,12 @@ Probing the relative strength of $\mu \to e$ and $\tau \to \mu$ LFV transitions 
 \Blu{Finally, LFV decay modes of the $Z^0$ are also of considerable interest. Their BRs in the SM are again negligible, $\BR(Z \to e^\pm \mu^\mp)  \sim \BR(Z \to e^\pm \tau^\mp) \sim 10^{-54}$,  $\BR(Z \to \mu^\pm \tau^\mp) \sim 10^{-60}$ and the LHC can obtain competitive bounds in some of these channels~\cite{Davidson:2012wn}.  
 The current upper limits are due to LEP measurements (at 95\% CL)~\cite{Decamp:1991uy,Adriani:1993sy,Akers:1995gz,Abreu:1996mj},
 \begin{equation}
-%&&
+%
 \BR(Z \to e^\pm \mu^\mp) < 1.7\times 10^{-6},
-% \\ &&
+%
 \quad \BR(Z \to e^\pm \tau^\mp)< 9.8\times 10^{-6}, 
-%\\
-%&&
+%
+%
 \quad\BR(Z \to \mu^\pm \tau^\mp) < 1.2 \times 10^{-5},
 \end{equation} 
 while the ATLAS Collaboration has recently obtained the following 95\% CL upper limits: $\BR(Z \to e^\pm \tau^\mp)< 5.8  \times 10^{-5}$~\cite{Aaboud:2018cxn}, and $\BR(Z \to \mu^\pm \tau^\mp) <1.3  \times 10^{-5}$~\cite{Aaboud:2018cxn}. 
@@ -292,44 +292,44 @@ which add one or more sterile neutrinos to the particle content of the SM~\cite{
 
 
 
-%%%%%%%%%%%%%%%%%%
+%
 \subsubsection{Lepton Flavour Violation in $\tau$ decays}
 \label{LFVTAU}
-%%%%%%%%%%%%%%%%%
+%
 Tau decays offer a  rich  landscape to search for CLFV. 
 The  $\tau$  lepton is heavy enough to decay into hadrons. Until now already 48 LFV modes have been bounded at the level of $10^{-8}$~\cite{Amhis:2016xyh}, 
-%cf. 
+%
 as can be seen in 
 Fig.~\ref{fig:Tau_LFV}.  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=1.\textwidth]{section5/figs/TauLFV_ULv5.pdf}
-\caption{Bounds on Tau Lepton Flavour %Branching Ratios from CLEO, BaBar, Belle and %projections for Belle II~\cite{Kou:2018nap}. 
+\caption{Bounds on Tau Lepton Flavour %
 Data from the existing experiments are compiled by HFLAV~\cite{Amhis:2016xyh}; projections of the Belle-II bounds were performed by the Belle-II collaboration assuming 50 ab$^{-1}$ of integrated luminosity~\cite{Kou:2018nap}.}
 \label{fig:Tau_LFV}
 \end{center}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%
+%
 The $B$ factories, BaBar and Belle, have improved by more than an order of magnitude
 ~\cite{Aubert:2006cz,Aubert:2007kx,Aubert:2009ag,Aubert:2009ys,Aubert:2009ap,Lees:2010ez,Miyazaki:2005ng,Hayasaka:2007vc,Miyazaki:2007jp,
 Miyazaki:2008mw,Miyazaki:2010qb,Hayasaka:2010np,Miyazaki:2011xe} 
 the previous CLEO bounds~\cite{Bowcock:1989mq,Bonvicini:1997bw,Chen:2002ug} for a significant 
 number of modes. 
 Some of the modes, for instance, $\tau \to \ell \omega$, have been bounded for the first time~\cite{Aubert:2007kx}. 
-%As shown in Fig.~\ref{fig:Tau_LFV}, 
-%a similar improvement is expected at Belle-II~\cite{Kou:2018nap}. 
+%
+%
 
 Table~\ref{tab:tauto3mu} shows a list of limits obtained for the $\tau \to 3\mu$ channel by different experiments. 
-%are shown explicitly in  because this channel is particularly important for our discussion. We find in the table t
+%
 The strongest limits come from the $B$-factories, with a competitive limit obtained by LHCb~\cite{LHCb-PAPER-2014-052}. Table~\ref{tab:tauto3mu} also contains the recent measurement by ATLAS~\cite{Aad:2016wce}, as well as 
-% We also show in the Table 
+%
 the expected limit from the Belle-II experiment at the SuperKEKB collider, which will improve current limits by almost two orders of magnitude~\cite{Kou:2018nap}. Finally, Table~\ref{tab:tauto3mu} also summarizes the expected limits from the HL-LHC that we discuss in more detail below.
 %
 \begin{table}[t]
 \centering
-\caption{Actual and expected limits on BR$(\tau\to 3\mu)$ for different experiments and facilities. The ATLAS projections are given for the medium background scenario, see main text for further details. }%{\color{red} Projections, luminosities, and references (if any) to be completed for the HL-LHC cases}.}
+\caption{Actual and expected limits on BR$(\tau\to 3\mu)$ for different experiments and facilities. The ATLAS projections are given for the medium background scenario, see main text for further details. }%
 \label{tab:tauto3mu}
 \begin{tabular}{ p{4cm}  l  l }
  \hline\hline
@@ -362,14 +362,14 @@ which operators are present at low energy and what is their relative strength:
 $\tau \to \mu \pi \pi$ ~\cite{Celis:2014asa} 
 and the Dalitz plot in $\tau \to 3 \mu$~\cite{Dassinger:2007ru,Matsuzaki:2007hh}.
 
-%In this arena,  
+%
 In addition to Belle-II, 
 HL/HE LHC will be able 
-%competitive 
+%
 to search for the ``background-free''   $\tau \to 3 \mu$.  
 A detailed summary of projected sensitivities is given below. This is a particularly crucial discovery mode when LFV is introduced at tree-level,
 for example by the exchange of $Z'$ or doubly charged Higgs bosons.
-%projected sensitivity of $3.7 \times 10^{-9}$ at 90\% C.L. with 3000 fb$^{-1}$ at 14 TeV for CMS presented below. 
+%
 Efforts should also go into understanding the 
 backgrounds and improving the sensitivity in semi-leptonic three-body decays $\tau  \to \mu \pi^+ \pi^-$ 
 and $\tau \to \mu K \bar{K}$, which have a particularly high discovery potential in Higgs-mediated~\cite{Paradisi:2005tk,Celis:2013xja,Petrov:2013vka} or leptoquark-mediated LFV.
@@ -385,11 +385,11 @@ If LFV is discovered, these modes also have significant model-diagnosing power b
 The LHC proton collisions at 13 TeV produce $\tau$ leptons with a cross-section five orders of magnitude 
 larger than at \belletwo. As a result, during the HL-LHC running period, about $10^ {15}$~$\tau$~leptons will be produced in 4$\pi$. Most will be
 produced in the decay of heavy flavour hadrons, specifically $D_s$ meson decays.
-%The event selection requires trimuons to form a good-quality trimuon vertex that should be displaced with respect to the primary pp-interaction point and uses a number of other observables to help suppress background.
+%
 This high production cross-section compensates for the higher background levels 
 and lower integrated luminosity, in particular for the $\tau \to 3\mu$ golden mode.
 Background events arise dominantly from badly reconstructed heavy flavour decays like \Dsetamunu, lepton fakes from hadrons ($c\bar{c}/b\bar{b}\to X\mu\mu$), and pile-up. A particular challenge for this production channel is the soft momentum spectrum of the $\tau$ decay products, which places stringent requirements on both the trigger and offline reconstructions of all the HL-LHC experiments.
-%The muons originating from the .
+%
 
 $W$~and $Z$~bosons offer a complementary source of $\tau$  leptons. Their production cross sections are considerably smaller than those for $B$~and $D$~mesons, but $\tau$~leptons from $W$~and $Z$~afford much cleaner experimental signatures with far better signal-to-background ratios for CMS and ATLAS; the LHCb forward geometry is less well suited to exploting these decays. For instance, in a $\tau \to 3 \mu$ search relying on $W \to \tau \nu$ decays as a source of $\tau$~leptons, one can benefit from $\tau$~leptons having relatively large transverse momenta and being isolated, from large missing transverse momentum $p_{\mathrm{T}}^{\mathrm{miss}}$ in an event, and from the transverse mass of the $\tau$-$p_{\mathrm{T}}^{\mathrm{miss}}$ system being close to the $W$~mass. 
 
@@ -413,7 +413,7 @@ the signal fiducial acceptance by a factor of two and, also, enhances the capabi
 The additional events with muons at high $|\eta|$ have worse trimuon mass resolution. Hence, two event categories are introduced: 
 Category 1 for events with all three muons reconstructed only with the Phase-1 detectors, and Category 2 for
 events with at least one muon 
-%with at least one muon 
+%
 reconstructed by the new triple Gas Electron Multiplier (GEM) detectors, which  will be installed in the first station of the upgraded muon system. The impact of the proposed ATLAS detector upgrades and CMS event categories is shown in Fig.~\ref{fig:mass}. In the case of LHCb, the deployment of a fully software trigger will remove one of the key sources of inefficiency in the current analysis. In addition, the proposed calorimeter improvements during the LHCb \upgradetwo  will play an important role in suppressing backgrounds such as \Dsetamunu. 
 
 \begin{figure}[h]
@@ -452,8 +452,8 @@ Number of background events & 2.4 $\times 10^6$ & 2.6 $\times 10^6$ \\
 Number of signal events & 4580 & 3640 \\
 Trimuon mass resolution & 18 MeV& 31 MeV \\
 $\mathcal{B}(\tau \to 3 \mu$) limit per event category & 4.3 $\times 10^{-9}$ & 7.0 $\times 10{^{-9}}$ \\ \hline
-%\end{tabular}
-%\begin{tabular} { l c} 
+%
+%
 $\mathcal{B}(\tau \to 3 \mu$) 90\% C.L. limit &  \multicolumn{2}{c}{$3.7 \times 10{^{-9}}$}
  \\
 $\mathcal{B}(\tau \to 3 \mu$) for 3-$\sigma$ evidence   &  \multicolumn{2}{c}{$6.7 \times 10{^{-9}}$}
@@ -486,37 +486,37 @@ significantly improve the combined limit.
 
 
 
-%%%%%%%%%%%%%%%%%%
-%\subsubsection{Lepton Flavour Violation in $Z^0$ decays}
-%\label{LFVZ}
-%%%%%%%%%%%%%%%%%%
-%Of considerable  interest are also the LFV decay modes of $Z^0$. In the SM %one has, due to nonzero neutrino masses,  
-%\begin{eqnarray}
-%&&\BR(Z \to e^\pm \mu^\mp)  \sim \BR(Z \to e^\pm \tau^\mp) \sim 10^{-54}, %\qquad \BR(Z \to \mu^\pm \tau^\mp) \sim 10^{-60},
-%\end{eqnarray}
-%so that these searches are 
-%which are also 
-%free from SM theoretical backgrounds.
-% from the SM including neutrino masses, in which one has 
-%The current upper limits are due to LEP measurements (at 95\% %CL)~\cite{Decamp:1991uy,Adriani:1993sy,Akers:1995gz,Abreu:1996mj},
-%\begin{equation}
-%&&
-%\BR(Z \to e^\pm \mu^\mp) < 1.7\times 10^{-6},
-% \\ &&
-%\quad \BR(Z \to e^\pm \tau^\mp)< 9.8\times 10^{-6}, 
-%\\
-%&&
-%\quad\BR(Z \to \mu^\pm \tau^\mp) < 1.2 \times 10^{-5},
-%\end{equation} 
-%Interestingly enough, the LHC can obtain competitive bounds on some of these %channels~\cite{Davidson:2012wn}. 
-%Indeed r
-%Recently the ATLAS Collaboration obtained the following 95\% CL upper %limits: $\BR(Z \to e^\pm \tau^\mp)< 5.8  \times %10^{-5}$~\cite{Aaboud:2018cxn}, and $\BR(Z \to \mu^\pm \tau^\mp) <1.3  %\times 10^{-5}$~\cite{Aaboud:2018cxn}. 
-%The HL/HE LHC will therefore provide the best limit on LFV $Z$ decays. 
-%The detection of a signal in the $Z^0 \to \ell \ell^\prime$ channel, in %combination with the
-%information from charged lepton LFV decays,  
-%would also allow one to learn about features of the underlying LFV dynamics. 
-%An explicit example is provided by the Inverse Seesaw (ISS) and ``3+1"  %effective models 
-%which add one or more sterile neutrinos to the particle content of the %SM~\cite{Abada:2014nwa} (see also, e.g., %Ref.~\cite{DeRomeri:2016gum,Bhattacharya:2018ryy,Cai:2018cog}).
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
 
 
 \end{document}

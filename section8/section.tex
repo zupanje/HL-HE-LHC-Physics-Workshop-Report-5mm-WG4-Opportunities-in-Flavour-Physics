@@ -1,16 +1,16 @@
-% mainfile: ../report.tex
+%
 
-% don't remove the folling lines, and edit the defintion of \main if needed
+%
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-% until here
+%
 \begin{document}
 
-%\section{Flavour aspects of top physics}
+%
 \section{The top quark and flavour physics}
 \label{sec:top:quark}
-%{\bf Author(s): Wouter Dekens, Frederic Deliot, Gauthier Durieux, Mariel Estevez, Darius Faroughy, Jernej F. Kamenik, Fabio Maltoni,  Eleni Vryonidou, Cen Zhang} (10 pages,TH:EXP= 50\%:50\%)
+%
 
 Among the SM fermions the top quark stands out. It has a large mass and an ${\mathcal O}(1)$ coupling to the Higgs, quite distinct from any other SM fermion. Studying top quark  properties may shed light on the resolution of the SM flavour puzzle, or at least as to why one and only one Yukawa coupling is large. The large Higgs-top coupling is also the reason for the weak scale hierarchy problem to be so acute -- the quadratic divergent corrections to the Higgs mass are driven almost completely by this coupling. BSM models addressing the hierarchy problem may thus well leave an imprint in the top quark properties and decays.  For instance, the FCNC top decays, $t\to c\gamma, cZ, cg$, are null tests of the SM and are used as BSM probes.
 
@@ -20,12 +20,12 @@ The SM predictions are thus controlled by the flavour couplings of the top -- wi
 
 The LHC is already a top factory and the currently available statistics has allowed ATLAS and CMS to perform a vast campaign of top related measurements. However, the larger number of top quarks at HL-LHC and HE-LHC will open new possibilities for precise measurements of top-quark properties and for significant 
 improvements probing NP, such as the rare FCNC decays. 
-%those involving flavour changing neutral currents.
+%
 
 \subsection{Global effective-field-theory interpretation of top-quark FCNCs} \label{sec:top:FCNC} 
 {\it\small Authors (TH): Gauthier Durieux, Teppei Kitahara, Cen Zhang.}
 {
-\newcommand{\hc}[1]{#1}%{}^\ddagger #1}%{\hspace{+2mm}\raisebox{.5mm}{$\cdot$}\hspace{-2mm}#1}}
+\newcommand{\hc}[1]{#1}%
 
 \newcommand{\ifb}{\ensuremath{\text{fb}^{-1}}}
 \newcommand{\iab}{\ensuremath{\text{ab}^{-1}}}
@@ -38,14 +38,14 @@ improvements probing NP, such as the rare FCNC decays.
 	\ifx\empty#3\empty\ifx\empty#1\empty\else^{#1}\fi\else^{#1(#3)}\fi%
 	\ifx\empty#2\empty\else_{#2}\fi}}}%
 \newcommand{\qq }[4][]{\tmp{#2}{#3}{#4}{#1{O}}}
-%\newcommand*{\cc }[4][]{\tmp{#2}{#3}{#4}{#1{C}}}
+%
 \newcommand*{\ccc}[4][]{\tmp{#2}{#3}{#4}{#1{c}}}
 
 \newcommand{\ReIm}{{}_{\Re}^{[\Im]}\!}
 \newcommand*{\sw}{s_W}
 \newcommand*{\cw}{c_W}
 
-%Following the methodology employed in Ref.\,\cite{Durieux:2014xla}, we provide an updated global effective-field-theory interpretation of current constraints on top-quark FCNCs before using the HL-LHC prospects presented in Sec.~\ref{WG1:top_fcnc}\textcolor{red}{[top fcnc experimental section]}.
+%
 
 \subsubsection{Effective operators}
 
@@ -62,7 +62,7 @@ several categories. We consider operators involving
 exactly two quarks, as well as those involving two quarks and two leptons.
 Operators containing four quarks only start contributing at next-to-leading order in QCD in most of the measurements we consider ($pp\to tj$ is the exception).
 The corresponding Warsaw-basis operators are~\cite{AguilarSaavedra:2018nen} 
-%(see also Eqs.\,(12-20) and (21-28) in Ref.~\cite{AguilarSaavedra:2018nen})
+%
 \begin{equation}
 	\begin{aligned}
 	\hc{\qq{}{u\varphi}{ij}}
@@ -139,17 +139,17 @@ The EFT degrees of freedom appearing in top-quark FCNC processes were defined in
 \ccc{-[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{1}{\varphi q}{3a}-\cc{3}{\varphi q}{3a}\},
 &\ccc{[I]}{uZ}{3a} &\equiv \ReIm\{-\sw\cc{}{uB}{3a}+\cw\cc{}{uW}{3a}\},
 \\
-%\ccc{3[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{3}{\varphi q}{3a}\},\\
+%
 \ccc{[I]}{\varphi u}{3+a}  &\equiv \ReIm\{\cc{}{\varphi u}{3a}\},
 &\ccc{[I]}{uZ}{a3} &\equiv \ReIm\{-\sw\cc{}{uB}{a3}+\cw\cc{}{uW}{a3}\},
-%\ccc{[I]}{\varphi ud}{3a} &\equiv \ReIm\{\cc{}{\varphi ud}{3a}\},\\
-%\ccc{[I]}{\varphi ud}{a3} &\equiv \ReIm\{\cc{}{\varphi ud}{a3}\},\\
+%
+%
 \end{align}
 as well as 
 $\ccc{[I]}{uG}{3a} \equiv \ReIm\{\cc{}{uG}{3a}\}$, 
 $\ccc{[I]}{uG}{a3} \equiv \ReIm\{\cc{}{uG}{a3}\},$ and 
 \begin{align}
-%\ccc{3[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{3}{lq}{\ell\ell 3a}\},\\
+%
 \ccc{-[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{-}{lq}{\ell\ell 3a}\}, &\ccc{S[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell 3a}\},
 \\
 \ccc{[I]}{eq}{\ell,3+a} &\equiv \ReIm\{\cc{}{eq}{\ell\ell 3a}\},& \ccc{S[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell a3}\},\\
@@ -158,53 +158,53 @@ $\ccc{[I]}{uG}{a3} \equiv \ReIm\{\cc{}{uG}{a3}\},$ and
 \end{align}
 }%
 
-%{%
-%\renewcommand*{\cc }[4][]{\tmp{#2}{#3}{#4}{#1{C}}}%
-%\begin{gather}
-%\begin{aligned}
-%\ccc{[I]}{t\varphi}{3a} &\equiv \ReIm\{\cc{}{u\varphi}{3a}\},\\
-%\ccc{[I]}{t\varphi}{a3} &\equiv \ReIm\{\cc{}{u\varphi}{a3}\},\\[2mm]
-%\ccc{-[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{1}{\varphi q}{3a}-\cc{3}{\varphi q}{3a}\},\\
-%%\ccc{3[I]}{\varphi q}{3+a}  &\equiv \ReIm\{\cc{3}{\varphi q}{3a}\},\\
-%\ccc{[I]}{\varphi u}{3+a}  &\equiv \ReIm\{\cc{}{\varphi u}{3a}\},\\
-%%\ccc{[I]}{\varphi ud}{3a} &\equiv \ReIm\{\cc{}{\varphi ud}{3a}\},\\
-%%\ccc{[I]}{\varphi ud}{a3} &\equiv \ReIm\{\cc{}{\varphi ud}{a3}\},\\
-%\end{aligned}
-%\qquad
-%\begin{aligned}
-%\ccc{[I]}{uA}{3a} &\equiv \ReIm\{\cw\cc{}{uB}{3a}+\sw\cc{}{uW}{3a}\},\\
-%\ccc{[I]}{uA}{a3} &\equiv \ReIm\{\cw\cc{}{uB}{a3}+\sw\cc{}{uW}{a3}\},\\
-%\ccc{[I]}{uZ}{3a} &\equiv \ReIm\{-\sw\cc{}{uB}{3a}+\cw\cc{}{uW}{3a}\},\\
-%\ccc{[I]}{uZ}{a3} &\equiv \ReIm\{-\sw\cc{}{uB}{a3}+\cw\cc{}{uW}{a3}\},\\
-%%\ccc{[I]}{dW}{3a} &\equiv \ReIm\{\cc{}{dW}{3a}\},\\
-%%\ccc{[I]}{dW}{a3} &\equiv \ReIm\{\cc{}{dW}{a3}\},\\
-%\ccc{[I]}{uG}{3a} &\equiv \ReIm\{\cc{}{uG}{3a}\},\\
-%\ccc{[I]}{uG}{a3} &\equiv \ReIm\{\cc{}{uG}{a3}\},\\
-%\end{aligned}
-%\\
-%\begin{aligned}
-%%\ccc{3[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{3}{lq}{\ell\ell 3a}\},\\
-%\ccc{-[I]}{lq}{\ell,3+a} &\equiv \ReIm\{\cc{-}{lq}{\ell\ell 3a}\},\\
-%\ccc{[I]}{eq}{\ell,3+a} &\equiv \ReIm\{\cc{}{eq}{\ell\ell 3a}\},\\
-%\ccc{[I]}{lu}{\ell,3+a} &\equiv \ReIm\{\cc{}{lu}{\ell\ell 3a}\},\\
-%\ccc{[I]}{eu}{\ell,3+a} &\equiv \ReIm\{\cc{}{eu}{\ell\ell 3a}\},\\
-%\end{aligned}
-%\qquad
-%\begin{aligned}
-%\ccc{S[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell 3a}\},\\
-%\ccc{S[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{1}{lequ}{\ell\ell a3}\},\\
-%\ccc{T[I]}{lequ}{\ell,3a} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell 3a}\},\\
-%\ccc{T[I]}{lequ}{\ell,a3} &\equiv \ReIm\{\cc{3}{lequ}{\ell\ell a3}\}.
-%%\ccc{S[I]}{ledq}{\ell,3a} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell 3a}\},\\
-%%\ccc{S[I]}{ledq}{\ell,a3} &\equiv \ReIm\{\cc{}{ledq}{\ell\ell a3}\},\\
-%\end{aligned}
-%\end{gather}%
-%}%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
 
 
 \begin{figure}[tb]\centering
 \includegraphics[width=.6\linewidth]{section8/figs/4f}
-%\includegraphics[width=.49\linewidth]{section8/figs/4fb}
+%
 \caption{Effective operators give rise to four-point contact interactions that
 are overlooked in the approach with anomalous couplings,  although they contribute to
 FCNC processes at the same order in $1/\Lambda^2$ as the three-point ones.
@@ -260,8 +260,8 @@ available in the future \cite{directtop}.
 \caption{%
 Summary of the existing $95\%$~C.L.\ limits on top-quark FCNC branching fractions obtained at the LHC.
 A summary plot is available at \protect\url{https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCTopWGSummaryPlots\#table21}.
-% by the LHC TOP WG. 
-%Interestingly,
+%
+%
  Ref.\,\cite{Khachatryan:2015att} has set limits in a fiducial volume at the particle level for $pp\to t\gamma$ (not displayed in this table).
 Numbers in bold are used as inputs to the global EFT analysis.}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}c@{}r@{\,}*{4}{c@{\,}}c}
@@ -275,7 +275,7 @@ Mode	& $\br^{95\%\text{CL}}$
 \\
 \hline
 $t\to q Z$
-% ATLAS t>qll
+%
 \\
 \noalign{\vskip1mm}
 $u$ 	& $\bf 1.7\times 10^{-4}$
@@ -284,13 +284,13 @@ $u$ 	& $\bf 1.7\times 10^{-4}$
 \\
 $c$	& $\bf 2.4\times 10^{-4}$
 \\
-% CMS t>qll (prod + decay)
+%
 $u$	& $2.4\times 10^{-4}$
 	& \cite{CMS:2017twu}		& CMS	& $13\,\tev$	& $35.9\,\ifb$
 	& production plus decay
 \\
 $c$	& $4.5\times 10^{-4}$
-% CMS t>qll (production only)
+%
 \\
 $u$	& $2.2\times 10^{-4}$
 	& \cite{Sirunyan:2017kkr}	& CMS	& $8\,\tev$	& $19.7\,\ifb$
@@ -298,7 +298,7 @@ $u$	& $2.2\times 10^{-4}$
 \\
 $c$	& $4.9\times 10^{-4}$
 \\[2mm]
-% ATLAS t>jj
+%
 \hline
 $t\to qg$
 \\\noalign{\vskip1mm}
@@ -308,14 +308,14 @@ $u$	& $0.40\times 10^{-4}$
 \\
 $c$	& $\bf 2.0\times 10^{-4}$
 \\
-% CMS t>jj
+%
 $u$	&  $\bf 0.20\times 10^{-4}$
 	& \cite{Khachatryan:2016sib}	& CMS	& $7,8\,\tev$	& $5.0,17.9\,\ifb$
 	& in $pp\to tj$
 \\
 $c$	& $4.1\times 10^{-4}$
 \\[2mm]
-% CMS t>qA
+%
 \hline
 $t\to q\gamma$
 \\\noalign{\vskip1mm}
@@ -369,7 +369,7 @@ a global EFT analysis. Several additional remarks are in order:
 \item[$\bullet$] For single top-quark production through the $tqg$ interaction, we use the best constraints: in the up-quark channel by CMS and in the charm-quark channel by ATLAS. We naively combine them using the numerical value at NLO in QCD for the $t\to jj$ branching fraction provided in Sec.~V.B of Ref.\,\cite{Durieux:2014xla}.
 
 \item[$\bullet$] For single top-quark production in association with a photon, we note the very interesting fiducial limit provided by Ref.\,\cite{Khachatryan:2015att} which allows for an accurate reinterpretation. 
-%Here, however, w
+%
 However, we use the simplified approach of Ref.\,\cite{Durieux:2014xla} based on the limit quoted on the total cross section and use the numerical values computed at NLO in QCD for $pp\to t\gamma+\bar{t}\gamma$ with a $30\,\gev$ cut on the photon \pt although a $50\,\gev$ cut was applied in Ref.\,\cite{Khachatryan:2015att}.
 
 \item[$\bullet$] For $t\to h j$ decay we use the most stringent limits set by ATLAS in the multilepton channel. The dependence on all operator coefficients, except $C_{t\phi}$ and $C_{tG}$, is assumed to be negligible.
@@ -382,7 +382,7 @@ We use the limit from the highest LEP II centre-of-mass energy, $\sqrt{s}=207\,\
 The global analysis based on existing data gives $95\%\,$C.L.\ limits
 on the EFT Wilsons coefficients in the notation of Ref.\,\cite{AguilarSaavedra:2018nen}, shown 
 in Fig.~\ref{fig:limits_current} (left panel). 
-%They are presented as 
+%
 As explained in Ref.\,\cite{Durieux:2014xla}, 
 no statistical combination is
 attempted, i.e.,~limits from different measurements are only overlaid.
@@ -428,7 +428,7 @@ on the four-fermion operators, after the HL-LHC phase.
 
 \subsubsection{Complementarity with $B$-meson and kaon rare processes}
 \label{sec:B:K:top}
-%Teppei Kitahara
+%
 The NP effective operators which include the top quark also contribute to
 the low-scale effective Hamiltonian for meson decays, 
 and hence, precision measurements of the $B$-meson and kaon rare processes provide complementary constraints to the NP top-quark operators~\cite{Fox:2007in,Drobnak:2011aa,Brod:2014hsa}.
@@ -483,7 +483,7 @@ Besides,
 
 \subsubsubsection{Signal modeling}
 
-%%CHECK really experiment dependent? 
+%
 
 The generation of signal events at ATLAS is done at NLO with {\tt MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca, Mangano:2006rw} and the effective field theory framework developed in the TopFCNC model is used~\cite{Degrande:2014tta,Durieux:2014xla}. In the case of $gqt$ coupling, the MEtop generator is used instead~\cite{Coimbra:2012ys}. At CMS signal events are simulated at LO with {\tt MadGraph5\_aMC@NLO} with the effective lagrangian implemented by means of the {\tt FEYNRULES} package, except in the simulation of signal events for $gqt$ and $\gamma qt$ couplings where {\tt CompHEP}~\cite{Boos:2004kh} and {\tt PROTOS 2.0}~\cite{AguilarSaavedra:2010rx} are used, respectively. In both experiments {\tt Pythia 8} is used to simulate the parton showering and hadronization. The generation of signal events is done under the assumption of only one non-vanishing FCNC coupling at a time. 
 
@@ -504,7 +504,7 @@ $t\to Hq $ & 10$^{-4}$ & & \cite{ATL-PHYS-PUB-2016-019} \\
 \end{table}
 
 
-%%%
+%
 \subsubsubsection{Top-gluon}
 
 \begin{figure}[h]
@@ -526,10 +526,10 @@ $\mathcal{B}(t \to gc) < 4.1~(2.8) \times 10^{-4}$, while the resultant limits i
 and $\mathcal{B}(t \to gc) < 2.0~(1.8) \times 10^{-4}$. The projected limits for 3 ab$^{-1}$ are $\mathcal{B}(t \to gu) < 3.8 \times 10^{-6}$ and $\mathcal{B}(t \to gc) < 32.1 \times 10^{-6}$~\cite{CMS:2018kwi}. 
 
 \begin{figure}[t]
-%  \vspace{-0.3cm}
+%
 \begin{center}{
 \includegraphics[width=8cm]{section8/figs/CMS-topglueFCNC.png}
-%\vspace{-0.3cm}
+%
 \caption{{Two-dimensional expected limits on the $t\to u g$ vs and $t\to c g$ branching fractions at 68\% and 95\% C.L. for an integrated luminosity of 3000 fb$^{-1}$}} \label{fig:topglue}}
 \end{center}
 \end{figure}
@@ -540,11 +540,11 @@ exclusion upper limits on integrated luminosity is shown in Fig.~\ref{fig:topglu
  with 1 and 2 $\sigma$ bands corresponding to 68 \% and 95 \% C.L intervals of distributions of the limits .
 In addition the two-dimensional contour that reflects the possible simultaneous presence of both FCNC processes. is shown in Fig.~\ref{fig:topglue}.
 
-%%%
+%
 \subsubsubsection{Top-Z}
 
 
-%%%%%OLD TEXT FROM ATLAS UNTIL NEW ANALYSIS GETS APPROVED 
+%
 The $t \rightarrow Z q$ FCNC decays are probed by ATLAS in top quark
 pair events at 13 TeV~\cite{Aaboud:2018nyl}. The event topology includes 
 the presence of two same-sign or three isolated leptons, $E^{miss}_{T}$, exactly
@@ -552,11 +552,11 @@ one b jet and at least one non-b jet. Several control regions are
 defined for each of the dominant background processes: $WZ$+jets,
 $ZZ$+jets, $ttZ$, and non-prompt leptons. The signal is extracted from a simultaneous maximum likelihood fit over control and signal regions using various event kinematic variables. The resultant limits are $\mathcal{B}(t \to Zu) < 1.7~(2.4) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 2.3~(3.2) \times 10^{-4}$. The analysis of the 13 TeV data at CMS explores a similar final state and additionally considers a single top associated FCNC production with a Z boson in the simulation of signal events~\cite{CMS:2017twu}. Only the three lepton final state is considered. A boosted decision tree (BDT) discriminant is defined to suppress background events. The resultant limits are $\mathcal{B}(t \to Zu) < 2.4~(1.5) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 4.5~(3.7) \times 10^{-4}$. Preliminary projection studies suggest the expected upper limits of $\mathcal{B}(t \to Zq) < 2.4 \times 10^{-5}$~\cite{ATL-PHYS-PUB-2016-019}.
 
-% %%%%NEW ATLAS TEXT ---- NEEDS TO BE ADDED IN VERSION 2 -- NOT APPROVED YET 
-% ATLAS studied the sensitivity to the $tqZ$ interaction, by performing an analysis~\cite{TOPQ-2018-35} based on simulated samples and following both the strategy of its 13~TeV data analysis on the same subject~\cite{TOPQ-2017-06} and of the general recommendations for this HL-LHC study. The study is performed in the three charged lepton final state of $t\bar t$ events, in which one of the top quarks decays to $qZ$, $(q=u,c)$ and the other one decays to $bW$ ($t\bar t\to bWqZ\to b\ell\nu q\ell\ell$). The kinematics of the events are reconstructed through a $\chi^2$ minimisation and dedicated control regions are used to normalize the main backgrounds and constrain systematic uncertainties. The main uncertainties, in both the background and signal estimations, are expected to come from theoretical normalization uncertainties and uncertainties in the modeling of background processes in the simulation. Different scenarios for the systematic uncertainties are considered, ranging from the full estimations obtained with the 13~TeV data analysis, to the ones expected with improvements in theoretical predictions, which should be half of the former ones. A binned likelihood function $L(\mu, \theta)$ is used to do the statistical analysis and extract the signal normalisation. An improvement by a factor of five is expected in relation to the current 13~TeV data analysis results. Obtained branching ratio limits are at the level of 4 to 5 $\times 10^{-5}$ depending on the considered scenarios for the systematic uncertainties.
+%
+%
 
 
-%%%
+%
 \subsubsubsection{Top-gamma}
 The $t\gamma q$ anomalous interactions are probed by CMS at 8 TeV in
 events with single top quarks produced in association with a photon~\cite{Khachatryan:2015att}.
@@ -565,7 +565,7 @@ one isolated photon, $E^{miss}_{T}$, and up to one b jet. The
 dominant $W\gamma$ and $W$+jets backgrounds are suppressed with a BDT. The resultant exclusion limits are $\mathcal{B}(t \to \gamma u) < 1.3~(1.9) \times 10^{-4}$ and
 $\mathcal{B}(t \to \gamma c) < 2.0~(1.7) \times 10^{-3}$. Preliminary projection studies yield $\mathcal{B}(t \to \gamma u) < 8.6 \times 10^{-6}$, $\mathcal{B}(t \to \gamma c) < 7.4 \times 10^{-5}$~\cite{Collaboration:2293646}.
 
-%%%
+%
 \subsubsubsection{Top-Higgs}
 
 The $tHq$ interactions are studied by ATLAS in top quark
@@ -605,7 +605,7 @@ Assuming that new physics is much heavier than the electroweak scale, the BSM co
 \mathcal L_{tb} =-\bar t\left[ \frac{g}{\sqrt{2}}\,\gamma^\mu \big(V_{tb}\big(1+\tfrac{v^2}{2}c_{\varphi q}^{-}\big)P_L+\tfrac{v^2}{2} C_{\varphi tb}P_R\big)W_\mu^+-v\sigma^{\mu\nu}W_{\mu\nu}^+\left(C_{bW}P_R+C_{tW}^*P_L\right)\right]b+{\rm h.c.}\,\,,
 \end{equation}
 where $C_i = (c_{i}+ic_i^{ [I]})/\Lambda^2$. In writing \eqref{eq:Wtb} we follow Ref.~\cite{Grzadkowski:2008mf} and \Blu{enforce $C_{\varphi q}^{1(33)}+C_{\varphi q}^{3(33)} = 0$ to avoid tree-level FCNC decays of the $Z$ (one also obtains a strong constraint from $Z\to b b$ decays~\cite{Zhang:2012cd})}, such that only the real combination $c_{\varphi q}^-=C_{\varphi q}^{1(33)}-C_{\varphi q}^{3(33)}$ appears.
-% in Eq.\ \eqref{eq:Wtb}.
+%
 
 %
 The Wilson coefficients in Eq.~\eqref{eq:Wtb} are in terms of the often-used anomalous couplings \cite{AguilarSaavedra:2008zc,AguilarSaavedra:2006fy} given by
@@ -622,7 +622,7 @@ Below we  discuss briefly both the direct and indirect limits on the operators i
 \begin{table}
 \center
 \caption{The current  and projected $95\%$ C.L.\ constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex, assuming $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$. 
-%{\color{red}\bf[Why no sensitivity to $c_{\varphi q}^-$?]}
+%
 }
 \vspace{.2cm}
 \begin{tabular}{llccc}
@@ -637,23 +637,23 @@ Current&	Re$(\ldots)$ &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-8.9,\,10.9]$  	\\
 \end{tabular}
 \label{tabdirectWtb}
 \end{table}
-%\begin{table}
-%\center\small
-%\caption{$95\%$ C.L.\ constraints from direct observables on the real and imaginary parts of the Wilson coefficients that contribute to the $Wtb$ vertex. The current  and projected limits are shown in the left and right panel, respectively. We assumed $\Lambda = 1$ TeV and $c_{\varphi q}^-=0$ in both panels. 
-%%{\color{red}\bf[Why no sensitivity to $c_{\varphi q}^-$?]}
-%}
-%\vspace{.2cm}
-%\begin{tabular}{lccclccc}
-%	\hline\hline
-%	Current &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$ & ~~~~$3000$ fb$^{-1}$ &$c^{}_{tW}$& $c^{}_{bW}$& $c^{}_{\varphi tb}$\\\hline
-%	Re$(\ldots)$ &$[-0.70,\,0.82]$ &$[-2.2,\,2.2]$ &$[-8.9,\,10.9]$ & Re$(\ldots)$ &$[-0.23,\,0.58]$&$[-2.2,\,2.0]$&$[-9.3,\,10.6]$
-%	\\
-%	Im$(\ldots)$ &$[-1.5,\,2.2]$ &$[-2.1,\,2.2]$ &$[-9.9,\,9.9]$ & Im$(\ldots)$ &$[-1.2,\,1.3]$&$[-2.2,\,2.1]$&$[-9.9,\,9.9]$
-%	\\
-%	\hline\hline
-%\end{tabular}
-%\label{tabdirectWtb}
-%\end{table}
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
 %
 The $Wtb$ interactions can be probed directly in single-top production and through the $W$ boson helicity fractions in top decays. In the case of polarized top quarks it is possible to construct additional $T$-odd observables that are sensitive to \CP-violating phases in the $Wtb$ couplings. Here we discuss briefly  these observables and the resulting (projected) constraints.
 
@@ -661,7 +661,7 @@ The $Wtb$ interactions can be probed directly in single-top production and throu
 {\bf Single top production~~}
 The single-top production cross section has been measured in the $t$ and $s$ channels at the LHC at $\sqrt{s} = 7$, $8$, and $13$ TeV \cite{Aad:2014fwa,Aaboud:2016ymp,Aaboud:2017pdi,Chatrchyan:2012ep,Khachatryan:2014iya,Sirunyan:2016cdg}. In principle, these cross sections  receive contributions from all $Wtb$ couplings. The measurements can be compared with the SM prediction \cite{Brucherseifer:2014ama} at NNLO in QCD, while BSM contributions have been evaluated at NLO \cite{Zhang:2016omx,Cirigliano:2016nyn,Alioli:2017ce,deBeurs:2018pvs}.
 %
-In SMEFT the single-top cross sections can receive contributions from other operators, in particular, from several four-quark operators, see, e.g., Refs.~\cite{Buckley:2015lku,Buckley:2015nca}. Thus, in order to perform an exhaustive global analysis one would have to include these effects as well. %For discussions on such operators in the context of single-top production, 
+In SMEFT the single-top cross sections can receive contributions from other operators, in particular, from several four-quark operators, see, e.g., Refs.~\cite{Buckley:2015lku,Buckley:2015nca}. Thus, in order to perform an exhaustive global analysis one would have to include these effects as well. %
 
 \smallskip
 {\bf Top quark decays~~}
@@ -742,19 +742,19 @@ The LHC as a top-quark factory has the ability to directly probe the $V_{tx}$ ma
 \end{equation}
  at 95\% CL \cite{Khachatryan:2014nda}. This result, when combined with measurements of $t$-channel single-top production \cite{Aaboud:2016ymp}, provides a direct determination of $|V_{tb}|=1.07\pm0.09$ in the limit $|V_{tb}|\gg|V_{ts}|,\,|V_{td}|$. Given that these measurements are already dominated by systematic effects, in particular the knowledge of the $b$-tagging efficiencies and theoretical uncertainties in single-top production, significant improvement in precision of $V_{tb}$ measurement at the HL-LHC or HE-LHC would arguably require novel strategies.  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 %
 \subsubsection{Measuring $|V_{td}|$ at HL-LHC and HE-LHC}
-%Jernej Kamenik
-%Mariel Estevez,
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
 
 A possible experimental strategy to probe the $|V_{td}|$ matrix element directly at the HL(HE)-LHC is using single top production associated with a $W$ boson, $pp \rightarrow tW$. The idea is to exploit the production cross-section enhancement, as well as boosts of the top quarks coming from initial state valence $d$-partons. The $d$-quark is a valence constituent of the proton and there is an imbalance with the $\bar{d}$-quark that motivates to explore charge asymmetries as possible $V_{td}$-sensitive observables.
 The main backgrounds, contrary to $t$-channel single top production, are charge symmetric or have very small charge asymmetries. 
 The $dg \to tW$ associated production process is interesting because of its sizeable charge asymmetry in proton collisions and also because its kinematics predicts a characteristic angular distribution. We expect a relatively large incoming momentum on average from the valence $d$-quark. Consequently, a forward $W^-$ is preferred in the lab frame, which is supposed to produce a forward $\ell ^-$ in signal events. The main two backgrounds to the $\ell ^+ \ell ^- b E_T^{\rm{miss}}$ final state are the dileptonic $t \bar{t}$ production (missing one of the $b$-jets from top decays) and $g b \to tW$ associated production, proportional to $|V_{tb}|^2$. Both backgrounds have very small charge asymmetries. In order to increase the sensitivity and enhance the signal cuts can be imposed that reduce the cross-sections of the backgrounds, see Ref.~\cite{Alvarez:2017ybk} for details. 
-%The details of all the considered backgrounds, the events selection, and simulations employed can be found in . 
-%We observe that t
+%
+%
 The most important difference between signal and background comes from the $\eta (\ell ^-)$ distribution, where the signal clearly prefers forward negatively charged leptons. The asymmetry
 \begin{equation}
 A(\eta,p_T) = \frac{N^+ - N^-}{N^+ + N^-},
@@ -763,18 +763,18 @@ A(\eta,p_T) = \frac{N^+ - N^-}{N^+ + N^-},
 where
 $
 N^\pm = N\left( \Delta |\eta(\ell)| \gtrless 0 \,\& \, \Delta p_T(\ell) \gtrless 0 \right),
-%\label{i-th contribution}
+%
 $
 is a $|V_{td}|$ sensitive observable. Each process contributes with
-%\begin{equation}
+%
 $N^+_i - N^-_i = \sigma_i \cdot {\cal A}_i \cdot \epsilon_i \cdot A_i(\eta,p_T)$,
-%\end{equation}
+%
 where the factors on the right hand side are the cross-section, acceptance, selection efficiency and asymmetry, respectively. 
-%We parameterize eventual departures from SM in $V_{td}$ through the ratio
-%\begin{equation}
-%r \equiv \left| \frac{V_{td}}{V_{td}^{\rm SM}}\right|\,,
-%\end{equation}
-%in order to classify processes according to their leading power in $r$. 
+%
+%
+%
+%
+%
 To quantify the versatility of the proposed charge asymmetry we study the prospective experimental reach in $r\equiv |V_{td}/V_{td}^{\rm SM}|$ by computing the difference of $A(\eta, p_T)$ to its SM expectation in units of the uncertainty. Based on existing experimental studies of charge asymmetries in top production~\cite{Khachatryan:2016ysn} we include an estimate for the systematic uncertainty of $\Delta _{sys}=0.2 \%$, and 
 define the significance as
 \begin{equation}
@@ -786,78 +786,78 @@ define the significance as
 \includegraphics[width=0.45\textwidth]{section8/figs/contour_r-L.pdf}
 \hspace{7mm}
 \includegraphics[width=0.45\textwidth]{section8/figs/contour_r-L_27.pdf}
-%\hspace{3mm}
+%
 \caption{Contour lines for the projected $2\sigma$, $3\sigma$ and $5\sigma$ upper bounds on $|V_{td}|$ (and $r\equiv|V_{td}/V_{td}^{\rm SM}|$) as functions of the LHC luminosity at $13$ TeV (left)  and $27$ TeV (right). Dashed lines follow if  the dominant $t\bar t$ background is reduced by half, see text for details.} 
 \label{figure:Vtd}
 \end{figure}
 
 Fig.~\ref{figure:Vtd} shows the contours of expected experimental significance for $A(\eta,p_T)$ (and $r$) as functions of luminosity, for $13$ TeV and $27$ TeV LHC. As a rough guidance we also show with dashed lines the significance for the case that the dominant $t \bar{t}$ background were further reduced by a factor of $2$, e.g., by using multivariate discrimination techniques as already done in existing single top analyses~\cite{Chatrchyan:2014tua, Aad:2015eto, Aaboud:2016lpj}.
-% (in dashed lines). 
+%
 Values of $r<10$ could be directly accessible at the LHC@13TeV, improving the existing best direct constraint~\cite{Khachatryan:2014nda} by roughly a factor of three. The current direct bound on $|V_{td}|$ can be surpassed with the Run 2 dataset, while with $3000\, {\rm fb}^{-1}$ it could be possible to probe $|V_{td}|\sim |V_{ts}^{\rm SM}| \simeq 0.04$. 
 
-The dominant $t \bar{t}$ background is mostly generated via gluon fusion, which is charge symmetric. There are subleading contributions from processes like $u \bar{u} \rightarrow t \bar{t}$ which are charge asymmetric, but only enter at higher orders in QCD. This is the main reason the dominant $t \bar{t}$ background has a strongly suppressed charge asymmetry. At higher collision energies, the probability of finding energetic enough gluons in the proton increases faster than that of valence quarks. Consequently, the fraction of $t\bar t$ events from the quark-antiquark initial state is reduced~\cite{Khachatryan:2016ysn}.  This leads to a shrinking charge asymmetry with growing collision energy. %A further significant reduction in systematic uncertainties below our current estimate of $0.2 \%$ could allow the (HL)LHC eventually to probe values as low as $|V_{td}| \sim 0.06$ at $13$ TeV. 
+The dominant $t \bar{t}$ background is mostly generated via gluon fusion, which is charge symmetric. There are subleading contributions from processes like $u \bar{u} \rightarrow t \bar{t}$ which are charge asymmetric, but only enter at higher orders in QCD. This is the main reason the dominant $t \bar{t}$ background has a strongly suppressed charge asymmetry. At higher collision energies, the probability of finding energetic enough gluons in the proton increases faster than that of valence quarks. Consequently, the fraction of $t\bar t$ events from the quark-antiquark initial state is reduced~\cite{Khachatryan:2016ysn}.  This leads to a shrinking charge asymmetry with growing collision energy. %
 Unfortunately, the same happens to the signal, this time because at higher energies the asymmetry between $d$ and $\bar{d}$ partons inside the proton is reduced. 
-%Combined with the growing contribution of the (mostly charge symmetric) $t\bar t$ background to the denominator, the end effect is severely diminishing t
+%
 The net effect is a severely diminished significance at $27$\,TeV compared to 13\,TeV for comparable luminosities. 
-%On the other hand, at $7$ TeV the significance does increase and with $3000 fb^{-1}$, values of $r<10$ could be accesible with $3 \sigma$ and values of $r \sim 10$ with $5 \sigma$.
+%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 %
 \subsubsection{Measuring Cabibbo-suppressed decays of the top quark at HL-LHC and HE-LHC}
-%Jernej Kamenik
-%Darius Faroughy,
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%
 
 	With the large $t\bar t$ statistics at the LHC, one might attempt a direct measurement of Cabibbo-suppressed decays of the top quark, $t\to (s,d)\,W^\pm$, in leptonic $t\bar t$ events. Since there is no practical way to distinguish between strange and down quark jets at the detector level (without dedictated PID systems), one measures 
 \begin{equation}
 \rho\equiv\sqrt{\big(\BR(t\to sW)+\BR(t\to dW)\big)/\BR(t\to bW)}\,.
 \end{equation}
 This gives
-%the method described here could 
+%
 a direct information on $({|V_{ts}|^2+|V_{td}|^2})^{1/2}$, but not on $V_{ts}$ and $V_{td}$ separately. 
-%by measuring the ratio of branching fractions
-%This quantity measures the hierarchy between diagonal and off-diagonal entries in the third row of the CKM matrix and is supposed to be approximately given by
+%
+%
  In the SM, $\rho\approx |V_{ts}|\approx0.04$. 
 
-%In order to measure top decays into light quarks, 
+%
 To perform the measurement it is necessary to discriminate between heavy-flavoured jets, e.g., $b$-jets from the $t\to b W$ background, gluons from ISR/FSR contamination, and the signal -- the light-quark jets ($q$-jets) from the Cabibbo-suppressed top decays. This can be achieved through a $q$-tagger based on existing techniques used for $b$-tagging and quark/gluon jet discrimination~\cite{Gallicchio:2011xq}. There are several known useful observables which can be used in a $q$-tagger. In the following we use: (i) the multiplicity $N_{\mathrm{SV}}$ of secondary vertices (SV) in the jet within a fiducial volume of the tracker, (ii) the fraction of longitudinal momentum of the jet carried by the hardest prompt charged track 
-%\begin{equation}\label{zmax}
+%
 $ z_{\mathrm{max}}\equiv\mathrm{max}\big[{\vec{p}_{x}\cdot\vec{p}_{\text{jet}}}/{|\vec{p}_\text{jet}|^2}\big]_{x\in\mathrm{jet}}$,
-%\end{equation}
-%with $x$ the reconstructed prompt track, 
+%
+%
 and (iii) the 2-point energy correlation function 
-% defined as
-%\begin{align}
+%
+%
 $U^\beta_1=\sum_{i,j\in \mathrm{jet}} z_T^i z_T^j\,(R_{ij})^\beta$, $z_T^i\equiv p_T^i /p_T^{\mathrm{jet}}$,
-%\end{align}
+%
 where $R_{ij}^2=(\eta_i-\eta_j)^2+(\phi_i-\phi_j)^2$ and $\beta$ is a free real parameter for which quark/gluon discrimination is optimized at $\beta=0.2$~\cite{Larkoski:2013eya,Moult:2016cvt}, see
-%. For more details on these observables in the context of the $q$-tagger we refer the reader to~
+%
 Ref.\cite{thePaper} for more details. 
-%The resulting performance of the $q$-tagger in simulated samples of $pp\to Zj$ for $j=s,b,c,g$ and $Z\to\mu\bar\mu$ in a realistic LHC environment at $13$\,TeV is presented in Fig.~\ref{figROC}, where we show the ROC curves for the $q$-tagger obtained by sliding the values of the cuts $z_{\mathrm{max}}$ (solid lines) or $U_1$ (dashed lines), independently. 
-%\begin{figure}[t]
- % \vspace{-0.3cm}
-%\begin{center}{
-%\includegraphics[width=8cm]{section8/figs/quark-gluon_ROC.pdf}
-%%  \vspace{-0.3cm}
-%\caption{{ ROC curves for the two $q$-taggers}} \label{figROC}}
-%\end{center}
-%\end{figure}
-%\paragraph{light-quark content in top decays}
-%Equipped with the light-quark tagger we are now in position to study the flavour content of top quark decays from $t\bar t$ production. 
+%
+%
+ %
+%
+%
+%
+%
+%
+%
+%
+%
 
-%%%%%%%%%%%%%%%%%%%%%
-%\begin{table}[htbp!]
+%
+%
 \begin{table}[t!]
 \begin{center}
-% \small
+%
  {
-%\renewcommand{\arraystretch}{1}
+%
 \centering
 \caption{ Tagging and mis-tagging efficiencies for the $q$-tagging working point used in the $V_{tq}$ analysis.}
 \label{tab:effs} 
-%\footnotesize
+%
 \begin{tabular}{cccccccc}
 \hline\hline 
 (t) type & Cuts &\  $\epsilon^{\mathrm t}_{q}$\ &\ $\epsilon^{\mathrm t}_{b}$\ &\ $\epsilon^{\mathrm t}_{c}$\ &\ $\epsilon^{\mathrm t}_{g}$
@@ -871,37 +871,37 @@ $b$-tagger & $N_{\mathrm SV}>3$     		                          &  $0.0091$ & $0
 \end{center}
 \end{table}
 
-	%First we generated MC samples of $t\bar t$ and $tW$ plus jets in {\tt Madgraph 5} at LO and decayed the tops into both $t\to bW$ and $t\to (s,d)W$ channels with the W-boson decaying leptonically and SM values for the CKM matrix. Jet matching, parton showering and hadronization were performed in {\tt pythia8} and jet clustering with {\tt FastJet}. 
+	%
 
 For the projections we use the reference working point 
-%for the utilized taggers is 
+%
 shown in Table~\ref{tab:effs}.	
-%	A possible extraction of $\rho$ using leptonic $t\bar t$ events then proceeds as follows.
-%	After pre-selection requirements, two selected highest \pt jets in an event are subjected to the $b$- and $q$-taggers (for the working points in Table \ref{tab:effs}). The results are b
+%
+%
 	We bin preselected events into one of the six tagged dijet categories $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ where $q$, $b$ and $\jmath$ represent $q\,$-jets, $b\,$-jets and non-tagged jets (a jet failing both taggers), respectively. 
-%	A fit to event yields in all the categories can then be used to extract $\rho$ together with the ISR/FSR contamination fractions. 
-	%Solely for the purpose of illustration we present  in 
-	Fig.~\ref{fig:master} shows the resulting upper limits on $\rho$ taking into account only statistical uncertainties in the $qb$ category for the signal significance $S/\sqrt{B}$ at $2\sigma$ (solid boundary) and $5\sigma$ (dashed boundary) as a function of the LHC luminosity, compared to the current best limit by CMS shown by the gray dashed curve. The results suggest that the HL-LHC could find evidence of Cabbibo-suppressed top decays and determine $V_{ts}$ CKM element directly, though the precise precision depends crucially on how well systematic uncertainties can be controlled. %For a more detailed study of these prospects we refer the reader to Ref.~\cite{thePaper}
+%
+	%
+	Fig.~\ref{fig:master} shows the resulting upper limits on $\rho$ taking into account only statistical uncertainties in the $qb$ category for the signal significance $S/\sqrt{B}$ at $2\sigma$ (solid boundary) and $5\sigma$ (dashed boundary) as a function of the LHC luminosity, compared to the current best limit by CMS shown by the gray dashed curve. The results suggest that the HL-LHC could find evidence of Cabbibo-suppressed top decays and determine $V_{ts}$ CKM element directly, though the precise precision depends crucially on how well systematic uncertainties can be controlled. %
 	The uncertainties in $q$- and $b$-tagging efficiencies could be controlled using $Zj$ production. Then a fit of the categorized dijet data $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ in inclusive dilepton events to a probabilistic model taking into account the tagging efficiencies could be performed, similar to that performed in \cite{Silva:2010qt,Khachatryan:2014nda} for the extraction of $V_{tb}$. Especially relevant for the HE-LHC would be to measure $t\to (s,d)W$ from boosted semi-leptonic $t\bar t$ events. Events with one top-tagged fat jet, one narrow jet and one lepton (both daughter candidates of the leptonic top) can be categorized by the flavour content of the narrow jet. A preliminary analysis~\cite{thePaper} suggests comparable sensitivity to the leptonic $t\bar t$ dataset already at the 13TeV LHC. 
 
 
 \begin{figure}[t]
-%  \vspace{-0.3cm}
+%
 \begin{center}{
 \includegraphics[width=10cm]{section8/figs/LHC_Resolved_lep_tops.pdf} 
-%\vspace{-0.3cm}
+%
 \caption{{Illustration of statistical limits on the ratio $\rho \simeq \big(|V_{ts}|^2 + |V_{td}|^2\big)^{1/2}/|V_{tb}|$ from an analysis of Cabbibo-suppressed top decays in leptonic $t\bar t$ events at 13TeV LHC. See text for details.}} \label{fig:master}}
 \end{center}
 \end{figure}
 
 
-%\paragraph{Outlook}
-%For more reliable (HL/HE-)LHC projections it is necessary to carefully categorize and estimate the main sources of systematic uncertainties. The dominating source of uncertainties is expected to come from the extraction and mapping of The uncertainties in $q$- and $b$-tagging efficiencies could be controlled using $Zj$ production.
-%% onto $t\bar t$ events. 
-%A complete assessment of these uncertainties is outside the scope of this report. Nevertheless, once these uncertainties are extracted from experimental data the following step is to perform a fit of the categorized dijet data $\{\jmath\jmath,\jmath b,\jmath q, qb,qq,bb\}$ in inclusive dilepton events to a probabilistic model taking into account the tagging efficiencies, similar to that performed in \cite{Silva:2010qt,Khachatryan:2014nda} for the extraction of $V_{tb}$. For further details on this search strategy see Ref.~\cite{thePaper}.
+%
+%
+%
+%
 
 
-%As a final note, given the small signal-to-background ratio of Cabibbo-suppressed top decays, advanced machine learning approaches to data analysis should be able to further improve upon these simple search strategies.
+%
 
 
 \end{document}
