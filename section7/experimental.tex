@@ -244,20 +244,20 @@ be possible to make a precise determination of the angular observables in narrow
 bins of \qsq or using a \qsq-unbinned approach~\cite{Hurth:2017sqw,Chrzaszcz:2018yza}; LHCb foresees to achieve around 440\,000 fully reconstructed \decay{\Bz}{\Kstarz\mumu} decays, CMS around 700\,000 excluding the $q^2$ range 
  overlapping with the resonant decays \cite{CMS-PAS-FTR-18-033}. 
  
- The current CMS and LHCb measurements are statistically limited.
+ The current ATLAS, CMS and LHCb measurements are statistically limited.
  For LHCb 
  %
  the major systematics are those which affect the calculation of the angular acceptance. Most of the systematic uncertainties are expected to reduce significantly with more integrated luminosity due to larger control samples. Both the LHCb statistical and systematic uncertainties are therefore scaled with integrated luminosity when obtaining the projections. In this context it is interesting to note that \upgradetwo will provide signal yields that are of the order of the current tree-level control modes $B^0\to \jpsi \Kstarz$ and $B^0_s\to \jpsi\phi$. %
  In the most recent measurement of $\phis$ from $B^0_s\to \jpsi\phi$, the systematic uncertainties on the decay amplitudes due to modeling of the angular acceptance were already at the 0.001-0.002 level. Therefore, even without considering further improvements from the larger control samples available in \upgradetwo, these uncertainties will not systematically limit the \upgradetwo analysis.
  
  The CMS sensitivity for the measurement of the $P_5'$ parameter at HL-LHC is extrapolated \cite{CMS-PAS-FTR-18-033} 
-  from the CMS Run-1 results \cite{Sirunyan:2017dhj} under some assumptions: effects of improvements in the analysis strategy (e.g., different selection criteria or fits) are not considered and the trigger thresholds and efficiency are assumed to remain the same. This latter is likely to be a conservative assumption since the availability of tracking information at the first level trigger may result in a higher efficiency than in Run-1. The extrapolation method also assumes that the signal-to-background is the same; indeed,
+  from the CMS Run-1 results \cite{Sirunyan:2017dhj} under some assumptions: effects of improvements in the analysis strategy (e.g., different selection criteria or fits) are not considered and the trigger thresholds and efficiency are assumed to remain the same. The latter is likely to be a conservative assumption since the availability of tracking information at the first level trigger may result in a higher efficiency than in Run-1. The extrapolation method also assumes that the signal-to-background is the same; indeed,
   the main 
   source of background is from other b-hadron decays, whose cross-section scales the same as the signal.
  Samples of simulated events are used to evaluate three relevant aspects of the analysis, namely mass resolution, CP mistagged rate, and the effect of pileup, to justify the extrapolation method; no degradation in the projected analysis performance was found.
   For each $q^2$ bin, the expected $B^0 \to K^{*0}\mu^+\mu^-$ signal yields are obtained from a sample of simulated signal events generated with the Phase-2 conditions, including an average of 200 pileup, and scaled to the integrated luminosity of 3000 fb $^{-1}$.
 %
-%
+
 The estimated  statistical uncertainty on the ${P'_5}$  parameter at 3000 fb$^{-1}$ is obtained by scaling the statistical uncertainty measured in Run-1 
 by the square root of the ratio between the yields observed in Run-1 and the Phase-2 simulation.
  The evolution of the systematic uncertainties is also extrapolated from the Run-1 analysis.
@@ -266,8 +266,14 @@ by the square root of the ratio between the yields observed in Run-1 and the Pha
 The uncertainties which depend on the available amount of data
 %
 are scaled the same as the statistical uncertainties. 
-The uncertainty related to the limited number of simulation events is neglected, under the assumption that sufficiently large simulation samples will be available by the time the HL-LHC becomes operational.
+The uncertainty related to the limited number of simulation events is neglected, under the assumption that sufficiently large simulation samples will be available by the time the HL-LHC becomes operational.\\
 %
+
+The ATLAS study extrapolates the signal and background yields based on the Run 1 analysis data observations \cite{Aaboud:2018krd}, accounting for 3000 fb$^{-1}$ of integrated luminosity and a $\times 1.7$ increase in the $b$ production cross-section. Monte-Carlo simulations are employed to estimate the experimental precision achievable, including the improved 4-prong invariant mass resolution projected with the ATLAS upgraded tracking system \cite{ATLAS:2285585}.
+Particular care is taken in applying likely trigger selections, emulating trigger thresholds and accounting for the $q^2$-dependency of the trigger efficiency. 
+Three different sets of di-muon trigger threshold scenarios are considered: two 6 GeV muons, the combinaton of 6 GeV and a 10 GeV muon, or two muons of 10 GeV.
+Although not dominant in the result, 
+systematic uncertainties are carefully extrapolated as well: signal and background fit model accuracies are expected to improve in proportion to the available data statistics, detector acceptance and mistagging accuracy are driven by MC statistics and thus assumed to produce negligible effects, the inclusion of S-wave contributions to the data fit is extrapolated to improve the effect of this systematic by a factor 5, and detector alignment and B-field systematic uncertainties are expected to improve approximately by a factor 4 with larger calibration samples and the use of new techniques \cite{ATL-PHYS-PUB-2018-003}. 
 %
  %
  %
@@ -382,6 +388,89 @@ The analysis in narrow $q^2$ bins provides a better determination of the $P_5'$ 
 The CMS available projection is for the single $P_5'$ angular parameter; with the foreseen HL-LHC statistics, CMS will have the capability to perform a full angular analysis of the \decay{\Bz}{\Kstarz\mumu} decay mode.
 
 %
+
+The ATLAS \cite{ATL-PHYS-PUB-2019-003} projected statistical and systematic uncertainties are provided in the same $q^2$ bins employed in the Run 1 analysis, and for the same set of angular parameters already published. Table \ref{tab:ATLASExtrapolation} reports the combined statistical and systematic uncertainty expectations for the different trigger scenarios considered, with the projected uncertainties for all the angular parameters compared to current theoretical predictions in figure \ref{fig:ATLASExtrapolation}. Reference \cite{ATL-PHYS-PUB-2019-003} includes full detail on the breakdown of statistical and systematic contributions.
+The precision in measuring e.g. the $P'_5$ parameter is expected to improve by a factor between 5 and 9 relative to the Run 1 result, depending on the trigger scenario considered.
+\newcommand{\FL}{\ensuremath{F_L}\xspace}
+\newcommand{\Sany}{\ensuremath{S_i}\xspace}
+\newcommand{\Pany}{\ensuremath{P_i^{(\prime)}}\xspace}
+\newcommand{\Sthree}{\ensuremath{S_3}\xspace}
+\newcommand{\Sfour}{\ensuremath{S_4}\xspace}
+\newcommand{\Sfive}{\ensuremath{S_5}\xspace}
+\newcommand{\Sseven}{\ensuremath{S_7}\xspace}
+\newcommand{\Seight}{\ensuremath{S_8}\xspace}
+\newcommand{\Pone}{\ensuremath{P^{}_1}\xspace}
+\newcommand{\Pfour}{\ensuremath{P_4^\prime}\xspace}
+\newcommand{\Pfive}{\ensuremath{P_5^\prime}\xspace}
+\newcommand{\Psix}{\ensuremath{P_6^\prime}\xspace}
+\newcommand{\Peight}{\ensuremath{P_8^\prime}\xspace}
+
+\newcommand{\totFL}{\ensuremath{\delta^\mathrm{tot}_{F_L}}\xspace}
+\newcommand{\totSany}{\ensuremath{\delta^\mathrm{tot}_{S_i}}\xspace}
+\newcommand{\totPany}{\ensuremath{\delta^\mathrm{tot}_{P_i^{(\prime)}}}\xspace}
+\newcommand{\totSthree}{\ensuremath{\delta^\mathrm{tot}_{S_3}}\xspace}
+\newcommand{\totSfour}{\ensuremath{\delta^\mathrm{tot}_{S_4}}\xspace}
+\newcommand{\totSfive}{\ensuremath{\delta^\mathrm{tot}_{S_5}}\xspace}
+\newcommand{\totSseven}{\ensuremath{\delta^\mathrm{tot}_{S_7}}\xspace}
+\newcommand{\totSeight}{\ensuremath{\delta^\mathrm{tot}_{S_8}}\xspace}
+\newcommand{\totPone}{\ensuremath{\delta^\mathrm{tot}_{P^{}_1}}\xspace}
+\newcommand{\totPfour}{\ensuremath{\delta^\mathrm{tot}_{P_4^\prime}}\xspace}
+\newcommand{\totPfive}{\ensuremath{\delta^\mathrm{tot}_{P_5^\prime}}\xspace}
+\newcommand{\totPsix}{\ensuremath{\delta^\mathrm{tot}_{P_6^\prime}}\xspace}
+\newcommand{\totPeight}{\ensuremath{\delta^\mathrm{tot}_{P_8^\prime}}\xspace}
+
+\begin{figure}[htb]
+  \begin{center}
+%    \resizebox{\columnwidth}{!}{
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_FL.pdf}
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_P1.pdf}
+%    }
+%    \resizebox{\columnwidth}{!}{
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_P4.pdf}
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_P5.pdf}
+%    }
+%    \resizebox{\columnwidth}{!}{
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_P6.pdf}
+      \includegraphics[width=0.42\columnwidth]{\main/section7/figures/ATLAS_mu10mu6_P8.pdf}
+ \caption{Projected ATLAS HL-LHC measurement precision in the \FL, \Pone, \Pfour, \Pfive, \Psix and \Peight parameters for the intermediate \trigTenSix trigger scenario compared to the ATLAS Run~1 measurement. Alongside theory predictions (CFFMPSV~\cite{Ciuchini:2015qxb}, DHMV~\cite{Descotes-Genon:2014uoa}, JC~\cite{Jager:2012uw}) are also shown. Both the projected statistical and the total (statistical and systematic) uncertainties are shown. While the HL-LHC toy-MC were generated with the DHMV central values of the \FL and \Pany parameters, in these plots the central values are moved to the ATLAS Run 1 measurement for better visualization of the improvement in the precision.} 
+ \label{fig:ATLASExtrapolation}
+ \end{center}
+ \end{figure}
+ 
+ \begin{table}[!tb]
+  \begin{center}
+    \caption{Combined systematic and statistical uncertainties on the \FL and \Pany parameters from the 2012 ATLAS data measurement
+           and projected to the HL-LHC phase for the three trigger scenarios discussed in the text.}
+            \label{tab:ATLASExtrapolation}
+    \begin{tabular}{lr|cccccc}
+      \hline
+      \hline
+      \rule{0pt}{15pt}LHC phase & \qSqr $[\GeV^2]$ & \totFL  & \totPone  & \totPfour  & \totPfive  & \totPsix  & \totPeight \\[5pt]
+      \hline
+      Run~1                     & $[0.04, 2.0]$    & 0.11    & 0.31      & 0.45       & 0.31       & 0.21      & 0.51 \\
+                                & $[2.0, 4.0]$     & 0.12    & 0.61      & 0.37       & 0.34       & 0.34      & 0.57 \\
+                                & $[4.0, 6.0]$     & 0.18    & 0.50      & 0.38       & 0.39       & 0.30      & 0.43 \\
+      \hline
+      HL-LHC \trigSixSix        & $[0.04, 2.0]$    & 0.010   & 0.027     & 0.037      & 0.037      & 0.019     & 0.046 \\
+                                & $[2.0, 4.0]$     & 0.008   & 0.093     & 0.040      & 0.038      & 0.040     & 0.070 \\
+                                & $[4.0, 6.0]$     & 0.016   & 0.083     & 0.032      & 0.047      & 0.033     & 0.041 \\
+      \hline
+      HL-LHC \trigTenSix        & $[0.04, 2.0]$    & 0.011   & 0.037     & 0.046      & 0.040      & 0.023     & 0.055 \\
+                                & $[2.0, 4.0]$     & 0.011   & 0.103     & 0.047      & 0.042      & 0.044     & 0.075 \\
+                                & $[4.0, 6.0]$     & 0.018   & 0.100     & 0.040      & 0.053      & 0.038     & 0.052 \\
+      \hline
+      HL-LHC \trigTenTen        & $[0.04, 2.0]$    & 0.018   & 0.065     & 0.076      & 0.059      & 0.041     & 0.093 \\
+                                & $[2.0, 4.0]$     & 0.017   & 0.15      & 0.074      & 0.068      & 0.059     & 0.100 \\
+                                & $[4.0, 6.0]$     & 0.026   & 0.17      & 0.074      & 0.082      & 0.063     & 0.090 \\
+      \hline
+      \hline
+    \end{tabular}
+  \end{center}
+   \centering
+   \begin{tabular}{crrrr}
+   \end{tabular}
+\end{table}
+
 
 Furthermore, with large data sets expected at the HL-LHC it will  be possible for the LHC experiments to probe \decay{\B}{V \ellell} SM contributions, under the premise that a genuine NP contribution is expected to have no $q^2$ dependence, while, \eg a 
 charm loop contribution is expected to grow when approaching the pole of

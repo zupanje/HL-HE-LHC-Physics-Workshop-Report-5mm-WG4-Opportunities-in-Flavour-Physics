@@ -487,22 +487,39 @@ Besides,
 
 The generation of signal events at ATLAS is done at NLO with {\tt MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca, Mangano:2006rw} and the effective field theory framework developed in the TopFCNC model is used~\cite{Degrande:2014tta,Durieux:2014xla}. In the case of $gqt$ coupling, the MEtop generator is used instead~\cite{Coimbra:2012ys}. At CMS signal events are simulated at LO with {\tt MadGraph5\_aMC@NLO} with the effective lagrangian implemented by means of the {\tt FEYNRULES} package, except in the simulation of signal events for $gqt$ and $\gamma qt$ couplings where {\tt CompHEP}~\cite{Boos:2004kh} and {\tt PROTOS 2.0}~\cite{AguilarSaavedra:2010rx} are used, respectively. In both experiments {\tt Pythia 8} is used to simulate the parton showering and hadronization. The generation of signal events is done under the assumption of only one non-vanishing FCNC coupling at a time. 
 
-\begin{table}[t]\center
+%\begin{table}[t]\center
+%\caption{Summary of the projected reach for the 95\% C.L. limits on the branching ratio for anomalous flavor changing top couplings.}
+%\begin{tabular}{cccc}
+%\hline\hline
+%$\mathcal{B}$ limit at 95\%C.L. & 3 ab$^{-1}$, 14 TeV & 15ab$^{-1}$, 27 TeV & Ref. \\
+%\hline
+%$t\to gu $ & $3.8\times 10^{-6}$ & $5.6\times 10^{-7}$ & %\cite{CMS:2018kwi}\\
+%$t\to gc $ & $32.1\times 10^{-6}$ &  $19.1\times 10^{-7}$ & %\cite{CMS:2018kwi}\\
+%$t\to qZ $ & $2.4\times 10^{-5}$ &  & %\cite{ATL-PHYS-PUB-2016-019}\\
+%$t\to \gamma u $ & $8.6\times 10^{-6}$ & & %\cite{Collaboration:2293646}\\
+%$t\to \gamma c $ & $7.4\times 10^{-5}$ & & \cite{Collaboration:2293646} \\
+%$t\to Hq $ & 10$^{-4}$ & & \cite{ATL-PHYS-PUB-2016-019} \\
+%\hline\hline
+%\end{tabular}
+%\end{table}
+
+\begin{table}
+\centering
 \caption{Summary of the projected reach for the 95\% C.L. limits on the branching ratio for anomalous flavor changing top couplings.}
-\begin{tabular}{cccc}
+\begin{tabular}{lcccc}
 \hline\hline
 $\mathcal{B}$ limit at 95\%C.L. & 3 ab$^{-1}$, 14 TeV & 15ab$^{-1}$, 27 TeV & Ref. \\
 \hline
 $t\to gu $ & $3.8\times 10^{-6}$ & $5.6\times 10^{-7}$ & \cite{CMS:2018kwi}\\
 $t\to gc $ & $32.1\times 10^{-6}$ &  $19.1\times 10^{-7}$ & \cite{CMS:2018kwi}\\
-$t\to qZ $ & $2.4\times 10^{-5}$ &  & \cite{ATL-PHYS-PUB-2016-019}\\
-$t\to \gamma u $ & $8.6\times 10^{-6}$ & & \cite{Collaboration:2293646}\\
+$t\to Zq$ & $2.4-5.8\times 10^{-5}$ &  & \cite{ATL-PHYS-PUB-2016-019}\\
+%$t\to Zq $ & $4\times 10^{-5}$ &  & \cite{TOPQ-2018-35}\\
+$t\to \gamma u $ & $8.6\times 10^{-6}$ & & \cite{Collaboration:2293646} \\
 $t\to \gamma c $ & $7.4\times 10^{-5}$ & & \cite{Collaboration:2293646} \\
 $t\to Hq $ & 10$^{-4}$ & & \cite{ATL-PHYS-PUB-2016-019} \\
 \hline\hline
 \end{tabular}
 \end{table}
-
 
 %
 \subsubsubsection{Top-gluon}
@@ -544,16 +561,18 @@ In addition the two-dimensional contour that reflects the possible simultaneous 
 \subsubsubsection{Top-Z}
 
 
-%
-The $t \rightarrow Z q$ FCNC decays are probed by ATLAS in top quark
-pair events at 13 TeV~\cite{Aaboud:2018nyl}. The event topology includes 
-the presence of two same-sign or three isolated leptons, $E^{miss}_{T}$, exactly
-one b jet and at least one non-b jet. Several control regions are
-defined for each of the dominant background processes: $WZ$+jets,
-$ZZ$+jets, $ttZ$, and non-prompt leptons. The signal is extracted from a simultaneous maximum likelihood fit over control and signal regions using various event kinematic variables. The resultant limits are $\mathcal{B}(t \to Zu) < 1.7~(2.4) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 2.3~(3.2) \times 10^{-4}$. The analysis of the 13 TeV data at CMS explores a similar final state and additionally considers a single top associated FCNC production with a Z boson in the simulation of signal events~\cite{CMS:2017twu}. Only the three lepton final state is considered. A boosted decision tree (BDT) discriminant is defined to suppress background events. The resultant limits are $\mathcal{B}(t \to Zu) < 2.4~(1.5) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 4.5~(3.7) \times 10^{-4}$. Preliminary projection studies suggest the expected upper limits of $\mathcal{B}(t \to Zq) < 2.4 \times 10^{-5}$~\cite{ATL-PHYS-PUB-2016-019}.
+%% %%%%OLD
+%The $t \rightarrow Z q$ FCNC decays are probed by ATLAS in top quark
+%pair events at 13 TeV~\cite{Aaboud:2018nyl}. The event topology includes 
+%the presence of two same-sign or three isolated leptons, $E^{miss}_{T}$, exactly
+%one b jet and at least one non-b jet. Several control regions are
+%defined for each of the dominant background processes: $WZ$+jets,
+%$ZZ$+jets, $ttZ$, and non-prompt leptons. The signal is extracted from a simultaneous maximum likelihood fit over control and signal regions using various event kinematic variables. The resultant limits are $\mathcal{B}(t \to Zu) < 1.7~(2.4) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 2.3~(3.2) \times 10^{-4}$. The analysis of the 13 TeV data at CMS explores a similar final state and additionally considers a single top associated FCNC production with a Z boson in the simulation of signal events~\cite{CMS:2017twu}. Only the three lepton final state is considered. A boosted decision tree (BDT) discriminant is defined to suppress background events. The resultant limits are $\mathcal{B}(t \to Zu) < 2.4~(1.5) \times 10^{-4}$ and $\mathcal{B}(t \to Zc) < 4.5~(3.7) \times 10^{-4}$. Preliminary projection studies suggest the expected upper limits of $\mathcal{B}(t \to Zq) < 2.4 \times 10^{-5}$~\cite{ATL-PHYS-PUB-2016-019}.
 
 %
 %
+% %%%%NEW ATLAS TEXT ---- NEEDS TO BE ADDED IN VERSION 2 -- APPROVED YET ?? 
+ATLAS studied the sensitivity to the $tqZ$ interaction, by performing an analysis~\cite{ATL-PHYS-PUB-2019-001} based on simulated samples and following both the strategy of its 13~TeV data analysis on the same subject~\cite{Aaboud:2018nyl} and of the general recommendations for this HL-LHC study. The study is performed in the three charged lepton final state of $t\bar t$ events, in which one of the top quarks decays to $qZ$, $(q=u,c)$ and the other one decays to $bW$ ($t\bar t\to bWqZ\to b\ell\nu q\ell\ell$). The kinematics of the events are reconstructed through a $\chi^2$ minimisation and dedicated control regions are used to normalize the main backgrounds and constrain systematic uncertainties. The main uncertainties, in both the background and signal estimations, are expected to come from theoretical normalization uncertainties and uncertainties in the modeling of background processes in the simulation. Different scenarios for the systematic uncertainties are considered, ranging from the full estimations obtained with the 13~TeV data analysis, to the ones expected with improvements in theoretical predictions, which should be half of the former ones. A binned likelihood function $L(\mu, \theta)$ is used to do the statistical analysis and extract the signal normalisation. An improvement by a factor of five is expected in relation to the current 13~TeV data analysis results. Obtained branching ratio limits are at the level of 4 to 5 $\times 10^{-5}$ depending on the considered scenarios for the systematic uncertainties.
 
 
 %

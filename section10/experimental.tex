@@ -42,108 +42,106 @@ Figure~\ref{fig:LQpairs:limits2d} shows the expected signal significances and up
 \label{fig:LQpairs:limits2d}
 \end{figure}
 
-\subsubsubsection{Search for leptoquarks decaying to $\tau$ and b}
-%
-%
 
-%
-%
-%
+\subsubsubsection{CMS Search for leptoquarks decaying to $\tau$ and $b$}\label{sec:leptoqbtau}
 
-The analysis from CMS~\cite{CMS-PAS-FTR-18-028} presents future discovery and exclusion prospects for singly and pair produced 
-third-generation scalar LQs, each decaying to $\tau_h$ and a bottom quark. Here, $\tau_h$ denotes a hadronically decaying 
+This analysis from CMS~\cite{CMS-PAS-FTR-18-028} presents future discovery and exclusion prospects for singly and pair produced 
+third-generation scalar LQs, each decaying to $\tauh$ and a bottom quark. Here, $\tauh$ denotes a hadronically decaying 
 $\tau$ lepton. 
-The relevant Feynman diagrams of the signal processes at leading order (LO) are shown in Fig. \ref{LQ3-diagram}.
+The relevant Feynman diagrams of the signal processes at leading order (LO) are shown in Fig.~\ref{LQ3-diagram}.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.42\textwidth]{\main/section10/img/LQsingleProduction.png}
+\includegraphics[width=0.25\textwidth]{\main/section10/img/diag1.pdf}
 \hspace{0.2cm}
-\includegraphics[width=0.38\textwidth]{\main/section10/img/gluonLQLQ.png}
-\caption{Leading order Feynman diagrams for the production of a third-generation LQ in the single production $s$-channel (left) and the pair production channel via gluon fusion (right).}
+\includegraphics[width=0.25\textwidth]{\main/section10/img/diag2.pdf}
+\hspace{0.2cm}
+\includegraphics[width=0.25\textwidth]{\main/section10/img/diag3.pdf}
+\caption{Leading order Feynman diagrams for the production of a third-generation LQ in the single production s-channel (left) and the pair production channel via gluon fusion (center) and quark fusion (right).}
 \label{LQ3-diagram}
 \end{figure}
 \vspace{-5pt}
 
-The analysis uses {\tt Delphes}~\cite{deFavereau:2013fsa} event samples of simulated $pp$ collisions at a center-of-mass energy of 14 TeV, corresponding to integrated luminosities of 300 and 3000\fbinv. %
+The analysis uses DELPHES~\cite{deFavereau:2013fsa} event samples of simulated pp collisions at a center-of-mass energy of 14 TeV, corresponding to integrated luminosities of 300 and 3000\fbinv. 
 The matrix elements of LQ signals for both single and pair LQ production are generated at LO using version 2.6.0 of
-{\tt MadGraph5\_aMC@NLO}~\cite{aMCatNLO} for $m_{LQ}=$500, 1000, 1500, and 2000 GeV. The branching fraction $\beta$ of the LQ to a charged
+$ {\tt MadGraph5\_aMC@NLO}$~\cite{Alwall:2014hca} for $m_{LQ}=$500, 1000, 1500, and 2000 \GeV. The branching fraction $\beta$ of the LQ to a charged
 lepton and a quark, in this case LQ$\to \tau b$, is assumed to be $\beta=1$. The unknown Yukawa coupling $\lambda$ of the LQ to a
 $\tau$ lepton and a bottom quark is set to $\lambda=1$. The width $\Gamma$ is calculated using $\Gamma = m_{LQ} \lambda^2 /
 (16\pi)$~\cite{Plehn:1997az}, and is less than 10\% of the LQ mass for most of the considered search range. The signal samples are
 normalized to the cross section calculated at LO, multiplied by a $K$ factor to account for higher order contributions~\cite{Dorsner:2018ynv}.
 
 Similar event selections are used in both the singly and pair produced LQ searches, except for the requirement on the number of jets. 
-In both channels, two reconstructed $\tau_h$ with opposite-sign charge are required, each with transverse momentum $p_{T,\tau}>50$~GeV and a maximum pseudorapidity  $|\eta_{\tau}|<2.3$. 
-In the search for single production, the presence of at least one reconstructed jet with $p_T > 50$~GeV is required, while at least
-two are required in the search for pair production. Jets are reconstructed with {\tt Fastjet}~\cite{Cacciari:2011ma}, using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, with a distance parameter of 0.4. 
+In both channels, two reconstructed $\tauh$ with opposite-sign charge are required, each with transverse momentum $p_{T,\tau}>50$\GeV\ and a maximum pseudorapidity  ${|\eta_{\tau}|}<2.3$. 
+In the search for single production, the presence of at least one reconstructed jet with $p_T > 50\GeV$ is required, while at least
+two are required in the search for pair production. Jets are reconstructed with FASTJET~\cite{Cacciari:2011ma}, using the anti-\kt algorithm~\cite{Cacciari:2008gp}, with a distance parameter of 0.4. 
 
-To reduce background due to Drell-Yan events (particularly Z$\to\tau\tau$), the invariant mass of the two selected $\tau_h$,
-$m_{\tau\tau}$, is required to be $>95$~GeV.
-In addition, at least one of the previously selected jets is required to be $b$-tagged to reduce QCD multijet backgrounds. 
-Finally, an event is rejected, if it contains identified and isolated electrons (muons), with $p_T>10$~GeV, $|\eta|<2.4 (2.5)$.
-The acceptance of the signal events is $4.9\%$  ($11\%$) for single (pair) production, where the branching ratio of two $\tau$ leptons decaying hadronically is included in the numerator of the acceptance.
-Signal extraction is based on a binned maximum likelihood fit to the distribution of the scalar $p_T$ sum $S_{\text{T}}$, which 
-is defined as the sum of the transverse momenta of the two $\tau_h$ and either the highest-$p_T$ jet in the 
+To reduce background due to Drell-Yan (particularly Z$\to\tau\tau$) events, the invariant mass of the two selected $\tauh$,
+$m_{\tau\tau}$, is required to be $>95$\GeV.
+In addition, at least one of the previously selected jets is required to be b-tagged to reduce QCD multijet backgrounds. 
+Finally, an event is rejected if it contains identified and isolated electrons (muons), with $p_T>10$\GeV, $|\eta|<$2.4 (2.5).
+The acceptance of the signal events is 4.9\%  (11\%) for single (pair) production, where the branching ratio of two $\tau$ leptons decaying hadronically is included in the numerator of the acceptance.
+
+Signal extraction is based on a binned maximum likelihood fit to the distribution of the scalar $p_T$ sum S$_{\text{T}}$, which 
+is defined as the sum of the transverse momenta of the two $\tauh$ and either the highest-$p_T$ jet in the 
 case of single LQ production, or the two highest-$p_T$ jets in the case of LQ pair production. These distributions are shown 
-in Fig. \ref{fig:scalarptsums} for the HL-LHC 3000 $\fbinv$ scenario.
+in Fig.~\ref{fig:scalarptsums} for the HL-LHC 3000 $\fbinv$ scenario.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt1sum.png}
-\includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt2sum.png}
-\caption{Left: scalar sum of the \pt\ of the two selected $\tau$ leptons and the highest-$p_T$ jet in the single LQ selection region. Right: scalar sum of the $p_T$ of the two selected $\tau$ leptons and the two highest-$p_T$ jets in the LQ pair search region. The considered backgrounds are shown as stacked histograms, while empty histograms for signals for the single LQ and LQ pair channels (for $m_{LQ}=1000$~GeV) are overlaid to illustrate the sensitivity. Both signal and backround are normalised to a luminosity of 3000 $\fbinv$.} %
+\includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt1sumfinal.png}
+\includegraphics[width=0.48\textwidth]{\main/section10/img/scalarpt2sumfinal.png}
+\caption{Left: scalar sum of the \pt\ of the two selected $\tau$ leptons and the highest-$p_T$ jet in the single LQ selection region. Right: scalar sum of the $p_T$ of the two selected $\tau$ leptons and the two highest-$p_T$ jets in the LQ pair search region. The considered backgrounds are shown as stacked histograms, while empty histograms for signals for the single LQ and LQ pair channels (for $m_{LQ}=1000$\GeV) are overlaid to illustrate the sensitivity. Both signal and backround are normalised to a luminosity of 3000 $\fbinv$.} %Signal is normalized to $\lambda=1$, $\beta=1$ and $\sigma=1$ pb.}
 \label{fig:scalarptsums}
 \end{figure}
 
 Systematic uncertainties are 
 calculated by scaling the current experimental uncertainties. For uncertainties limited by statistics, including the uncertainty 
-on the DY ($3.3\%$) and QCD ($3.3\%$) cross sections, a scale factor of $1/\sqrt{L}$ is applied, for an integrated luminosity ratio $L$. 
+on the DY (3.3\%) and QCD (3.3\%) cross sections, a scale factor of $1/\sqrt{L}$ is applied, for an integrated luminosity ratio $L$. 
 For uncertainties 
 coming from theoretical calculations, a scale factor of 1/2 is applied with respect to current uncertainties, as is the case for 
-the uncertainties on the cross section for top ($2.8\%$) or diboson ($3\%$) events. Other experimental systematic uncertainties are 
+the uncertainties on the cross section for top (2.8\%) or diboson (3\%) events. Other experimental systematic uncertainties are 
 scaled by the 
 square root of the integrated luminosity ratio until the uncertainty reaches a minimum value, including uncertainties on the integrated 
-luminosity ($1\%$), 
-$\tau$ identification ($5\%$) and $b$-tagging/misidentification ($1\%$/$5\%$).
+luminosity (1\%), 
+$\tau$ identification (5\%) and b-tagging/misidentification (1\%-5\%).
 
-Fig.~\ref{fig:LQ3-projection} shows an upper limit at 95\% CL on the cross section, $\sigma$, times branching fraction, $\beta$, as a 
-function of $m_{LQ}$, by using the asymptotic CLs modified frequentist 
-criterion~\cite{Cowan:2010js, Junk:1999kv,Read:2002hq, CMS-NOTE-2011-005}.
+Figure~\ref{fig:LQ3-projection} shows an upper limit at 95\% CL on the cross section times branching fraction $\beta$ as a 
+function of $m_{LQ}$ by using the asymptotic CLs modified frequentist 
+criterion~\cite{Cowan:2010js,Junk:1999kv,Read:2002hq, ATLAS:2011tau}.
 Upper limits are calculated considering 
-two different scenarios. The first one, hereafter abbreviated as ``stat. only'' considers only statistical uncertainties, to 
+two different scenarios. The first one, hereafter abbreviated as "stat. only" considers only statistical uncertainties, to 
 observe how the results are affected by the increase of the integrated luminosity. The second scenario, hereafter 
-abbreviated as ``stat.+syst.'', also includes the estimate of the systematic uncertainties at the HL-LHC. 
+abbreviated as "stat.+syst.," also includes the estimate of the systematic uncertainties at the HL-LHC. 
 For the single LQ production search, the theoretical prediction for the cross section assumes $\lambda = 1$ and $\beta = 1$. 
 
 \begin{figure}[t]
 \vspace{-5pt}
 \centering
-\includegraphics[width=0.45\textwidth]{\main/section10/img/projection_single.pdf}
-\includegraphics[width=0.45\textwidth]{\main/section10/img/projection_pair.pdf}
-\caption{Expected limits at 95\% CL on the product of the cross section, $\sigma$, and the branching fraction, $\beta$, as a function
+\includegraphics[width=0.49\textwidth]{\main/section10/img/projection_single.pdf}
+\includegraphics[width=0.49\textwidth]{\main/section10/img/projection_pair.pdf}
+\caption{Expected limits at 95\% CL on the product of the cross section $\sigma$ and the branching fraction $\beta$, as a function
 of the LQ mass, for the two high luminosity projections, 300 \fbinv (red) and 3000 \fbinv (orange), for both the stat. only  (dashed
 lines) and the stat.+syst. scenarios (solid lines). This is shown in conjunction with the theoretical predictions at NLO~\cite{Dorsner:2018ynv} in cyan. Projections are calculated for both the single LQ (left) and LQ pair production (right).}
 \label{fig:LQ3-projection}
 \end{figure}
 
-Comparing the limits with theoretical predictions assuming unit Yukawa coupling, $\lambda = 1$, third-generation scalar 
-leptoquarks are expected to be excluded at $95\%$ confidence level for LQ masses below 1.35 (1.71) TeV for a luminosity 
-of 300 \fbinv, and below 1.60 (1.93) TeV for 3000 \fbinv in the single (pair) production channel, considering both 
+Comparing the limits with theoretical predictions assuming unit Yukawa coupling $\lambda = 1$, third-generation scalar 
+leptoquarks are expected to be excluded at 95\% confidence level for LQ masses below 732 (1249) GeV for a luminosity 
+of 300 \fbinv, and below 1130 (1518) GeV for 3000 \fbinv in the single (pair) production channel, considering both 
 statistical and systematic uncertainties. 
- Since the single-LQ signal cross section scales with $\lambda^2$, it is straightforward to recast the results presented in 
-Fig. \ref{fig:LQ3-projection} in terms of expected upper limits on $m_{LQ}$  as a function of $\lambda$, which is shown in 
-Fig. \ref{fig:lambda_mass}. 
-The blue band shows the parameter space (95\% CL) for the scalar LQ $R_2$ preferred by the $\PB$ physics 
-anomalies: $\lambda = (0.95 \pm 0.50) m_{LQ} ({\rm TeV})$~\cite{Buttazzo:2017ixm,Dorsner:2016wpm}. 
+
+Since the single-LQ signal cross section scales with $\lambda^2$, it is straightforward to recast the results presented in 
+Fig.~\ref{fig:LQ3-projection} in terms of expected upper limits on $m_{LQ}$  as a function of $\lambda$, as shown in 
+Fig.~\ref{fig:lambda_mass}. 
+The blue band shows the parameter space (95\% CL) for the scalar LQ preferred by the $\PB$ physics 
+anomalies: $\lambda = (0.95 \pm 0.50) m_{LQ} (\TeV)$~\cite{Buttazzo:2017ixm}. 
 For the 300 (3000) \fbinv luminosity scenario, the leptoquark pair production channel is more sensitive if  
-$\lambda<2.5$ $(1.5)$, while the single leptoquark production is dominant otherwise. Using the predicted cross section~\cite{Dorsner:2018ynv} of the signal, it is also possible to estimate the maximal LQ mass expected to be in reach for a 5$\sigma$ discovery. 
-Fig.~\ref{fig:LQ3-discovery} shows the expected local significance of a signal-like excess as a function of the LQ mass hypothesis.
+$\lambda<2.7$ $(2.3)$, while the single leptoquark production is dominant otherwise.
  
-\begin{figure}[tb]
+\begin{figure}[t]
 \centering
-\includegraphics[width=0.45\textwidth]{\main/section10/img/exclusion.pdf}
-\caption{Expected 95\% CL exclusion limits on the Yukawa coupling $\lambda$, entering the LQ-lepton-quark vertex, as a function of the
+\includegraphics[width=0.5\textwidth]{\main/section10/img/exclusion.pdf}
+\caption{Expected exclusion limits at 95\% CL on the Yukawa coupling $\lambda$ at the LQ-lepton-quark vertex, as a function of the
 LQ mass. A unit branching fraction $\beta$ of the LQ to a $\tau$ lepton and a bottom quark is assumed. Future projections for 300
 and 3000 \fbinv are shown for both the stat. only and stat.+syst. scenarios, shown as dashed and
 filled lines respectively, and for both the single LQ and LQ pair production, where the latter corresponds to the vertical line
@@ -153,22 +151,123 @@ explain anomalies observed in $\PB$ physics~\cite{Buttazzo:2017ixm}.}
 \label{fig:lambda_mass}
 \end{figure}
 
+Using the predicted cross section~\cite{Dorsner:2018ynv} of the signal, it is also possible to estimate the maximal LQ mass expected to be in reach for a 5$\sigma$ discovery. 
+Figure~\ref{fig:LQ3-discovery} shows the expected local significance of a signal-like excess as a function of the LQ mass hypothesis.
 
-
-\begin{figure}[tb]
+\begin{figure}[t]
 \vspace{-5pt}
 \centering
-\includegraphics[width=0.45\textwidth]{\main/section10/img/significance_LQ.pdf}~~~~
-\includegraphics[width=0.45\textwidth]{\main/section10/img/significance_LQLQ.pdf}
+\includegraphics[width=0.49\textwidth]{\main/section10/img/significance_LQ.pdf}
+\includegraphics[width=0.49\textwidth]{\main/section10/img/significance_LQLQ.pdf}
 \caption{Expected local significance of a signal-like excess as a function of the LQ mass, for the two high luminosity projections,
 300 \fbinv (red) and 3000 \fbinv (orange), assuming the theoretical prediction for the LQ cross section at NLO~\cite{Dorsner:2018ynv}, calculated with $\lambda = 1$ and $\beta = 1$. Projections are calculated for both single LQ (left) and LQ pair production (right).}
 \label{fig:LQ3-discovery}
 \end{figure}
 
-In summary, this study shows that the future LQ searches under higher luminosity conditions are promising, as they are expected 
-to greatly increase the experimental reach. It also shows that the pair production channel is  expected to be the most 
-sensitive. A significance of 5$\sigma$ is within reach for LQ masses below 1.25 (1.35) TeV for the single (pair) production 
-channels in the 300\fbinv scenario and 1.50 (1.50) TeV for the 3000 \fbinv scenario.
+In summary, this study shows that future LQ searches under higher luminosity conditions are promising, as they are expected 
+to greatly increase the reach of the search. They also show that the pair production channel is  expected to be the most 
+sensitive. A significance of 5$\sigma$ is within reach for LQ masses below 800 (1200) FeV for the single (pair) production 
+channels in the 300\fbinv scenario and 1000 (1500) GeV for the 3000 \fbinv scenario.
+
+
+\subsubsubsection{CMS Searches for $W^\prime \to \tau + \met$}
+
+New heavy gauge bosons are predicted by various SM extensions. The charged version of such heavy gauge bosons
+is generally referred to as \PWpr.
+The decay $\PWpr \rightarrow \tau \nu$ yields a single hadronically decaying tau
+($\tau_h$) as the only detectable object and missing energy due to the neutrinos.
+Hadronically decaying tau leptons are selected since the corresponding branching fraction,
+about 60\%, is the largest among all $\tau$ decays.
+Tau-jets are experimentally distinctive because of their low charged hadron
+multiplicity, unlike QCD multi-jets,
+which have high charged hadron multiplicity, or other leptonic \PWpr boson decays, which yield no jet. 
+This Phase-2 study~\cite{CMS-PAS-FTR-18-030} follows closely the recently published Run~2 result~\cite{Sirunyan:2018lbg},
+using hadronically decaying tau leptons.
+
+The signature of a \PWpr boson (see Fig.~\ref{fig:feynmanWprime}), is considered
+similar to a high-mass W boson. 
+It could be observed in the distribution of the
+transverse mass ($M_T$) of the transverse momentum of the $\tau$ ($p_T^{\tau}$)
+and the missing transverse momentum (\ptmiss):
+$M_T = \sqrt{2 p_T^{\tau}p_T^{miss}(1-cos\Delta\phi(\tau,p_T^{miss}))}$.
+Unlike the leptonic search channels, the signal shape of $W^\prime$ bosons with hadronically
+decaying tau leptons does
+not show a Jacobian peak structure because of the presence of two neutrinos in the final
+state. Despite the multi-particle final state,
+the decay appears as a typical two-body decay; the axis of the
+hadronic tau jet is back to
+back with \ptmiss and the magnitude of both is comparable such that their ratio is about unity.
+
+
+\begin{figure}[htp]
+\begin{center}
+
+\includegraphics[width=.45\textwidth]{\main/section10/img/WprimeToTau.pdf}
+\includegraphics[width=.49\textwidth]{\main/section10/img/MT_final_3000Wprime.pdf}
+
+\caption{Left: Illustration of the studied channel $W^\prime \rightarrow \tau \nu$ with the
+subsequent hadronic decay of the tau ($\tau_h$).
+Right: The discriminating variable, $M_T$, after all selection criteria for the HL-LHC conditions of
+\intLumi and 200~PU.
+The relevant SM backgrounds are shown according to the labels in
+the legend. Signal examples for \PWpr boson masses of 1\TeV, 5\TeV and 6\TeV are scaled to their SSM
+LO cross section and \intLumi.}
+\label{fig:feynmanWprime}
+\end{center}
+\end{figure}
+
+
+The results are interpreted in the context of the sequential standard model (SSM)
+~\cite{Altarelli:1989ff} in terms of \PWpr mass and coupling strength. 
+A model-independent cross section limit allows interpretations in other models.
+The signal was simulated in LO and the detector performance simulated with \delphes{}.
+The \PWpr boson coupling strength, $g_{\PWpr}$, is given in terms of the SM weak coupling strength $g_{\PW} = e/\sin^2\theta_W\approx 0.65$.
+Here, $\theta_{\PW}$ is the weak mixing angle.
+If the \PWpr boson is a heavier copy of the SM \PW\ boson, their coupling ratio is $g_{\PWpr}/g_{\PW}=1$ and the 
+SSM \PWpr boson theoretical cross sections, signal shapes, and widths apply.
+However, different couplings are possible. Because of the dependence of the width of a particle on its couplings
+the consequent effect on the transverse mass distribution, a limit can also be set on the coupling strength.
+
+The dominant background appears in the off-shell tail of the $M_T$ distribution of
+the SM \PW\ boson.
+Subleading background contributions arise from $t\bar{t}$ and QCD multijet events. The number of background events
+is reduced by the event selection.
+These backgrounds primarily arise as a consequence of jets misidentified as $\tau_h$ candidates
+and populate the lower transverse masses while the signal exhibits an excess of events at high $M_T$.
+Events with one hadronically decaying $\tau$
+and \ptmiss are selected if the ratio of $\pt^{\Pgt}$ to \ptmiss satisfies $0.7 < \pt^{\Pgt}/\ptmiss <
+1.3$ and the
+angle $\Delta\phi(\vec{p_T}^{\Pgt}, \vec{p_T}_{miss})$ is greater than 2.4 radians.
+
+The physics sensitivity is studied based on the $M_T$ distribution in Fig.~\ref{fig:feynmanWprime}-right.
+Signal events are expected to be particularly prominent at the upper end of the $M_T$
+distribution, where the expected SM background is low.
+So far, there are no indications for the existence of a SSM \PWpr\ boson~\cite{Sirunyan:2018lbg}. With the
+high luminosity during Phase-2, the \PWpr mass reach for potential observation increases
+to 6.9\TeV\ and 6.4\TeV\
+for 3~$\sigma$ evidence and 5~$\sigma$ discovery, respectively, as shown in Fig.~\ref{fig:WprimeResults}-left. Alternatively, in case of no observation, one can exclude SSM \PWpr boson masses up to 7.0\TeV
+with \intLumi.
+These are multi-bin limits taking into account the full $M_T$ shape.
+
+While the SSM model assumes SM-like couplings of the fermions, the couplings could well be weaker if
+further decays occur. The HL-LHC has good sensitivity to study these couplings.
+The sensitivity to weaker couplings extends significantly.
+A model-independent cross section limit for new physics with $\tau$+MET
+in the final state is depicted in Fig.~\ref{fig:WprimeResults}-right, calculated as a single-bin limit
+by counting the number of events above a sliding threshold $M_T^{\rm min}$.
+
+\begin{figure}[hbtp]\centering
+    \includegraphics[width=0.49\textwidth]{\main/section10/img/SignificanceWprime.pdf}
+    \includegraphics[width=0.49\textwidth]{\main/section10/img/MILimit_3000fbinvWprime.pdf}
+\caption{Left: Discovery significance for SSM \PWpr to tau leptons.
+Right: Model-independent cross section limit. For this, a single-bin limit is
+calculated for increasing $M_T^{\rm min}$
+while keeping the signal yield constant in order to avoid including any signal shape
+information on this limit calculation.}
+    \label{fig:WprimeResults}
+\end{figure}
+
+
 
 
 
